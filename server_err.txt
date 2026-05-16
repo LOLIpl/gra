@@ -1,0 +1,11 @@
+[DEBUG] RAW_DATA players=29707 leagues=76
+[DEBUG] DB leagues=76 transfers=30625
+[CACHE] transfers count in DATABASE: 30625
+[CACHE] DATABASE id: 2577540597696
+[CACHE] serialized length: 20920947
+[CACHE] bytes length: 20920947
+[CACHE] first 50 bytes: b'{"players": [{"player_id": "683840", "name": "Pedr'
+127.0.0.1 - - [16/May/2026 13:56:45] "GET /api/transfers HTTP/1.1" 200 -
+127.0.0.1 - - [16/May/2026 13:56:53] "GET /api/bootstrap HTTP/1.1" 200 -
+127.0.0.1 - - [16/May/2026 13:56:53] "GET /api/uefa HTTP/1.1" 200 -
+127.0.0.1 - - [16/May/2026 13:56:53] "GET /api/league/PL1 HTTP/1.1" 200 -

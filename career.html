@@ -1,0 +1,458 @@
+﻿<!-- GAME -->
+<nav>
+  <div class="brand" style="font-weight:900;color:#fff;padding:.6rem 0;"> PolskiWidok</div>
+  <div class="team-info" style="display:flex;align-items:center;gap:0.75rem;">
+    <div class="badge-nav" id="navBadge"></div>
+    <span id="navTeamName" style="font-weight:700;"></span>
+    <span id="navLeagueName" style="color:var(--muted);font-size:0.85rem;"></span>
+  </div>
+  <div class="nav-links" style="display:flex;gap:.4rem;flex-wrap:wrap;">
+    <button class="active" onclick="showSection('dashboard')" id="btn-dashboard" accesskey="1"> Panel</button>
+    <button onclick="showSection('squad')" id="btn-squad" accesskey="2"> Skład</button>
+    <button onclick="showSection('transfers')" id="btn-transfers" accesskey="3"> Transfery</button>
+    <button onclick="showSection('simulation')" id="btn-simulation" accesskey="4"> Terminarz</button>
+    <button onclick="showSection('table')" id="btn-table" accesskey="6"> Tabela</button>
+    <button onclick="showUefa()" id="btn-uefa"> UEFA</button>
+    <button onclick="showSection('settings')" id="btn-settings"> Ustawienia</button>
+  </div>
+</nav>
+
+<main>
+        <div id="loadingScreen" class="loading-overlay">
+            <div class="loading-inner-glass">
+                <div class="loader-spinner"></div>
+                <h2 style="margin-top:1rem;font-weight:900;color:#fff;letter-spacing:.04em;">PolskiWidok</h2>
+                <p style="color:var(--text-muted);font-size:0.85rem;" id="loadingText">Inicjalizacja...</p>
+                <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progressFill"></div></div>
+                <p style="color:rgba(255,255,255,.35);font-size:0.72rem;margin-top:.75rem;">Ĺadowanie składu i terminarza...</p>
+            </div>
+        </div>
+    <div class="section active" id="dashboard">
+        <div class="stadium-background">
+            <div class="stadium-overlay"></div>
+            <div class="pitch-lines"></div>
+            <div class="floodlights"></div>
+        </div>
+
+        <div class="dashboard-content">
+            <div class="dashboard-left">
+                <div class="card club-hero-card">
+                    <div class="club-header-layout">
+                        <div id="clubBigBadge" class="huge-badge">?</div>
+                        <div class="club-text-layout">
+                            <div class="club-title-row">
+                                <h1 id="clubName">Nazwa klubu</h1>
+                                <span class="badge badge-season" id="seasonBadge">Sezon 25/26</span>
+                            </div>
+                            <p id="clubLeague" class="text-muted"></p>
+                        </div>
+                    </div>
+                    <div class="club-stats-grid">
+                        <div class="stat-item"><i class="fi fi-rr-settings"></i> <span id="formationBadge">4-4-2</span></div>
+                        <div class="stat-item money"><i class="fi fi-rr-money-bill-wave"></i> <span id="clubBudgetPreview">â‚¬2.00M</span></div>
+                        <div class="stat-item"><i class="fi fi-rr-calendar-check"></i> <span id="matchDisplay">22</span> kol.</div>
+                        <div class="stat-item pos"><i class="fi fi-ss-trophy"></i> <span id="positionDisplay">-</span>. msc</div>
+                        <div class="stat-item" style="grid-column:span 2;" id="uefaCoefficient"></div>
+                    </div>
+                </div>
+
+                <div class="card match-preview-card">
+                    <div class="card-header-compact">
+                        <strong>Najbliższy Mecz</strong>
+                        <span class="badge badge-neon" id="dashboardMatchBadge">Kolejka 1</span>
+                    </div>
+                    <div id="dashboardMatchDate" class="match-date">2 SierpieĹ„ 2025</div>
+
+                    <div class="scoreboard-display">
+                        <div class="sc-team home">
+                            <div class="sc-logo" id="dashboardHomeLogo"></div>
+                            <div class="sc-name" id="dashboardHomeName">Gospodarz</div>
+                        </div>
+                        <div class="sc-score-area">
+                            <div class="sc-vs">VS</div>
+                            <div class="sc-score" id="dashboardScore">- : -</div>
+                        </div>
+                        <div class="sc-team away">
+                            <div class="sc-logo" id="dashboardAwayLogo"></div>
+                            <div class="sc-name" id="dashboardAwayName">GośÄ‡</div>
+                        </div>
+                    </div>
+
+                    <div class="action-stack-row">
+                        <button class="btn btn-primary btn-glow" id="dashboardPlayBtn" onclick="startSimulation()"><i class="fi fi-br-play"></i> Rozegraj mecz</button>
+                        <button class="btn btn-accent" onclick="simulateToWindow()"><i class="fi fi-rr-calendar-arrow-up"></i> Symuluj do meczu</button>
+                    </div>
+                </div>
+
+                <div class="card news-card">
+                    <div class="card-header">
+                        <h3><i class="fi fi-rr-news"></i> Centrum Wiadomości</h3>
+                        <span class="badge badge-orange" id="dateBadge">Data</span>
+                    </div>
+                    <div id="newsContainer" class="news-scroll-container"></div>
+                </div>
+            </div>
+
+            <div class="card dashboard-table-card">
+                <div class="card-header">
+                    <h3><i class="fi fi-ss-chart-tree-map"></i> Sytuacja w Lidze</h3>
+                    <span class="badge badge-blue" id="dashboardTableMatchDay">Po 0</span>
+                </div>
+                <div class="table-container compact-table">
+                    <table id="dashboardTable">
+                        <thead><tr><th>#</th><th>Drużyna</th><th>M</th><th>W</th><th>R</th><th>P</th><th>Pkt</th><th>Forma</th></tr></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <button class="btn btn-secondary btn-sm full-width-btn" onclick="showSection('table')" style="margin-top:1rem;">Zobacz pełną tabelę</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="gra">
+        <div class="card match-day-big-card">
+            <div class="stadium-visual-bg"></div>
+            <div class="card-content-relative">
+                <div class="match-broadcast-header">
+                    <div class="broad-live">LIVE</div>
+                    <div class="broad-info">
+                        <h2 id="matchDayBadge">Kolejka 1</h2>
+                        <p id="matchDate">18 lipca 2025</p>
+                    </div>
+                </div>
+
+                <div id="matchContainer">
+                    <div class="match-teams-broadcast">
+                        <div class="bc-team">
+                            <div class="bc-logo-wrap" id="homeLogo" style="background:#3b82f6;">H</div>
+                            <h3 id="homeName">Gospodarz</h3>
+                        </div>
+                        <div class="bc-score-wrap">
+                            <div class="bc-score-display" id="scoreDisplay">- : -</div>
+                            <div class="bc-time">00:00</div>
+                        </div>
+                        <div class="bc-team">
+                            <div class="bc-logo-wrap" id="awayLogo" style="background:#ef4444;">A</div>
+                            <h3 id="awayName">GośÄ‡</h3>
+                        </div>
+                    </div>
+
+                    <div class="match-controls-bar">
+                        <button class="btn btn-primary btn-lg btn-glow" id="simBtn" onclick="startSimulation()"><i class="fi fi-br-play-alt"></i> ROZPOCZNIJ MECZ</button>
+                        <button class="btn btn-orange btn-lg stop-btn" id="stopBtn" onclick="stopSimulation()" style="display:none;"><i class="fi fi-rr-stop-circle"></i> PRZERWIJ</button>
+                    </div>
+
+                    <div class="match-log-console">
+                        <div class="console-head"><i class="fi fi-rs-comment-alt"></i> Komentarz live</div>
+                        <div id="matchLog" class="console-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="squad">
+        <div class="card tactics-card">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:.8rem 1.2rem;border-bottom:1px solid var(--border);flex-wrap:wrap;gap:.5rem;">
+                <div style="display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;">
+                    <h2 style="margin:0;font-size:1.1rem;">Ustawienie</h2>
+                    <div class="formation-selector" id="formationButtons" style="display:flex;gap:.25rem;"></div>
+                </div>
+                <button class="btn btn-secondary btn-sm" onclick="toggleTacticsPanel()"><i class="fi fi-rr-settings-sliders"></i> Taktyka</button>
+            </div>
+            <div class="tactics-pitch-layout">
+                <div class="pitch-visual">
+                    <div class="formation-display" id="formationDisplay"></div>
+                </div>
+
+                <div id="tacticsPanel" style="display:none;padding:1rem 1.2rem;border-top:1px solid var(--border);">
+                    <div class="settings-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;">
+                        <div class="s-field">
+                            <label>Styl gry</label>
+                            <select id="styleSelect" onchange="updateTactics()">
+                                <option value="balanced">ZrĂłwnoważony</option>
+                                <option value="attacking">Ofensywny</option>
+                                <option value="defensive">Defensywny</option>
+                                <option value="possession">Piłka do nogi</option>
+                                <option value="counter">Kontra</option>
+                            </select>
+                        </div>
+                        <div class="s-field">
+                            <label>Przygotowanie</label>
+                            <select id="pressingSelect" onchange="updateTactics()">
+                                <option value="medium">Ĺšrednie</option>
+                                <option value="high">Wysokie</option>
+                                <option value="low">Niskie</option>
+                            </select>
+                        </div>
+                        <div class="s-field">
+                            <label>SzerokośÄ‡</label>
+                            <select id="widthSelect" onchange="updateTactics()">
+                                <option value="normal">Normalne</option>
+                                <option value="wide">Szerokie</option>
+                                <option value="narrow">Wąskie</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary btn-sm" onclick="autoPick()" style="margin-top:.5rem;"><i class="fi fi-rr-refresh"></i> Auto-skład</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="squad-bottom-grid">
+            <div class="card bench-card">
+                <h3><i class="fi fi-br-users-alt"></i> Ĺawka Rezerwowych</h3>
+                <div class="bench-list" id="benchList"></div>
+            </div>
+            <div class="card reserves-card">
+                <h3><i class="fi fi-rr-box-alt"></i> Rezerwy</h3>
+                <div class="bench-list" id="reservesList"></div>
+            </div>
+        </div>
+        <div class="card stats-card" style="margin-top:1rem;">
+            <div class="card-header">
+                <h3><i class="fi fi-rr-stats"></i> Statystyki drużyny</h3>
+                <div style="display:flex;gap:.5rem;">
+                    <button class="btn btn-secondary btn-sm active" id="statsBtnGoals" onclick="switchStats('goals')">Strzelcy</button>
+                    <button class="btn btn-secondary btn-sm" id="statsBtnAssists" onclick="switchStats('assists')">Asystenci</button>
+                </div>
+            </div>
+            <div class="table-container" style="max-height:300px;overflow-y:auto;">
+                <table class="stats-table" id="statsTable">
+                    <thead><tr><th>#</th><th>Pozycja</th><th>Zawodnik</th><th>Wiek</th><th>Mecze</th><th>Gole</th><th>Asysty</th><th>G+A</th><th>Ocena</th></tr></thead>
+                    <tbody id="statsBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="transfers">
+        <div class="card transfer-center-card">
+            <div class="transfer-welcome-bg"></div>
+            <div class="card-header-broad">
+                <h1><i class="fi fi-rr-exchange"></i> Centrum Transferowe</h1>
+                <span class="badge badge-lg" id="transferWindowBadge">Letnie</span>
+            </div>
+
+            <div class="finance-display-row">
+                <div class="fin-card budget">
+                    <div class="fin-icon"><i class="fi fi-br-money-bills-simple"></i></div>
+                    <div class="fin-info"><p>Budżet transferowy</p><h2 id="transferBudget">€5.0M</h2></div>
+                </div>
+                <div class="fin-card" style="border-color:rgba(6,182,212,.2);">
+                    <div class="fin-icon" style="color:var(--accent-cyan);"><i class="fi fi-rr-hand-holding-usd"></i></div>
+                    <div class="fin-info"><p>Maks. pensja (K/tydz)</p><h2 id="wageBudgetDisplay" style="color:var(--accent-cyan);">0K</h2></div>
+                </div>
+                <div class="fin-card" style="border-color:rgba(16,185,129,.2);">
+                    <div class="fin-icon" style="color:#10b981;"><i class="fi fi-rr-users-alt"></i></div>
+                    <div class="fin-info"><p>Zawodnicy w składzie</p><h2 id="squadCountDisplay" style="color:#10b981;">0</h2></div>
+                </div>
+            </div>
+
+            <div class="search-and-filter-bar card">
+                <div class="search-input-wrap">
+                    <i class="fi fi-rr-search"></i>
+                    <input type="text" id="transferNameFilter" placeholder="Szukaj zawodnika po nazwisku..." oninput="updateTransferFilters()">
+                </div>
+                <div class="filters-row">
+                    <select id="transferClubFilter" onchange="updateTransferFilters()"><option value="">Wszystkie kluby</option></select>
+                    <select id="transferLeagueFilter" onchange="updateTransferFilters()"><option value="">Wszystkie ligi</option></select>
+                    <input type="number" id="transferAgeFilter" placeholder="Max wiek" oninput="updateTransferFilters()">
+                </div>
+                <div class="position-quick-filters">
+                    <button class="btn btn-secondary btn-sm active" onclick="filterTransfers('all')">Wszyscy</button>
+                    <button class="btn btn-secondary btn-sm" onclick="filterTransfers('BR')">BR</button>
+                    <button class="btn btn-secondary btn-sm" onclick="filterTransfers('OB')">ŚO</button>
+                    <button class="btn btn-secondary btn-sm" onclick="filterTransfers('PO')">ŚP</button>
+                    <button class="btn btn-secondary btn-sm" onclick="filterTransfers('NA')">N</button>
+                </div>
+            </div>
+
+            <div id="transferMsg" style="display:none;margin:0 1.5rem .75rem;padding:.75rem 1rem;border-radius:10px;font-weight:700;font-size:.9rem;"></div>
+            <div class="transfer-grid-expressive" id="transferList"></div>
+        </div>
+    </div>
+
+    <div class="section" id="simulation">
+        <div class="calendar-layout-container">
+            <div class="card calendar-main-card">
+                <div class="calendar-header-bar">
+                    <button class="btn-icon" onclick="changeCalendarMonth(-1)"><i class="fi fi-ts-arrow-left"></i></button>
+                    <h2 id="calendarMonthLabel">Lipiec 2025</h2>
+                    <button class="btn-icon" onclick="changeCalendarMonth(1)"><i class="fi fi-br-arrow-right"></i></button>
+                </div>
+                <div style="text-align:center;padding:0.2rem 0 0.4rem;background:rgba(0,0,0,.1);border-bottom:1px solid var(--border);">
+                    <span class="badge badge-blue"><i class="fi fi-rr-calendar-arrow-up"></i> Widok miesiąca</span>
+                </div>
+                <div class="calendar-grid-expressive" id="calendarGrid"></div>
+            </div>
+
+            <div class="calendar-sidebar">
+                <div class="card agenda-card">
+                    <h3><i class="fi fi-br-list-check"></i> Nadchodzące wydarzenia</h3>
+                    <div class="agenda-list-expressive news-scroll-container" id="calendarAgenda"></div>
+                </div>
+                <div class="card tools-card">
+                    <h3><i class="fi fi-rr-magic-wand"></i> Szybka symulacja</h3>
+                    <button class="btn btn-accent btn-sm" onclick="simulateToWindow()"><i class="fi fi-rr-calendar-arrow-up"></i> Symuluj do meczu</button>
+                    <button class="btn btn-secondary btn-sm" onclick="previousMonth()" style="margin-top:.4rem;"><i class="fi fi-br-arrow-left"></i> Poprzedni miesiąc</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card table-card" style="margin-top:1rem;">
+            <div class="card-header"><h2><i class="fi fi-br-list-check"></i> Pełny Terminarz Sezonu</h2></div>
+            <div class="table-container news-scroll-container" style="max-height:400px;">
+                <table id="scheduleTable" class="nice-table">
+                    <thead><tr><th>Kolejka</th><th>Data</th><th>Gospodarz</th><th>Wynik</th><th>GośÄ‡</th><th>Status</th></tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="table">
+        <div class="card main-table-card">
+            <div class="stadium-table-bg"></div>
+            <div class="card-content-relative">
+                <div class="table-header-broad">
+                    <div class="th-left">
+                        <h1><i class="fi fi-ss-trophy-achievement-skill"></i> Oficjalna Tabela</h1>
+                        <select class="league-selector-dark" id="leagueTableSelector" onchange="switchLeagueTable()"></select>
+                    </div>
+                    <span class="badge badge-blue badge-lg" id="tableMatchDay">Po 0 kolejkach</span>
+                </div>
+
+                <div class="table-container expressive-league-table">
+                    <table id="leagueTable">
+                        <thead>
+                            <tr>
+                                <th>#</th><th>Drużyna</th><th>M</th><th>W</th><th>R</th><th>P</th>
+                                <th>B+</th><th>B-</th><th>RB</th><th>Pkt</th><th>Forma</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+                <div class="table-legend-expressive">
+                    <span><span class="leg-box promo"></span> Awans / Puchary</span>
+                    <span><span class="leg-box releg"></span> Spadek</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card other-leagues-card" style="margin-top:1rem;">
+            <div class="card-header"><h2><i class="fi fi-ss-chart-bullet"></i> Przegląd innych lig</h2></div>
+            <div class="grid-4" id="otherLeaguesPreview"></div>
+        </div>
+    </div>
+
+    <div class="section" id="uefa">
+        <div class="card">
+            <div class="card-header"><h2><i class="fi fi-ss-trophy-achievement-skill"></i> Ranking UEFA</h2></div>
+            <div id="uefaRankingContent" style="overflow-x:auto;">
+                <table class="nice-table" style="width:100%;">
+                    <thead><tr><th>#</th><th>Kraj</th><th>Liga</th><th>Współczynnik</th><th>LM</th><th>LE</th><th>LK</th><th>Razem</th></tr></thead>
+                    <tbody id="uefaRankingBody"></tbody>
+                </table>
+            </div>
+            <div style="margin-top:.8rem;padding:.8rem;background:rgba(255,255,255,.03);border-radius:8px;font-size:.82rem;color:var(--muted);">
+                <strong style="color:var(--primary-light);">Miejsca w pucharach</strong> zależą od pozycji w rankingu UEFA.
+                LM = Liga Mistrzów &bull; LE = Liga Europy &bull; LK = Liga Konferencji
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="settings">
+        <div class="card settings-main-card">
+            <div class="card-header"><h2><i class="fi fi-br-settings-sliders"></i> Ustawienia Gry</h2></div>
+
+            <div class="settings-grid-visual">
+                <div class="setting-item-card">
+                    <i class="fi fi-rr-download i-big"></i>
+                    <h3>Zapisz Grę</h3>
+                    <p>Zapisz aktualny stan kariery na serwerze.</p>
+                    <button class="btn btn-primary" onclick="saveCareer()">Zapisz teraz</button>
+                </div>
+                <div class="setting-item-card">
+                    <i class="fi fi-sr-upload i-big"></i>
+                    <h3>Wczytaj (Serwer)</h3>
+                    <p>Wczytaj zapis z chmury.</p>
+                    <button class="btn btn-secondary" onclick="loadCareer()">Wczytaj</button>
+                </div>
+                <div class="setting-item-card">
+                    <i class="fi fi-rr-folder i-big"></i>
+                    <h3>Wczytaj (Plik)</h3>
+                    <p>Wczytaj plik JSON z dysku.</p>
+                    <button class="btn btn-secondary" onclick="document.getElementById('loadGameInputSettings').click()">Wybierz plik</button>
+                    <input type="file" id="loadGameInputSettings" accept=".json" style="display:none" onchange="loadGameFromFile(event)">
+                </div>
+            </div>
+
+            <div class="sim-speed-box card" style="margin-top:1.5rem;">
+                <label><i class="fi fi-sr-spinner"></i> PrędkośÄ‡ symulacji meczu</label>
+                <div class="radio-speed-group">
+                    <select id="simSpeedSelect" onchange="updateSimSpeed()">
+                        <option value="200">Bardzo szybko (200ms)</option>
+                        <option value="500" selected>Szybko (500ms)</option>
+                        <option value="1000">Normalnie (1s)</option>
+                    </select>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="saveStatusSettings" class="save-status-bar"></div>
+    </div>
+<!-- TĹO KARIERY -->
+<div id="career-bg" aria-hidden="true">
+  <div class="cb-grid"></div>
+  <div class="cb-orb cb-orb1"></div>
+  <div class="cb-orb cb-orb2"></div>
+  <div class="cb-orb cb-orb3"></div>
+  <div class="cb-scanline"></div>
+  <canvas id="cb-particles"></canvas>
+</div>
+</main>
+
+<div class="modal-overlay" id="modal">
+    <div class="modal-window card">
+        <div id="modalContent"></div>
+    </div>
+</div>
+
+<div id="playerTooltip" class="player-tooltip" style="display:none;"></div>
+
+<script>
+(function initParticles(){
+  const canvas = document.getElementById('cb-particles');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let W, H, particles=[];
+  function resize(){ W=canvas.width=window.innerWidth; H=canvas.height=window.innerHeight; }
+  resize();
+  window.addEventListener('resize', resize);
+  for(let i=0;i<55;i++) particles.push({
+    x:Math.random()*W, y:Math.random()*H,
+    r:Math.random()*1.4+0.4,
+    vx:(Math.random()-.5)*0.25, vy:(Math.random()-.5)*0.18,
+    a:Math.random()
+  });
+  function frame(){
+    ctx.clearRect(0,0,W,H);
+    particles.forEach(p=>{
+      p.x+=p.vx; p.y+=p.vy;
+      p.a+=0.005;
+      if(p.x<0)p.x=W; if(p.x>W)p.x=0;
+      if(p.y<0)p.y=H; if(p.y>H)p.y=0;
+      ctx.beginPath();
+      ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(96,165,250,${0.12+0.08*Math.sin(p.a)})`;
+      ctx.fill();
+    });
+    requestAnimationFrame(frame);
+  }
+  frame();
+})();
+</script>
