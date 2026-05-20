@@ -1,6 +1,6 @@
 ﻿<!-- GAME -->
 <nav>
-  <div class="brand" style="font-weight:900;color:#fff;padding:.6rem 0;"> PolskiWidok</div>
+  <div class="brand" style="padding:.6rem 0;"><img src="/logo.png" alt="PolskiWidok" class="brand-logo" style="height:28px;vertical-align:middle;"></div>
   <div class="team-info" style="display:flex;align-items:center;gap:0.75rem;">
     <div class="badge-nav" id="navBadge"></div>
     <span id="navTeamName" style="font-weight:700;"></span>
@@ -21,10 +21,10 @@
         <div id="loadingScreen" class="loading-overlay">
             <div class="loading-inner-glass">
                 <div class="loader-spinner"></div>
-                <h2 style="margin-top:1rem;font-weight:900;color:#fff;letter-spacing:.04em;">PolskiWidok</h2>
+                <img src="/logo.png" alt="PolskiWidok" style="height:32px;margin-top:1rem;">
                 <p style="color:var(--text-muted);font-size:0.85rem;" id="loadingText">Inicjalizacja...</p>
                 <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progressFill"></div></div>
-                <p style="color:rgba(255,255,255,.35);font-size:0.72rem;margin-top:.75rem;">Ĺadowanie składu i terminarza...</p>
+                <p style="color:rgba(255,255,255,.35);font-size:0.72rem;margin-top:.75rem;">Ładowanie składu i terminarza...</p>
             </div>
         </div>
     <div class="section active" id="dashboard">
@@ -49,7 +49,7 @@
                     </div>
                     <div class="club-stats-grid">
                         <div class="stat-item"><i class="fi fi-rr-settings"></i> <span id="formationBadge">4-4-2</span></div>
-                        <div class="stat-item money"><i class="fi fi-rr-money-bill-wave"></i> <span id="clubBudgetPreview">â‚¬2.00M</span></div>
+                        <div class="stat-item money"><i class="fi fi-rr-money-bill-wave"></i> <span id="clubBudgetPreview">€2.00M</span></div>
                         <div class="stat-item"><i class="fi fi-rr-calendar-check"></i> <span id="matchDisplay">22</span> kol.</div>
                         <div class="stat-item pos"><i class="fi fi-ss-trophy"></i> <span id="positionDisplay">-</span>. msc</div>
                         <div class="stat-item" style="grid-column:span 2;" id="uefaCoefficient"></div>
@@ -61,7 +61,7 @@
                         <strong>Najbliższy Mecz</strong>
                         <span class="badge badge-neon" id="dashboardMatchBadge">Kolejka 1</span>
                     </div>
-                    <div id="dashboardMatchDate" class="match-date">2 SierpieĹ„ 2025</div>
+                    <div id="dashboardMatchDate" class="match-date">2 Sierpień 2025</div>
 
                     <div class="scoreboard-display">
                         <div class="sc-team home">
@@ -180,7 +180,7 @@
                         <div class="s-field">
                             <label>Przygotowanie</label>
                             <select id="pressingSelect" onchange="updateTactics()">
-                                <option value="medium">Ĺšrednie</option>
+                                <option value="medium">Średnie</option>
                                 <option value="high">Wysokie</option>
                                 <option value="low">Niskie</option>
                             </select>
@@ -201,11 +201,29 @@
 
         <div class="squad-bottom-grid">
             <div class="card bench-card">
-                <h3><i class="fi fi-br-users-alt"></i> Ĺawka Rezerwowych</h3>
+                <div class="squad-sort-bar">
+                    <h3><i class="fi fi-br-users-alt"></i> Ławka</h3>
+                    <div class="sort-chips">
+                        <button class="bench-sort-btn btn btn-secondary btn-sm active" data-sort="position" onclick="setSortBench('position')">Poz.</button>
+                        <button class="bench-sort-btn btn btn-secondary btn-sm" data-sort="rating" onclick="setSortBench('rating')">OVR</button>
+                        <button class="bench-sort-btn btn btn-secondary btn-sm" data-sort="age_asc" onclick="setSortBench('age_asc')">Wiek ↑</button>
+                        <button class="bench-sort-btn btn btn-secondary btn-sm" data-sort="fitness" onclick="setSortBench('fitness')">Forma</button>
+                        <button class="bench-sort-btn btn btn-secondary btn-sm" data-sort="name" onclick="setSortBench('name')">A–Z</button>
+                    </div>
+                </div>
                 <div class="bench-list" id="benchList"></div>
             </div>
             <div class="card reserves-card">
-                <h3><i class="fi fi-rr-box-alt"></i> Rezerwy</h3>
+                <div class="squad-sort-bar">
+                    <h3><i class="fi fi-rr-box-alt"></i> Rezerwy</h3>
+                    <div class="sort-chips">
+                        <button class="res-sort-btn btn btn-secondary btn-sm" data-sort="position" onclick="setSortReserves('position')">Poz.</button>
+                        <button class="res-sort-btn btn btn-secondary btn-sm active" data-sort="rating" onclick="setSortReserves('rating')">OVR</button>
+                        <button class="res-sort-btn btn btn-secondary btn-sm" data-sort="age_asc" onclick="setSortReserves('age_asc')">Wiek ↑</button>
+                        <button class="res-sort-btn btn btn-secondary btn-sm" data-sort="value" onclick="setSortReserves('value')">Wartość</button>
+                        <button class="res-sort-btn btn btn-secondary btn-sm" data-sort="name" onclick="setSortReserves('name')">A–Z</button>
+                    </div>
+                </div>
                 <div class="bench-list" id="reservesList"></div>
             </div>
         </div>
@@ -252,12 +270,31 @@
             <div class="search-and-filter-bar card">
                 <div class="search-input-wrap">
                     <i class="fi fi-rr-search"></i>
-                    <input type="text" id="transferNameFilter" placeholder="Szukaj zawodnika po nazwisku..." oninput="updateTransferFilters()">
+                    <input type="text" id="transferNameFilter" placeholder="Szukaj po nazwisku..." oninput="updateTransferFilters()">
                 </div>
-                <div class="filters-row">
-                    <select id="transferClubFilter" onchange="updateTransferFilters()"><option value="">Wszystkie kluby</option></select>
+                <div class="filters-row" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.5rem;">
                     <select id="transferLeagueFilter" onchange="updateTransferFilters()"><option value="">Wszystkie ligi</option></select>
-                    <input type="number" id="transferAgeFilter" placeholder="Max wiek" oninput="updateTransferFilters()">
+                    <select id="transferClubFilter" onchange="updateTransferFilters()"><option value="">Wszystkie kluby</option></select>
+                    <select id="transferNatFilter" onchange="updateTransferFilters()"><option value="">Każda nacja</option></select>
+                    <div style="display:flex;gap:.3rem;">
+                        <input type="number" id="transferAgeMin" placeholder="Min wiek" min="15" max="45" oninput="updateTransferFilters()" style="width:100%;">
+                        <input type="number" id="transferAgeMax" placeholder="Max wiek" min="15" max="45" oninput="updateTransferFilters()" style="width:100%;">
+                    </div>
+                    <div style="display:flex;gap:.3rem;">
+                        <input type="number" id="transferRatingMin" placeholder="Min OVR" min="1" max="99" oninput="updateTransferFilters()" style="width:100%;">
+                        <input type="number" id="transferRatingMax" placeholder="Max OVR" min="1" max="99" oninput="updateTransferFilters()" style="width:100%;">
+                    </div>
+                    <input type="number" id="transferValueMax" placeholder="Max wartość (M€)" min="0" oninput="updateTransferFilters()">
+                    <select id="transferSortBy" onchange="updateTransferFilters()">
+                        <option value="rating">Sortuj: Ocena ↓</option>
+                        <option value="rating_asc">Ocena ↑</option>
+                        <option value="age_asc">Wiek ↑</option>
+                        <option value="age_desc">Wiek ↓</option>
+                        <option value="value_asc">Najtańszy</option>
+                        <option value="value_desc">Najdroższy</option>
+                        <option value="name">Nazwisko A–Z</option>
+                    </select>
+                    <button class="btn btn-secondary btn-sm" onclick="clearTransferFilters()" style="justify-content:center;">Wyczyść</button>
                 </div>
                 <div class="position-quick-filters">
                     <button class="btn btn-secondary btn-sm active" onclick="filterTransfers('all')">Wszyscy</button>
@@ -268,8 +305,21 @@
                 </div>
             </div>
 
+            <div class="transfer-tabs">
+                <button class="transfer-tab active" id="tab-buy" onclick="switchTransferTab('buy')">Szukaj zawodników</button>
+                <button class="transfer-tab" id="tab-sell" onclick="switchTransferTab('sell')">Lista sprzedaży</button>
+            </div>
+
             <div id="transferMsg" style="display:none;margin:0 1.5rem .75rem;padding:.75rem 1rem;border-radius:10px;font-weight:700;font-size:.9rem;"></div>
-            <div class="transfer-grid-expressive" id="transferList"></div>
+
+            <div id="panel-buy">
+                <div class="transfer-result-count" id="transferCount"></div>
+                <div class="transfer-grid-expressive" id="transferList"></div>
+            </div>
+
+            <div id="panel-sell" style="display:none;">
+                <div class="sale-list-container" id="saleList"></div>
+            </div>
         </div>
     </div>
 
@@ -405,7 +455,7 @@
         </div>
         <div id="saveStatusSettings" class="save-status-bar"></div>
     </div>
-<!-- TĹO KARIERY -->
+<!-- TŁO KARIERY -->
 <div id="career-bg" aria-hidden="true">
   <div class="cb-grid"></div>
   <div class="cb-orb cb-orb1"></div>

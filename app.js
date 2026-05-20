@@ -46,12 +46,32 @@ async function initApp() {
 
 
 
+const IS_STATIC = !location.hostname.includes('localhost') && location.hostname !== '127.0.0.1';
+
+function staticApiPath(path) {
+    if (path === '/api/bootstrap') return '/data/bootstrap.json';
+    if (path === '/api/transfers') return '/data/transfers.json';
+    if (path === '/api/leagues') return '/data/leagues.json';
+    if (path === '/api/uefa') return '/data/uefa.json';
+    if (path === '/api/save' || path === '/api/save-exists') return null;
+    const m = path.match(/^\/api\/league\/(.+)$/);
+    if (m) return `/data/league/${m[1]}.json`;
+    return path;
+}
+
 async function apiGet(url) {
-    const r = await fetch(url);
+    const sp = IS_STATIC ? staticApiPath(url) : url;
+    if (sp === null) {
+        if (url === '/api/save-exists') return { exists: false };
+        if (url === '/api/save') return { exists: false };
+        return null;
+    }
+    const r = await fetch(sp);
     if (!r.ok) throw new Error(`Blad serwera dla ${url}`);
     return r.json();
 }
 async function apiPost(url, payload) {
+    if (IS_STATIC) throw new Error('Zapis niedostepny w wersji statycznej');
     const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
     if (!r.ok) throw new Error(`Blad serwera dla ${url}`);
     return r.json();

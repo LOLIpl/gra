@@ -17,7 +17,7 @@ SAVE_PATH = ROOT / "career_state.json"
 RATING_PATH = ROOT / "oceny.json"
 ADMIN_DATA_PATH = ROOT / "admin_data.json"
 UEFA_PATH = ROOT / "uefa.json"
-HOST = "127.0.0.1"
+HOST = "0.0.0.0"
 PORT = 8000
 
 CACHED_BOOTSTRAP_BYTES = None
