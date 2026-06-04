@@ -1,0 +1,5077 @@
+{
+  "competition_code": "SL1",
+  "name": "Prva Liga",
+  "url": "https://www.transfermarkt.pl/prva-liga/startseite/wettbewerb/SL1",
+  "club_count": 10,
+  "league_logo_url": "https://tmssl.akamaized.net//images/logo/homepageWappen150x150/sl1.png",
+  "country": "Inne",
+  "tier": 4,
+  "level": 1,
+  "label": "Prva Liga",
+  "startBudget": 8,
+  "rules": {},
+  "clubs": [
+    {
+      "club_id": "790",
+      "name": "NK Maribor",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/790.png?lm=1537520961",
+      "league_url": "",
+      "color": "hsl(160 70% 48%)",
+      "avg_rating": 73,
+      "strength": 73,
+      "budget_millions": 2.14,
+      "squad_size": 26,
+      "players": [
+        {
+          "player_id": "893658",
+          "name": "Óscar Zambrano",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 22,
+          "date_of_birth": "20 kwi 2004 (22)",
+          "market_value": "1,50 mln €",
+          "market_value_eur": 1500000,
+          "rating": 77,
+          "rating_base": 74,
+          "rating_experience": 2,
+          "rating_potential": 1,
+          "potential": 1,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/893658-1718722748.jpg?lm=1",
+          "nationalities": [
+            "Ekwador"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "306382",
+          "name": "Benjamin Tetteh",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 28,
+          "date_of_birth": "10 lip 1997 (28)",
+          "market_value": "1,00 mln €",
+          "market_value_eur": 1000000,
+          "rating": 76,
+          "rating_base": 72,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/306382-1697466032.png?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "245083",
+          "name": "Jan Repas",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 29,
+          "date_of_birth": "19 mar 1997 (29)",
+          "market_value": "800 tys. €",
+          "market_value_eur": 800000,
+          "rating": 74,
+          "rating_base": 70,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/245083-1544023430.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "427821",
+          "name": "Pijus Sirvys",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 28,
+          "date_of_birth": "1 kwi 1998 (28)",
+          "market_value": "800 tys. €",
+          "market_value_eur": 800000,
+          "rating": 74,
+          "rating_base": 70,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/427821-1727032271.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "1009633",
+          "name": "David Pejičić",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 18,
+          "date_of_birth": "14 cze 2007 (18)",
+          "market_value": "1,00 mln €",
+          "market_value_eur": 1000000,
+          "rating": 73,
+          "rating_base": 72,
+          "rating_experience": 0,
+          "rating_potential": 1,
+          "potential": 1,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1009633-1693205121.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "795431",
+          "name": "Tio Cipot",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 23,
+          "date_of_birth": "20 kwi 2003 (23)",
+          "market_value": "800 tys. €",
+          "market_value_eur": 800000,
+          "rating": 73,
+          "rating_base": 70,
+          "rating_experience": 2,
+          "rating_potential": 1,
+          "potential": 1,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/795431-1727527015.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "236510",
+          "name": "Sheyi Ojo",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 28,
+          "date_of_birth": "19 cze 1997 (28)",
+          "market_value": "700 tys. €",
+          "market_value_eur": 700000,
+          "rating": 73,
+          "rating_base": 69,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/s_236510_6922_2012_1.jpg?lm=1",
+          "nationalities": [
+            "Anglia",
+            "Nigeria"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "890272",
+          "name": "Karol Borys",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 19,
+          "date_of_birth": "28 wrz 2006 (19)",
+          "market_value": "800 tys. €",
+          "market_value_eur": 800000,
+          "rating": 71,
+          "rating_base": 70,
+          "rating_experience": 0,
+          "rating_potential": 1,
+          "potential": 1,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/890272-1713450249.png?lm=1",
+          "nationalities": [
+            "Polska"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "546686",
+          "name": "Ziga Repas",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 24,
+          "date_of_birth": "29 maj 2001 (24)",
+          "market_value": "700 tys. €",
+          "market_value_eur": 700000,
+          "rating": 71,
+          "rating_base": 69,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/546686-1600273434.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "391340",
+          "name": "Dario Vizinger",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 27,
+          "date_of_birth": "6 cze 1998 (27)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 71,
+          "rating_base": 67,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/391340-1661534203.png?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "818107",
+          "name": "Bradley M'Bondo",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 24,
+          "date_of_birth": "30 paź 2001 (24)",
+          "market_value": "600 tys. €",
+          "market_value_eur": 600000,
+          "rating": 70,
+          "rating_base": 68,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/818107-1684141078.jpg?lm=1",
+          "nationalities": [
+            "Francja",
+            "Demokratyczna Republika Kongo"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "578292",
+          "name": "Omar Rekik",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 24,
+          "date_of_birth": "20 gru 2001 (24)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 69,
+          "rating_base": 67,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/578292-1658862423.jpg?lm=1",
+          "nationalities": [
+            "Tunezja",
+            "Holandia"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "808235",
+          "name": "Isaac Tshipamba",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 25,
+          "date_of_birth": "9 lis 2000 (25)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 68,
+          "rating_base": 65,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/808235-1669738243.jpg?lm=1",
+          "nationalities": [
+            "Francja",
+            "Demokratyczna Republika Kongo"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "116918",
+          "name": "Azbe Jug",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 34,
+          "date_of_birth": "3 mar 1992 (34)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 68,
+          "rating_base": 62,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/116918-1445431934.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "615177",
+          "name": "Ali Reghba",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 26,
+          "date_of_birth": "14 sty 2000 (26)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 65,
+          "rating_base": 62,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/615177-1733294147.jpg?lm=1",
+          "nationalities": [
+            "Irlandia",
+            "Algieria"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "354021",
+          "name": "Cedomir Bumbic",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 26,
+          "date_of_birth": "8 wrz 1999 (26)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 65,
+          "rating_base": 62,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/354021-1725019222.jpg?lm=1",
+          "nationalities": [
+            "Austria"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "502349",
+          "name": "Mark Spanring",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 24,
+          "date_of_birth": "13 cze 2001 (24)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/502349-1585077071.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "1061937",
+          "name": "Nejc Viher",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 18,
+          "date_of_birth": "13 lut 2008 (18)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 62,
+          "rating_base": 62,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "138584",
+          "name": "Luka Krajnc",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 31,
+          "date_of_birth": "19 wrz 1994 (31)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 61,
+          "rating_base": 56,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/138584-1661423800.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "866221",
+          "name": "Luka Mlakar",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 20,
+          "date_of_birth": "27 kwi 2006 (20)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 60,
+          "rating_base": 59,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "580030",
+          "name": "James Furlong",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 23,
+          "date_of_birth": "7 cze 2002 (23)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/580030-1756666664.jpg?lm=1",
+          "nationalities": [
+            "Irlandia"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "174842",
+          "name": "El Arbi Hillel Soudani",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 38,
+          "date_of_birth": "25 lis 1987 (38)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 56,
+          "rating_base": 49,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/174842-1680214623.JPG?lm=1",
+          "nationalities": [
+            "Algieria",
+            "Chorwacja"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "178614",
+          "name": "Jean Michaël Seri",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 34,
+          "date_of_birth": "19 lip 1991 (34)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 55,
+          "rating_base": 49,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/178614-1718179799.jpg?lm=1",
+          "nationalities": [
+            "Wybrzeże Kości Słoniowej"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "686253",
+          "name": "Lan Vidmar",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 24,
+          "date_of_birth": "11 wrz 2001 (24)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/686253-1571593396.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "874949",
+          "name": "Téva Gardies",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 25,
+          "date_of_birth": "1 kwi 2001 (25)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/874949-1737652264.jpg?lm=1",
+          "nationalities": [
+            "Madagaskar",
+            "Francja"
+          ],
+          "club_id": "790"
+        },
+        {
+          "player_id": "1061953",
+          "name": "Nik Belovic",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 17,
+          "date_of_birth": "9 lip 2008 (17)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "790"
+        }
+      ]
+    },
+    {
+      "club_id": "710",
+      "name": "NK Celje",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/710.png?lm=1625564824",
+      "league_url": "",
+      "color": "hsl(152 70% 48%)",
+      "avg_rating": 72,
+      "strength": 72,
+      "budget_millions": 2.09,
+      "squad_size": 26,
+      "players": [
+        {
+          "player_id": "603368",
+          "name": "Svit Seslar",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 24,
+          "date_of_birth": "9 sty 2002 (24)",
+          "market_value": "2,20 mln €",
+          "market_value_eur": 2200000,
+          "rating": 77,
+          "rating_base": 75,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/603368-1761574985.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "614464",
+          "name": "Nikita Iosifov",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 25,
+          "date_of_birth": "11 kwi 2001 (25)",
+          "market_value": "1,20 mln €",
+          "market_value_eur": 1200000,
+          "rating": 75,
+          "rating_base": 72,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/614464-1567786848.png?lm=1",
+          "nationalities": [
+            "Rosja"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "507403",
+          "name": "Zan Karnicnik",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 31,
+          "date_of_birth": "18 wrz 1994 (31)",
+          "market_value": "800 tys. €",
+          "market_value_eur": 800000,
+          "rating": 75,
+          "rating_base": 70,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/507403-1716317164.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "647701",
+          "name": "Artemijus Tutyskinas",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "8 sie 2003 (22)",
+          "market_value": "800 tys. €",
+          "market_value_eur": 800000,
+          "rating": 73,
+          "rating_base": 70,
+          "rating_experience": 2,
+          "rating_potential": 1,
+          "potential": 1,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/647701-1676568335.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "668433",
+          "name": "Armandas Kucys",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 23,
+          "date_of_birth": "27 lut 2003 (23)",
+          "market_value": "700 tys. €",
+          "market_value_eur": 700000,
+          "rating": 72,
+          "rating_base": 69,
+          "rating_experience": 2,
+          "rating_potential": 1,
+          "potential": 1,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/668433-1715412873.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "605757",
+          "name": "Zan-Luk Leban",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 23,
+          "date_of_birth": "15 gru 2002 (23)",
+          "market_value": "600 tys. €",
+          "market_value_eur": 600000,
+          "rating": 71,
+          "rating_base": 68,
+          "rating_experience": 2,
+          "rating_potential": 1,
+          "potential": 1,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/605757-1750348649.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "188201",
+          "name": "Simon Sluga",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 33,
+          "date_of_birth": "17 mar 1993 (33)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 71,
+          "rating_base": 65,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/188201-1648882222.png?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "577785",
+          "name": "Mark Zabukovnik",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 25,
+          "date_of_birth": "27 gru 2000 (25)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 70,
+          "rating_base": 67,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/577785-1755306938.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "382007",
+          "name": "Andrej Kotnik",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 30,
+          "date_of_birth": "4 sie 1995 (30)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 70,
+          "rating_base": 65,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/382007-1486636705.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "513526",
+          "name": "David Castro",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 30,
+          "date_of_birth": "9 paź 1995 (30)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 70,
+          "rating_base": 65,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Hiszpania"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "327207",
+          "name": "Juanjo Nieto",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 31,
+          "date_of_birth": "3 paź 1994 (31)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 70,
+          "rating_base": 65,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/327207-1694431157.jpg?lm=1",
+          "nationalities": [
+            "Hiszpania"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "168152",
+          "name": "Rudi Pozeg Vancas",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 32,
+          "date_of_birth": "15 mar 1994 (32)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 70,
+          "rating_base": 65,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/168152-1642009614.png?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "653719",
+          "name": "Jakov Pranjic",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 25,
+          "date_of_birth": "13 sty 2001 (25)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 68,
+          "rating_base": 65,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/653719-1755220262.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "636756",
+          "name": "Milot Avdyli",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 23,
+          "date_of_birth": "28 lip 2002 (23)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 67,
+          "rating_base": 65,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/636756-1722871479.jpg?lm=1",
+          "nationalities": [
+            "Kosowo"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "554969",
+          "name": "Łukasz Bejger",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 24,
+          "date_of_birth": "11 sty 2002 (24)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 67,
+          "rating_base": 65,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/554969-1668768968.png?lm=1",
+          "nationalities": [
+            "Polska"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "183843",
+          "name": "Damjan Vuklisevic",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 30,
+          "date_of_birth": "28 cze 1995 (30)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 67,
+          "rating_base": 62,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/s_183843_790_2014_02_16_1.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "1170713",
+          "name": "Florjan Jevsenak",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 21,
+          "date_of_birth": "6 kwi 2005 (21)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 66,
+          "rating_base": 65,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "587507",
+          "name": "Ivica Vidovic",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 24,
+          "date_of_birth": "15 lut 2002 (24)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "543836",
+          "name": "Darko Hrka",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 26,
+          "date_of_birth": "20 lis 1999 (26)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 62,
+          "rating_base": 59,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/543836-1772132427.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "641060",
+          "name": "Ivan Calusic",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 26,
+          "date_of_birth": "12 wrz 1999 (26)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 62,
+          "rating_base": 59,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/641060-1732990337.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "491032",
+          "name": "Nino Vukasovic",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 25,
+          "date_of_birth": "23 mar 2001 (25)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 62,
+          "rating_base": 59,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "166173",
+          "name": "Mario Kvesic",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 34,
+          "date_of_birth": "12 sty 1992 (34)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 62,
+          "rating_base": 56,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/166173-1665089448.jpg?lm=1",
+          "nationalities": [
+            "Bośnia i Hercegowina",
+            "Chorwacja"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "235360",
+          "name": "Matej Poplatnik",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 33,
+          "date_of_birth": "15 lip 1992 (33)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 59,
+          "rating_base": 53,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/235360-1572163291.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "860297",
+          "name": "Papa Daniel",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 24,
+          "date_of_birth": "1 sty 2002 (24)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/860297-1619471906.jpeg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "842336",
+          "name": "Gasper Vodeb",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "30 cze 2003 (22)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "710"
+        },
+        {
+          "player_id": "981082",
+          "name": "Luka Kolar",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 20,
+          "date_of_birth": "9 wrz 2005 (20)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "710"
+        }
+      ]
+    },
+    {
+      "club_id": "4772",
+      "name": "NK Olimpija Ljubljana",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/4772.png?lm=1420820214",
+      "league_url": "",
+      "color": "hsl(212 70% 48%)",
+      "avg_rating": 72,
+      "strength": 72,
+      "budget_millions": 1.96,
+      "squad_size": 28,
+      "players": [
+        {
+          "player_id": "386794",
+          "name": "Dimitar Mitrovski",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 27,
+          "date_of_birth": "28 sty 1999 (27)",
+          "market_value": "1,30 mln €",
+          "market_value_eur": 1300000,
+          "rating": 77,
+          "rating_base": 73,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/386794-1755927957.jpg?lm=1",
+          "nationalities": [
+            "Macedonia Północna"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "371863",
+          "name": "Matevz Vidovsek",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 26,
+          "date_of_birth": "30 paź 1999 (26)",
+          "market_value": "1,00 mln €",
+          "market_value_eur": 1000000,
+          "rating": 75,
+          "rating_base": 72,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/371863-1755948396.png?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "687035",
+          "name": "Kelvin Ofori",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 24,
+          "date_of_birth": "27 lip 2001 (24)",
+          "market_value": "900 tys. €",
+          "market_value_eur": 900000,
+          "rating": 73,
+          "rating_base": 71,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/687035-1657097137.jpg?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "419458",
+          "name": "Diga",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 28,
+          "date_of_birth": "30 mar 1998 (28)",
+          "market_value": "700 tys. €",
+          "market_value_eur": 700000,
+          "rating": 73,
+          "rating_base": 69,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/419458-1755789742.jpg?lm=1",
+          "nationalities": [
+            "Portugalia"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "271323",
+          "name": "Ahmet Muhamedbegovic",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 27,
+          "date_of_birth": "30 paź 1998 (27)",
+          "market_value": "600 tys. €",
+          "market_value_eur": 600000,
+          "rating": 72,
+          "rating_base": 68,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/271323-1755928204.jpg?lm=1",
+          "nationalities": [
+            "Austria"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "374858",
+          "name": "Agustín Doffo",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 30,
+          "date_of_birth": "25 maj 1995 (30)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 72,
+          "rating_base": 67,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/374858-1755927263.jpg?lm=1",
+          "nationalities": [
+            "Argentyna",
+            "Włochy"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "1170753",
+          "name": "Dino Kojic",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 21,
+          "date_of_birth": "4 kwi 2005 (21)",
+          "market_value": "600 tys. €",
+          "market_value_eur": 600000,
+          "rating": 70,
+          "rating_base": 68,
+          "rating_experience": 1,
+          "rating_potential": 1,
+          "potential": 1,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1170753-1755927592.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "371016",
+          "name": "Antonio Marin",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 25,
+          "date_of_birth": "9 sty 2001 (25)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 70,
+          "rating_base": 67,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/371016-1755927825.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "487605",
+          "name": "Jost Urbancic",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 25,
+          "date_of_birth": "12 kwi 2001 (25)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 70,
+          "rating_base": 67,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/487605-1755948255.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "689227",
+          "name": "Marko Brest",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 24,
+          "date_of_birth": "10 maj 2002 (24)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 69,
+          "rating_base": 67,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/689227-1755789424.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "619299",
+          "name": "Veljko Jelenkovic",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "5 cze 2003 (22)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 69,
+          "rating_base": 67,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/619299-1755927533.jpg?lm=1",
+          "nationalities": [
+            "Bułgaria",
+            "Serbia"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "314942",
+          "name": "Bruno Lourenço",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 28,
+          "date_of_birth": "2 lut 1998 (28)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 69,
+          "rating_base": 65,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/314942-1569364213.jpg?lm=1",
+          "nationalities": [
+            "Portugalia"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "328914",
+          "name": "Álex Blanco",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 27,
+          "date_of_birth": "16 gru 1998 (27)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 69,
+          "rating_base": 65,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/328914-1755789209.jpg?lm=1",
+          "nationalities": [
+            "Hiszpania"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "622727",
+          "name": "Jurgen Çelhaka",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 25,
+          "date_of_birth": "6 gru 2000 (25)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 68,
+          "rating_base": 65,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/622727-1755789581.jpg?lm=1",
+          "nationalities": [
+            "Albania"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "604323",
+          "name": "Nemanja Motika",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 23,
+          "date_of_birth": "20 mar 2003 (23)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 67,
+          "rating_base": 65,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/604323-1755928082.jpg?lm=1",
+          "nationalities": [
+            "Serbia",
+            "Niemcy"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "240263",
+          "name": "Frederic Ananou",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 28,
+          "date_of_birth": "20 wrz 1997 (28)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 66,
+          "rating_base": 62,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/240263-1755789140.jpg?lm=1",
+          "nationalities": [
+            "Togo",
+            "Niemcy"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "462252",
+          "name": "Diogo Pinto",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 26,
+          "date_of_birth": "29 cze 1999 (26)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 65,
+          "rating_base": 62,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/462252-1755789800.jpg?lm=1",
+          "nationalities": [
+            "Portugalia"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "476165",
+          "name": "Jan Gorenc",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 26,
+          "date_of_birth": "26 lip 1999 (26)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 65,
+          "rating_base": 62,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/476165-1755927437.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "704079",
+          "name": "Matevz Dajcar",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 24,
+          "date_of_birth": "5 lut 2002 (24)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/704079-1755789675.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "641456",
+          "name": "Pedro Lucas Schwaizer",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 27,
+          "date_of_birth": "5 wrz 1998 (27)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 63,
+          "rating_base": 59,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/641456-1755928255.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "85825",
+          "name": "Jasmin Kurtic",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 37,
+          "date_of_birth": "10 sty 1989 (37)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 63,
+          "rating_base": 56,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/85825-1596013416.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "523969",
+          "name": "Jordi Govea",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 27,
+          "date_of_birth": "9 mar 1999 (27)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 60,
+          "rating_base": 56,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/523969-1755927497.jpg?lm=1",
+          "nationalities": [
+            "Ekwador",
+            "Hiszpania"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "946972",
+          "name": "Marat Zlibanovic",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 21,
+          "date_of_birth": "7 sty 2005 (21)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 57,
+          "rating_base": 56,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja",
+            "Bośnia i Hercegowina"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "959182",
+          "name": "Marko Ristic",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 21,
+          "date_of_birth": "1 lis 2004 (21)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 57,
+          "rating_base": 56,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/959182-1755928312.png?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "1009632",
+          "name": "Mateo Acimovic",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 18,
+          "date_of_birth": "5 paź 2007 (18)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1009632-1755789023.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "1170910",
+          "name": "Jan Cedilnik",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 19,
+          "date_of_birth": "19 gru 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "1302402",
+          "name": "Miljan Pantic",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 18,
+          "date_of_birth": "12 cze 2007 (18)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Bośnia i Hercegowina"
+          ],
+          "club_id": "4772"
+        },
+        {
+          "player_id": "1170749",
+          "name": "Val Matija Zakrajsek",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 19,
+          "date_of_birth": "3 paź 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4772"
+        }
+      ]
+    },
+    {
+      "club_id": "433",
+      "name": "FC Koper",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/433.png?lm=1610114112",
+      "league_url": "",
+      "color": "hsl(154 70% 48%)",
+      "avg_rating": 66,
+      "strength": 66,
+      "budget_millions": 1.0,
+      "squad_size": 30,
+      "players": [
+        {
+          "player_id": "485964",
+          "name": "Isaac Matondo",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 27,
+          "date_of_birth": "24 mar 1999 (27)",
+          "market_value": "600 tys. €",
+          "market_value_eur": 600000,
+          "rating": 72,
+          "rating_base": 68,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/485964-1694081533.jpg?lm=1",
+          "nationalities": [
+            "Francja",
+            "Demokratyczna Republika Kongo"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "471148",
+          "name": "Filip Damjanovic",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 27,
+          "date_of_birth": "2 lip 1998 (27)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 69,
+          "rating_base": 65,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/471148-1727457620.png?lm=1",
+          "nationalities": [
+            "Serbia"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "469687",
+          "name": "Maj Mittendorfer",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 26,
+          "date_of_birth": "11 maj 2000 (26)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 68,
+          "rating_base": 65,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "757248",
+          "name": "Veljko Mijailovic",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 25,
+          "date_of_birth": "29 gru 2000 (25)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 68,
+          "rating_base": 65,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Serbia"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "502692",
+          "name": "Fran Tomek",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 23,
+          "date_of_birth": "25 cze 2002 (23)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 67,
+          "rating_base": 65,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/502692-1760643982.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "378128",
+          "name": "Metod Jurhar",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 28,
+          "date_of_birth": "7 gru 1997 (28)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 66,
+          "rating_base": 62,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/378128-1598823467.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "464699",
+          "name": "Mark Pabai",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 25,
+          "date_of_birth": "30 wrz 2000 (25)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 65,
+          "rating_base": 62,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/464699-1605469018.jpg?lm=1",
+          "nationalities": [
+            "Liberia",
+            "Holandia"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "875638",
+          "name": "Brice Negouai",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 24,
+          "date_of_birth": "17 lut 2002 (24)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/875638-1649848585.jpg?lm=1",
+          "nationalities": [
+            "Francja",
+            "Martynika"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "631603",
+          "name": "Kamil Manseri",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 24,
+          "date_of_birth": "12 cze 2001 (24)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/631603-1756494781.jpg?lm=1",
+          "nationalities": [
+            "Francja",
+            "Algieria"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "531338",
+          "name": "Scotty Sadzoute",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 28,
+          "date_of_birth": "29 kwi 1998 (28)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 63,
+          "rating_base": 59,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/531338-1626687969.jpg?lm=1",
+          "nationalities": [
+            "Madagaskar",
+            "Francja"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "80351",
+          "name": "Josip Ilicic",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 38,
+          "date_of_birth": "29 sty 1988 (38)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 63,
+          "rating_base": 56,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/80351-1661981551.jpg?lm=1",
+          "nationalities": [
+            "Słowenia",
+            "Chorwacja"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "463611",
+          "name": "Abdoulaye Dabo",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 25,
+          "date_of_birth": "4 mar 2001 (25)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 62,
+          "rating_base": 59,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/463611-1729266151.jpg?lm=1",
+          "nationalities": [
+            "Francja",
+            "Gwinea"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "687602",
+          "name": "Michal Kukucka",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 24,
+          "date_of_birth": "12 kwi 2002 (24)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 61,
+          "rating_base": 59,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/687602-1722956137.jpg?lm=1",
+          "nationalities": [
+            "Słowacja"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "93571",
+          "name": "Florian Hartherz",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 32,
+          "date_of_birth": "29 maj 1993 (32)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 61,
+          "rating_base": 56,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/93571-1753194622.png?lm=1",
+          "nationalities": [
+            "Niemcy"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "1056457",
+          "name": "Leo Rimac",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 20,
+          "date_of_birth": "14 mar 2006 (20)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 60,
+          "rating_base": 59,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia",
+            "Chorwacja"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "1168297",
+          "name": "Brown Irabor",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 22,
+          "date_of_birth": "30 mar 2004 (22)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1168297-1773937178.jpg?lm=1",
+          "nationalities": [
+            "Nigeria",
+            "Francja"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "838804",
+          "name": "Check Oumar Diakité",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 23,
+          "date_of_birth": "5 gru 2002 (23)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/838804-1729266108.jpg?lm=1",
+          "nationalities": [
+            "Francja",
+            "Mali"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "331467",
+          "name": "Felipe Curcio",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 32,
+          "date_of_birth": "6 sie 1993 (32)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 54,
+          "rating_base": 49,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/331467-1604826951.jpg?lm=1",
+          "nationalities": [
+            "Brazylia",
+            "Włochy"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "75665",
+          "name": "Nik Omladic",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 36,
+          "date_of_birth": "21 sie 1989 (36)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 52,
+          "rating_base": 45,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/75665-1674822562.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "801283",
+          "name": "Andraz Ruedl",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 22,
+          "date_of_birth": "20 sty 2004 (22)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/801283-1631970098.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "938009",
+          "name": "Bassirou N'Diaye",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 24,
+          "date_of_birth": "15 lut 2002 (24)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/938009-1761048954.png?lm=1",
+          "nationalities": [
+            "Senegal"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "546176",
+          "name": "Brian Oddei",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 23,
+          "date_of_birth": "18 wrz 2002 (23)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/546176-1693426607.JPG?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "647181",
+          "name": "Jean-Pierre Longonda",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 24,
+          "date_of_birth": "9 lut 2002 (24)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/647181-1755303341.jpg?lm=1",
+          "nationalities": [
+            "Belgia",
+            "Demokratyczna Republika Kongo"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "1171161",
+          "name": "Aljaz Zalaznik",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 20,
+          "date_of_birth": "12 gru 2005 (20)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "911116",
+          "name": "Luka Bas",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 24,
+          "date_of_birth": "30 kwi 2002 (24)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/911116-1677304990.JPG?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "1235096",
+          "name": "Victor Ehibe",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 20,
+          "date_of_birth": "6 sty 2006 (20)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "1174882",
+          "name": "Aldin Delimehic",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 20,
+          "date_of_birth": "30 mar 2006 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "743531",
+          "name": "Ilann Petrisot",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 21,
+          "date_of_birth": "14 wrz 2004 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Francja",
+            "Demokratyczna Republika Kongo"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "1059220",
+          "name": "Omar Rugginenti",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 20,
+          "date_of_birth": "25 sty 2006 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Włochy"
+          ],
+          "club_id": "433"
+        },
+        {
+          "player_id": "1298716",
+          "name": "Tadej Bonaca",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 19,
+          "date_of_birth": "4 wrz 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "433"
+        }
+      ]
+    },
+    {
+      "club_id": "26985",
+      "name": "NK Bravo",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/26985.png?lm=1501500525",
+      "league_url": "",
+      "color": "hsl(270 70% 48%)",
+      "avg_rating": 66,
+      "strength": 66,
+      "budget_millions": 0.94,
+      "squad_size": 22,
+      "players": [
+        {
+          "player_id": "506936",
+          "name": "Martin Pecar",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 23,
+          "date_of_birth": "5 lip 2002 (23)",
+          "market_value": "700 tys. €",
+          "market_value_eur": 700000,
+          "rating": 72,
+          "rating_base": 69,
+          "rating_experience": 2,
+          "rating_potential": 1,
+          "potential": 1,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/506936-1693864037.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "976775",
+          "name": "Vénuste Baboula",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 27,
+          "date_of_birth": "23 sie 1998 (27)",
+          "market_value": "600 tys. €",
+          "market_value_eur": 600000,
+          "rating": 72,
+          "rating_base": 68,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/976775-1720194803.jpg?lm=1",
+          "nationalities": [
+            "Republika Środkowoafrykańska"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "795734",
+          "name": "Jakoslav Stankovic",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 25,
+          "date_of_birth": "10 kwi 2001 (25)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 70,
+          "rating_base": 67,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/795734-1753984258.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "675018",
+          "name": "Gasper Jovan",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 25,
+          "date_of_birth": "25 lut 2001 (25)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 68,
+          "rating_base": 65,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "521369",
+          "name": "Sandi Nuhanovic",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 27,
+          "date_of_birth": "5 gru 1998 (27)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 66,
+          "rating_base": 62,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/521369-1508363114.jpg?lm=1",
+          "nationalities": [
+            "Słowenia",
+            "Bośnia i Hercegowina"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "678606",
+          "name": "Admir Bristric",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 23,
+          "date_of_birth": "28 kwi 2003 (23)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 65,
+          "rating_base": 63,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/678606-1755789482.jpg?lm=1",
+          "nationalities": [
+            "Bośnia i Hercegowina"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "1020863",
+          "name": "Matic Ivansek",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 21,
+          "date_of_birth": "26 lip 2004 (21)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 64,
+          "rating_base": 63,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "605225",
+          "name": "Christalino Atemona",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 24,
+          "date_of_birth": "26 kwi 2002 (24)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/605225-1657538181.jpg?lm=1",
+          "nationalities": [
+            "Niemcy"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "1052287",
+          "name": "Marwann Nzuzi",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 22,
+          "date_of_birth": "16 maj 2004 (22)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1052287-1727719825.jpg?lm=1",
+          "nationalities": [
+            "Francja",
+            "Algieria"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "804715",
+          "name": "Nathan Monzango",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 25,
+          "date_of_birth": "18 kwi 2001 (25)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 62,
+          "rating_base": 59,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/804715-1692805424.png?lm=1",
+          "nationalities": [
+            "Francja",
+            "Demokratyczna Republika Kongo"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "891786",
+          "name": "Kenan Toibibou",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 21,
+          "date_of_birth": "9 gru 2004 (21)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 60,
+          "rating_base": 59,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/891786-1656350569.jpg?lm=1",
+          "nationalities": [
+            "Komory",
+            "Francja"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "484542",
+          "name": "Uros Likar",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 26,
+          "date_of_birth": "1 paź 1999 (26)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 59,
+          "rating_base": 56,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/484542-1609870414.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "694318",
+          "name": "Enrik Ostrc",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 23,
+          "date_of_birth": "21 cze 2002 (23)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/694318-1613766643.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "945683",
+          "name": "Luka Lukanic",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 22,
+          "date_of_birth": "3 maj 2004 (22)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/945683-1714077310.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "937549",
+          "name": "Divine Omoregie",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 21,
+          "date_of_birth": "19 sty 2005 (21)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 54,
+          "rating_base": 53,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/937549-1739471906.jpeg?lm=1",
+          "nationalities": [
+            "Włochy",
+            "Nigeria"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "1317245",
+          "name": "Fallou Faye",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 20,
+          "date_of_birth": "29 lis 2005 (20)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 54,
+          "rating_base": 53,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1317245-1763530130.jpg?lm=1",
+          "nationalities": [
+            "Senegal"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "1058490",
+          "name": "Benjamin Maticic",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 19,
+          "date_of_birth": "20 lut 2007 (19)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 53,
+          "rating_base": 53,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "585824",
+          "name": "Lan Stravs",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 26,
+          "date_of_birth": "4 mar 2000 (26)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 52,
+          "rating_base": 49,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/585824-1598824011.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "921530",
+          "name": "Borna Buljan",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 21,
+          "date_of_birth": "5 kwi 2005 (21)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/921530-1694534556.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "1170700",
+          "name": "Rok Kopatin",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 19,
+          "date_of_birth": "25 lip 2006 (19)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "1170701",
+          "name": "David Stojanoski",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 19,
+          "date_of_birth": "20 mar 2007 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Macedonia Północna",
+            "Słowenia"
+          ],
+          "club_id": "26985"
+        },
+        {
+          "player_id": "1135663",
+          "name": "Tais Sabotic",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 18,
+          "date_of_birth": "4 wrz 2007 (18)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1135663-1741983275.jpeg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "26985"
+        }
+      ]
+    },
+    {
+      "club_id": "21460",
+      "name": "NK Radomlje",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/21460.png?lm=1424901764",
+      "league_url": "",
+      "color": "hsl(253 70% 48%)",
+      "avg_rating": 64,
+      "strength": 64,
+      "budget_millions": 0.77,
+      "squad_size": 26,
+      "players": [
+        {
+          "player_id": "434557",
+          "name": "Mihael Zaper",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 27,
+          "date_of_birth": "11 sie 1998 (27)",
+          "market_value": "700 tys. €",
+          "market_value_eur": 700000,
+          "rating": 73,
+          "rating_base": 69,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/434557-1694539832.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "827783",
+          "name": "Nikola Jojic",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 22,
+          "date_of_birth": "15 wrz 2003 (22)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 69,
+          "rating_base": 67,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/827783-1751921818.jpg?lm=1",
+          "nationalities": [
+            "Serbia"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "801075",
+          "name": "Andrej Pogacar",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 23,
+          "date_of_birth": "20 sie 2002 (23)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 65,
+          "rating_base": 63,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "502693",
+          "name": "Matej Mamic",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 24,
+          "date_of_birth": "9 sty 2002 (24)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 65,
+          "rating_base": 63,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "822077",
+          "name": "Enej Klampfer",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "3 maj 2004 (22)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "619280",
+          "name": "Vanja Pelko",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 24,
+          "date_of_birth": "25 mar 2002 (24)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/619280-1770752674.jpeg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "397030",
+          "name": "Stanislav Krapukhin",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 28,
+          "date_of_birth": "28 mar 1998 (28)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 63,
+          "rating_base": 59,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/397030-1681117970.png?lm=1",
+          "nationalities": [
+            "Rosja"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "536486",
+          "name": "Jasa Martincic",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 24,
+          "date_of_birth": "6 lis 2001 (24)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 61,
+          "rating_base": 59,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "622197",
+          "name": "Samo Pridgar",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 23,
+          "date_of_birth": "10 mar 2003 (23)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 61,
+          "rating_base": 59,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "675758",
+          "name": "Amadej Marinic",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 25,
+          "date_of_birth": "10 paź 2000 (25)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 59,
+          "rating_base": 56,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "1160419",
+          "name": "Divine Igwe Ikenna",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 22,
+          "date_of_birth": "5 maj 2004 (22)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "972130",
+          "name": "Dejan Kantuzer",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 22,
+          "date_of_birth": "2 cze 2003 (22)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 52,
+          "rating_base": 50,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/972130-1690049020.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "949842",
+          "name": "Patrik Klancir",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 22,
+          "date_of_birth": "9 maj 2004 (22)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/949842-1755593859.png?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "872101",
+          "name": "Zan Zaler",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 23,
+          "date_of_birth": "30 sie 2002 (23)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "190811",
+          "name": "Ognjen Gnjatic",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 34,
+          "date_of_birth": "16 paź 1991 (34)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 51,
+          "rating_base": 45,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/190811-1562142888.png?lm=1",
+          "nationalities": [
+            "Bośnia i Hercegowina",
+            "Chorwacja"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "1338132",
+          "name": "Luka Kusic",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 18,
+          "date_of_birth": "2 maj 2008 (18)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 49,
+          "rating_base": 49,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia",
+            "Serbia"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "1338131",
+          "name": "Vid Chinoso Juvancic",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 18,
+          "date_of_birth": "16 kwi 2008 (18)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 49,
+          "rating_base": 49,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia",
+            "Gambia"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "1124705",
+          "name": "Borna Graonic",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 21,
+          "date_of_birth": "31 sty 2005 (21)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 48,
+          "rating_base": 47,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1124705-1768059526.jpeg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "1170712",
+          "name": "Jakob Kobal",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 20,
+          "date_of_birth": "19 lut 2006 (20)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "991754",
+          "name": "Jasa Jelen",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 20,
+          "date_of_birth": "15 kwi 2006 (20)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "993907",
+          "name": "Matej Dvorsak",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 21,
+          "date_of_birth": "24 sty 2005 (21)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/993907-1755927379.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "1170668",
+          "name": "Bine Anzelj",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 19,
+          "date_of_birth": "9 paź 2006 (19)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "1257364",
+          "name": "Daniil Churakov",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 18,
+          "date_of_birth": "14 kwi 2008 (18)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Rosja"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "1460085",
+          "name": "Donald Gbinde",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 21,
+          "date_of_birth": "21 sie 2004 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Wybrzeże Kości Słoniowej"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "1181465",
+          "name": "Florijan Meznar",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 17,
+          "date_of_birth": "14 sie 2008 (17)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "21460"
+        },
+        {
+          "player_id": "1002387",
+          "name": "Tilen Gasper Stiftar",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 20,
+          "date_of_birth": "26 sty 2006 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "21460"
+        }
+      ]
+    },
+    {
+      "club_id": "4507",
+      "name": "ND Primorje",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/4507.png?lm=1581179324",
+      "league_url": "",
+      "color": "hsl(208 70% 48%)",
+      "avg_rating": 63,
+      "strength": 63,
+      "budget_millions": 0.73,
+      "squad_size": 29,
+      "players": [
+        {
+          "player_id": "166662",
+          "name": "Macky Bagnack",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 30,
+          "date_of_birth": "7 cze 1995 (30)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 68,
+          "rating_base": 63,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/166662-1675172077.png?lm=1",
+          "nationalities": [
+            "Kamerun"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "842658",
+          "name": "Gasper Petek",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 23,
+          "date_of_birth": "3 lip 2002 (23)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 65,
+          "rating_base": 63,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "537180",
+          "name": "Haris Kadric",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 26,
+          "date_of_birth": "16 mar 2000 (26)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 65,
+          "rating_base": 62,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/537180-1753553043.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "708239",
+          "name": "Zan Besir",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 25,
+          "date_of_birth": "17 paź 2000 (25)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 65,
+          "rating_base": 62,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/708239-1748462873.png?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "770068",
+          "name": "Roger Murillo",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 24,
+          "date_of_birth": "17 mar 2002 (24)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/770068-1678938495.jpg?lm=1",
+          "nationalities": [
+            "Kolumbia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "749003",
+          "name": "Sandro Jovanovic",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 24,
+          "date_of_birth": "23 kwi 2002 (24)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "459937",
+          "name": "Elian Demirovic",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 25,
+          "date_of_birth": "1 cze 2000 (25)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 62,
+          "rating_base": 59,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/459937-1607622251.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "801080",
+          "name": "Matic Zavnik",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 26,
+          "date_of_birth": "10 mar 2000 (26)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 62,
+          "rating_base": 59,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/801080-1731964219.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "537273",
+          "name": "Patrik Mohorovic",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 26,
+          "date_of_birth": "24 maj 1999 (26)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 59,
+          "rating_base": 56,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/537273-1716666762.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "651844",
+          "name": "Maj Fogec",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 23,
+          "date_of_birth": "1 lip 2002 (23)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "698547",
+          "name": "Stefan Melentijevic",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "20 mar 2004 (22)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/698547-1676136950.png?lm=1",
+          "nationalities": [
+            "Czarnogóra",
+            "Serbia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "183850",
+          "name": "Tilen Klemencic",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 30,
+          "date_of_birth": "21 sie 1995 (30)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 58,
+          "rating_base": 53,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/183850-1519854641.png?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "491093",
+          "name": "Ishaq Kayode Rafiu",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 25,
+          "date_of_birth": "16 gru 2000 (25)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 56,
+          "rating_base": 53,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/491093-1727987087.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "527238",
+          "name": "Nik Jermol",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 26,
+          "date_of_birth": "17 sie 1999 (26)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 56,
+          "rating_base": 53,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/527238-1613081560.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "340428",
+          "name": "Luka Stor",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 27,
+          "date_of_birth": "5 lip 1998 (27)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/340428-1565788767.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "484487",
+          "name": "Mark Gulic",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 28,
+          "date_of_birth": "15 sie 1997 (28)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/484487-1596092255.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "515479",
+          "name": "Mirko Mutavcic",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 25,
+          "date_of_birth": "29 sty 2001 (25)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 52,
+          "rating_base": 49,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/515479-1613081501.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "940170",
+          "name": "Jon Ficko",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 22,
+          "date_of_birth": "27 sty 2004 (22)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "935217",
+          "name": "Mark Strajnar",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 22,
+          "date_of_birth": "19 gru 2003 (22)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "672243",
+          "name": "Niko Rak",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 22,
+          "date_of_birth": "26 lip 2003 (22)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/672243-1727458116.png?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "1078234",
+          "name": "Daniel Bameyi",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 20,
+          "date_of_birth": "4 sty 2006 (20)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1078234-1746552672.jpeg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "217128",
+          "name": "Matej Mavric",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 32,
+          "date_of_birth": "23 sty 1994 (32)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 50,
+          "rating_base": 45,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "437334",
+          "name": "Daniel Pavlev",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 25,
+          "date_of_birth": "11 paź 2000 (25)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/437334-1608096133.png?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "690789",
+          "name": "Tony Macan",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 25,
+          "date_of_birth": "11 paź 2000 (25)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "952722",
+          "name": "Faris Dzevahiric",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 19,
+          "date_of_birth": "16 mar 2007 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/952722-1743362951.jpg?lm=1",
+          "nationalities": [
+            "Bośnia i Hercegowina"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "1171156",
+          "name": "Leo Peranovic",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 19,
+          "date_of_birth": "22 sie 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "1057529",
+          "name": "Luca Santor",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 19,
+          "date_of_birth": "13 mar 2007 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Szwajcaria",
+            "Chorwacja"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "1304672",
+          "name": "Mile Parmac",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 19,
+          "date_of_birth": "20 maj 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "4507"
+        },
+        {
+          "player_id": "944312",
+          "name": "Sodiq Ismaila",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 22,
+          "date_of_birth": "13 sie 2003 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/944312-1755610118.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "4507"
+        }
+      ]
+    },
+    {
+      "club_id": "11033",
+      "name": "NK Aluminij Kidricevo",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/11033.png?lm=1755708779",
+      "league_url": "",
+      "color": "hsl(248 70% 48%)",
+      "avg_rating": 63,
+      "strength": 63,
+      "budget_millions": 0.82,
+      "squad_size": 31,
+      "players": [
+        {
+          "player_id": "626770",
+          "name": "Behar Feta",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 23,
+          "date_of_birth": "7 kwi 2003 (23)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 67,
+          "rating_base": 65,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/626770-1637507540.jpg?lm=1",
+          "nationalities": [
+            "Macedonia Północna"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "342255",
+          "name": "Stefanos Evangelou",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 28,
+          "date_of_birth": "12 maj 1998 (28)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 67,
+          "rating_base": 63,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/342255-1631769449.png?lm=1",
+          "nationalities": [
+            "Grecja"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "715309",
+          "name": "Emir Saitoski",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 23,
+          "date_of_birth": "8 maj 2003 (23)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 65,
+          "rating_base": 63,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia",
+            "Macedonia Północna"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "622166",
+          "name": "Adriano Bloudek",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 22,
+          "date_of_birth": "24 paź 2003 (22)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "627439",
+          "name": "Amir Feratovic",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 23,
+          "date_of_birth": "8 cze 2002 (23)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/627439-1668161813.png?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "955598",
+          "name": "Josip Pejic",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 24,
+          "date_of_birth": "23 lip 2001 (24)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/955598-1753808480.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "622200",
+          "name": "Vid Koderman",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 23,
+          "date_of_birth": "18 kwi 2003 (23)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "742693",
+          "name": "Aleksandar Zeljkovic",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 26,
+          "date_of_birth": "4 lip 1999 (26)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 62,
+          "rating_base": 59,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/742693-1778215185.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "804280",
+          "name": "Filip Kosi",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 23,
+          "date_of_birth": "20 wrz 2002 (23)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 61,
+          "rating_base": 59,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/804280-1635529875.JPG?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "953958",
+          "name": "Rok Schaubach",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 21,
+          "date_of_birth": "4 paź 2004 (21)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 60,
+          "rating_base": 59,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "990208",
+          "name": "Eric Taylor",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 25,
+          "date_of_birth": "14 kwi 2001 (25)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 59,
+          "rating_base": 56,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "519504",
+          "name": "Florijan Raduha",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 29,
+          "date_of_birth": "1 kwi 1997 (29)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "270077",
+          "name": "Matic Vrbanec",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 29,
+          "date_of_birth": "28 paź 1996 (29)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/270077-1598824081.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "947095",
+          "name": "Tomislav Jagic",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 28,
+          "date_of_birth": "29 maj 1997 (28)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "813603",
+          "name": "Bamba Susso",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 23,
+          "date_of_birth": "9 paź 2002 (23)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/813603-1661363689.jpg?lm=1",
+          "nationalities": [
+            "Gambia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "432763",
+          "name": "Ivijan Svrznjak",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 24,
+          "date_of_birth": "2 sie 2001 (24)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/432763-1677254301.png?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "502356",
+          "name": "Rok Maher",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 24,
+          "date_of_birth": "20 lip 2001 (24)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 52,
+          "rating_base": 50,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/502356-1762200598.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "70873",
+          "name": "Matjaz Rozman",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 39,
+          "date_of_birth": "3 sty 1987 (39)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 52,
+          "rating_base": 45,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/70873-1598823587.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "622202",
+          "name": "Domen Zajsek",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 23,
+          "date_of_birth": "6 kwi 2003 (23)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "451632",
+          "name": "Omar Kocar",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 24,
+          "date_of_birth": "6 cze 2001 (24)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/451632-1731236952.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "1157534",
+          "name": "Marko Simonic",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 20,
+          "date_of_birth": "21 cze 2005 (20)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "70872",
+          "name": "Uros Korun",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 38,
+          "date_of_birth": "25 maj 1987 (38)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 49,
+          "rating_base": 42,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/70872-1573678419.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "469684",
+          "name": "Anej Mrezar",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 25,
+          "date_of_birth": "25 maj 2000 (25)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/469684-1601844314.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "801088",
+          "name": "Simon Rogina",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 25,
+          "date_of_birth": "26 mar 2001 (25)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/801088-1605974398.png?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "1295665",
+          "name": "Blaz Petrisko",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 22,
+          "date_of_birth": "8 sty 2004 (22)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "627438",
+          "name": "Gasper Pecnik",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 23,
+          "date_of_birth": "10 lip 2002 (23)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/627438-1618939699.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "963375",
+          "name": "Andrej Stamenkovic",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 19,
+          "date_of_birth": "28 cze 2006 (19)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Serbia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "1139784",
+          "name": "Nal Lan Koren",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 19,
+          "date_of_birth": "21 cze 2006 (19)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "1298703",
+          "name": "Blaz Lipavsek",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 19,
+          "date_of_birth": "21 wrz 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "1177273",
+          "name": "Leon Uranek",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 19,
+          "date_of_birth": "28 gru 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        },
+        {
+          "player_id": "1179451",
+          "name": "Vito Koren",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 20,
+          "date_of_birth": "9 kwi 2006 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "11033"
+        }
+      ]
+    },
+    {
+      "club_id": "4059",
+      "name": "NS Mura",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/4059.png?lm=1620378189",
+      "league_url": "",
+      "color": "hsl(210 70% 48%)",
+      "avg_rating": 62,
+      "strength": 62,
+      "budget_millions": 0.77,
+      "squad_size": 26,
+      "players": [
+        {
+          "player_id": "916531",
+          "name": "Alen Korosec",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 24,
+          "date_of_birth": "17 lis 2001 (24)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 69,
+          "rating_base": 67,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/916531-1727615218.png?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "149810",
+          "name": "Matija Boben",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 32,
+          "date_of_birth": "26 lut 1994 (32)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 67,
+          "rating_base": 62,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/149810-1732178480.png?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "902488",
+          "name": "Borna Proleta",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 24,
+          "date_of_birth": "26 lis 2001 (24)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 65,
+          "rating_base": 63,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/902488-1742110213.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "686095",
+          "name": "Sacha Komljenovic",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 23,
+          "date_of_birth": "10 maj 2003 (23)",
+          "market_value": "325 tys. €",
+          "market_value_eur": 325000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Holandia",
+            "Rosja"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "603953",
+          "name": "Raphael Hofer",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 23,
+          "date_of_birth": "14 lut 2003 (23)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/603953-1692971343.png?lm=1",
+          "nationalities": [
+            "Austria"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "263055",
+          "name": "Luka Bobicanec",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 32,
+          "date_of_birth": "23 maj 1993 (32)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 61,
+          "rating_base": 56,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/263055-1519111702.png?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "174530",
+          "name": "Nino Kouter",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 32,
+          "date_of_birth": "19 gru 1993 (32)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 61,
+          "rating_base": 56,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/174530-1519112436.png?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "838494",
+          "name": "Aljaz Antolin",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 23,
+          "date_of_birth": "2 sie 2002 (23)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "987753",
+          "name": "Edvin Krupic",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 22,
+          "date_of_birth": "3 mar 2004 (22)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/987753-1750348859.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "864084",
+          "name": "Faad Sana",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 23,
+          "date_of_birth": "15 kwi 2003 (23)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Togo",
+            "Burkina Faso"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "622167",
+          "name": "Nejc Ajhmajer",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 23,
+          "date_of_birth": "22 kwi 2003 (23)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "340403",
+          "name": "Zan Flis",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 28,
+          "date_of_birth": "30 lip 1997 (28)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/340403-1690050446.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "1009624",
+          "name": "Zan Petrovic",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 19,
+          "date_of_birth": "26 lut 2007 (19)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 56,
+          "rating_base": 56,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "1263376",
+          "name": "Federico Rose",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 21,
+          "date_of_birth": "7 sie 2004 (21)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 55,
+          "rating_base": 54,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1263376-1767812585.jpeg?lm=1",
+          "nationalities": [
+            "Argentyna",
+            "Chorwacja"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "722383",
+          "name": "Nejc Dermastija",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 22,
+          "date_of_birth": "20 lut 2004 (22)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "950214",
+          "name": "Vanja Kulenovic",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 22,
+          "date_of_birth": "26 cze 2003 (22)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/950214-1771699833.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "940788",
+          "name": "Luka Turudija",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 21,
+          "date_of_birth": "24 lip 2004 (21)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 54,
+          "rating_base": 53,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/940788-1737211517.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "722382",
+          "name": "Kristjan Trdin",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "1 mar 2004 (22)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/722382-1704142058.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "319143",
+          "name": "Ivan Borna Jelic Balta",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 33,
+          "date_of_birth": "17 wrz 1992 (33)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 51,
+          "rating_base": 45,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/319143-1692245644.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja",
+            "Bośnia i Hercegowina"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "809799",
+          "name": "Hamza Ljukovac",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 21,
+          "date_of_birth": "4 mar 2005 (21)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/809799-1707920230.jpg?lm=1",
+          "nationalities": [
+            "Bośnia i Hercegowina"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "940211",
+          "name": "Niko Kasalo",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 20,
+          "date_of_birth": "31 gru 2005 (20)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "960985",
+          "name": "Kenan Kurtovic",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 19,
+          "date_of_birth": "18 sty 2007 (19)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 49,
+          "rating_base": 49,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "718031",
+          "name": "Robert Caks",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 25,
+          "date_of_birth": "31 sty 2001 (25)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "506924",
+          "name": "Ziga Fermisek",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 24,
+          "date_of_birth": "20 mar 2002 (24)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "1171004",
+          "name": "Anej Roman Leljak",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 19,
+          "date_of_birth": "20 maj 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "4059"
+        },
+        {
+          "player_id": "837746",
+          "name": "Godwin Agbevor",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 22,
+          "date_of_birth": "19 gru 2003 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "4059"
+        }
+      ]
+    },
+    {
+      "club_id": "6248",
+      "name": "NK Domzale",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/6248.png?lm=1513276420",
+      "league_url": "",
+      "color": "hsl(212 70% 48%)",
+      "avg_rating": 0,
+      "strength": 0,
+      "budget_millions": 0.5,
+      "squad_size": 0,
+      "players": []
+    }
+  ]
+}

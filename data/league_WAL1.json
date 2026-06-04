@@ -1,0 +1,5483 @@
+{
+  "competition_code": "WAL1",
+  "name": "Cymru Premier",
+  "url": "https://www.transfermarkt.pl/cymru-premier/startseite/wettbewerb/WAL1",
+  "club_count": 12,
+  "league_logo_url": "https://tmssl.akamaized.net//images/logo/homepageWappen150x150/wal1.png",
+  "country": "Inne",
+  "tier": 4,
+  "level": 1,
+  "label": "Cymru Premier",
+  "startBudget": 8,
+  "rules": {},
+  "clubs": [
+    {
+      "club_id": "10734",
+      "name": "The New Saints",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/10734.png?lm=1403618313",
+      "league_url": "",
+      "color": "hsl(255 70% 48%)",
+      "avg_rating": 55,
+      "strength": 55,
+      "budget_millions": 0.5,
+      "squad_size": 24,
+      "players": [
+        {
+          "player_id": "162823",
+          "name": "Ryan Brobbel",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 33,
+          "date_of_birth": "5 mar 1993 (33)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 59,
+          "rating_base": 53,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/162823-1728334999.jpg?lm=1",
+          "nationalities": [
+            "Irlandia Północna",
+            "Anglia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "265866",
+          "name": "Danny Davies",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 30,
+          "date_of_birth": "28 cze 1995 (30)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 58,
+          "rating_base": 53,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "525969",
+          "name": "Daniel Williams",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 25,
+          "date_of_birth": "19 kwi 2001 (25)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 56,
+          "rating_base": 53,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "61586",
+          "name": "Daniel Redmond",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 35,
+          "date_of_birth": "2 mar 1991 (35)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 56,
+          "rating_base": 49,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "614259",
+          "name": "Dominic Corness",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 23,
+          "date_of_birth": "5 maj 2003 (23)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/614259-1655974106.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "407392",
+          "name": "Jordan Williams",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 33,
+          "date_of_birth": "13 gru 1992 (33)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 55,
+          "rating_base": 49,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "427922",
+          "name": "Leo Smith",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 28,
+          "date_of_birth": "15 maj 1998 (28)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 54,
+          "rating_base": 50,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/427922-1728335345.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "339861",
+          "name": "Adam Wilson",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 26,
+          "date_of_birth": "10 kwi 2000 (26)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 53,
+          "rating_base": 50,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/339861-1728334805.jpg?lm=1",
+          "nationalities": [
+            "Kenia",
+            "Anglia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "516936",
+          "name": "Ben Clark",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 25,
+          "date_of_birth": "14 paź 2000 (25)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 53,
+          "rating_base": 50,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/516936-1728335691.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "431643",
+          "name": "Rory Holden",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 28,
+          "date_of_birth": "23 sie 1997 (28)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/431643-1728335587.jpg?lm=1",
+          "nationalities": [
+            "Irlandia Północna"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "543139",
+          "name": "Jack Bodenham",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 26,
+          "date_of_birth": "29 wrz 1999 (26)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 52,
+          "rating_base": 49,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "286806",
+          "name": "Harrison McGahey",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 30,
+          "date_of_birth": "26 wrz 1995 (30)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 52,
+          "rating_base": 47,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "379449",
+          "name": "Jordan Marshall",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 29,
+          "date_of_birth": "27 paź 1996 (29)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 51,
+          "rating_base": 47,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/379449-1626167531.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "505040",
+          "name": "Nathan Shepperd",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 25,
+          "date_of_birth": "10 wrz 2000 (25)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 50,
+          "rating_base": 47,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/505040-1737406079.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "549572",
+          "name": "Ben Wilson",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 24,
+          "date_of_birth": "5 gru 2001 (24)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 49,
+          "rating_base": 47,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Irlandia Północna"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "798864",
+          "name": "Eoin Farrell",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 24,
+          "date_of_birth": "27 mar 2002 (24)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 49,
+          "rating_base": 47,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Irlandia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "1091054",
+          "name": "Dan Barton",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 21,
+          "date_of_birth": "28 sty 2005 (21)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 48,
+          "rating_base": 47,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "975190",
+          "name": "Isaac Jefferies",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 21,
+          "date_of_birth": "6 maj 2005 (21)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 48,
+          "rating_base": 47,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "962053",
+          "name": "Ken Charles",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 25,
+          "date_of_birth": "5 sie 2000 (25)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "731734",
+          "name": "Harvey Godsmark-Ford",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "25 wrz 2003 (22)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "1002363",
+          "name": "Jack Edwards",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 20,
+          "date_of_birth": "4 sie 2005 (20)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "855283",
+          "name": "Jack Nadin",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 21,
+          "date_of_birth": "31 paź 2004 (21)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "1187735",
+          "name": "Jacob Owen",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 21,
+          "date_of_birth": "14 lut 2005 (21)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "10734"
+        },
+        {
+          "player_id": "1363247",
+          "name": "Bryn Owen",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 19,
+          "date_of_birth": "7 lis 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "10734"
+        }
+      ]
+    },
+    {
+      "club_id": "22461",
+      "name": "Caernarfon Town",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/22461.png?lm=1777387649",
+      "league_url": "",
+      "color": "hsl(255 70% 48%)",
+      "avg_rating": 52,
+      "strength": 52,
+      "budget_millions": 0.5,
+      "squad_size": 21,
+      "players": [
+        {
+          "player_id": "822917",
+          "name": "Adam Davies",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 29,
+          "date_of_birth": "13 paź 1996 (29)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/822917-1699885633.jpeg?lm=1",
+          "nationalities": [
+            "Walia",
+            "Anglia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "479202",
+          "name": "Ryan Sears",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 27,
+          "date_of_birth": "30 gru 1998 (27)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "456331",
+          "name": "Sion Bradley",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 28,
+          "date_of_birth": "20 lut 1998 (28)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/456331-1728335292.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "121267",
+          "name": "Connor Roberts",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 33,
+          "date_of_birth": "8 gru 1992 (33)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 53,
+          "rating_base": 47,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia",
+            "Irlandia Północna"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "255163",
+          "name": "Dominic Smith",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 30,
+          "date_of_birth": "9 lut 1996 (30)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 52,
+          "rating_base": 47,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia",
+            "Anglia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "687383",
+          "name": "Iwan Lewis",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 32,
+          "date_of_birth": "19 cze 1993 (32)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 52,
+          "rating_base": 47,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "426428",
+          "name": "Paulo Mendes",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 32,
+          "date_of_birth": "8 lip 1993 (32)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 52,
+          "rating_base": 47,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Portugalia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "52377",
+          "name": "Adrian Cieslewicz",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 35,
+          "date_of_birth": "16 lis 1990 (35)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 52,
+          "rating_base": 45,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/52377-1495035966.png?lm=1",
+          "nationalities": [
+            "Polska",
+            "Wyspy Owcze"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "392378",
+          "name": "Darren Thomas",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 39,
+          "date_of_birth": "20 sty 1987 (39)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 52,
+          "rating_base": 45,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "748839",
+          "name": "Phil Mooney",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 35,
+          "date_of_birth": "19 sty 1991 (35)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 52,
+          "rating_base": 45,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "654173",
+          "name": "Brad Young",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 23,
+          "date_of_birth": "6 sty 2003 (23)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/654173-1725279260.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "918867",
+          "name": "Zack Clarke",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 23,
+          "date_of_birth": "25 sty 2003 (23)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "531288",
+          "name": "Mathew Jones",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 26,
+          "date_of_birth": "14 lip 1999 (26)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 50,
+          "rating_base": 47,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "911955",
+          "name": "Morgan Owen",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 25,
+          "date_of_birth": "8 lis 2000 (25)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 50,
+          "rating_base": 47,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "267328",
+          "name": "Danny Gosset",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 31,
+          "date_of_birth": "30 wrz 1994 (31)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 50,
+          "rating_base": 45,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "558133",
+          "name": "Kyle Harrison",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 31,
+          "date_of_birth": "31 paź 1994 (31)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 50,
+          "rating_base": 45,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "993228",
+          "name": "Josh Lock",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 22,
+          "date_of_birth": "19 gru 2003 (22)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 49,
+          "rating_base": 47,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "1190206",
+          "name": "Hari Thomas",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 19,
+          "date_of_birth": "13 sty 2007 (19)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "1329955",
+          "name": "Osian Ellis",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 19,
+          "date_of_birth": "3 mar 2007 (19)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1329955-1740259458.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "1363243",
+          "name": "Rio Owen",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 19,
+          "date_of_birth": "20 wrz 2006 (19)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22461"
+        },
+        {
+          "player_id": "1292024",
+          "name": "Caron Williams",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 18,
+          "date_of_birth": "6 sty 2008 (18)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22461"
+        }
+      ]
+    },
+    {
+      "club_id": "22499",
+      "name": "Connah's Quay Nomads",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/22499.png?lm=1722903567",
+      "league_url": "",
+      "color": "hsl(266 70% 48%)",
+      "avg_rating": 52,
+      "strength": 52,
+      "budget_millions": 0.5,
+      "squad_size": 22,
+      "players": [
+        {
+          "player_id": "547041",
+          "name": "Rhys Hughes",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 24,
+          "date_of_birth": "21 wrz 2001 (24)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/547041-1777967419.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "556862",
+          "name": "Harry Franklin",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 26,
+          "date_of_birth": "2 gru 1999 (26)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 56,
+          "rating_base": 53,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/556862-1777967766.jpg?lm=1",
+          "nationalities": [
+            "Irlandia Północna",
+            "Anglia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "342288",
+          "name": "Ben Nash",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 27,
+          "date_of_birth": "23 lip 1998 (27)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia",
+            "Walia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "334705",
+          "name": "Declan Poole",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 30,
+          "date_of_birth": "5 wrz 1995 (30)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 52,
+          "rating_base": 47,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "104685",
+          "name": "Chris Marriott",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 36,
+          "date_of_birth": "24 wrz 1989 (36)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 52,
+          "rating_base": 45,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "104688",
+          "name": "Kai Edwards",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 35,
+          "date_of_birth": "29 sty 1991 (35)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 52,
+          "rating_base": 45,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "352729",
+          "name": "James Jones",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 29,
+          "date_of_birth": "13 mar 1997 (29)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 51,
+          "rating_base": 47,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "342195",
+          "name": "Noah Edwards",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 29,
+          "date_of_birth": "30 maj 1996 (29)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 51,
+          "rating_base": 47,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "1091665",
+          "name": "Callum West",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 20,
+          "date_of_birth": "28 paź 2005 (20)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "824052",
+          "name": "Callum Bratley",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 31,
+          "date_of_birth": "12 mar 1995 (31)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 50,
+          "rating_base": 45,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "293162",
+          "name": "Dan Cowan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 30,
+          "date_of_birth": "18 lut 1996 (30)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 50,
+          "rating_base": 45,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "104555",
+          "name": "Zeli Ismail",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 32,
+          "date_of_birth": "12 gru 1993 (32)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 50,
+          "rating_base": 45,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/s_104555_543_2013_09_23_1.jpg?lm=1",
+          "nationalities": [
+            "Anglia",
+            "Albania"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "1028958",
+          "name": "Kit Margetson",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 19,
+          "date_of_birth": "10 lip 2006 (19)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 49,
+          "rating_base": 49,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "965743",
+          "name": "Max Woodcock",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 20,
+          "date_of_birth": "29 lip 2005 (20)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 48,
+          "rating_base": 47,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Szkocja",
+            "Anglia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "503684",
+          "name": "Abdi Sharif",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 25,
+          "date_of_birth": "1 sty 2001 (25)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Somalia",
+            "Anglia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "728861",
+          "name": "Dan Roberts",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 25,
+          "date_of_birth": "26 maj 2000 (25)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "340691",
+          "name": "Jack Kenny",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 34,
+          "date_of_birth": "14 paź 1991 (34)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 48,
+          "rating_base": 42,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "215902",
+          "name": "Jason Oswell",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 33,
+          "date_of_birth": "7 paź 1992 (33)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 48,
+          "rating_base": 42,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "987070",
+          "name": "Jacob Cook",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 19,
+          "date_of_birth": "31 paź 2006 (19)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 47,
+          "rating_base": 47,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "1212259",
+          "name": "Freddie Redshaw",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 20,
+          "date_of_birth": "12 lut 2006 (20)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "1412474",
+          "name": "Marco Fregapane",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 20,
+          "date_of_birth": "20 gru 2005 (20)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22499"
+        },
+        {
+          "player_id": "1280899",
+          "name": "Ryley Berry",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 17,
+          "date_of_birth": "3 cze 2008 (17)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22499"
+        }
+      ]
+    },
+    {
+      "club_id": "1115",
+      "name": "Barry Town United",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/1115.png?lm=1503816184",
+      "league_url": "",
+      "color": "hsl(200 70% 48%)",
+      "avg_rating": 51,
+      "strength": 51,
+      "budget_millions": 0.5,
+      "squad_size": 23,
+      "players": [
+        {
+          "player_id": "496650",
+          "name": "George Ratcliffe",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 25,
+          "date_of_birth": "12 wrz 2000 (25)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 52,
+          "rating_base": 49,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "531236",
+          "name": "Callum Sainty",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 30,
+          "date_of_birth": "12 maj 1996 (30)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 52,
+          "rating_base": 47,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "66501",
+          "name": "Robbie Willmott",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 36,
+          "date_of_birth": "16 maj 1990 (36)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 52,
+          "rating_base": 45,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "787936",
+          "name": "Ollie Hulbert",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 23,
+          "date_of_birth": "25 lut 2003 (23)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "250730",
+          "name": "Keston Davies",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 29,
+          "date_of_birth": "2 paź 1996 (29)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 51,
+          "rating_base": 47,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "134192",
+          "name": "Will Richards",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 34,
+          "date_of_birth": "18 gru 1991 (34)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 51,
+          "rating_base": 45,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "805601",
+          "name": "Ben Margetson",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 25,
+          "date_of_birth": "1 wrz 2000 (25)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 50,
+          "rating_base": 47,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia",
+            "Anglia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "543617",
+          "name": "Michael George",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 26,
+          "date_of_birth": "12 cze 1999 (26)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 50,
+          "rating_base": 47,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "212783",
+          "name": "Theo Wharton",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 31,
+          "date_of_birth": "15 lis 1994 (31)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 50,
+          "rating_base": 45,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "St. Kitts i Nevis",
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "1080421",
+          "name": "Ieuan Owen",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 19,
+          "date_of_birth": "20 maj 2006 (19)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 49,
+          "rating_base": 49,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "1069532",
+          "name": "Owen Cuddihy",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 21,
+          "date_of_birth": "21 mar 2005 (21)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 48,
+          "rating_base": 47,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "547006",
+          "name": "Keenan Patten",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 25,
+          "date_of_birth": "7 kwi 2001 (25)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "1159662",
+          "name": "Ellis Williams",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 23,
+          "date_of_birth": "15 gru 2002 (23)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "747288",
+          "name": "Ryan Kavanagh",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 23,
+          "date_of_birth": "8 paź 2002 (23)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "1099350",
+          "name": "Dan Barton",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 20,
+          "date_of_birth": "14 gru 2005 (20)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "1085886",
+          "name": "Joe Thomas",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 21,
+          "date_of_birth": "14 sty 2005 (21)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "1432072",
+          "name": "Daniel Smith",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 29,
+          "date_of_birth": "16 sie 1996 (29)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 46,
+          "rating_base": 42,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "878885",
+          "name": "Rhys Schwank",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 22,
+          "date_of_birth": "19 gru 2003 (22)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 44,
+          "rating_base": 42,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "1211278",
+          "name": "Josh Bernard",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 20,
+          "date_of_birth": "12 kwi 2006 (20)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 43,
+          "rating_base": 42,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "1180000",
+          "name": "Jac Norris",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 19,
+          "date_of_birth": "9 lis 2006 (19)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "1209406",
+          "name": "Joseph Beynon",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 19,
+          "date_of_birth": "16 lip 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "1479874",
+          "name": "Keegan Saunders",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 17,
+          "date_of_birth": "1 lip 2008 (17)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        },
+        {
+          "player_id": "1209379",
+          "name": "Luke Masrani",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 19,
+          "date_of_birth": "18 gru 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "1115"
+        }
+      ]
+    },
+    {
+      "club_id": "22546",
+      "name": "Colwyn Bay",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/22546.png?lm=1414223336",
+      "league_url": "",
+      "color": "hsl(259 70% 48%)",
+      "avg_rating": 51,
+      "strength": 51,
+      "budget_millions": 0.5,
+      "squad_size": 22,
+      "players": [
+        {
+          "player_id": "456733",
+          "name": "Jordan Davies",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 30,
+          "date_of_birth": "16 lis 1995 (30)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 54,
+          "rating_base": 49,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia",
+            "Anglia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "926050",
+          "name": "Jamie Cumming",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 30,
+          "date_of_birth": "26 kwi 1996 (30)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 52,
+          "rating_base": 47,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/926050-1739989706.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "139051",
+          "name": "Aeron Edwards",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 38,
+          "date_of_birth": "16 lut 1988 (38)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 52,
+          "rating_base": 45,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "443989",
+          "name": "Nathan Peate",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 35,
+          "date_of_birth": "2 maj 1991 (35)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 52,
+          "rating_base": 45,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "542456",
+          "name": "George Hughes",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 27,
+          "date_of_birth": "23 mar 1999 (27)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 51,
+          "rating_base": 47,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "279473",
+          "name": "Louis Robles",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 29,
+          "date_of_birth": "11 wrz 1996 (29)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 51,
+          "rating_base": 47,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/279473-1486413766.PNG?lm=1",
+          "nationalities": [
+            "Anglia",
+            "Hiszpania"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "577069",
+          "name": "Alex Downes",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 26,
+          "date_of_birth": "2 lis 1999 (26)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 50,
+          "rating_base": 47,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "239826",
+          "name": "Aaron Williams",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 32,
+          "date_of_birth": "21 paź 1993 (32)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 50,
+          "rating_base": 45,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "287230",
+          "name": "Aron Williams",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 30,
+          "date_of_birth": "8 lis 1995 (30)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 50,
+          "rating_base": 45,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "244228",
+          "name": "Lewis Sirrell",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 32,
+          "date_of_birth": "31 paź 1993 (32)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 50,
+          "rating_base": 45,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/244228-1739990188.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "198148",
+          "name": "Ryan Astles",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 31,
+          "date_of_birth": "1 lip 1994 (31)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 50,
+          "rating_base": 45,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "1301745",
+          "name": "Alex Brown",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 19,
+          "date_of_birth": "14 lip 2006 (19)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 49,
+          "rating_base": 49,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "344013",
+          "name": "Rhys Williams",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 28,
+          "date_of_birth": "9 sty 1998 (28)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 49,
+          "rating_base": 45,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "106744",
+          "name": "Jay Owen",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 35,
+          "date_of_birth": "14 sty 1991 (35)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 49,
+          "rating_base": 42,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/106744-1739989449.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "911923",
+          "name": "Matty Hill",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 25,
+          "date_of_birth": "26 kwi 2001 (25)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "156575",
+          "name": "Sam Hart",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 34,
+          "date_of_birth": "29 lis 1991 (34)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 48,
+          "rating_base": 42,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/156575-1739990670.jpg?lm=1",
+          "nationalities": [
+            "Walia",
+            "Anglia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "1363241",
+          "name": "Alex Moore",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 19,
+          "date_of_birth": "18 wrz 2006 (19)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 47,
+          "rating_base": 47,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "886909",
+          "name": "Issa Kargbo",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 24,
+          "date_of_birth": "7 sty 2002 (24)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Irlandia",
+            "Sierra Leone"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "798363",
+          "name": "Uniss Kargbo",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 24,
+          "date_of_birth": "7 sty 2002 (24)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Irlandia",
+            "Sierra Leone"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "1095153",
+          "name": "Ethan Roberts",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 21,
+          "date_of_birth": "12 sie 2004 (21)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "1162814",
+          "name": "Sol Forde",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 20,
+          "date_of_birth": "17 lip 2005 (20)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1162814-1739989812.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22546"
+        },
+        {
+          "player_id": "1202540",
+          "name": "Luke Murphy",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 18,
+          "date_of_birth": "15 paź 2007 (18)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "22546"
+        }
+      ]
+    },
+    {
+      "club_id": "25232",
+      "name": "Haverfordwest County",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/25232.png?lm=1599769634",
+      "league_url": "",
+      "color": "hsl(254 70% 48%)",
+      "avg_rating": 51,
+      "strength": 51,
+      "budget_millions": 0.5,
+      "squad_size": 22,
+      "players": [
+        {
+          "player_id": "383383",
+          "name": "Corey Shephard",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 28,
+          "date_of_birth": "28 gru 1997 (28)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "319290",
+          "name": "Rhys Abbruzzese",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 28,
+          "date_of_birth": "28 mar 1998 (28)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "391522",
+          "name": "Greg Walters",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 31,
+          "date_of_birth": "10 sty 1995 (31)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 52,
+          "rating_base": 47,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "486732",
+          "name": "Dylan Rees",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 29,
+          "date_of_birth": "17 wrz 1996 (29)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 51,
+          "rating_base": 47,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "823931",
+          "name": "Ben Ahmun",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 34,
+          "date_of_birth": "2 lut 1992 (34)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 51,
+          "rating_base": 45,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/823931-1755308949.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "195204",
+          "name": "Kyle McCarthy",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 33,
+          "date_of_birth": "12 kwi 1993 (33)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 51,
+          "rating_base": 45,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "939334",
+          "name": "Ifan Knott",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 21,
+          "date_of_birth": "3 paź 2004 (21)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "746625",
+          "name": "Dan Hawkins",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 25,
+          "date_of_birth": "22 kwi 2001 (25)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 50,
+          "rating_base": 47,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "250741",
+          "name": "Owain Jones",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 29,
+          "date_of_birth": "1 paź 1996 (29)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 49,
+          "rating_base": 45,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "754248",
+          "name": "Alaric Jones",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 25,
+          "date_of_birth": "9 lut 2001 (25)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "824136",
+          "name": "Jack Wilson",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 25,
+          "date_of_birth": "12 kwi 2001 (25)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "172216",
+          "name": "Ricky Watts",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 34,
+          "date_of_birth": "7 lis 1991 (34)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 48,
+          "rating_base": 42,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "803387",
+          "name": "Luc Rees",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 23,
+          "date_of_birth": "30 paź 2002 (23)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "1054124",
+          "name": "Panashe Makwiramiti",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 23,
+          "date_of_birth": "1 lip 2002 (23)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Zimbabwe",
+            "Anglia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "480814",
+          "name": "Elliot Scotcher",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 32,
+          "date_of_birth": "3 mar 1994 (32)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 47,
+          "rating_base": 42,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "1439950",
+          "name": "Jacob Bacon",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 19,
+          "date_of_birth": "16 lut 2007 (19)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "939319",
+          "name": "Iori Humphreys",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 22,
+          "date_of_birth": "22 wrz 2003 (22)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 44,
+          "rating_base": 42,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "878909",
+          "name": "Kyle Kenniford",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 21,
+          "date_of_birth": "20 wrz 2004 (21)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 43,
+          "rating_base": 42,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "1088628",
+          "name": "Tom Shepherd",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 20,
+          "date_of_birth": "20 wrz 2005 (20)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 43,
+          "rating_base": 42,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "1198669",
+          "name": "Ashley Watkins",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 19,
+          "date_of_birth": "11 sty 2007 (19)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "1424420",
+          "name": "Hari Thomas",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 17,
+          "date_of_birth": "18 paź 2008 (17)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        },
+        {
+          "player_id": "1370868",
+          "name": "Will Hughes",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 19,
+          "date_of_birth": "14 kwi 2007 (19)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "25232"
+        }
+      ]
+    },
+    {
+      "club_id": "62026",
+      "name": "Penybont FC",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/62026.png?lm=1567623678",
+      "league_url": "",
+      "color": "hsl(256 70% 48%)",
+      "avg_rating": 51,
+      "strength": 51,
+      "budget_millions": 0.5,
+      "squad_size": 21,
+      "players": [
+        {
+          "player_id": "504898",
+          "name": "Mael Davies",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 27,
+          "date_of_birth": "10 paź 1998 (27)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "717147",
+          "name": "Nathan Wood",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 28,
+          "date_of_birth": "7 sty 1998 (28)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/717147-1721323249.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "340596",
+          "name": "Clayton Green",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 32,
+          "date_of_birth": "27 lut 1994 (32)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 52,
+          "rating_base": 47,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "334959",
+          "name": "Kane Owen",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 31,
+          "date_of_birth": "22 paź 1994 (31)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 52,
+          "rating_base": 47,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "120761",
+          "name": "Chris Venables",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 40,
+          "date_of_birth": "23 lip 1985 (40)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 52,
+          "rating_base": 45,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia",
+            "Anglia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "754290",
+          "name": "Noah Daley",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 24,
+          "date_of_birth": "30 mar 2002 (24)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "717104",
+          "name": "Billy Borge",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 30,
+          "date_of_birth": "20 sty 1996 (30)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 50,
+          "rating_base": 45,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "662240",
+          "name": "Archie Matthews",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 24,
+          "date_of_birth": "2 sie 2001 (24)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 49,
+          "rating_base": 47,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "747291",
+          "name": "Owen Pritchard",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 23,
+          "date_of_birth": "1 wrz 2002 (23)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 49,
+          "rating_base": 47,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "446116",
+          "name": "Alexander Cvetkovic",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 29,
+          "date_of_birth": "29 lis 1996 (29)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 49,
+          "rating_base": 45,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/446116-1708088195.png?lm=1",
+          "nationalities": [
+            "Anglia",
+            "Chorwacja"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "527493",
+          "name": "Ash Baker",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 29,
+          "date_of_birth": "30 paź 1996 (29)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 49,
+          "rating_base": 45,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "67403",
+          "name": "Owain Warlow",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 38,
+          "date_of_birth": "25 paź 1987 (38)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 49,
+          "rating_base": 42,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "1243180",
+          "name": "Daniel Higgs",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 18,
+          "date_of_birth": "11 wrz 2007 (18)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 47,
+          "rating_base": 47,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "1005846",
+          "name": "Luke Armstrong",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 19,
+          "date_of_birth": "19 cze 2006 (19)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 47,
+          "rating_base": 47,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "924133",
+          "name": "Ethan Cann",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 23,
+          "date_of_birth": "18 lip 2002 (23)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "720265",
+          "name": "Jac Clay",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 22,
+          "date_of_birth": "2 wrz 2003 (22)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "564873",
+          "name": "Jacob Jones",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 24,
+          "date_of_birth": "5 wrz 2001 (24)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "723673",
+          "name": "Joe Woodiwiss",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 23,
+          "date_of_birth": "10 lis 2002 (23)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "663248",
+          "name": "Kai Ludvigsen",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "26 mar 2004 (22)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia",
+            "Anglia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "855259",
+          "name": "Nathaniel Williams",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "3 wrz 2003 (22)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "62026"
+        },
+        {
+          "player_id": "1214065",
+          "name": "Ioan Phillips",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 18,
+          "date_of_birth": "9 kwi 2008 (18)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "62026"
+        }
+      ]
+    },
+    {
+      "club_id": "29221",
+      "name": "Briton Ferry Llansawel",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/29221.png?lm=1715546810",
+      "league_url": "",
+      "color": "hsl(256 70% 48%)",
+      "avg_rating": 50,
+      "strength": 50,
+      "budget_millions": 0.5,
+      "squad_size": 22,
+      "players": [
+        {
+          "player_id": "209570",
+          "name": "Alex Gammond",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 31,
+          "date_of_birth": "26 sie 1994 (31)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 52,
+          "rating_base": 47,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "456807",
+          "name": "Will Fuller",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 32,
+          "date_of_birth": "7 lip 1993 (32)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 52,
+          "rating_base": 47,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "930772",
+          "name": "Corey Hurford",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 22,
+          "date_of_birth": "10 maj 2004 (22)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "931828",
+          "name": "Tom Walters",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 29,
+          "date_of_birth": "12 lis 1996 (29)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 51,
+          "rating_base": 47,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "531253",
+          "name": "Luke Cooper",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 33,
+          "date_of_birth": "2 kwi 1993 (33)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 51,
+          "rating_base": 45,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "504616",
+          "name": "Tom Price",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 26,
+          "date_of_birth": "26 lis 1999 (26)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 50,
+          "rating_base": 47,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "667515",
+          "name": "Ruben Davies",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 22,
+          "date_of_birth": "2 maj 2004 (22)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 49,
+          "rating_base": 47,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia",
+            "Anglia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "427868",
+          "name": "Dan Jefferies",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 27,
+          "date_of_birth": "30 sty 1999 (27)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 49,
+          "rating_base": 45,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "314820",
+          "name": "Keiran Williams",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 29,
+          "date_of_birth": "8 paź 1996 (29)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 49,
+          "rating_base": 45,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "751701",
+          "name": "Kian Jenkins",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 21,
+          "date_of_birth": "4 cze 2004 (21)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 48,
+          "rating_base": 47,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/751701-1604858924.png?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "623100",
+          "name": "Sam Snaith",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 26,
+          "date_of_birth": "5 maj 2000 (26)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "162272",
+          "name": "Rhys Wilson",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 33,
+          "date_of_birth": "11 cze 1992 (33)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 48,
+          "rating_base": 42,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "1087606",
+          "name": "Jack Fanning",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 19,
+          "date_of_birth": "21 maj 2006 (19)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 47,
+          "rating_base": 47,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "1317395",
+          "name": "Ollie Anderson",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 19,
+          "date_of_birth": "26 kwi 2007 (19)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 47,
+          "rating_base": 47,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia",
+            "Anglia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "1069756",
+          "name": "Mitchell Bates",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 22,
+          "date_of_birth": "20 lut 2004 (22)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "1132722",
+          "name": "Connor Smith",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 21,
+          "date_of_birth": "20 mar 2005 (21)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "732241",
+          "name": "Luis Bates",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 23,
+          "date_of_birth": "4 wrz 2002 (23)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 44,
+          "rating_base": 42,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/732241-1610893033.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "671057",
+          "name": "Rio Dyer",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 22,
+          "date_of_birth": "7 lis 2003 (22)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 44,
+          "rating_base": 42,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "547044",
+          "name": "Ryan Bevan",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 24,
+          "date_of_birth": "20 paź 2001 (24)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 44,
+          "rating_base": 42,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "715891",
+          "name": "Ryan George",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 24,
+          "date_of_birth": "27 lis 2001 (24)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 44,
+          "rating_base": 42,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "1186502",
+          "name": "Dylan Packer",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 19,
+          "date_of_birth": "5 gru 2006 (19)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        },
+        {
+          "player_id": "1186500",
+          "name": "Ricky-Lee Owen",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 18,
+          "date_of_birth": "30 cze 2007 (18)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "29221"
+        }
+      ]
+    },
+    {
+      "club_id": "53152",
+      "name": "Cardiff Metropolitan University",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/53152.png?lm=1758464674",
+      "league_url": "",
+      "color": "hsl(256 70% 48%)",
+      "avg_rating": 50,
+      "strength": 50,
+      "budget_millions": 0.5,
+      "squad_size": 21,
+      "players": [
+        {
+          "player_id": "496649",
+          "name": "Ryan Reynolds",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 25,
+          "date_of_birth": "15 wrz 2000 (25)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 52,
+          "rating_base": 49,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "67215",
+          "name": "James Clarke",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 36,
+          "date_of_birth": "17 lis 1989 (36)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 52,
+          "rating_base": 45,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/67215-1721323180.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "623519",
+          "name": "CJ Craven",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 25,
+          "date_of_birth": "3 paź 2000 (25)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 50,
+          "rating_base": 47,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/623519-1609661535.png?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "542458",
+          "name": "Lifumpa Mwandwe",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 25,
+          "date_of_birth": "29 gru 2000 (25)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 50,
+          "rating_base": 47,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/542458-1683140345.jpg?lm=1",
+          "nationalities": [
+            "Anglia",
+            "Zambia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "456844",
+          "name": "Adam Roscrow",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 31,
+          "date_of_birth": "17 lut 1995 (31)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 50,
+          "rating_base": 45,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/456844-1612879283.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "823075",
+          "name": "Lewis Rees",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 23,
+          "date_of_birth": "1 lip 2002 (23)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 49,
+          "rating_base": 47,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "291286",
+          "name": "Liam Walsh",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 29,
+          "date_of_birth": "26 lip 1996 (29)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 49,
+          "rating_base": 45,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "643938",
+          "name": "Matt Chubb",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 27,
+          "date_of_birth": "31 sie 1998 (27)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 49,
+          "rating_base": 45,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "531229",
+          "name": "Sam Jones",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 27,
+          "date_of_birth": "8 gru 1998 (27)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 49,
+          "rating_base": 45,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "456838",
+          "name": "Eliot Evans",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 34,
+          "date_of_birth": "26 lis 1991 (34)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 48,
+          "rating_base": 42,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia",
+            "Anglia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "122842",
+          "name": "Joel Edwards",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 34,
+          "date_of_birth": "18 sie 1991 (34)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 48,
+          "rating_base": 42,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "1097141",
+          "name": "Sam Seager",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 19,
+          "date_of_birth": "21 mar 2007 (19)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 47,
+          "rating_base": 47,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "615966",
+          "name": "Barney Soady",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 24,
+          "date_of_birth": "12 wrz 2001 (24)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "846848",
+          "name": "Dixon Kabongo",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 22,
+          "date_of_birth": "21 lis 2003 (22)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia",
+            "Demokratyczna Republika Kongo"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "1006407",
+          "name": "Ewan Griffiths",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 20,
+          "date_of_birth": "22 lut 2006 (20)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "1069538",
+          "name": "Jake Morris",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 21,
+          "date_of_birth": "14 wrz 2004 (21)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "1069757",
+          "name": "Jasper Payne",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 21,
+          "date_of_birth": "24 lis 2004 (21)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "972432",
+          "name": "Toby Raison",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 24,
+          "date_of_birth": "18 lut 2002 (24)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 44,
+          "rating_base": 42,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "1045312",
+          "name": "Harri John",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 20,
+          "date_of_birth": "4 kwi 2006 (20)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 43,
+          "rating_base": 42,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "846846",
+          "name": "Jonah Williams",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 21,
+          "date_of_birth": "11 mar 2005 (21)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 43,
+          "rating_base": 42,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "53152"
+        },
+        {
+          "player_id": "1331063",
+          "name": "Harrison Matthews",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 19,
+          "date_of_birth": "19 kwi 2007 (19)",
+          "market_value": "10 tys. €",
+          "market_value_eur": 10000,
+          "rating": 41,
+          "rating_base": 41,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "53152"
+        }
+      ]
+    },
+    {
+      "club_id": "31188",
+      "name": "Flint Town United",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/31188.png?lm=1692825338",
+      "league_url": "",
+      "color": "hsl(261 70% 48%)",
+      "avg_rating": 50,
+      "strength": 50,
+      "budget_millions": 0.5,
+      "squad_size": 22,
+      "players": [
+        {
+          "player_id": "574497",
+          "name": "Osebi Abadaki",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 35,
+          "date_of_birth": "22 kwi 1991 (35)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 52,
+          "rating_base": 45,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria",
+            "Anglia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "924628",
+          "name": "Elliott Reeves",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 29,
+          "date_of_birth": "14 lut 1997 (29)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 51,
+          "rating_base": 47,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "456702",
+          "name": "Jake Phillips",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 29,
+          "date_of_birth": "31 sty 1997 (29)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 51,
+          "rating_base": 47,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "182858",
+          "name": "Darren Stephenson",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 33,
+          "date_of_birth": "6 mar 1993 (33)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 51,
+          "rating_base": 45,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Jamajka",
+            "Anglia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "914577",
+          "name": "Ben Wynne",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 24,
+          "date_of_birth": "20 kwi 2002 (24)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 49,
+          "rating_base": 47,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "748927",
+          "name": "Harry Owen",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "14 lip 2003 (22)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 49,
+          "rating_base": 47,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "869891",
+          "name": "Jake Canavan",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 22,
+          "date_of_birth": "17 gru 2003 (22)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 49,
+          "rating_base": 47,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "1308699",
+          "name": "Sidi Sanogo Fofana",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 27,
+          "date_of_birth": "18 lis 1998 (27)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 49,
+          "rating_base": 45,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Hiszpania",
+            "Anglia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "965736",
+          "name": "Jack Flint",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 21,
+          "date_of_birth": "18 gru 2004 (21)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 48,
+          "rating_base": 47,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "728736",
+          "name": "Lee Jonas",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 21,
+          "date_of_birth": "6 lip 2004 (21)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 48,
+          "rating_base": 47,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/728736-1773741525.jpg?lm=1",
+          "nationalities": [
+            "Anglia",
+            "Jamajka"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "599976",
+          "name": "Dawid Szczepaniak",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 26,
+          "date_of_birth": "13 kwi 2000 (26)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Polska"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "640229",
+          "name": "Jack Thorn",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 25,
+          "date_of_birth": "22 mar 2001 (25)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "560347",
+          "name": "Josh Jones",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 25,
+          "date_of_birth": "9 paź 2000 (25)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "980268",
+          "name": "Ben Woollam",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "30 lis 2003 (22)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "531054",
+          "name": "Alec Mudimu",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 31,
+          "date_of_birth": "8 kwi 1995 (31)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 47,
+          "rating_base": 42,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/531054-1635525562.png?lm=1",
+          "nationalities": [
+            "Zimbabwe",
+            "Anglia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "977175",
+          "name": "Ben Hughes",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 21,
+          "date_of_birth": "12 paź 2004 (21)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "1363238",
+          "name": "Max Purvis",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 18,
+          "date_of_birth": "8 cze 2007 (18)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1363238-1756667032.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "1049936",
+          "name": "Mikey Burke",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 23,
+          "date_of_birth": "10 cze 2002 (23)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 44,
+          "rating_base": 42,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "1436881",
+          "name": "Evan Smith",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 21,
+          "date_of_birth": "29 maj 2004 (21)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 43,
+          "rating_base": 42,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "1396406",
+          "name": "Callum Ferguson",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": null,
+          "date_of_birth": "(-)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "1287281",
+          "name": "Levi Morrison",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 17,
+          "date_of_birth": "25 wrz 2008 (17)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "31188"
+        },
+        {
+          "player_id": "794817",
+          "name": "Oliver Kilner",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "27 mar 2004 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "31188"
+        }
+      ]
+    },
+    {
+      "club_id": "27843",
+      "name": "Bala Town",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/27843.png?lm=1639412629",
+      "league_url": "",
+      "color": "hsl(264 70% 48%)",
+      "avg_rating": 49,
+      "strength": 49,
+      "budget_millions": 0.5,
+      "squad_size": 24,
+      "players": [
+        {
+          "player_id": "279472",
+          "name": "Nathan Burke",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 30,
+          "date_of_birth": "15 wrz 1995 (30)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 52,
+          "rating_base": 47,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/s_279472_6922_2012_1.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "1169013",
+          "name": "Nelson Digbeu",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 28,
+          "date_of_birth": "20 wrz 1997 (28)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 51,
+          "rating_base": 47,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Francja"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "716104",
+          "name": "Lassana Mendes",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 33,
+          "date_of_birth": "26 gru 1992 (33)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 51,
+          "rating_base": 45,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Gwinea Bissau",
+            "Hiszpania"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "427046",
+          "name": "Dominic McGiveron",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 30,
+          "date_of_birth": "7 mar 1996 (30)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 50,
+          "rating_base": 45,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "246177",
+          "name": "Will Bell",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 31,
+          "date_of_birth": "29 wrz 1994 (31)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 50,
+          "rating_base": 45,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "727585",
+          "name": "Joel Torrance",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 24,
+          "date_of_birth": "24 kwi 2002 (24)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 49,
+          "rating_base": 47,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "1106631",
+          "name": "Jacob Tarasenko",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 29,
+          "date_of_birth": "11 mar 1997 (29)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 49,
+          "rating_base": 45,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1106631-1740066166.jpg?lm=1",
+          "nationalities": [
+            "Australia",
+            "Chorwacja"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "250768",
+          "name": "Ross White",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 29,
+          "date_of_birth": "23 cze 1996 (29)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 49,
+          "rating_base": 45,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "486098",
+          "name": "Louis Hall",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 26,
+          "date_of_birth": "23 maj 1999 (26)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "196304",
+          "name": "John Owen",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 33,
+          "date_of_birth": "18 sie 1992 (33)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 48,
+          "rating_base": 42,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "893997",
+          "name": "Cameron Ferguson",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 23,
+          "date_of_birth": "24 mar 2003 (23)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Szkocja",
+            "Anglia"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "862949",
+          "name": "Hussein Mehasseb",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 23,
+          "date_of_birth": "14 lip 2002 (23)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/862949-1613314227.jpg?lm=1",
+          "nationalities": [
+            "Egipt",
+            "Anglia"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "693125",
+          "name": "Liam Higgins",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 23,
+          "date_of_birth": "15 sty 2003 (23)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "798371",
+          "name": "Olamide Ibrahim",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 22,
+          "date_of_birth": "23 wrz 2003 (22)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/798371-1741192867.jpg?lm=1",
+          "nationalities": [
+            "Irlandia",
+            "Nigeria"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "1422737",
+          "name": "Harry Dean",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 20,
+          "date_of_birth": "21 mar 2006 (20)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "1300700",
+          "name": "Joshua Samuels",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 28,
+          "date_of_birth": "1 kwi 1998 (28)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 46,
+          "rating_base": 42,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia",
+            "Jamajka"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "720935",
+          "name": "Taner Dogan",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 27,
+          "date_of_birth": "30 maj 1998 (27)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 46,
+          "rating_base": 42,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/720935-1776278206.png?lm=1",
+          "nationalities": [
+            "Stany Zjednaczone",
+            "Turcja"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "1363237",
+          "name": "Tom Kelly",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 19,
+          "date_of_birth": "2 mar 2007 (19)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "871851",
+          "name": "Connor Evans",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 22,
+          "date_of_birth": "27 wrz 2003 (22)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 44,
+          "rating_base": 42,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "846227",
+          "name": "Sam Billington",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 24,
+          "date_of_birth": "21 wrz 2001 (24)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 44,
+          "rating_base": 42,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/846227-1608318590.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "1498926",
+          "name": "Charlie Fisher",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 20,
+          "date_of_birth": "16 lis 2005 (20)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 43,
+          "rating_base": 42,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "479349",
+          "name": "Harri Lloyd",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 29,
+          "date_of_birth": "30 kwi 1997 (29)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "1457999",
+          "name": "Leif Hunter",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 23,
+          "date_of_birth": "27 maj 2002 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Stany Zjednaczone"
+          ],
+          "club_id": "27843"
+        },
+        {
+          "player_id": "1309469",
+          "name": "Luca Beck",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 18,
+          "date_of_birth": "15 kwi 2008 (18)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "27843"
+        }
+      ]
+    },
+    {
+      "club_id": "11915",
+      "name": "Llanelli Town AFC",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/11915.png?lm=1697480193",
+      "league_url": "",
+      "color": "hsl(257 70% 48%)",
+      "avg_rating": 47,
+      "strength": 47,
+      "budget_millions": 0.5,
+      "squad_size": 19,
+      "players": [
+        {
+          "player_id": "719305",
+          "name": "Alex Pennock",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 25,
+          "date_of_birth": "7 lut 2001 (25)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 50,
+          "rating_base": 47,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "169665",
+          "name": "Josh Yorwerth",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 31,
+          "date_of_birth": "28 lut 1995 (31)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 50,
+          "rating_base": 45,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "1020648",
+          "name": "Jamie Baker",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 35,
+          "date_of_birth": "21 cze 1990 (35)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 49,
+          "rating_base": 42,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "931507",
+          "name": "Josef Hopkins",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 35,
+          "date_of_birth": "30 kwi 1991 (35)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 49,
+          "rating_base": 42,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "144146",
+          "name": "Sean Cronin",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 40,
+          "date_of_birth": "17 sty 1986 (40)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 49,
+          "rating_base": 42,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "678478",
+          "name": "Danny Williams",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 26,
+          "date_of_birth": "19 sie 1999 (26)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 48,
+          "rating_base": 45,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "623475",
+          "name": "Tristan Jenkins",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 24,
+          "date_of_birth": "11 sie 2001 (24)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "342192",
+          "name": "James Parry",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 30,
+          "date_of_birth": "27 maj 1995 (30)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 47,
+          "rating_base": 42,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "1205531",
+          "name": "Morgan Evans",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 19,
+          "date_of_birth": "22 gru 2006 (19)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "551006",
+          "name": "Bradley Gibbings",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 24,
+          "date_of_birth": "3 sty 2002 (24)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 44,
+          "rating_base": 42,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "806431",
+          "name": "Harrison Bright",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 22,
+          "date_of_birth": "23 lut 2004 (22)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 44,
+          "rating_base": 42,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "902411",
+          "name": "Joseph Lloyd",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 23,
+          "date_of_birth": "6 cze 2002 (23)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 44,
+          "rating_base": 42,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "746615",
+          "name": "McCauley Power",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 23,
+          "date_of_birth": "25 paź 2002 (23)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 44,
+          "rating_base": 42,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "747289",
+          "name": "Sam Parsons",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 24,
+          "date_of_birth": "19 paź 2001 (24)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 44,
+          "rating_base": 42,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "1070171",
+          "name": "Rio Booth",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 20,
+          "date_of_birth": "15 lip 2005 (20)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 43,
+          "rating_base": 42,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "1324150",
+          "name": "James Lester",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 19,
+          "date_of_birth": "10 lis 2006 (19)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Trynidad and Tobago",
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "1483358",
+          "name": "Jay Farrell-Alli",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 17,
+          "date_of_birth": "1 lip 2008 (17)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "1159146",
+          "name": "Luc Owen",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 19,
+          "date_of_birth": "30 sie 2006 (19)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        },
+        {
+          "player_id": "1436876",
+          "name": "Oliver Williams",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": null,
+          "date_of_birth": "(-)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Walia"
+          ],
+          "club_id": "11915"
+        }
+      ]
+    }
+  ]
+}

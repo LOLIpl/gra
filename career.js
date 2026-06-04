@@ -1,4 +1,5 @@
 ﻿if(typeof rand==="undefined") window.rand=(min,max)=>Math.floor(Math.random()*(max-min+1))+min;
+if(typeof clamp==="undefined") window.clamp=(v,min,max)=>Math.max(min,Math.min(max,v));
 
 const FORMATIONS = {
     "4-3-3":{BR:1,OB:4,PO:3,NA:3,positions:[{top:88,left:50},{top:68,left:15},{top:68,left:38},{top:68,left:62},{top:68,left:85},{top:45,left:25},{top:45,left:50},{top:45,left:75},{top:18,left:20},{top:18,left:50},{top:18,left:80}]},
@@ -7,11 +8,36 @@ const FORMATIONS = {
     "3-5-2":{BR:1,OB:3,PO:5,NA:2,positions:[{top:88,left:50},{top:68,left:25},{top:68,left:50},{top:68,left:75},{top:50,left:15},{top:50,left:35},{top:50,left:50},{top:50,left:65},{top:50,left:85},{top:18,left:38},{top:18,left:62}]},
 };
 const POS_MAP = {BR:"BR",OB:"ŚO",PO:"ŚP",NA:"N"};
-const MONTHS = ["Styczen","Luty","Marzec","Kwiecien","Maj","Czerwiec","Lipiec","Sierpien","Wrzesien","Pazdziernik","Listopad","Grudzien"];
+const MONTHS = ["Styczeń","Luty","Marzec","Kwiecień","Maj","Czerwiec","Lipiec","Sierpień","Wrzesień","Październik","Listopad","Grudzień"];
 const DAY_NAMES = ["Pn","Wt","Sr","Cz","Pt","Sb","Nd"];
 const POS_ICON = {BR:"BR",OB:"ŚO",PO:"ŚP",NA:"N"};
 const FORM_ICON = {W:'<span style="color:#10b981;font-weight:800;">W</span>',D:'<span style="color:#9ca3af;font-weight:800;">R</span>',L:'<span style="color:#ef4444;font-weight:800;">P</span>'};
 const AI_STYLES = ["balanced","attacking","defensive","possession","counter"];
+const UEFA_CUPS = {
+    UCL: { short:"LM", name:"Liga Mistrzów", className:"ucl", color:"#3b82f6", groupLabel:"Faza ligowa" },
+    UEL: { short:"LE", name:"Liga Europy", className:"uel", color:"#f97316", groupLabel:"Faza ligowa" },
+    UECL:{ short:"LK", name:"Liga Konferencji", className:"uecl", color:"#22c55e", groupLabel:"Faza ligowa" },
+};
+const UEFA_CODE_ALIASES = { L1:"DE1", C1:"CH1", KR1:"HR1", ZYP1:"CY1", UNG1:"HU1", SL1:"SI1", SLO1:"SK1", KAS1:"KZ1", BOS1:"BA1", LET1:"LV1", MAZ1:"MK1", NIR1:"NI1", EST1:"EE1", MO1N:"MD1", MNE1:"ME1", GE1N:"GE1", LUX1:"LU1", SMR1:"SM1" };
+const LEAGUE_RULES = {
+    GB1:{down:"GB2",relegation:3,playoffRelegation:0}, GB2:{up:"GB1",promotion:2,playoffPromotion:[3,4,5,6],relegation:3},
+    ES1:{down:"ES2",relegation:3,playoffRelegation:0}, ES2:{up:"ES1",promotion:2,playoffPromotion:[3,4,5,6],relegation:4},
+    IT1:{down:"IT2",relegation:3,playoffRelegation:0}, IT2:{up:"IT1",promotion:2,playoffPromotion:[3,4,5,6,7,8],relegation:3,playoffRelegation:1},
+    L1:{down:"L2",relegation:2,playoffRelegation:1}, L2:{up:"L1",promotion:2,playoffPromotion:[3],relegation:2,playoffRelegation:1},
+    FR1:{down:"FR2",relegation:2,playoffRelegation:1}, FR2:{up:"FR1",promotion:2,playoffPromotion:[3,4,5],relegation:3},
+    PO1:{down:"PO2",relegation:2,playoffRelegation:1}, PO2:{up:"PO1",promotion:2,playoffPromotion:[3],relegation:2},
+    NL1:{down:"NL2",relegation:2,playoffRelegation:1}, NL2:{up:"NL1",promotion:2,playoffPromotion:[3,4,5,6,7,8],relegation:0},
+    PL1:{down:"PL2",relegation:3,playoffRelegation:0}, PL2:{up:"PL1",promotion:2,playoffPromotion:[3,4,5,6],relegation:3},
+    TR1:{down:"TR2",relegation:4,playoffRelegation:0}, TR2:{up:"TR1",promotion:2,playoffPromotion:[3,4,5,6,7],relegation:4},
+    BE1:{down:"BE2",relegation:1,playoffRelegation:1}, BE2:{up:"BE1",promotion:1,playoffPromotion:[2,3,4,5],relegation:1},
+    DK1:{down:"DK2",relegation:2,playoffRelegation:0}, DK2:{up:"DK1",promotion:2,relegation:2},
+    A1:{down:"A2",relegation:1,playoffRelegation:0}, A2:{up:"A1",promotion:1,relegation:3},
+    NO1:{down:"NO2",relegation:2,playoffRelegation:1}, NO2:{up:"NO1",promotion:2,playoffPromotion:[3,4,5,6],relegation:2},
+    SE1:{down:"SE2",relegation:2,playoffRelegation:1}, SE2:{up:"SE1",promotion:2,playoffPromotion:[3],relegation:2},
+    TS1:{down:"TS2",relegation:1,playoffRelegation:2}, TS2:{up:"TS1",promotion:1,playoffPromotion:[2,3],relegation:2},
+    RO1:{down:"RO2",relegation:2,playoffRelegation:2}, RO2:{up:"RO1",promotion:2,playoffPromotion:[3,4],relegation:4},
+    GR1:{down:"GRS2",relegation:2,playoffRelegation:0}, GRS2:{up:"GR1",promotion:2,relegation:4},
+};
 let simSpeedMs = 500;
 
 function injectGameplayStyles(){
@@ -217,6 +243,31 @@ nav button.active{color:#fff;background:var(--primary);border-color:var(--primar
 .calendar-grid-expressive .calendar-weekday{background:#111827;color:var(--muted);text-align:center;padding:.6rem;font-size:.68rem;font-weight:700;text-transform:uppercase;}
 .calendar-cell{background:#1f2937;min-height:85px;padding:.6rem;display:flex;flex-direction:column;gap:.4rem;cursor:pointer;border-left:3px solid transparent;border-radius:4px;}
 .calendar-cell:not(.empty):hover{background:#374151;}
+.uefa-cups-grid{display:grid;grid-template-columns:repeat(3,minmax(180px,1fr));gap:.85rem;margin-bottom:1rem;}
+.uefa-cup-card{position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.10);border-radius:12px;padding:1rem;min-height:126px;background:#111827;}
+.uefa-cup-card::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 10%,rgba(255,255,255,.24),transparent 34%);pointer-events:none;}
+.uefa-cup-card.ucl{background:linear-gradient(135deg,#132a72,#081331 62%,#111827);}
+.uefa-cup-card.uel{background:linear-gradient(135deg,#a94705,#2a1208 62%,#111827);}
+.uefa-cup-card.uecl{background:linear-gradient(135deg,#0f7a45,#082416 62%,#111827);}
+.uefa-cup-kicker{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.62);font-weight:800;}
+.uefa-cup-name{font-size:1.05rem;font-weight:900;color:#fff;margin:.25rem 0 .55rem;}
+.uefa-cup-meta{font-size:.78rem;color:rgba(255,255,255,.72);line-height:1.45;max-width:75%;}
+.uefa-cup-trophy{position:absolute;right:.8rem;bottom:.65rem;width:58px;height:72px;border-radius:28px 28px 10px 10px;border:3px solid rgba(255,255,255,.75);border-top-width:8px;opacity:.78;}
+.uefa-cup-trophy::before,.uefa-cup-trophy::after{content:"";position:absolute;top:10px;width:20px;height:24px;border:3px solid rgba(255,255,255,.55);border-radius:50%;}
+.uefa-cup-trophy::before{left:-20px;border-right:none;}.uefa-cup-trophy::after{right:-20px;border-left:none;}
+.match-report-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.45rem;margin:.8rem 0 1rem;}
+.match-report-stat{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:8px;padding:.5rem;text-align:center;}
+.match-report-stat span{display:block;color:var(--muted);font-size:.68rem;text-transform:uppercase;font-weight:800;}
+.match-report-stat strong{display:block;color:#fff;font-size:1rem;margin-top:.15rem;}
+.euro-standings-grid{display:grid;grid-template-columns:repeat(3,minmax(220px,1fr));gap:.9rem;}
+.euro-table-card{border:1px solid var(--border);border-radius:10px;background:rgba(0,0,0,.18);overflow:hidden;}
+.euro-table-card h3{margin:0;padding:.75rem .9rem;border-bottom:1px solid var(--border);font-size:1rem;}
+.euro-table-card table{width:100%;border-collapse:collapse;font-size:.82rem;}
+.euro-table-card td,.euro-table-card th{padding:.45rem .55rem;border-bottom:1px solid rgba(255,255,255,.05);text-align:left;}
+.euro-table-card th{color:var(--muted);font-size:.68rem;text-transform:uppercase;}
+.euro-table-card tr.highlight td{background:rgba(37,99,235,.18);color:#fff;font-weight:800;}
+.live-match-running .bc-score-display{box-shadow:0 0 24px rgba(37,99,235,.45);}
+@media(max-width:780px){.uefa-cups-grid,.euro-standings-grid{grid-template-columns:1fr;}.uefa-cup-meta{max-width:100%;padding-right:78px;}}
 .calendar-cell.empty{background:#111827;cursor:default;opacity:.4;}
 .calendar-cell.today{background:#172554;border:2px solid var(--primary);}
 .calendar-cell.selected{box-shadow:inset 0 0 0 2px var(--accent-cyan);}
@@ -256,7 +307,15 @@ nav button.active{color:#fff;background:var(--primary);border-color:var(--primar
 .table-legend-expressive{padding:.6rem 1.5rem 1.2rem;display:flex;gap:1.2rem;font-size:.78rem;color:var(--muted);border-top:1px solid rgba(255,255,255,.03);}
 .leg-box{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:.4rem;vertical-align:middle;}
 .leg-box.promo{background:#10b981;}
+.leg-box.playoff{background:#f59e0b;}
 .leg-box.releg{background:#ef4444;}
+.zone-chip{display:inline-flex;align-items:center;gap:.25rem;border-radius:6px;padding:.22rem .48rem;font-size:.68rem;font-weight:900;white-space:nowrap;border:1px solid rgba(255,255,255,.12);}
+.zone-ucl{background:rgba(59,130,246,.14);color:#93c5fd;}
+.zone-uel{background:rgba(249,115,22,.14);color:#fdba74;}
+.zone-uecl{background:rgba(34,197,94,.14);color:#86efac;}
+.zone-promo{background:rgba(16,185,129,.14);color:#6ee7b7;}
+.zone-playoff{background:rgba(245,158,11,.14);color:#fcd34d;}
+.zone-releg{background:rgba(239,68,68,.14);color:#fca5a5;}
 
 .grid-4{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.8rem;}
 
@@ -357,9 +416,6 @@ kbd{background:#e1e1e1;color:#000;border-radius:3px;border:1px solid #b4b4b4;col
 .modal-overlay.active{display:flex;}
 .modal-window{width:92%;max-width:480px;background:#111827;border:1px solid var(--border);border-radius:14px;padding:1.5rem;}
 
-.loading-overlay{position:fixed;inset:0;background:rgba(7,9,15,.92);display:flex;align-items:center;justify-content:center;z-index:9999;backdrop-filter:blur(4px);}
-.loading-inner-glass{text-align:center;padding:2.5rem;background:rgba(15,21,32,.85);border:1px solid rgba(255,255,255,.06);border-radius:20px;backdrop-filter:blur(12px);box-shadow:0 8px 40px rgba(0,0,0,.5);}
-
 .loader-spinner{border:4px solid rgba(255,255,255,.1);border-left-color:#3b82f6;border-radius:50%;width:44px;height:44px;animation:spin .8s linear infinite;}
 @keyframes spin{to{transform:rotate(360deg)}}
 .loading-item{display:flex;align-items:center;gap:.5rem;font-size:.78rem;color:#6b7280;transition:color .3s;}
@@ -432,89 +488,24 @@ kbd{background:#e1e1e1;color:#000;border-radius:3px;border:1px solid #b4b4b4;col
   .squad-bottom-grid{flex-direction:column;}
   .pitch-visual{min-height:380px;}
 }
-@media(max-width:600px){
-  nav{padding:.5rem .6rem;gap:.25rem;}
-  nav button{font-size:.75rem;padding:.3rem .5rem;}
-  .brand{font-size:.85rem;}
-  main{padding:.4rem;}
-  .dashboard-cards{grid-template-columns:1fr;}
-  .match-teams{flex-direction:column;gap:.5rem;}
-  .match-teams .team-display{width:100%;}
-  .score-display{font-size:2.5rem;}
-  .match-info{flex-direction:column;text-align:center;}
-  .squad-list,.bench-list{gap:.3rem;}
-  .transfer-grid{grid-template-columns:1fr;}
-  .transfer-card{padding:.75rem;}
-  .calendar-layout-container{flex-direction:column;}
-  .calendar-grid{grid-template-columns:repeat(7,minmax(0,1fr));}
-  .agenda-list .calendar-agenda-item{flex-direction:column;gap:.3rem;}
-  .modal-window{width:98%;max-width:100%;margin:.5rem;padding:1rem;}
-  .player-tooltip{width:calc(100vw - 2rem);left:1rem!important;}
-  .stats-card .stats-table{font-size:.72rem;}
-  .stats-card .stats-table td,.stats-card .stats-table th{padding:.3rem .2rem;}
-  .section-header{flex-direction:column;gap:.4rem;}
-  .section-header .filter-group{width:100%;}
-  .section-header select{width:100%;}
-  .finance-bar{flex-direction:column;gap:.5rem;}
-  .finance-bar .finance-item{width:100%;}
-  .settings-row{flex-direction:column;}
-  .settings-group{flex-direction:column;}
-  .leagues-table-wrap{overflow-x:auto;}
-  .leagues-table-wrap table{font-size:.75rem;}
-  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr;}
-  .negotiation-grid{grid-template-columns:1fr;}
-  .player-modal-content{flex-direction:column;}
-  .player-modal-content .player-modal-sidebar{width:100%;}
-  .transfer-tabs{gap:.25rem;padding:0 .5rem .5rem;overflow-x:auto;}
-  .transfer-tab{font-size:.78rem;padding:.4rem .6rem;white-space:nowrap;}
-  .save-status-bar{font-size:.68rem;padding:.3rem .5rem;}
-}
-@media(max-width:480px){
-  nav{gap:.15rem;}
-  nav button{font-size:.7rem;padding:.25rem .4rem;border-radius:4px;}
-  .brand .brand-logo{height:20px!important;}
-  #navTeamName{font-size:.8rem;}
-  #navLeagueName{font-size:.7rem;}
-  .card{padding:.75rem;}
-  .card h2{font-size:1rem;}
-  .card h3{font-size:.85rem;}
-  .btn{font-size:.78rem;padding:.4rem .7rem;min-height:32px;}
-  .btn-sm{font-size:.7rem;padding:.25rem .5rem;min-height:26px;}
-  .player-slot{width:48px;height:60px;}
-  .player-slot .shirt{width:38px;height:38px;font-size:.6rem;}
-  .player-slot .name{font-size:.55rem;}
-  .pitch-visual{min-height:320px;}
-  .rating-badge{width:20px;height:20px;font-size:.6rem;}
-  .match-date{font-size:.75rem;}
-  .table-wrap{overflow-x:auto;}
-  .table-wrap table{font-size:.7rem;}
-  .table-wrap table td,.table-wrap table th{padding:.25rem .15rem;}
-  .pos{width:22px;height:22px;font-size:.65rem;}
-  .club-crest-sm{width:16px;height:16px;}
-  .loading-inner-glass{padding:1.5rem;}
-  .player-tooltip{width:calc(100vw - 1rem);}
-  .news-item{flex-direction:column;gap:.3rem;}
-  .news-item .news-body{font-size:.82rem;}
-  .calendar-cell{min-height:50px;font-size:.65rem;padding:2px;}
-  .calendar-cell .has-match{font-size:.55rem;}
-  .tactic-grid{grid-template-columns:1fr;}
-  .keybinds-grid{grid-template-columns:1fr;}
-  .sort-chips{gap:.2rem;}
-  .sort-chips .btn{font-size:.7rem;padding:.2rem .45rem;min-height:26px;}
-  .sale-offer-row{flex-direction:column;align-items:stretch;text-align:center;}
-}
-/* ---- TĹO KARIERY ---- */
-#career-bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;}
+/* ---- TŁO KARIERY ---- */
+#career-bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:#05080d;}
 .cb-grid{position:absolute;inset:0;
-  background-image:
-    linear-gradient(rgba(37,99,235,.07) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(37,99,235,.07) 1px,transparent 1px);
-  background-size:60px 60px;
-  mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,#000 40%,transparent 100%);}
-.cb-orb{position:absolute;border-radius:50%;filter:blur(80px);animation:orbFloat 14s ease-in-out infinite;}
-.cb-orb1{width:520px;height:520px;background:rgba(37,99,235,.13);top:-120px;left:-100px;animation-delay:0s;}
-.cb-orb2{width:400px;height:400px;background:rgba(6,182,212,.10);bottom:-80px;right:-60px;animation-delay:-5s;}
-.cb-orb3{width:300px;height:300px;background:rgba(16,185,129,.08);top:40%;left:55%;animation-delay:-9s;}
+  background:
+    linear-gradient(to bottom,rgba(5,8,13,.18),rgba(5,8,13,.92) 72%),
+    radial-gradient(ellipse at 50% 18%,rgba(226,232,240,.22),transparent 24%),
+    linear-gradient(to bottom,#14213d 0 22%,#1f2937 22% 28%,#0b1220 28% 42%,#155e36 42% 100%);}
+.cb-grid::before{content:"";position:absolute;left:-8%;right:-8%;top:24%;height:23%;
+  background:repeating-linear-gradient(90deg,#dbeafe 0 16px,#1e3a8a 16px 28px,#f8fafc 28px 43px,#334155 43px 56px);
+  transform:perspective(700px) rotateX(58deg);transform-origin:50% 100%;opacity:.18;}
+.cb-grid::after{content:"";position:absolute;left:8%;right:8%;bottom:-6%;height:48%;
+  background:
+    linear-gradient(90deg,transparent 0 49.6%,rgba(255,255,255,.42) 49.6% 50.4%,transparent 50.4%),
+    radial-gradient(ellipse at center,transparent 0 17%,rgba(255,255,255,.32) 17.4% 18%,transparent 18.4%),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.08) 0 1px,transparent 1px 54px),
+    linear-gradient(#15803d,#166534);
+  border:2px solid rgba(255,255,255,.24);transform:perspective(900px) rotateX(64deg);transform-origin:50% 100%;}
+.cb-orb{display:none;}
 .cb-scanline{position:absolute;inset:0;
   background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.06) 3px,rgba(0,0,0,.06) 4px);
   pointer-events:none;}
@@ -544,7 +535,9 @@ let _loadedStep = -1;
 
 function getUefaForLeague(code) {
     if (!state.uefaData) return null;
-    const entry = state.uefaData.rankings?.find(r => r.competition_code === code);
+    const key = String(code || "").toUpperCase();
+    const alias = UEFA_CODE_ALIASES[key] || key;
+    const entry = state.uefaData.rankings?.find(r => r.competition_code === key || r.competition_code === alias);
     return entry || null;
 }
 
@@ -637,6 +630,7 @@ async function initCareer() {
     state.transferPlayers=[];state._transfersLoaded=false;state.allLeagueData=null;
 
     setLoadProgress(40,"Generowanie terminarza...","fixtures");
+    state.europeanEntry=null;state.europeanOpponents=[];
     generateFixtures(2025);initTable();
 
     setLoadProgress(65,"Ustawianie składu...","squad");
@@ -718,11 +712,115 @@ function generateFixtures(startYear) {
         snapToMatchDay(cur);
         if (cur > lastDeadline) cur = new Date(lastDeadline);
         rf.forEach((f)=>{
-            fixtures.push({id:`${f.round}-${f.homeClubId}-${f.awayClubId}`,round:f.round,date:toIsoDate(cur),homeClubId:f.homeClubId,awayClubId:f.awayClubId,played:false,homeGoals:null,awayGoals:null});
+            fixtures.push({id:`${f.round}-${f.homeClubId}-${f.awayClubId}`,competition:"league",round:f.round,date:toIsoDate(cur),homeClubId:f.homeClubId,awayClubId:f.awayClubId,played:false,homeGoals:null,awayGoals:null});
         });
         cur.setDate(cur.getDate() + gapDays);
     });
-    state.fixtures=fixtures;
+    
+    // Wyczyść WSZYSTKIE stare mecze europejskie przed generowaniem nowych
+    const euroCodes = Object.keys(UEFA_CUPS);
+    state.fixtures = fixtures.filter(f => !euroCodes.includes(f.competition));
+    
+    generateEuropeanFixtures(startYear);
+}
+
+function generateEuropeanFixtures(startYear){
+    if(!state.europeanEntry) return;
+    const cup = UEFA_CUPS[state.europeanEntry.code];
+    if(!cup) return;
+    
+    // Wyczyść stare mecze i grupę
+    state.fixtures = state.fixtures.filter(f => f.competition !== state.europeanEntry.code);
+    state.europeanOpponents = [];
+    
+    // Zbuduj grupę 4 drużyn: gracz + 3 przeciwników
+    const opponents = buildEuropeanOpponents(state.europeanEntry.code, 3);
+    state.europeanOpponents = opponents;
+    
+    const groupTeams = [
+        { club_id: String(state.team.club_id), name: state.team.name, color: state.team.color || "#3b82f6", logo_url: state.team.logo_url || "", avg_rating: state.lineup.reduce((s,p)=>s+p.rating,0)/Math.max(1,state.lineup.length) },
+        ...opponents.map(t => ({ club_id: String(t.club_id), name: t.name, color: t.color || "#64748b", logo_url: t.logo_url || "", avg_rating: t.avg_rating || 72 }))
+    ];
+    
+    // Inicjalizuj tabelę grupową
+    state.europeanGroup = {
+        code: state.europeanEntry.code,
+        name: cup.name,
+        color: cup.color,
+        teams: groupTeams.map(t => ({...t, played:0, won:0, drawn:0, lost:0, gf:0, ga:0, points:0, form:[]}))
+    };
+    
+    // Round-robin: każdy z każdym, dom/wyjazd = 6 kolejek
+    let ids = groupTeams.map(t => t.club_id);
+    const rounds = [];
+    for(let rd = 1; rd < ids.length; rd++){
+        const rf = [];
+        for(let i = 0; i < ids.length/2; i++){
+            let home = ids[i], away = ids[ids.length-1-i];
+            if(rd % 2 === 0) [home, away] = [away, home];
+            rf.push({homeClubId: home, awayClubId: away, round: rd});
+        }
+        rounds.push(rf);
+        ids = [ids[0], ids[ids.length-1], ...ids.slice(1, -1)];
+    }
+    // Rewanże
+    const rev = rounds.map(rf => rf.map(f => ({
+        homeClubId: f.awayClubId, awayClubId: f.homeClubId, round: f.round + rounds.length
+    })));
+    
+    const allRounds = [...rounds, ...rev];
+    const dates = [
+        new Date(startYear, 8, 17), new Date(startYear, 9, 1), new Date(startYear, 9, 22),
+        new Date(startYear, 10, 5), new Date(startYear, 10, 26), new Date(startYear, 11, 10)
+    ];
+    
+    const fixtures = [];
+    allRounds.forEach((rf, idx) => {
+        rf.forEach(f => {
+            fixtures.push({
+                id: `${state.europeanEntry.code}-${startYear}-${idx+1}-${f.homeClubId}-${f.awayClubId}`,
+                competition: state.europeanEntry.code,
+                round: idx + 1,
+                stage: `${cup.groupLabel} — Mecz ${idx+1}`,
+                date: toIsoDate(dates[idx]),
+                homeClubId: f.homeClubId,
+                awayClubId: f.awayClubId,
+                played: false, homeGoals: null, awayGoals: null
+            });
+        });
+    });
+    
+    state.fixtures = [...state.fixtures, ...fixtures].sort((a,b)=>a.date.localeCompare(b.date));
+}
+
+function buildEuropeanOpponents(cupCode, count){
+    const teams = [];
+    if(state.allLeagueData && state.uefaData?.rankings){
+        const rankedCodes = state.uefaData.rankings
+            .map(r=>r.competition_code)
+            .filter(c=>c!==state.selectedLeagueCode);
+        rankedCodes.forEach(code=>{
+            const league = state.allLeagueData[code];
+            if(!league?.clubs?.length) return;
+            const pool = [...league.clubs].sort((a,b)=>(b.avg_rating||0)-(a.avg_rating||0));
+            const offset = cupCode==="UCL"?0:cupCode==="UEL"?2:4;
+            pool.slice(offset, offset+2).forEach(c=>teams.push({...c}));
+        });
+    }
+    while(teams.length<count){
+        const n = teams.length + 1;
+        teams.push({
+            club_id: `EURO-${cupCode}-${n}`,
+            name: `UEFA Club ${n}`,
+            color: cupCode==="UCL"?"#1d4ed8":cupCode==="UEL"?"#ea580c":"#16a34a",
+            logo_url: "",
+            avg_rating: cupCode==="UCL"?78:cupCode==="UEL"?73:68
+        });
+    }
+    return shuffle(teams).slice(0,count).map((c)=>({
+        ...c, 
+        club_id: String(c.club_id || `EURO-${cupCode}-${0}`)
+    }));
 }
 
 function generateAllLeagueFixtures(startYear) {
@@ -847,27 +945,37 @@ function renderStats() {
     }).join("");
 }
 
-function renderAll(){updateDashboard();renderFormation();renderBenchList();renderReservesList();renderStats();renderTransfers();renderCurrentMatchPanels();renderCalendar();renderSchedule();renderTable();updateSaveStatus();}
+function renderAll(){updateDashboard();renderFormation();renderBenchList();renderReservesList();renderStats();renderTransfers();renderCurrentMatchPanels();renderCalendar();renderSchedule();renderTable();renderEuropeanTables();updateSaveStatus();}
 function updateSaveStatus(){const s=document.getElementById("saveStatusSettings");if(s)s.textContent=state.saveStatus;}
 
 function showUefa() {
     renderUefaRanking();
+    renderEuropeanTables();
     showSection('uefa');
 }
 
-function renderUefaRanking() {
+function renderUefaRanking(){
     const tbody = document.getElementById("uefaRankingBody");
-    if (!tbody) return;
-    if (!state.uefaData || !state.uefaData.rankings) {
-        tbody.innerHTML = '<tr><td colspan="8" style="text-align:center;color:var(--muted);padding:2rem;">Brak danych rankingu UEFA</td></tr>';
+    if(!tbody) return;
+    renderUefaCups();
+    if(!state.uefaData || !state.uefaData.rankings){
+        tbody.innerHTML = '<tr><td colspan="13" style="text-align:center;color:var(--muted);padding:2rem;">Brak danych rankingu UEFA</td></tr>';
         return;
     }
+    const userCode = String(state.selectedLeagueCode||"").toUpperCase();
     const rows = state.uefaData.rankings.map(r => {
-        const highlight = r.competition_code === state.selectedLeagueCode ? 'style="background:rgba(37,99,235,.12);font-weight:700;"' : '';
+        const isUser = r.competition_code === userCode || UEFA_CODE_ALIASES[r.competition_code] === userCode;
+        const highlight = isUser ? 'style="background:rgba(37,99,235,.15);border-left:3px solid var(--primary);"' : '';
+        const s = r.seasons || {};
         return `<tr ${highlight}>
-            <td>${r.rank}</td>
+            <td style="font-weight:800;color:${isUser?'#fff':'var(--muted)'};">${r.rank}</td>
             <td>${escapeHtml(r.country)}</td>
-            <td>${escapeHtml(r.league_name)}</td>
+            <td>${escapeHtml(r.league_name)} ${isUser?'<span style="color:var(--primary-light);font-size:.72rem;font-weight:700;margin-left:.4rem;">★ TWOJA LIGA</span>':''}</td>
+            <td>${formatCoeff(s["21/22"])}</td>
+            <td>${formatCoeff(s["22/23"])}</td>
+            <td>${formatCoeff(s["23/24"])}</td>
+            <td>${formatCoeff(s["24/25"])}</td>
+            <td style="font-weight:700;color:var(--accent-cyan);">${formatCoeff(s["25/26"])}</td>
             <td style="font-weight:800;color:var(--primary-light);">${r.coefficient.toFixed(3)}</td>
             <td>${r.ucl_spots}</td>
             <td>${r.uel_spots}</td>
@@ -876,6 +984,184 @@ function renderUefaRanking() {
         </tr>`;
     }).join('');
     tbody.innerHTML = rows;
+}
+
+function formatCoeff(v){return Number.isFinite(Number(v))?Number(v).toFixed(3):"-";}
+
+function renderUefaCups(){
+    const el = document.getElementById("uefaCupsGrid");
+    if(!el) return;
+    const entry = state.europeanEntry;
+    
+    el.innerHTML = Object.values(UEFA_CUPS).map(c => {
+        const active = entry?.short === c.short;
+        let status = c.groupLabel + ' po kwalifikacji z rankingu krajowego.';
+        if(active) status = `🔥 Aktualnie grasz w ${c.name}! Twoja drużyna walczy o trofeum.`;
+        else if(entry && entry.short !== c.short) status = `Nie kwalifikujesz się. Obecnie grasz w ${entry.name}.`;
+        
+        return `<div class="uefa-cup-card ${c.className}" style="${active?'box-shadow:0 0 0 2px '+c.color+'88, 0 8px 32px '+c.color+'22;transform:translateY(-2px);':''}">
+            <div class="uefa-cup-kicker">${escapeHtml(c.short)} · UEFA</div>
+            <div class="uefa-cup-name">${escapeHtml(c.name)}</div>
+            <div class="uefa-cup-meta">${status}</div>
+            <div class="uefa-cup-trophy"></div>
+            ${active?`<div style="position:absolute;top:.8rem;right:.8rem;background:${c.color};color:#fff;font-size:.65rem;font-weight:800;padding:.3rem .7rem;border-radius:20px;box-shadow:0 2px 8px rgba(0,0,0,.3);">GRASZ TERAZ</div>`:''}
+        </div>`;
+    }).join("");
+}
+
+function renderEuropeanTables(){
+    const el = document.getElementById("europeanTables");
+    if(!el) return;
+    
+    if(!state.europeanEntry){
+        el.innerHTML = `<div class="card" style="text-align:center;padding:3rem 2rem;color:var(--muted);">
+            <div style="font-size:3rem;margin-bottom:1rem;">🏆</div>
+            <h2 style="color:#fff;margin-bottom:.5rem;">Brak kwalifikacji europejskiej</h2>
+            <p style="max-width:400px;margin:0 auto;line-height:1.6;">Zajmij odpowiednie miejsce w lidze, aby zakwalifikować się do Ligi Mistrzów, Ligi Europy lub Ligi Konferencji.</p>
+        </div>`;
+        return;
+    }
+    
+    const cupCode = state.europeanEntry.code;
+    const cup = UEFA_CUPS[cupCode];
+    const tbl = buildEuropeanTable(cupCode);
+    const fixtures = (state.fixtures||[]).filter(f => f.competition === cupCode).sort((a,b)=>a.date.localeCompare(b.date));
+    
+    // TABELA GRUPOWA
+    let html = `<div class="euro-table-card" style="margin-bottom:1.25rem;border:1px solid ${cup.color}33;">
+        <div style="display:flex;align-items:center;gap:.75rem;padding:.9rem 1.2rem;border-bottom:1px solid var(--border);background:rgba(0,0,0,.2);">
+            <div style="width:36px;height:36px;border-radius:50%;background:${cup.color};display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:.8rem;">${cup.short}</div>
+            <div>
+                <div style="font-size:1.1rem;font-weight:800;color:#fff;">Tabela grupy</div>
+                <div style="font-size:.78rem;color:var(--muted);">${escapeHtml(cup.name)} — Sezon 25/26</div>
+            </div>
+        </div>
+        <div style="overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;font-size:.88rem;">
+            <thead>
+                <tr style="background:rgba(0,0,0,.25);">
+                    <th style="padding:.7rem .6rem;text-align:center;color:var(--muted);font-size:.68rem;text-transform:uppercase;">#</th>
+                    <th style="padding:.7rem .6rem;text-align:left;color:var(--muted);font-size:.68rem;text-transform:uppercase;">Drużyna</th>
+                    <th style="padding:.7rem .6rem;text-align:center;color:var(--muted);font-size:.68rem;text-transform:uppercase;">M</th>
+                    <th style="padding:.7rem .6rem;text-align:center;color:var(--muted);font-size:.68rem;text-transform:uppercase;">W</th>
+                    <th style="padding:.7rem .6rem;text-align:center;color:var(--muted);font-size:.68rem;text-transform:uppercase;">R</th>
+                    <th style="padding:.7rem .6rem;text-align:center;color:var(--muted);font-size:.68rem;text-transform:uppercase;">P</th>
+                    <th style="padding:.7rem .6rem;text-align:center;color:var(--muted);font-size:.68rem;text-transform:uppercase;">B+</th>
+                    <th style="padding:.7rem .6rem;text-align:center;color:var(--muted);font-size:.68rem;text-transform:uppercase;">B-</th>
+                    <th style="padding:.7rem .6rem;text-align:center;color:var(--muted);font-size:.68rem;text-transform:uppercase;">RB</th>
+                    <th style="padding:.7rem .6rem;text-align:center;color:var(--muted);font-size:.68rem;text-transform:uppercase;">Pkt</th>
+                    <th style="padding:.7rem .6rem;text-align:center;color:var(--muted);font-size:.68rem;text-transform:uppercase;">Forma</th>
+                </tr>
+            </thead>
+            <tbody>`;
+    
+    tbl.forEach((r,i) => {
+        const isUser = r.club_id === String(state.team?.club_id);
+        const pos = i + 1;
+        let posBg = ""; let posColor = "var(--muted)";
+        
+        if(cupCode === "UCL"){
+            if(pos <= 2){ posBg = "background:rgba(16,185,129,.1);"; posColor = "#10b981"; }
+            else if(pos === 3){ posBg = "background:rgba(245,158,11,.1);"; posColor = "#f59e0b"; }
+            else { posBg = "background:rgba(239,68,68,.06);"; posColor = "#ef4444"; }
+        } else {
+            if(pos <= 2){ posBg = "background:rgba(16,185,129,.1);"; posColor = cup.color; }
+            else { posBg = "background:rgba(239,68,68,.06);"; posColor = "#ef4444"; }
+        }
+        
+        if(isUser){ posBg = "background:rgba(37,99,235,.2);"; }
+        
+        const nameStyle = isUser ? "color:#93c5fd;font-weight:800;" : "color:#fff;font-weight:600;";
+        const ptsStyle = isUser ? "color:#fff;font-weight:900;font-size:1.05rem;" : `color:${posColor};font-weight:800;`;
+        const badge = isUser ? ' <span style="background:var(--primary);color:#fff;font-size:.6rem;padding:2px 6px;border-radius:4px;margin-left:.4rem;">TY</span>' : '';
+        const form = (r.form||[]).slice(-5).map(v => FORM_ICON[v]||v).join(" ") || "-";
+        const gd = r.gf - r.ga;
+        const gdColor = gd > 0 ? '#10b981' : gd < 0 ? '#ef4444' : 'var(--muted)';
+        
+        html += `<tr style="${posBg}border-bottom:1px solid rgba(255,255,255,.03);">
+            <td style="padding:.7rem .6rem;text-align:center;font-weight:900;color:${posColor};font-size:.95rem;">${pos}</td>
+            <td style="padding:.7rem .6rem;text-align:left;${nameStyle}white-space:nowrap;">
+                ${clubCrestHtml(r.logo_url,r.name,"club-crest-sm")}${escapeHtml(r.name)}${badge}
+            </td>
+            <td style="padding:.7rem .6rem;text-align:center;color:var(--muted);">${r.played}</td>
+            <td style="padding:.7rem .6rem;text-align:center;color:#10b981;font-weight:700;">${r.won}</td>
+            <td style="padding:.7rem .6rem;text-align:center;color:#9ca3af;font-weight:700;">${r.drawn}</td>
+            <td style="padding:.7rem .6rem;text-align:center;color:#ef4444;font-weight:700;">${r.lost}</td>
+            <td style="padding:.7rem .6rem;text-align:center;color:var(--muted);">${r.gf}</td>
+            <td style="padding:.7rem .6rem;text-align:center;color:var(--muted);">${r.ga}</td>
+            <td style="padding:.7rem .6rem;text-align:center;font-weight:800;color:${gdColor};">${gd > 0 ? '+' : ''}${gd}</td>
+            <td style="padding:.7rem .6rem;text-align:center;${ptsStyle}">${r.points}</td>
+            <td style="padding:.7rem .6rem;text-align:center;font-size:.78rem;white-space:nowrap;">${form}</td>
+        </tr>`;
+    });
+    
+    html += `</tbody></table></div>
+        <div style="display:flex;gap:1.2rem;padding:.8rem 1.2rem;font-size:.78rem;color:var(--muted);border-top:1px solid var(--border);flex-wrap:wrap;background:rgba(0,0,0,.15);">`;
+    
+    if(cupCode === "UCL"){
+        html += `<span style="display:flex;align-items:center;gap:.35rem;"><span style="width:10px;height:10px;background:#10b981;border-radius:3px;"></span>Awans do 1/8 finału</span>
+                 <span style="display:flex;align-items:center;gap:.35rem;"><span style="width:10px;height:10px;background:#f59e0b;border-radius:3px;"></span>3. miejsce → Liga Europy</span>`;
+    } else {
+        html += `<span style="display:flex;align-items:center;gap:.35rem;"><span style="width:10px;height:10px;background:${cup.color};border-radius:3px;"></span>Awans do fazy pucharowej</span>`;
+    }
+    html += `<span style="display:flex;align-items:center;gap:.35rem;"><span style="width:10px;height:10px;background:#ef4444;border-radius:3px;"></span>Odpadnięcie</span>
+        </div>
+    </div>`;
+    
+    // TERMINARZ GRUPY
+    if(fixtures.length){
+        html += `<div class="euro-table-card">
+            <div style="display:flex;align-items:center;gap:.5rem;padding:.9rem 1.2rem;border-bottom:1px solid var(--border);">
+                <i class="fi fi-rr-calendar" style="color:${cup.color};font-size:1.1rem;"></i>
+                <h3 style="margin:0;font-size:1.05rem;color:#fff;">Terminarz grupy</h3>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:.35rem;padding:.6rem;">`;
+        
+        fixtures.forEach(f => {
+            const h = getClub(f.homeClubId), a = getClub(f.awayClubId);
+            const isUser = f.homeClubId === state.team?.club_id || f.awayClubId === state.team?.club_id;
+            const isHome = f.homeClubId === state.team?.club_id;
+            const bg = isUser ? "background:rgba(37,99,235,.12);border-left:3px solid var(--primary);" : "background:rgba(0,0,0,.2);";
+            const result = f.played 
+                ? `<span style="font-weight:900;color:#fff;font-size:1.1rem;min-width:50px;text-align:center;">${f.homeGoals}:${f.awayGoals}</span>`
+                : `<span style="color:var(--muted);font-size:.82rem;min-width:50px;text-align:center;">${formatDateShort(f.date)}</span>`;
+            const homeStyle = isHome ? "color:#93c5fd;font-weight:800;" : "color:#fff;font-weight:600;";
+            const awayStyle = !isHome && isUser ? "color:#93c5fd;font-weight:800;" : "color:#fff;font-weight:600;";
+            
+            html += `<div style="display:flex;align-items:center;justify-content:space-between;padding:.55rem .8rem;border-radius:8px;border:1px solid var(--border);${bg}">
+                <div style="display:flex;align-items:center;gap:.6rem;flex:1;min-width:0;">
+                    <span style="${homeStyle}font-size:.88rem;white-space:nowrap;overflow:hidden;text-overflow:max-width:120px;">${clubCrestHtml(h?.logo_url,h?.name,"club-crest-sm")}${escapeHtml(h?.name||"?")}</span>
+                    <span style="color:var(--muted);font-size:.75rem;">vs</span>
+                    <span style="${awayStyle}font-size:.88rem;white-space:nowrap;overflow:hidden;text-overflow:max-width:120px;">${clubCrestHtml(a?.logo_url,a?.name,"club-crest-sm")}${escapeHtml(a?.name||"?")}</span>
+                </div>
+                ${result}
+            </div>`;
+        });
+        html += `</div></div>`;
+    }
+    
+    el.innerHTML = html;
+}
+
+function buildEuropeanTable(cupCode){
+    if(!state.europeanGroup || state.europeanGroup.code !== cupCode) return [];
+    const rows = state.europeanGroup.teams.map(t => ({...t, played:0, won:0, drawn:0, lost:0, gf:0, ga:0, points:0, form:[]}));
+    const map = new Map(rows.map(r => [String(r.club_id), r]));
+    
+    (state.fixtures||[]).filter(f => f.competition === cupCode && f.played).forEach(f => {
+        const h = map.get(String(f.homeClubId)), a = map.get(String(f.awayClubId));
+        if(!h || !a) return;
+        h.played++; a.played++;
+        h.gf += f.homeGoals; h.ga += f.awayGoals;
+        a.gf += f.awayGoals; a.ga += f.homeGoals;
+        if(f.homeGoals > f.awayGoals){ h.won++; h.points+=3; a.lost++; pushForm(h,"W"); pushForm(a,"L"); }
+        else if(f.homeGoals < f.awayGoals){ a.won++; a.points+=3; h.lost++; pushForm(a,"W"); pushForm(h,"L"); }
+        else { h.drawn++; a.drawn++; h.points++; a.points++; pushForm(h,"D"); pushForm(a,"D"); }
+    });
+    
+    return rows.sort((a,b) => 
+        (b.points-a.points) || ((b.gf-b.ga)-(a.gf-a.ga)) || (b.gf-a.gf) || a.name.localeCompare(b.name,"pl")
+    );
 }
 
 function showSection(sectionId) {
@@ -917,9 +1203,8 @@ function updateDashboard() {
 function renderDashboardTable() {
     const tbody=document.querySelector("#dashboardTable tbody");if(!tbody)return;
     const tbl=state.table;
-    const moveCount=Math.max(1,Math.min(Math.floor(tbl.length*0.15),Math.floor((tbl.length-2)/2)));
-    const promoCount = moveCount; const relegCount = moveCount;
-    tbody.innerHTML=tbl.map((r,i)=>{const cls=r.clubId===state.team.club_id?"highlight":"";const posCls=i<moveCount?"pos-promo":i>=tbl.length-moveCount?"pos-releg":"pos-normal";const zoneLabel=i<promoCount?' title="Strefa awansu"':i>=tbl.length-relegCount?' title="Strefa spadku"':'';const f=r.form.slice(-5).map((v)=>FORM_ICON[v]||v).join(" ");return`<tr class="${cls}"${zoneLabel}><td><span class="pos ${posCls}">${i+1}</span></td><td>${clubCrestHtml(r.logo_url,r.name)}${escapeHtml(r.name)}</td><td>${r.played}</td><td>${r.won}</td><td>${r.drawn}</td><td>${r.lost}</td><td style="font-weight:800;color:var(--primary-light);">${r.points}</td><td>${f}</td></tr>`;}).join("");
+    const zones = getLeagueZones(state.selectedLeagueCode, tbl);
+    tbody.innerHTML=tbl.map((r,i)=>{const z=zones.get(i+1);const cls=[r.clubId===state.team.club_id?"highlight":"",z?.rowClass||""].filter(Boolean).join(" ");const posCls=z?.rowClass||"pos-normal";const zoneLabel=z?` title="${escapeHtml(z.label)}"`:"";const f=r.form.slice(-5).map((v)=>FORM_ICON[v]||v).join(" ");return`<tr class="${cls}"${zoneLabel}><td><span class="pos ${posCls}">${i+1}</span></td><td>${clubCrestHtml(r.logo_url,r.name)}${escapeHtml(r.name)} ${z?`<span class="zone-chip ${z.className}" style="margin-left:.35rem;">${escapeHtml(z.label)}</span>`:""}</td><td>${r.played}</td><td>${r.won}</td><td>${r.drawn}</td><td>${r.lost}</td><td style="font-weight:800;color:var(--primary-light);">${r.points}</td><td>${f}</td></tr>`;}).join("");
     const e=document.getElementById("dashboardTableMatchDay");if(e)e.textContent=`Po ${getUserResults().length} kolejkach`;
 }
 
@@ -1575,7 +1860,7 @@ function renderCurrentMatchPanels() {
 function matchInfoFromFixture(fx){
   const h = getClub(fx.homeClubId), a = getClub(fx.awayClubId);
   return {
-    badge: `Kolejka ${fx.round}`,
+    badge: fixtureRoundLabel(fx),
     date: formatDateLong(state.currentDate),
     home: h,
     away: a,
@@ -1584,7 +1869,7 @@ function matchInfoFromFixture(fx){
     button: fx.played ? "Mecz rozegrany" : " Rozegraj mecz"
   };
 }
-function trainingDayInfo(){return{badge:"Dzien treningowy",date:formatDateLong(state.currentDate),home:state.team,away:{name:describeDay(),logo_url:"",color:"var(--bg-light)"},score:"TRENING",playable:false,button:"Brak meczu"};}
+function trainingDayInfo(){return{badge:"Dzień treningowy",date:formatDateLong(state.currentDate),home:state.team,away:{name:describeDay(),logo_url:"",color:"var(--bg-light)"},score:"TRENING",playable:false,button:"Brak meczu"};}
 function seasonFinishedInfo(){return{badge:" Koniec sezonu",date:formatDateLong(state.currentDate),home:state.team,away:{name:"Podsumowanie",logo_url:"",color:"#1f2937"},score:"KONIEC",playable:true,button:" Podsumowanie sezonu"};}
 
 function updateMatchPanel(badgeId,dateId,hLogoId,hNameId,aLogoId,aNameId,scoreId,btnId,info,_unused) {
@@ -1604,9 +1889,184 @@ async function startSimulation(){
     if(state.seasonFinished) return;
     const fx=getUserFixtureByDate(toIsoDate(state.currentDate));
     if(!fx||fx.played)return;
-    try{simulateFixturesForDate(toIsoDate(state.currentDate));}catch(e){console.error("Sim error:",e);}
-    renderAll();
-    showMatchResult();
+    if(state.liveMatch?.running) return;
+    // Zaznacz zawodnikow zawieszonych przed meczem i zastap ich laczka z lawki
+    state.lineup.forEach(p => {
+        p._suspendedBeforeMatch = !!p.suspended;
+    });
+    const suspended = state.lineup.filter(p => p.suspended && !p.injury);
+    if(suspended.length > 0){
+        suspended.forEach(sp => {
+            const replacement = state.bench.find(bp => bp.position === sp.position && !bp.suspended);
+            if(replacement){
+                const sidx = state.lineup.indexOf(sp);
+                const bidx = state.bench.indexOf(replacement);
+                if(sidx >= 0 && bidx >= 0){
+                    state.lineup[sidx] = replacement;
+                    state.bench[bidx] = sp;
+                    sp.suspended = false;
+                }
+            }
+        });
+        addNews(`Zawieszenia: ${suspended.map(p=>p.name).join(", ")} pomija mecz.`);
+        await renderFormation();
+    }
+    startLiveMatchSimulation(fx);
+}
+
+function startLiveMatchSimulation(fx){
+    const h=getClub(fx.homeClubId), a=getClub(fx.awayClubId);
+    const result=generateScore(h,a,fx);
+    const report=buildMatchReport(h,a,fx,result);
+    state.liveMatch={running:true,fixtureId:fx.id,minute:0,homeGoals:0,awayGoals:0,result,report,shownEvents:0,timer:null,half:1};
+    document.querySelector(".match-day-big-card")?.classList.add("live-match-running");
+    const btn=document.getElementById("simBtn"); if(btn){btn.disabled=true;btn.textContent="Mecz trwa...";}
+    const stop=document.getElementById("stopBtn"); if(stop)stop.style.display="inline-flex";
+    initMatchLiveStats(report);
+    const log=document.getElementById("matchLog"); if(log) log.innerHTML=`<div style="color:var(--primary-light);font-weight:700;">0' Pierwszy gwizdek! Mecz rozpoczęty.</div>`;
+    updateLiveScoreboard(fx);
+    runLiveMinute();
+}
+
+function initMatchLiveStats(report){
+    const container = document.getElementById("matchContainer");
+    if(!container) return;
+    let statsEl = document.getElementById("matchLiveStats");
+    if(!statsEl){
+        statsEl = document.createElement("div");
+        statsEl.id = "matchLiveStats";
+        const logConsole = container.querySelector(".match-log-console");
+        if(logConsole) container.insertBefore(statsEl, logConsole);
+        else container.appendChild(statsEl);
+    }
+    renderLiveStats(report);
+}
+
+function renderLiveStats(report){
+    const el = document.getElementById("matchLiveStats");
+    if(!el || !report) return;
+    const lm = state.liveMatch;
+    const pct = lm?.minute ? Math.min(100, Math.round((lm.minute/90)*100)) : 0;
+    el.style.cssText = "display:grid;grid-template-columns:1fr auto 1fr;gap:.4rem 1rem;background:rgba(0,0,0,.35);border:1px solid var(--border);border-radius:10px;padding:.75rem 1rem;margin:1rem 0;font-size:.82rem;";
+    el.innerHTML = `
+        <div style="text-align:right;color:#fff;font-weight:800;">${report.possessionHome}%</div>
+        <div style="text-align:center;color:var(--primary-light);font-weight:800;font-size:.7rem;text-transform:uppercase;">Posiadanie</div>
+        <div style="text-align:left;color:#fff;font-weight:800;">${report.possessionAway}%</div>
+        <div style="text-align:right;color:var(--muted);font-weight:700;">${report.shotsHome}</div>
+        <div style="text-align:center;color:var(--primary-light);font-weight:800;font-size:.7rem;text-transform:uppercase;">Strzały</div>
+        <div style="text-align:left;color:var(--muted);font-weight:700;">${report.shotsAway}</div>
+        <div style="text-align:right;color:var(--muted);font-weight:700;">${report.onTargetHome}</div>
+        <div style="text-align:center;color:var(--primary-light);font-weight:800;font-size:.7rem;text-transform:uppercase;">Celne</div>
+        <div style="text-align:left;color:var(--muted);font-weight:700;">${report.onTargetAway}</div>
+        <div style="text-align:right;color:var(--muted);font-weight:700;">${report.xgHome}</div>
+        <div style="text-align:center;color:var(--primary-light);font-weight:800;font-size:.7rem;text-transform:uppercase;">xG</div>
+        <div style="text-align:left;color:var(--muted);font-weight:700;">${report.xgAway}</div>
+        <div style="grid-column:1/-1;margin-top:.3rem;">
+            <div style="height:3px;background:rgba(255,255,255,.08);border-radius:2px;overflow:hidden;">
+                <div style="width:${pct}%;height:100%;background:linear-gradient(90deg,var(--primary),var(--accent-cyan));border-radius:2px;transition:width .3s;"></div>
+            </div>
+            <div style="text-align:center;font-size:.65rem;color:var(--muted);margin-top:.2rem;">${lm?.minute||0}' / 90'</div>
+        </div>`;
+}
+
+function runLiveMinute(){
+    const lm=state.liveMatch;
+    if(!lm?.running) return;
+    const fx=state.fixtures.find(f=>f.id===lm.fixtureId);
+    if(!fx){state.liveMatch=null;return;}
+    lm.minute += 1;
+
+    if(lm.minute === 45){
+        addLiveLog("45' +"+rand(1,4)+" — Koniec pierwszej połowy.", "whistle");
+        lm.half = 2;
+        updateLiveScoreboard(fx); renderLiveStats(lm.report);
+        lm.timer=setTimeout(runLiveMinute, Math.max(120, simSpeedMs));
+        return;
+    }
+    if(lm.minute === 46){
+        addLiveLog("46' Druga połowa rozpoczęta.", "whistle");
+    }
+
+    const due = lm.report.events.filter(e=>e.min<=lm.minute);
+    while(lm.shownEvents < due.length){
+        const ev = due[lm.shownEvents++];
+        if(ev.type==="goal"){
+            if(ev.team===getClub(fx.homeClubId)?.name) lm.homeGoals += 1;
+            else lm.awayGoals += 1;
+            addLiveLog(`${ev.min}' ⚽ ${ev.text}`, "goal");
+        } else if(ev.type==="card"){
+            addLiveLog(`${ev.min}' 🟨 ${ev.text}`, "card");
+        } else if(ev.type==="red"){
+            addLiveLog(`${ev.min}' 🟥 ${ev.text}`, "red");
+        } else if(ev.type==="sub"){
+            addLiveLog(`${ev.min}' 🔄 ${ev.text}`, "sub");
+        } else {
+            addLiveLog(`${ev.min}' ${ev.text}`, "chance");
+        }
+    }
+
+    if(lm.minute % 10 === 0 && lm.minute < 90 && due.length === 0){
+        const comments = ["Spokojna faza meczu, wymiana podań w środku pola.","Żadna z drużyn nie potrafi przełamać defensywy.","Kibice domagają się akcji!","Gra toczy się głównie między 16. a 16.","Obie drużyny szukają luki w obronie."];
+        addLiveLog(`${lm.minute}' ${comments[rand(0, comments.length-1)]}`, "neutral");
+    }
+
+    updateLiveScoreboard(fx); renderLiveStats(lm.report);
+    if(lm.minute>=90){
+        addLiveLog(`90' +${rand(2,5)} — Sędzia kończy mecz!`, "whistle");
+        finishLiveMatch(fx); return;
+    }
+    lm.timer=setTimeout(runLiveMinute, Math.max(120, simSpeedMs));
+}
+
+function updateLiveScoreboard(fx){
+    const lm=state.liveMatch;
+    const score=document.getElementById("scoreDisplay");
+    const dash=document.getElementById("dashboardScore");
+    const clock=document.getElementById("matchClock");
+    if(score) score.textContent=`${lm?.homeGoals ?? fx.homeGoals ?? 0}:${lm?.awayGoals ?? fx.awayGoals ?? 0}`;
+    if(dash) dash.textContent=score?.textContent || "-:-";
+    if(clock) clock.textContent=`${String(Math.min(lm?.minute||0,90)).padStart(2,"0")}:00`;
+}
+
+function addLiveLog(text, type="neutral"){
+    const log=document.getElementById("matchLog");
+    if(!log) return;
+    let color = "var(--muted)"; let bg = "transparent"; let fw = "";
+    if(type==="goal") { color = "#34d399"; bg = "rgba(16,185,129,.1)"; fw="font-weight:800;"; }
+    if(type==="card") { color = "#fbbf24"; bg = "rgba(251,191,36,.1)"; }
+    if(type==="red")  { color = "#ef4444"; bg = "rgba(239,68,68,.1)"; fw="font-weight:700;"; }
+    if(type==="whistle") { color = "#60a5fa"; bg = "rgba(59,130,246,.1)"; fw="font-weight:700;"; }
+    if(type==="sub")  { color = "#a78bfa"; }
+    const div = document.createElement("div");
+    div.style.cssText = `padding:.35rem .5rem;border-radius:6px;margin-bottom:.25rem;color:${color};background:${bg};${fw}font-size:.85rem;border-left:3px solid ${type==="goal"?"#10b981":type==="red"?"#ef4444":type==="whistle"?"#3b82f6":"transparent"};`;
+    div.textContent = text;
+    log.insertBefore(div, log.firstChild);
+    while(log.children.length > 40) log.removeChild(log.lastChild);
+}
+
+function finishLiveMatch(fx){
+    const lm=state.liveMatch;
+    if(!lm) return;
+    fx.homeGoals=lm.result.homeGoals; fx.awayGoals=lm.result.awayGoals;
+    fx.matchReport=lm.report; fx.played=true;
+    const h=getClub(fx.homeClubId), a=getClub(fx.awayClubId);
+    state.results.push({date: fx.date, round: fx.round, home: h.name, away: a.name, homeGoals: fx.homeGoals, awayGoals: fx.awayGoals, userMatch: true});
+    const myG = fx.homeClubId === state.team.club_id ? fx.homeGoals : fx.awayGoals;
+    const opG = fx.homeClubId === state.team.club_id ? fx.awayGoals : fx.homeGoals;
+    const opp = fx.homeClubId === state.team.club_id ? a.name : h.name;
+    const rw = myG > opG ? "wygrywa" : myG === opG ? "remisuje" : "przegrywa";
+    state.matchLog.unshift(`${formatDateLong(state.currentDate)}: ${getFixtureCompetitionLabel(fx)} — ${state.team.name} ${rw} z ${opp} ${myG}:${opG}.`);
+    addNews(`${getFixtureCompetitionLabel(fx)}: ${state.team.name} ${rw} z ${opp} ${myG}:${opG}`);
+    addLiveLog(`KONIEC: ${h.name} ${fx.homeGoals}:${fx.awayGoals} ${a.name}`, "whistle");
+    addLiveLog(`Podsumowanie: Strzały ${lm.report.shotsHome}-${lm.report.shotsAway} | xG ${lm.report.xgHome}-${lm.report.xgAway}`, "neutral");
+    applySquadEffects(myG, opG);
+    state.lineup.forEach(p => { if (p._suspendedBeforeMatch) { p.suspended = false; delete p._suspendedBeforeMatch; } });
+    simulateAllLeagueFixturesForDate(fx.date); sortTable();
+    document.querySelector(".match-day-big-card")?.classList.remove("live-match-running");
+    state.liveMatch=null;
+    const btn=document.getElementById("simBtn"); if(btn){btn.disabled=false; btn.textContent="ROZPOCZNIJ MECZ"; btn.onclick=startSimulation;}
+    const stop=document.getElementById("stopBtn"); if(stop)stop.style.display="none";
+    renderAll(); showMatchResult();
 }
 function progressInjuries() {
     const recovered = [];
@@ -1644,6 +2104,9 @@ async function simulateDay() {
 
     applyTrainingEffects?.(hadFixture);
 
+    // Symuluj inne ligi CODZIENNIE, nie tylko w dni meczu gracza
+    simulateAllLeagueFixturesForDate(iso);
+
     if (hadFixture) simulateFixturesForDate(iso);
 
     state.players.forEach(p => {
@@ -1663,43 +2126,106 @@ async function simulateDay() {
     if (hadFixture) showMatchResult();
 }
 
-function stopSimulation(){if(state.simTimer){clearTimeout(state.simTimer);state.simTimer=null;}state.simulating=false;state.simMode="none";state.calendarTargetDate=toIsoDate(state.currentDate);const sb=document.getElementById("stopBtn");if(sb)sb.style.display="none";renderAll();}
+function stopSimulation(){if(state.simTimer){clearTimeout(state.simTimer);state.simTimer=null;}if(state.liveMatch?.timer){clearTimeout(state.liveMatch.timer);state.liveMatch=null;document.querySelector(".match-day-big-card")?.classList.remove("live-match-running");}state.simulating=false;state.simMode="none";state.calendarTargetDate=toIsoDate(state.currentDate);const sb=document.getElementById("stopBtn");if(sb)sb.style.display="none";renderAll();}
 function simulateToWindow(){const next=state.fixtures.find((f)=>!f.played&&(f.homeClubId===state.team.club_id||f.awayClubId===state.team.club_id)&&f.date>=toIsoDate(state.currentDate));if(!next)return;if(state.simulating){stopSimulation();return;}startTimedSimulation(next.date,"next-match");}
 function startTimedSimulation(targetIso,mode){if(!targetIso||state.seasonFinished)return;if(state.simTimer)clearTimeout(state.simTimer);state.simulating=true;state.simMode=mode;state.calendarTargetDate=targetIso;const sb=document.getElementById("stopBtn");if(sb)sb.style.display="inline-flex";renderAll();state.simTimer=setTimeout(runSimulationLoop,simSpeedMs);}
-async function runSimulationLoop(){if(!state.simulating||state.seasonFinished){stopSimulation();return;}if(!state.calendarTargetDate||toIsoDate(state.currentDate)>=state.calendarTargetDate){stopSimulation();return;}await simulateDay();if(state.seasonFinished||toIsoDate(state.currentDate)>=state.calendarTargetDate){stopSimulation();return;}state.simTimer=setTimeout(runSimulationLoop,simSpeedMs);}
+async function runSimulationLoop(){try{if(!state.simulating||state.seasonFinished){stopSimulation();return;}if(!state.calendarTargetDate||toIsoDate(state.currentDate)>=state.calendarTargetDate){stopSimulation();return;}await simulateDay();if(state.seasonFinished||toIsoDate(state.currentDate)>=state.calendarTargetDate){stopSimulation();return;}state.simTimer=setTimeout(runSimulationLoop,simSpeedMs);}catch(e){console.error("Simulation error:",e);stopSimulation();}}
 function skipToDate(isoDate){if(!isoDate)return;state.calendarTargetDate=isoDate;state.calendarDate=new Date(`${isoDate}T12:00:00`);if(state.simulating){startTimedSimulation(isoDate,"calendar");return;}if(isoDate<=toIsoDate(state.currentDate)){renderCalendar();return;}startTimedSimulation(isoDate,"calendar");}
 
 function simulateFixturesForDate(isoDate){
-  const fxs = getFixturesByDate(isoDate).filter(f => !f.played);
-  if(!fxs.length) return;
+    const fxs = getFixturesByDate(isoDate).filter(f => !f.played);
+    if(!fxs.length) return;
 
-  fxs.forEach(fx => {
-    const h = getClub(fx.homeClubId), a = getClub(fx.awayClubId);
-    if(!h || !a) return;
-
-    const r = generateScore(h, a, fx);
-    fx.homeGoals = r.homeGoals;
-    fx.awayGoals = r.awayGoals;
-    fx.played = true;
-    applyResultToTable(fx);
-    state.results.push({date: isoDate, round: fx.round, home: h.name, away: a.name, homeGoals: fx.homeGoals, awayGoals: fx.awayGoals, userMatch: isUserFixture(fx)});
-
-    if(isUserFixture(fx)){
-      const myG = fx.homeClubId === state.team.club_id ? fx.homeGoals : fx.awayGoals;
-      const opG = fx.homeClubId === state.team.club_id ? fx.awayGoals : fx.homeGoals;
-      const opp = fx.homeClubId === state.team.club_id ? a.name : h.name;
-      const rw = myG > opG ? "wygrywa" : myG === opG ? "remisuje" : "przegrywa";
-      state.matchLog.unshift(`${formatDateLong(state.currentDate)}: ${state.team.name} ${rw} z ${opp} ${myG}:${opG}.`);
-      addNews(`${state.team.name} ${rw} z ${opp} ${myG}:${opG}`);
-      applySquadEffects(myG, opG);
-      state.lineup.forEach(p => {
-          if (p.suspended && !p.injury) p.suspended = false;
-      });
+    const userFixture = fxs.find(fx => isUserFixture(fx));
+    if(userFixture){
+        state.lineup.forEach(p => { p._suspendedBeforeMatch = !!p.suspended; });
+        const suspended = state.lineup.filter(p => p.suspended && !p.injury);
+        suspended.forEach(sp => {
+            const replacement = state.bench.find(bp => bp.position === sp.position && !bp.suspended);
+            if(replacement){
+                const sidx = state.lineup.indexOf(sp);
+                const bidx = state.bench.indexOf(replacement);
+                if(sidx >= 0 && bidx >= 0){
+                    state.lineup[sidx] = replacement;
+                    state.bench[bidx] = sp;
+                    sp.suspended = false;
+                }
+            }
+        });
+        if(suspended.length) addNews(`Zawieszenia: ${suspended.map(p=>p.name).join(", ")} pomija mecz.`);
     }
-  });
 
-  simulateAllLeagueFixturesForDate(isoDate);
-  sortTable();
+    fxs.forEach(fx => {
+        const h = getClub(fx.homeClubId), a = getClub(fx.awayClubId);
+        if(!h || !a) return;
+
+        const r = generateScore(h, a, fx);
+        fx.homeGoals = r.homeGoals;
+        fx.awayGoals = r.awayGoals;
+        fx.matchReport = buildMatchReport(h, a, fx, r);
+        fx.played = true;
+        
+        if(!fx.competition || fx.competition==="league") {
+            applyResultToTable(fx);
+        } else {
+            applyEuropeanResult(fx);
+        }
+        
+        state.results.push({date: isoDate, round: fx.round, home: h.name, away: a.name, homeGoals: fx.homeGoals, awayGoals: fx.awayGoals, userMatch: isUserFixture(fx)});
+
+        if(isUserFixture(fx)){
+            const myG = fx.homeClubId === state.team.club_id ? fx.homeGoals : fx.awayGoals;
+            const opG = fx.homeClubId === state.team.club_id ? fx.awayGoals : fx.homeGoals;
+            const opp = fx.homeClubId === state.team.club_id ? a.name : h.name;
+            const rw = myG > opG ? "wygrywa" : myG === opG ? "remisuje" : "przegrywa";
+            const compLabel = getFixtureCompetitionLabel(fx);
+            state.matchLog.unshift(`${formatDateLong(state.currentDate)}: ${compLabel} — ${state.team.name} ${rw} z ${opp} ${myG}:${opG}.`);
+            addNews(`${compLabel}: ${state.team.name} ${rw} z ${opp} ${myG}:${opG}`);
+            applySquadEffects(myG, opG);
+            state.lineup.forEach(p => {
+                if (p._suspendedBeforeMatch) { p.suspended = false; delete p._suspendedBeforeMatch; }
+            });
+        }
+    });
+
+    sortTable();
+}
+
+function buildMatchReport(h,a,fx,score){
+    const hPower=(h.avg_rating||68)+(fx.homeClubId===state.team.club_id?userTeamBonus():0)+rand(-4,4);
+    const aPower=(a.avg_rating||68)+(fx.awayClubId===state.team.club_id?userTeamBonus():0)+rand(-4,4);
+    const total=Math.max(1,hPower+aPower);
+    const possession=clamp(Math.round((hPower/total)*100+rand(-6,6)),35,65);
+    const hShots=Math.max(score.homeGoals, rand(6,16)+Math.round((hPower-aPower)/8));
+    const aShots=Math.max(score.awayGoals, rand(5,15)+Math.round((aPower-hPower)/8));
+    const hOn=Math.max(score.homeGoals, Math.min(hShots, Math.round(hShots*(0.34+Math.random()*0.22))));
+    const aOn=Math.max(score.awayGoals, Math.min(aShots, Math.round(aShots*(0.34+Math.random()*0.22))));
+    const events=[]; const used=new Set();
+    const minute=()=>{let m;do{m=rand(2,90)+(Math.random()<0.08?rand(1,5):0);}while(used.has(m));used.add(m);return m;};
+
+    for(let i=0;i<score.homeGoals;i++) events.push({min:minute(),team:h.name,type:"goal",text:`GOL! ${h.name} strzela na ${i+1}:${score.awayGoals||0}`});
+    for(let i=0;i<score.awayGoals;i++) events.push({min:minute(),team:a.name,type:"goal",text:`GOL! ${a.name} strzela na ${score.homeGoals||0}:${i+1}`});
+
+    const cards = rand(2,5);
+    for(let i=0;i<cards;i++){
+        const team = Math.random() < possession/100 ? h : a;
+        events.push({min:minute(),team:team.name,type:"card",text:`Żółta kartka dla zawodnika ${team.name}`});
+    }
+    if(Math.random() < 0.08){
+        const team = Math.random() < possession/100 ? a : h;
+        events.push({min:minute(),team:team.name,type:"red",text:`CZERWONA KARTKA! ${team.name} w osłabieniu`});
+    }
+    for(let i=0;i<rand(2,4);i++){
+        const team = Math.random() < 0.5 ? h : a;
+        events.push({min:minute(),team:team.name,type:"sub",text:`Zmiana w ${team.name}`});
+    }
+    const extra=["groźny strzał obroniony przez bramkarza","świetna interwencja obrońcy","rzut rożny — dobitka głową obok słupka","szybka kontra zakończona spalonym","strzał z dystansu nad poprzeczką","faul na granicy pola karnego","dośrodkowanie, ale nikt nie zamyka"];
+    for(let i=0;i<rand(6,10);i++){
+        const team=Math.random()<possession/100?h:a;
+        events.push({min:minute(),team:team.name,type:"chance",text:`${team.name}: ${extra[rand(0,extra.length-1)]}`});
+    }
+    events.sort((x,y)=>x.min-y.min);
+    return {possessionHome:possession,possessionAway:100-possession,shotsHome:hShots,shotsAway:aShots,onTargetHome:hOn,onTargetAway:aOn,xgHome:round2(score.homeGoals*0.65+hOn*0.18+rand(0,30)/100),xgAway:round2(score.awayGoals*0.65+aOn*0.18+rand(0,30)/100),events};
 }
 
 
@@ -1712,17 +2238,81 @@ function simulateAllLeagueFixturesForDate(isoDate) {
 function applyResultToTableRaw(tbl,fx){const h=tbl.find((r)=>r.clubId===fx.homeClubId),a=tbl.find((r)=>r.clubId===fx.awayClubId);if(!h||!a)return;h.played+=1;a.played+=1;h.gf+=fx.homeGoals;h.ga+=fx.awayGoals;a.gf+=fx.awayGoals;a.ga+=fx.homeGoals;if(fx.homeGoals>fx.awayGoals){h.won+=1;h.points+=3;a.lost+=1;pushForm(h,"W");pushForm(a,"L");}else if(fx.homeGoals<fx.awayGoals){a.won+=1;a.points+=3;h.lost+=1;pushForm(a,"W");pushForm(h,"L");}else{h.drawn+=1;a.drawn+=1;h.points+=1;a.points+=1;pushForm(h,"D");pushForm(a,"D");}}
 function sortTableRaw(tbl){tbl.sort((a,b)=>(b.points-a.points)||((b.gf-b.ga)-(a.gf-a.ga))||(b.gf-a.gf)||a.name.localeCompare(b.name,"pl"));}
 
-function generateScore(h,a,fx){const hs=AI_STYLES[Math.floor(Math.random()*AI_STYLES.length)],as=AI_STYLES[Math.floor(Math.random()*AI_STYLES.length)];let hp=h.avg_rating+rand(-5,5),ap=a.avg_rating+rand(-5,5);if(fx.homeClubId===state.team.club_id)hp+=userTeamBonus();else hp+=aiTacticBonus(hs,h.avg_rating);if(fx.awayClubId===state.team.club_id)ap+=userTeamBonus();else ap+=aiTacticBonus(as,a.avg_rating);hp+=rand(-3,3);ap+=rand(-3,3);return{homeGoals:calculateGoals(hp,ap),awayGoals:calculateGoals(ap,hp)};}
-function aiTacticBonus(s,r){switch(s){case"attacking":return 1.2+rand(0,2);case"defensive":return 0.5+rand(-1,1);case"possession":return 0.8+rand(-.5,1.5);case"counter":return 1+rand(-1,3);default:return 0.5+rand(-1,2);}}
-function calculateGoals(tp, op){
-    const base = 0.50 + (tp - op) * 0.010;
-    let g = 0;
-    for(let i = 0; i < 6; i++){
-        if(Math.random() < Math.max(0.03, Math.min(0.50, base - i * 0.10))) g += 1;
+function generateScore(h,a,fx){
+    const hs = AI_STYLES[Math.floor(Math.random()*AI_STYLES.length)];
+    const as = AI_STYLES[Math.floor(Math.random()*AI_STYLES.length)];
+    
+    let hp = (h.avg_rating||70) + rand(-3,3);
+    let ap = (a.avg_rating||70) + rand(-3,3);
+    
+    if(fx.homeClubId === state.team.club_id) {
+        hp += userTeamBonus();
+    } else {
+        hp += aiTacticBonus(hs, h.avg_rating);
     }
-    return Math.max(0, Math.min(5, g));
+    
+    if(fx.awayClubId === state.team.club_id) {
+        ap += userTeamBonus();
+    } else {
+        ap += aiTacticBonus(as, a.avg_rating);
+    }
+    
+    // Bonus własnego boiska
+    hp += 1.2;
+    
+    // Pobierz rating bramkarza (dla gracza ze składu, dla AI z avg)
+    const getKeeper = (teamId) => {
+        if(teamId === state.team?.club_id) {
+            const gk = state.lineup.find(p => p.position === "BR");
+            return gk ? gk.rating : 65;
+        }
+        return 68; // średni AI-keeper
+    };
+    
+    const hKeeper = getKeeper(fx.homeClubId);
+    const aKeeper = getKeeper(fx.awayClubId);
+    
+    return {
+        homeGoals: calculateGoals(hp, ap * 0.88, aKeeper >= 78),
+        awayGoals: calculateGoals(ap, hp * 0.88, hKeeper >= 78)
+    };
 }
-function userTeamBonus(){const avg=state.lineup.reduce((s,p)=>s+p.rating,0)/Math.max(1,state.lineup.length);const avgFit=state.lineup.reduce((s,p)=>s+(p.fitness||96),0)/Math.max(1,state.lineup.length);const fitFactor=avgFit<60?0.7:avgFit<70?0.82:avgFit<80?0.9:avgFit<90?0.96:1;let t=0;if(state.tactics.style==="attacking")t+=1.4;if(state.tactics.style==="counter")t+=0.9;if(state.tactics.style==="defensive")t+=0.5;if(state.tactics.pressing==="high")t+=0.7;if(state.tactics.width==="wide")t+=0.3;return avg*0.11*fitFactor+t+rand(-2,2);}
+function aiTacticBonus(s,r){switch(s){case"attacking":return 1.2+rand(0,2);case"defensive":return 0.5+rand(-1,1);case"possession":return 0.8+rand(-.5,1.5);case"counter":return 1+rand(-1,3);default:return 0.5+rand(-1,2);}}
+function calculateGoals(tp, op, hasGoodKeeper){
+    // tp = siła ofensywna, op = siła defensywna przeciwnika
+    const base = 0.42 + (tp - op) * 0.011;
+    const keeperBonus = hasGoodKeeper ? -0.07 : 0;
+    let g = 0;
+    // 8 akcji na mecz
+    for(let i = 0; i < 8; i++){
+        const chance = Math.max(0.02, Math.min(0.50, base + keeperBonus - i * 0.055));
+        if(Math.random() < chance) g += 1;
+    }
+    // Ograniczenie ekstremalnych wyników
+    if(g >= 5 && Math.random() > 0.25) g = 4;
+    return Math.max(0, Math.min(6, g));
+}
+function userTeamBonus(){
+    if(!state.lineup || state.lineup.length < 11) return 0;
+    
+    const avg = state.lineup.reduce((s,p)=>s+p.rating,0) / state.lineup.length;
+    const avgFit = state.lineup.reduce((s,p)=>s+(p.fitness||96),0) / state.lineup.length;
+    const fitFactor = avgFit<60 ? 0.78 : avgFit<70 ? 0.88 : avgFit<80 ? 0.94 : avgFit<90 ? 0.98 : 1.04;
+    
+    // Bramkarz ma większe znaczenie
+    const gk = state.lineup.find(p => p.position === "BR");
+    const gkBonus = gk ? (gk.rating - 70) * 0.06 : -1;
+    
+    let tacticBonus = 0;
+    if(state.tactics.style==="attacking") tacticBonus += 1.0;
+    if(state.tactics.style==="counter") tacticBonus += 0.8;
+    if(state.tactics.style==="defensive") tacticBonus += 0.2;
+    if(state.tactics.style==="possession") tacticBonus += 0.5;
+    if(state.tactics.pressing==="high") tacticBonus += 0.5;
+    if(state.tactics.width==="wide") tacticBonus += 0.25;
+    
+    return avg * 0.11 * fitFactor + gkBonus + tacticBonus + rand(-1.5, 1.5);
+}
 
 function applyResultToTable(fx){const h=getTableRow(fx.homeClubId),a=getTableRow(fx.awayClubId);if(!h||!a)return;h.played+=1;a.played+=1;h.gf+=fx.homeGoals;h.ga+=fx.awayGoals;a.gf+=fx.awayGoals;a.ga+=fx.homeGoals;if(fx.homeGoals>fx.awayGoals){h.won+=1;h.points+=3;a.lost+=1;pushForm(h,"W");pushForm(a,"L");}else if(fx.homeGoals<fx.awayGoals){a.won+=1;a.points+=3;h.lost+=1;pushForm(a,"W");pushForm(h,"L");}else{h.drawn+=1;a.drawn+=1;h.points+=1;a.points+=1;pushForm(h,"D");pushForm(a,"D");}const ltc=state.activeLeagueTable||state.selectedLeagueCode;const lt=state.leagueTables?.[ltc];if(lt)applyResultToTableRaw(lt,fx);}
 function applyCardEffects() {
@@ -1734,7 +2324,7 @@ function applyCardEffects() {
             p.yellowCards += 1;
             if (p.yellowCards > 0 && p.yellowCards % 5 === 0) {
                 p.suspended = true;
-                toSuspend.push(`${p.name} (5. zolta)`);
+                toSuspend.push(`${p.name} (5. żółta)`);
             }
         }
         if (Math.random() < 0.02) {
@@ -1778,7 +2368,7 @@ function applySquadEffects(myG, opG) {
     }
     if (Math.random() < 0.12) {
         const p = outfield[rand(0, outfield.length - 1)];
-        events.push({ min: pickMin(), text: `${p ? p.name.split(" ").pop() : "Zawodnik"} — zolta kartka` });
+        events.push({ min: pickMin(), text: `${p ? p.name.split(" ").pop() : "Zawodnik"} — żółta kartka` });
     }
 
     events.sort((a, b) => a.min - b.min);
@@ -1793,7 +2383,7 @@ function applySquadEffects(myG, opG) {
         if (p.injury) return;
         if (Math.random() < 0.01) {
             const days = rand(7, 42);
-            const types = ["Nacignięcie mięśnia", "Skręcenie kostki", "Kontuzja kolana", "Uraz uda", "Stluczenie piszczeli"];
+            const types = ["Naciągnięcie mięśnia", "Skręcenie kostki", "Kontuzja kolana", "Uraz uda", "Stłuczenie piszczeli"];
             p.injury = { daysLeft: days, type: types[rand(0, types.length - 1)], weeksTotal: Math.ceil(days / 7) };
             p.fitness = Math.max(0, p.fitness - 30);
             addNews(`Kontuzja: ${p.name} — ${p.injury.type} (${Math.ceil(days / 7)} tyg.)`);
@@ -1825,38 +2415,38 @@ function renderCalendar() {
         const oppClub=fx?getClub(fx.homeClubId===state.team.club_id?fx.awayClubId:fx.homeClubId):null;
         const crest=oppClub?.logo_url?`<img class="calendar-crest" src="${escapeHtml(oppClub.logo_url)}" alt="" onerror="this.style.display='none'" loading="lazy">`:"";
         const cls=["calendar-cell",isToday?"today":"",isSel?"selected":"",fx?"match":"",played?"played":"",resultClass].filter(Boolean).join(" ");
-        const tag=played?'<i class="fi fi-rr-check"></i> Rozegrany':fx?`<i class="fi fi-rr-calendar-arrow-up"></i> Kolejka ${fx.round}`:(iso>todayIso?"Wolne":"Minelo");
+        const tag=played?'<i class="fi fi-rr-check"></i> Rozegrany':fx?`<i class="fi fi-rr-calendar-arrow-up"></i> ${fixtureRoundLabel(fx)}`:(iso>todayIso?"Wolne":"Minęło");
         const oppLine=fx?`<div class="calendar-opponent">${fx.homeClubId===state.team.club_id?"vs ":"@ "}${crest}${escapeHtml(shortClubNamePatched(opp))}</div>`:`<div class="calendar-empty-note">${iso===todayIso?'<i class="fi fi-br-info"></i> Dzisiaj':"Brak meczu"}</div>`;
         const sub=fx?`<div class="calendar-subtext">${venue} • ${played?`${fx.homeGoals}:${fx.awayGoals}`:'<i class="fi fi-br-arrow-right"></i> Kliknij'}</div>`:`<div class="calendar-subtext">${isSel&&iso>todayIso?'<i class="fi fi-sr-star"></i> Cel':'<i class="fi fi-sr-spinner"></i> Trening'}</div>`;
         html.push(`<div class="${cls}" onclick="skipToDate('${iso}')"><div class="calendar-dayline"><div class="calendar-date">${dn}</div><div class="calendar-tag">${tag}</div></div>${oppLine}${sub}</div>`);
     }
     grid.innerHTML=html.join("");
     const upc=state.fixtures.filter((f)=>(f.homeClubId===state.team.club_id||f.awayClubId===state.team.club_id)&&f.date>=todayIso).slice(0,6);
-    agenda.innerHTML=upc.map((f)=>{const opp=getOpponentNamePatched(f);const oc=getClub(f.homeClubId===state.team.club_id?f.awayClubId:f.homeClubId);const side=f.homeClubId===state.team.club_id?"vs":"@";const sum=f.played?`${f.homeGoals}:${f.awayGoals}`:`<i class="fi fi-rr-calendar-arrow-up"></i> Kolejka ${f.round}`;const cr=oc?.logo_url?`<img class="calendar-crest" src="${escapeHtml(oc.logo_url)}" alt="" onerror="this.style.display='none'" loading="lazy">`:"";return`<div class="calendar-agenda-item"><div><strong>${escapeHtml(formatDateLong(fromIsoDate(f.date)))}</strong><div>${side} ${cr}${escapeHtml(opp)}</div></div><div class="calendar-subtext">${sum}</div></div>`;}).join("")||`<div class="calendar-subtext">Brak nadchodzacych meczow.</div>`;
+    agenda.innerHTML=upc.map((f)=>{const opp=getOpponentNamePatched(f);const oc=getClub(f.homeClubId===state.team.club_id?f.awayClubId:f.homeClubId);const side=f.homeClubId===state.team.club_id?"vs":"@";const sum=f.played?`${f.homeGoals}:${f.awayGoals}`:`<i class="fi fi-rr-calendar-arrow-up"></i> ${fixtureRoundLabel(f)}`;const cr=oc?.logo_url?`<img class="calendar-crest" src="${escapeHtml(oc.logo_url)}" alt="" onerror="this.style.display='none'" loading="lazy">`:"";return`<div class="calendar-agenda-item"><div><strong>${escapeHtml(formatDateLong(fromIsoDate(f.date)))}</strong><div>${side} ${cr}${escapeHtml(opp)}</div></div><div class="calendar-subtext">${sum}</div></div>`;}).join("")||`<div class="calendar-subtext">Brak nadchodzących meczów.</div>`;
 }
 
 function findFixtureForTeamDate(iso){return state.fixtures.find((f)=>f.date===iso&&(f.homeClubId===state.team?.club_id||f.awayClubId===state.team?.club_id))||null;}
 function getOpponentNamePatched(fx){if(!fx||!state.team)return"";const id=fx.homeClubId===state.team.club_id?fx.awayClubId:fx.homeClubId;return clubNameByIdPatched(id);}
-function clubNameByIdPatched(id){return state.allTeams.find((c)=>c.club_id===String(id))?.name||"Nieznany klub";}
+function clubNameByIdPatched(id){return getClub(id)?.name||"Nieznany klub";}
 function shortClubNamePatched(n){if(!n)return"";const c=String(n).trim();return c.length<=14?c:c.split(" ").slice(0,2).join(" ");}
 
 function changeCalendarMonth(step){state.calendarDate=new Date(state.calendarDate.getFullYear(),state.calendarDate.getMonth()+step,1);renderCalendar();}
 function previousMonth(){changeCalendarMonth(-1);}
 function nextMonth(){changeCalendarMonth(1);}
-function renderSchedule(){const tbody=document.querySelector("#scheduleTable tbody");tbody.innerHTML="";getUserFixtures().forEach((f)=>{const h=getClub(f.homeClubId),a=getClub(f.awayClubId);tbody.innerHTML+=`<tr><td>${f.round}</td><td>${formatDateLong(fromIsoDate(f.date))}</td><td>${clubCrestHtml(h?.logo_url,h?.name)}${escapeHtml(h?.name||"?")}</td><td style="font-weight:800;">${f.played?`${f.homeGoals}:${f.awayGoals}`:"-:-"}</td><td>${clubCrestHtml(a?.logo_url,a?.name)}${escapeHtml(a?.name||"?")}</td><td>${f.played?'<span class="badge badge-green"><i class="fi fi-rr-check"></i> Rozegrany</span>':f.date===toIsoDate(state.currentDate)?'<span class="badge badge-orange"><i class="fi fi-rr-calendar-arrow-up"></i> Dzisiaj</span>':'<span class="badge badge-blue"><i class="fi fi-rr-calendar-arrow-up"></i> Plan</span>'}</td></tr>`;});}
+function renderSchedule(){const tbody=document.querySelector("#scheduleTable tbody");tbody.innerHTML="";getUserFixtures().forEach((f)=>{const h=getClub(f.homeClubId),a=getClub(f.awayClubId);tbody.innerHTML+=`<tr><td>${fixtureRoundLabel(f)}</td><td>${formatDateLong(fromIsoDate(f.date))}</td><td>${clubCrestHtml(h?.logo_url,h?.name)}${escapeHtml(h?.name||"?")}</td><td style="font-weight:800;">${f.played?`${f.homeGoals}:${f.awayGoals}`:"-:-"}</td><td>${clubCrestHtml(a?.logo_url,a?.name)}${escapeHtml(a?.name||"?")}</td><td>${f.played?'<span class="badge badge-green"><i class="fi fi-rr-check"></i> Rozegrany</span>':f.date===toIsoDate(state.currentDate)?'<span class="badge badge-orange"><i class="fi fi-rr-calendar-arrow-up"></i> Dzisiaj</span>':'<span class="badge badge-blue"><i class="fi fi-rr-calendar-arrow-up"></i> Plan</span>'}</td></tr>`;});}
 
-function renderTable(){const code=state.activeLeagueTable||state.selectedLeagueCode;const tbl=state.leagueTables[code]||state.table;const tbody=document.querySelector("#leagueTable tbody");if(!tbody)return;tbody.innerHTML="";const moveCount=Math.max(1,Math.min(Math.floor(tbl.length*0.15),Math.floor((tbl.length-2)/2)));tbl.forEach((r,i)=>{const cls=i<moveCount?"pos-promo":i>=tbl.length-moveCount?"pos-releg":"pos-normal";const form=r.form.map((v)=>FORM_ICON[v]||v).join(" ");const crest=clubCrestHtml(r.logo_url,r.name);tbody.innerHTML+=`<tr class="${r.clubId===state.team.club_id?"highlight":""}"><td><span class="pos ${cls}">${i+1}</span></td><td>${crest}${escapeHtml(r.name)}</td><td>${r.played}</td><td>${r.won}</td><td>${r.drawn}</td><td>${r.lost}</td><td>${r.gf}</td><td>${r.ga}</td><td>${r.gf-r.ga}</td><td style="font-weight:800;color:var(--primary-light);">${r.points}</td><td>${form}</td></tr>`;});const e=document.getElementById("tableMatchDay");if(e)e.textContent=`Po ${(state.leagueTables[code]&&state.leagueTables[code][0]?.played)||0} kolejkach`;renderOtherLeaguePreviews();}
+function renderTable(){const code=state.activeLeagueTable||state.selectedLeagueCode;const tbl=state.leagueTables[code]||state.table;const tbody=document.querySelector("#leagueTable tbody");if(!tbody)return;tbody.innerHTML="";const zones=getLeagueZones(code,tbl);tbl.forEach((r,i)=>{const z=zones.get(i+1);const cls=[r.clubId===state.team.club_id?"highlight":"",z?.rowClass||""].filter(Boolean).join(" ");const posCls=z?.rowClass||"pos-normal";const form=r.form.map((v)=>FORM_ICON[v]||v).join(" ");const crest=clubCrestHtml(r.logo_url,r.name);tbody.innerHTML+=`<tr class="${cls}"><td><span class="pos ${posCls}">${i+1}</span></td><td>${crest}${escapeHtml(r.name)}</td><td>${r.played}</td><td>${r.won}</td><td>${r.drawn}</td><td>${r.lost}</td><td>${r.gf}</td><td>${r.ga}</td><td>${r.gf-r.ga}</td><td style="font-weight:800;color:var(--primary-light);">${r.points}</td><td>${z?`<span class="zone-chip ${z.className}">${escapeHtml(z.label)}</span>`:"-"}</td><td>${form}</td></tr>`;});const e=document.getElementById("tableMatchDay");if(e)e.textContent=`Po ${(state.leagueTables[code]&&state.leagueTables[code][0]?.played)||0} kolejkach`;renderOtherLeaguePreviews();}
 
 function renderOtherLeaguePreviews(){const cont=document.getElementById("otherLeaguesPreview");if(!cont||!state.allLeagueData){if(cont)cont.innerHTML="";return;}const toShow=Object.entries(state.allLeagueData).filter(([c])=>c!==state.selectedLeagueCode).slice(0,4);cont.innerHTML=toShow.map(([code,league])=>{const tbl=state.leagueTables[code]||[];const top3=tbl.slice(0,3);return`<div class="card" style="margin:0;padding:1rem;"><div class="card-header" style="margin-bottom:0.5rem;padding-bottom:0.5rem;"><h3>${escapeHtml(league.name)}</h3></div>${top3.map((r,i)=>`<div style="display:flex;justify-content:space-between;align-items:center;padding:0.2rem 0;font-size:0.85rem;"><span>${i+1}. ${clubCrestHtml(r.logo_url,r.name,"club-crest-sm")}${escapeHtml(r.name)}</span><span style="font-weight:700;">${r.points} pkt</span></div>`).join("")||"<div style='font-size:0.85rem;color:var(--text-muted);'>Brak danych</div>"}</div>`;}).join("");}
 
 async function fillLeagueTableSelector(){const sel=document.getElementById("leagueTableSelector");if(!sel)return;if(state.allLeagueData){sel.innerHTML=Object.entries(state.allLeagueData).map(([code,league])=>`<option value="${escapeHtml(code)}" ${code===state.selectedLeagueCode?"selected":""}>${escapeHtml(league.name)}</option>`).join("");}else{sel.innerHTML=`<option value="${escapeHtml(state.selectedLeagueCode)}">${escapeHtml(state.leagueData.name)}</option>`;}state.activeLeagueTable=state.selectedLeagueCode;}
 function switchLeagueTable(){state.activeLeagueTable=document.getElementById("leagueTableSelector")?.value||state.selectedLeagueCode;renderTable();}
 
-async function saveCareer(){if(!state.team)return;try{const payload=serializeState();await apiPost("/api/save",payload);const label=state.coachName?`${state.coachName} - ${state.team.name}`:state.team.name;state.saveStatus=` Zapisano: ${label}`;}catch(e){state.saveStatus=` Blad zapisu: ${e.message}`;}updateSaveStatus();}
-async function loadCareer(){let p;try{p=await apiGet("/api/save");}catch(e){state.saveStatus=" Blad ladowania: serwer nie odpowiada.";updateSaveStatus();return;}if(!p||!p.exists){state.saveStatus=" Brak zapisu na serwerze.";updateSaveStatus();return;}if(!p.state){state.saveStatus=" Uszkodzony zapis.";updateSaveStatus();return;}try{await applySavedState(p.state);}catch(e){state.saveStatus=" Blad wczytywania: "+e.message;updateSaveStatus();return;}if(!state.uefaData){try{const u=await apiGet("/api/uefa");state.uefaData=u;if(u&&u.rankings){state.uefaPoints={};u.rankings.forEach(r=>{state.uefaPoints[r.competition_code]=r.coefficient;});}}catch(e){}}}
-function serializeState(){return{selectedLeagueCode:state.selectedLeagueCode,teamId:state.team.club_id,coachName:state.coachName||"",currentDate:toIsoDate(state.currentDate),calendarDate:toIsoDate(state.calendarDate),budgetMillions:state.budgetMillions,wageBudgetMillions:state.wageBudgetMillions,formation:state.formation,tactics:state.tactics,seasonFinished:state.seasonFinished,transferWindow:state.transferWindow,players:state.players,lineupIds:state.lineup.map((p)=>p.id),benchIds:state.bench.map((p)=>p.id),table:state.table,fixtures:state.fixtures,results:state.results,news:state.news,matchLog:state.matchLog,leagueTables:state.leagueTables,leagueFixtures:state.leagueFixtures,uefaData:state.uefaData,uefaPoints:state.uefaPoints};}
+async function saveCareer(){if(!state.team)return;try{const payload=serializeState();await apiPost("/api/save",payload);const label=state.coachName?`${state.coachName} - ${state.team.name}`:state.team.name;state.saveStatus=` Zapisano: ${label}`;}catch(e){state.saveStatus=` Błąd zapisu: ${e.message}`;}updateSaveStatus();}
+async function loadCareer(){let p;try{p=await apiGet("/api/save");}catch(e){state.saveStatus=" Błąd ładowania: serwer nie odpowiada.";updateSaveStatus();return;}if(!p||!p.exists){state.saveStatus=" Brak zapisu na serwerze.";updateSaveStatus();return;}if(!p.state){state.saveStatus=" Uszkodzony zapis.";updateSaveStatus();return;}try{await applySavedState(p.state);}catch(e){state.saveStatus=" Błąd wczytywania: "+e.message;updateSaveStatus();return;}if(!state.uefaData){try{const u=await apiGet("/api/uefa");state.uefaData=u;if(u&&u.rankings){state.uefaPoints={};u.rankings.forEach(r=>{state.uefaPoints[r.competition_code]=r.coefficient;});}}catch(e){}}}
+function serializeState(){return{selectedLeagueCode:state.selectedLeagueCode,teamId:state.team.club_id,coachName:state.coachName||"",currentDate:toIsoDate(state.currentDate),calendarDate:toIsoDate(state.calendarDate),budgetMillions:state.budgetMillions,wageBudgetMillions:state.wageBudgetMillions,formation:state.formation,tactics:state.tactics,seasonFinished:state.seasonFinished,transferWindow:state.transferWindow,europeanEntry:state.europeanEntry||null,europeanOpponents:state.europeanOpponents||[],players:state.players,lineupIds:state.lineup.map((p)=>p.id),benchIds:state.bench.map((p)=>p.id),table:state.table,fixtures:state.fixtures,results:state.results,news:state.news,matchLog:state.matchLog,leagueTables:state.leagueTables,leagueFixtures:state.leagueFixtures,uefaData:state.uefaData,uefaPoints:state.uefaPoints};}
 
-async function applySavedState(snapshot){const ld=deepClone(await loadLeague(snapshot.selectedLeagueCode));state.selectedLeagueCode=snapshot.selectedLeagueCode;state.leagueData=ld;state.allTeams=ld.clubs;state.team=ld.clubs.find((c)=>c.club_id===String(snapshot.teamId))||ld.clubs[0];state.coachName=snapshot.coachName||"";state.players=snapshot.players;state.formation=snapshot.formation||"4-3-3";state.tactics=snapshot.tactics||{style:"balanced",pressing:"medium",width:"normal"};state.budgetMillions=snapshot.budgetMillions;state.wageBudgetMillions=snapshot.wageBudgetMillions;state.currentDate=fromIsoDate(snapshot.currentDate);state.calendarDate=fromIsoDate(snapshot.calendarDate);state.seasonFinished=!!snapshot.seasonFinished;state.transferWindow=snapshot.transferWindow||null;state.table=snapshot.table;state.fixtures=snapshot.fixtures;state.results=snapshot.results;state.news=snapshot.news;state.matchLog=snapshot.matchLog;state.lineup=snapshot.lineupIds.map((id)=>state.players.find((p)=>p.id===id)).filter(Boolean);state.bench=snapshot.benchIds.map((id)=>state.players.find((p)=>p.id===id)).filter(Boolean);if(snapshot.leagueTables)state.leagueTables=snapshot.leagueTables;if(snapshot.leagueFixtures)state.leagueFixtures=snapshot.leagueFixtures;if(snapshot.uefaData)state.uefaData=snapshot.uefaData;if(snapshot.uefaPoints)state.uefaPoints=snapshot.uefaPoints;
+async function applySavedState(snapshot){const ld=deepClone(await loadLeague(snapshot.selectedLeagueCode));state.selectedLeagueCode=snapshot.selectedLeagueCode;state.leagueData=ld;state.allTeams=ld.clubs;state.team=ld.clubs.find((c)=>c.club_id===String(snapshot.teamId))||ld.clubs[0];state.coachName=snapshot.coachName||"";state.players=snapshot.players;state.formation=snapshot.formation||"4-3-3";state.tactics=snapshot.tactics||{style:"balanced",pressing:"medium",width:"normal"};state.budgetMillions=snapshot.budgetMillions;state.wageBudgetMillions=snapshot.wageBudgetMillions;state.currentDate=fromIsoDate(snapshot.currentDate);state.calendarDate=fromIsoDate(snapshot.calendarDate);state.seasonFinished=!!snapshot.seasonFinished;state.transferWindow=snapshot.transferWindow||null;state.europeanEntry=snapshot.europeanEntry||null;state.europeanOpponents=snapshot.europeanOpponents||[];state.table=snapshot.table;state.fixtures=snapshot.fixtures;state.results=snapshot.results;state.news=snapshot.news;state.matchLog=snapshot.matchLog;state.lineup=snapshot.lineupIds.map((id)=>state.players.find((p)=>p.id===id)).filter(Boolean);state.bench=snapshot.benchIds.map((id)=>state.players.find((p)=>p.id===id)).filter(Boolean);if(snapshot.leagueTables)state.leagueTables=snapshot.leagueTables;if(snapshot.leagueFixtures)state.leagueFixtures=snapshot.leagueFixtures;if(snapshot.uefaData)state.uefaData=snapshot.uefaData;if(snapshot.uefaPoints)state.uefaPoints=snapshot.uefaPoints;
     // Szybkie renderowanie przed załadowaniem transferów
     renderFormationButtons();updateTacticsInputs();updateNav();await fillLeagueTableSelector();renderAll();
     document.getElementById("startScreen").style.display="none";document.getElementById("teamSelect").style.display="none";
@@ -1866,7 +2456,7 @@ async function applySavedState(snapshot){const ld=deepClone(await loadLeague(sna
     if(!state.allLeagueData){loadAllLeagues().then(d=>{state.allLeagueData=d;if(!snapshot.leagueTables){initAllLeagueTables();generateAllLeagueFixtures(2025);}fillLeagueTableSelector();renderTable();}).catch(()=>{});}
 }
 
-async function loadGameFromFile(event){const file=event.target.files?.[0];if(!file)return;const reader=new FileReader();reader.onload=async(e)=>{try{const data=JSON.parse(e.target.result);const container=document.getElementById("gameContainer");if(container&&!container.innerHTML.trim()){const resp=await fetch("/career.html");if(!resp.ok)throw new Error("Blad ladowania szablonu ("+resp.status+")");container.innerHTML=await resp.text();container.style.display="block";injectGameplayStyles();}await applySavedState(data);state.saveStatus=` Wczytano z pliku: ${file.name}`;updateSaveStatus();}catch(err){state.saveStatus=` Blad: ${err.message}`;updateSaveStatus();}};reader.readAsText(file);event.target.value="";}
+async function loadGameFromFile(event){const file=event.target.files?.[0];if(!file)return;const reader=new FileReader();reader.onload=async(e)=>{try{const data=JSON.parse(e.target.result);const container=document.getElementById("gameContainer");if(container&&!container.innerHTML.trim()){const resp=await fetch("./career.html");if(!resp.ok)throw new Error("Błąd ładowania szablonu ("+resp.status+")");container.innerHTML=await resp.text();container.style.display="block";injectGameplayStyles();}await applySavedState(data);state.saveStatus=` Wczytano z pliku: ${file.name}`;updateSaveStatus();}catch(err){state.saveStatus=` Błąd: ${err.message}`;updateSaveStatus();}};reader.readAsText(file);event.target.value="";}
 
 const YOUTH_NAMES = {first:["Jakub","Kacper","Mateusz","Bartosz","Szymon","Filip","Antoni","Michał","Jan","Adam","Piotr","Mikołaj","Tomasz","Konrad","Dawid","Krzysztof","Łukasz","Wojciech","Rafał","Patryk","Marcin","Grzegorz","Igor","Artur"],last:["Kowalski","Wiśniewski","Kamiński","Lewandowski","Zieliński","Adamczyk","Krawczyk","Nowak","Jankowski","Kwiatkowski","Pawlak","Michalak","Sadowski","Wójcik","Baran","Kozłowski","Woźniak","Szymański","Dąbrowski","Mazurek","Kubiak","Pietrzak","Czarnecki","Ostrowski","Malinowski","Jabłoński","Kruk","Gajewski","Stępień","Tomczak"]};
 function agePlayers(){
@@ -1952,36 +2542,34 @@ function generateYouthPlayers(count){
     addNews(` Akademia: ${count} nowych młodzików dołączyło do klubu.`);
 }
 
-// Mapa tier → bazowy budżet startowy i premia sezonowa
-const LEAGUE_TIERS = {
-    // Tier 1 – wielkie ligi europejskie
-    GB1:{ tier:1, startBudget:120, label:"Premier League" },
-    ES1:{ tier:1, startBudget:100, label:"La Liga" },
-    IT1:{ tier:1, startBudget:95,  label:"Serie A" },
-    DE1:{ tier:1, startBudget:90,  label:"Bundesliga" },
-    FR1:{ tier:1, startBudget:85,  label:"Ligue 1" },
-    // Tier 2 – średnie ligi
-    PO1:{ tier:2, startBudget:45,  label:"Primeira Liga" },
-    NL1:{ tier:2, startBudget:42,  label:"Eredivisie" },
-    RU1:{ tier:2, startBudget:40,  label:"Premier Liga RU" },
-    TR1:{ tier:2, startBudget:38,  label:"Süper Lig" },
-    BE1:{ tier:2, startBudget:32,  label:"Jupiler Pro" },
-    // Tier 3 – mniejsze ligi
-    PL1:{ tier:3, startBudget:18,  label:"Ekstraklasa" },
-    SC1:{ tier:3, startBudget:20,  label:"Scottish Premiership" },
-    GR1:{ tier:3, startBudget:16,  label:"Super League" },
-    DK1:{ tier:3, startBudget:14,  label:"Superliga DK" },
-    // Tier 4 – liga krajowa
-    default:{ tier:4, startBudget:8, label:"Liga" },
-};
+function getLeagueConfig(code = state.selectedLeagueCode) {
+    const key = String(code || "").toUpperCase();
+    const fromSelected = state.leagueData && String(state.leagueData.competition_code || "").toUpperCase() === key ? state.leagueData : null;
+    const fromAll = state.allLeagueData?.[key];
+    const source = fromSelected || fromAll;
+    if (source) {
+        return {
+            code: key,
+            name: source.name || key,
+            label: source.label || source.name || key,
+            tier: Number(source.tier || 4),
+            level: Number(source.level || 1),
+            startBudget: Number(source.startBudget || 8),
+            rules: source.rules || {},
+        };
+    }
+    return { code: key, name: key, label: key || "Liga", tier: 4, level: 1, startBudget: 8, rules: {} };
+}
 
 function getLeagueTier() {
-    const code = (state.selectedLeagueCode || "").toUpperCase();
-    return LEAGUE_TIERS[code] || LEAGUE_TIERS.default;
+    const cfg = getLeagueConfig();
+    return { tier: cfg.tier || 4, startBudget: cfg.startBudget || 8, label: cfg.label || cfg.name || "Liga" };
 }
 
 function getCounterpartLeague(code, direction) {
     const upper = code.toUpperCase();
+    const cfg = getLeagueConfig(upper);
+    if (cfg?.rules && cfg.rules[direction]) return cfg.rules[direction];
     const ends1 = upper.endsWith("1");
     const ends2 = upper.endsWith("2");
     const overrides = {
@@ -2002,12 +2590,12 @@ function getCounterpartLeague(code, direction) {
 
 // --- TRENINGI ---
 const TRAINING_MODES = {
-    balanced:  { label: "Zrownowazony",     desc: "Ogolny rozwoj — kondycja i morale." },
-    physical:  { label: "Fizyczny",         desc: "Maksymalna poprawa kondycji zawodnikow." },
-    technical: { label: "Techniczny",       desc: "Mlodziez (do 25 lat) zyskuje oceny szybciej." },
-    tactical:  { label: "Taktyczny",        desc: "Boost morale i druzyna gra bardziej zgranie." },
-    youth:     { label: "Akademia",         desc: "Rezerwy ponizej 21 lat rozwijaja sie szybciej." },
-    recovery:  { label: "Regeneracja",      desc: "Wszyscy szybko wracaja do pelnej kondycji." },
+    balanced:  { label: "Zrównoważony",     desc: "Ogólny rozwój — kondycja i morale." },
+    physical:  { label: "Fizyczny",         desc: "Maksymalna poprawa kondycji zawodników." },
+    technical: { label: "Techniczny",       desc: "Młodzież (do 25 lat) zyskuje oceny szybciej." },
+    tactical:  { label: "Taktyczny",        desc: "Boost morale i drużyna gra bardziej zgranie." },
+    youth:     { label: "Akademia",         desc: "Rezerwy poniżej 21 lat rozwijają się szybciej." },
+    recovery:  { label: "Regeneracja",      desc: "Wszyscy szybko wracają do pełnej kondycji." },
 };
 
 function setTrainingFocus(mode) {
@@ -2030,26 +2618,26 @@ function applyTrainingEffects(hadFixture) {
             break;
         case "technical":
             allActive.filter(p => (p.age || 30) <= 25 && (p.potential || 0) > 0).forEach(p => {
-                if (Math.random() < 0.03) { p.rating = Math.min(99, p.rating + 1); p.potential = Math.max(0, p.potential - 1); logText = `Trening tech.: ${p.name} poprawil ocene.`; }
+                if (Math.random() < 0.03) { p.rating = Math.min(99, p.rating + 1); p.potential = Math.max(0, p.potential - 1); logText = `Trening tech.: ${p.name} poprawił ocenę.`; }
             });
-            if (!logText) logText = "Trening techniczny — brak wzrostow dzisiaj.";
+            if (!logText) logText = "Trening techniczny — brak wzrostów dzisiaj.";
             break;
         case "tactical":
             allActive.forEach(p => { p.morale = Math.min(99, (p.morale || 75) + rand(1, 3)); });
-            logText = "Trening taktyczny: morale wzroslo.";
+            logText = "Trening taktyczny: morale wzrosło.";
             break;
         case "youth":
             (state.reserves || []).filter(p => (p.age || 30) <= 21 && (p.potential || 0) > 0).forEach(p => {
                 if (Math.random() < 0.05) { p.rating = Math.min(99, p.rating + 1); p.potential = Math.max(0, p.potential - 1); }
             });
-            logText = "Akademia: sesja z mlodziezowcami.";
+            logText = "Akademia: sesja z młodzieżowcami.";
             break;
         case "recovery":
             state.players.forEach(p => {
                 p.fitness = Math.min(99, (p.fitness || 90) + rand(4, 8));
                 if (p.injury) p.injury.daysLeft = Math.max(0, p.injury.daysLeft - 2);
             });
-            logText = "Regeneracja: kondycja druzyny odbudowana.";
+            logText = "Regeneracja: kondycja drużyny odbudowana.";
             break;
         default:
             allActive.forEach(p => {
@@ -2072,7 +2660,7 @@ function renderTrainingLog() {
     const log = state.trainingLog || [];
     el.innerHTML = log.slice(0, 8).map(l =>
         `<div><span style="color:rgba(255,255,255,.3);margin-right:.4rem;">${l.date}</span>${escapeHtml(l.text)}</div>`
-    ).join("") || "<div>Brak historii treningow.</div>";
+    ).join("") || "<div>Brak historii treningów.</div>";
 
     const badge = document.getElementById("trainingModeBadge");
     if (badge) badge.textContent = TRAINING_MODES[state.trainingFocus]?.label || state.trainingFocus;
@@ -2082,28 +2670,42 @@ function renderTrainingLog() {
 
 // --- KONIEC SEZONU ---
 
-function getEuropeanQualification() {
+function getEuropeanQualification(){
     const code = state.selectedLeagueCode;
-    const tierInfo = getLeagueTier();
-    if (tierInfo.tier > 1) return null;
+    const tier = getLeagueTier();
+    if(tier.tier > 1) return null;
     const uefa = getUefaForLeague(code);
-    if (!uefa) return null;
-    const tbl = state.table;
-    const pos = tbl.findIndex(r => r.clubId === state.team.club_id);
-    const n = tbl.length;
-    const totalSpots = uefa.total_spots || 0;
-    if (totalSpots === 0 || pos < 0) return null;
-
-    const spots = [];
-    let s = 0;
-    if (uefa.ucl_spots > 0) { spots.push({ name: 'Liga Mistrzów', short: 'LM', color: '#1a47b8', pos: '1-' + uefa.ucl_spots, end: s + uefa.ucl_spots }); s += uefa.ucl_spots; }
-    if (uefa.uel_spots > 0) { spots.push({ name: 'Liga Europy', short: 'LE', color: '#f97316', pos: (s+1) + '-' + (s+uefa.uel_spots), end: s + uefa.uel_spots }); s += uefa.uel_spots; }
-    if (uefa.uecl_spots > 0) { spots.push({ name: 'Liga Konferencji', short: 'LK', color: '#22c55e', pos: (s+1) + '-' + (s+uefa.uecl_spots), end: s + uefa.uecl_spots }); }
-
-    for (const spot of spots) {
-        if (pos < spot.end) return spot;
-    }
+    if(!uefa) return null;
+    const pos = state.table.findIndex(r => r.clubId === state.team.club_id);
+    if(pos < 0) return null;
+    
+    let end = 0;
+    if(pos < (end += (uefa.ucl_spots||0))) return {name:'Liga Mistrzów', short:'LM', color:'#1a47b8'};
+    if(pos < (end += (uefa.uel_spots||0))) return {name:'Liga Europy', short:'LE', color:'#ea580c'};
+    if(pos < (end += (uefa.uecl_spots||0))) return {name:'Liga Konferencji', short:'LK', color:'#16a34a'};
     return null;
+}
+
+function formatDateShort(iso){
+    const d = fromIsoDate(iso);
+    return `${d.getDate()} ${MONTHS[d.getMonth()].slice(0,3)}`;
+}
+
+function applyEuropeanResult(fx){
+    if(!state.europeanGroup) return;
+    const h = state.europeanGroup.teams.find(r => String(r.club_id) === String(fx.homeClubId));
+    const a = state.europeanGroup.teams.find(r => String(r.club_id) === String(fx.awayClubId));
+    if(!h || !a) return;
+    h.played++; a.played++;
+    h.gf += fx.homeGoals; h.ga += fx.awayGoals;
+    a.gf += fx.awayGoals; a.ga += fx.homeGoals;
+    if(fx.homeGoals > fx.awayGoals){
+        h.won++; h.points += 3; a.lost++; pushForm(h,"W"); pushForm(a,"L");
+    } else if(fx.homeGoals < fx.awayGoals){
+        a.won++; a.points += 3; h.lost++; pushForm(a,"W"); pushForm(h,"L");
+    } else {
+        h.drawn++; a.drawn++; h.points++; a.points++; pushForm(h,"D"); pushForm(a,"D");
+    }
 }
 
 function computeMoveCounts(nUpper, nLower) {
@@ -2115,6 +2717,50 @@ function computeMoveCounts(nUpper, nLower) {
     ));
     const hasPlayoff = nUpper >= 10 && nLower >= 6;
     return { directMove: direct, hasPlayoff };
+}
+
+function getLeagueRule(code, nThis=18, nPartner=18) {
+    const key = String(code || "").toUpperCase();
+    const rule = getLeagueConfig(key).rules || {};
+    if (Object.keys(rule).length) return { promotion:0, relegation:0, playoffPromotion:[], playoffRelegation:0, ...rule };
+    const up = getCounterpartLeague(key, "up");
+    const down = getCounterpartLeague(key, "down");
+    const fallback = computeMoveCounts(nThis, nPartner);
+    return {
+        up, down,
+        promotion: up ? fallback.directMove : 0,
+        relegation: down ? fallback.directMove : 0,
+        playoffPromotion: up && fallback.hasPlayoff ? [fallback.directMove + 1] : [],
+        playoffRelegation: down && fallback.hasPlayoff ? 1 : 0,
+    };
+}
+
+function getPlayoffPromotionCount(rule) {
+    return Array.isArray(rule.playoffPromotion) ? rule.playoffPromotion.length : Number(rule.playoffPromotion || 0);
+}
+
+function getLeagueZones(code, tbl) {
+    const n = tbl?.length || 0;
+    const zones = [];
+    const isTop = !getCounterpartLeague(code, "up");
+    if (isTop) {
+        const uefa = getUefaForLeague(code);
+        let s = 1;
+        if (uefa?.ucl_spots) { for (let p=s; p<s+uefa.ucl_spots; p++) zones.push({pos:p,label:"LM",className:"zone-ucl",rowClass:"pos-promo"}); s += uefa.ucl_spots; }
+        if (uefa?.uel_spots) { for (let p=s; p<s+uefa.uel_spots; p++) zones.push({pos:p,label:"LE",className:"zone-uel",rowClass:"pos-promo"}); s += uefa.uel_spots; }
+        if (uefa?.uecl_spots) { for (let p=s; p<s+uefa.uecl_spots; p++) zones.push({pos:p,label:"LK",className:"zone-uecl",rowClass:"pos-promo"}); }
+    }
+    const partnerCode = getCounterpartLeague(code, "down") || getCounterpartLeague(code, "up");
+    const partnerN = partnerCode && state.leagueTables?.[partnerCode] ? state.leagueTables[partnerCode].length : n;
+    const rule = getLeagueRule(code, n, partnerN);
+    for (let p=1; p<=Number(rule.promotion || 0); p++) zones.push({pos:p,label:"Awans",className:"zone-promo",rowClass:"pos-promo"});
+    const playoffPositions = Array.isArray(rule.playoffPromotion) ? rule.playoffPromotion : [];
+    playoffPositions.forEach(p => zones.push({pos:p,label:"Baraż o awans",className:"zone-playoff",rowClass:"pos-promo"}));
+    for (let i=0; i<Number(rule.playoffRelegation || 0); i++) zones.push({pos:n-Number(rule.relegation || 0)-i,label:"Baraż o utrzymanie",className:"zone-playoff",rowClass:"pos-releg"});
+    for (let i=0; i<Number(rule.relegation || 0); i++) zones.push({pos:n-i,label:"Spadek",className:"zone-releg",rowClass:"pos-releg"});
+    const byPos = new Map();
+    zones.forEach(z => { if (z.pos >= 1 && z.pos <= n && !byPos.has(z.pos)) byPos.set(z.pos, z); });
+    return byPos;
 }
 
 async function applyAllPromotionsRelegations() {
@@ -2151,19 +2797,36 @@ async function applyAllPromotionsRelegations() {
 
         const nU = upperTbl.length;
         const nL = lowerTbl.length;
-        const { directMove, hasPlayoff } = computeMoveCounts(nU, nL);
+        const upperRule = getLeagueRule(upperCode, nU, nL);
+        const lowerRule = getLeagueRule(lowerCode, nL, nU);
+        const directRelegation = Math.min(Number(upperRule.relegation || 0), Math.max(0, nU - 1));
+        const directPromotion = Math.min(Number(lowerRule.promotion || 0), Math.max(0, nL - 1));
+        const playoffRelegation = Math.min(Number(upperRule.playoffRelegation || 0), Math.max(0, nU - directRelegation));
+        const playoffPromotionPositions = (Array.isArray(lowerRule.playoffPromotion) ? lowerRule.playoffPromotion : [])
+            .filter(p => p >= 1 && p <= nL);
 
         const sortedU = [...upperTbl].sort(sortFn);
         const sortedL = [...lowerTbl].sort(sortFn);
 
-        // Bezposrednie awanse i spadki (identyczna liczba)
-        const relegateIds = sortedU.slice(nU - directMove).map(r => String(r.clubId));
-        const promoteIds  = sortedL.slice(0, directMove).map(r => String(r.clubId));
+        const relegateIds = sortedU.slice(nU - directRelegation).map(r => String(r.clubId));
+        const promoteIds  = sortedL.slice(0, directPromotion).map(r => String(r.clubId));
+        const playoffLowerRows = playoffPromotionPositions.map(p => sortedL[p-1]).filter(Boolean);
+        let lowerPlayoffWinner = null;
+        if (playoffLowerRows.length) {
+            lowerPlayoffWinner = playoffLowerRows.reduce((best,row)=>{
+                if(!best) return row;
+                const rowClub = lowerData.clubs.find(c => String(c.club_id) === String(row.clubId));
+                const bestClub = lowerData.clubs.find(c => String(c.club_id) === String(best.clubId));
+                const rowScore = (rowClub?.avg_rating || 60) + rand(-5,5) + row.points * 0.05;
+                const bestScore = (bestClub?.avg_rating || 60) + rand(-5,5) + best.points * 0.05;
+                return rowScore >= bestScore ? row : best;
+            }, null);
+            addNews(`Baraże o awans (${lowerData.name || lowerCode}): wygrywa ${lowerPlayoffWinner.name}.`);
+        }
 
-        // Baraz: sortedU[nU - directMove - 1] vs sortedL[directMove]
-        if (hasPlayoff && nU - directMove - 1 >= 0 && directMove < nL) {
-            const barazU = sortedU[nU - directMove - 1];
-            const barazL = sortedL[directMove];
+        if (playoffRelegation > 0 && lowerPlayoffWinner) {
+            const barazU = sortedU[nU - directRelegation - 1];
+            const barazL = lowerPlayoffWinner;
 
             if (barazU && barazL) {
                 const uId = String(barazU.clubId);
@@ -2174,7 +2837,7 @@ async function applyAllPromotionsRelegations() {
                 let upperSurvives;
 
                 if (userInUpper || userInLower) {
-                    // Baraz z udzialem gracza — uzywamy sily skladem
+                    // Baraż z udziałem gracza — używamy siły składu
                     const userStr = state.lineup.reduce((s, p) => s + p.rating, 0)
                         / Math.max(1, state.lineup.length);
                     const oppClubData = userInUpper
@@ -2182,7 +2845,7 @@ async function applyAllPromotionsRelegations() {
                         : upperData.clubs.find(c => String(c.club_id) === uId);
                     const oppStr = oppClubData?.avg_rating || 65;
 
-                    // Druzyna z wyzszej ligi gra u siebie (przewaga)
+                    // Drużyna z wyższej ligi gra u siebie (przewaga)
                     const isHome = userInUpper;
                     const ha = isHome ? 2 : 0;
                     const uG = calculateGoals(userStr * 0.11 + ha + rand(-3, 3), oppStr * 0.09 + rand(-3, 3));
@@ -2194,14 +2857,14 @@ async function applyAllPromotionsRelegations() {
                     if (userInUpper) {
                         upperSurvives = uG >= oG;
                         barazMsg = upperSurvives
-                            ? `Baraz o utrzymanie: ${state.team.name} utrzymuje sie z ${oppName} ${score}.`
-                            : `Baraz o utrzymanie: ${state.team.name} przegrywa z ${oppName} ${score} i spada.`;
+                            ? `Baraż o utrzymanie: ${state.team.name} utrzymuje się z ${oppName} ${score}.`
+                            : `Baraż o utrzymanie: ${state.team.name} przegrywa z ${oppName} ${score} i spada.`;
                     } else {
                         upperSurvives = uG <= oG;
                         const userWins = !upperSurvives;
                         barazMsg = userWins
-                            ? `Baraz o awans: ${state.team.name} wygrywa z ${oppName} ${uG}:${oG} i awansuje!`
-                            : `Baraz o awans: ${state.team.name} przegrywa z ${oppName} ${uG}:${oG}.`;
+                            ? `Baraż o awans: ${state.team.name} wygrywa z ${oppName} ${uG}:${oG} i awansuje!`
+                            : `Baraż o awans: ${state.team.name} przegrywa z ${oppName} ${uG}:${oG}.`;
                     }
                 } else {
                     // AI vs AI
@@ -2213,7 +2876,7 @@ async function applyAllPromotionsRelegations() {
                     const aG = calculateGoals(as, hs);
                     upperSurvives = hG >= aG;
                     const winner = upperSurvives ? barazU.name : barazL.name;
-                    addNews(`Baraz: ${barazU.name} ${hG}:${aG} ${barazL.name} — ${winner} wygrywa.`);
+                    addNews(`Baraż: ${barazU.name} ${hG}:${aG} ${barazL.name} — ${winner} wygrywa.`);
                 }
 
                 if (!upperSurvives) {
@@ -2221,9 +2884,11 @@ async function applyAllPromotionsRelegations() {
                     promoteIds.push(lId);
                 }
             }
+        } else if (lowerPlayoffWinner && !promoteIds.includes(String(lowerPlayoffWinner.clubId))) {
+            promoteIds.push(String(lowerPlayoffWinner.clubId));
         }
 
-        // Zastosuj bezposrednie awanse (z nizszej do wyzszej)
+        // Zastosuj awanse (z niższej do wyższej)
         for (const cid of promoteIds) {
             const ci = lowerData.clubs.findIndex(c => String(c.club_id) === cid);
             if (ci >= 0) {
@@ -2237,7 +2902,7 @@ async function applyAllPromotionsRelegations() {
             }
         }
 
-        // Zastosuj bezposrednie spadki (z wyzszej do nizszej)
+        // Zastosuj spadki (z wyższej do niższej)
         for (const cid of relegateIds) {
             const ci = upperData.clubs.findIndex(c => String(c.club_id) === cid);
             if (ci >= 0) {
@@ -2270,28 +2935,28 @@ function getSeasonOutcome() {
         ? state.leagueTables[partnerCode].length
         : n;
 
-    const { directMove, hasPlayoff } = computeMoveCounts(n, nPartner);
+    const rule = getLeagueRule(state.selectedLeagueCode, n, nPartner);
     const europe = getEuropeanQualification();
 
-    // Mistrz
-    if (pos === 0)
+    // Mistrz najwyższej ligi
+    if (!partnerUp && pos === 0)
         return { type:'champion',      label:'MISTRZ LIGI',          color:'#fbbf24', budget: BC(15), europe };
 
     // Bezposredni awans (tylko gdy jest liga wyzej)
-    if (partnerUp && pos > 0 && pos < directMove)
-        return { type:'promoted',      label:'AWANS BEZPOSREDNI',    color:'#10b981', budget: BC(9),  europe };
+    if (partnerUp && pos < Number(rule.promotion || 0))
+        return { type:'promoted',      label:'AWANS BEZPOŚREDNI',    color:'#10b981', budget: BC(9),  europe };
 
-    // Baraz o awans (tylko gdy jest liga wyzej)
-    if (partnerUp && pos === directMove && hasPlayoff)
-        return { type:'playoff_promo', label:'BARAZ O AWANS',        color:'#06b6d4', budget: BC(4),  europe: null };
+    // Baraż o awans (tylko gdy jest liga wyżej)
+    if (partnerUp && (rule.playoffPromotion || []).includes(pos + 1))
+        return { type:'playoff_promo', label:'BARAŻ O AWANS',        color:'#06b6d4', budget: BC(4),  europe: null };
 
-    // Bezposredni spadek (tylko gdy jest liga nizej)
-    if (partnerDown && pos >= n - directMove)
-        return { type:'relegated',     label:'SPADEK BEZPOSREDNI',   color:'#ef4444', budget: BC(-7), europe: null };
+    // Bezpośredni spadek (tylko gdy jest liga niżej)
+    if (partnerDown && pos >= n - Number(rule.relegation || 0))
+        return { type:'relegated',     label:'SPADEK BEZPOŚREDNI',   color:'#ef4444', budget: BC(-7), europe: null };
 
-    // Baraz o utrzymanie (tylko gdy jest liga nizej)
-    if (partnerDown && pos === n - directMove - 1 && hasPlayoff)
-        return { type:'playoff_releg', label:'BARAZ O UTRZYMANIE',   color:'#f59e0b', budget: BC(1),  europe: null };
+    // Baraż o utrzymanie (tylko gdy jest liga niżej)
+    if (partnerDown && pos >= n - Number(rule.relegation || 0) - Number(rule.playoffRelegation || 0) && pos < n - Number(rule.relegation || 0))
+        return { type:'playoff_releg', label:'BARAŻ O UTRZYMANIE',   color:'#f59e0b', budget: BC(1),  europe: null };
 
     // Srodek tabeli
     return { type:'mid', label:`MIEJSCE ${pos + 1}`, color:'#9ca3af', budget: BC(2), europe };
@@ -2360,7 +3025,7 @@ async function applySeasonOutcome() {
 
     let newsText = {
         champion: `MISTRZOWIE! ${state.team.name} zdobywa mistrzostwo ligi!`,
-        promoted:  `AWANS! ${state.team.name} awansuje do wyzszej klasy!`,
+        promoted:  `AWANS! ${state.team.name} awansuje do wyższej klasy!`,
         relegated: `SPADEK. ${state.team.name} spada z ligi.`,
         mid: `Sezon zakonczony na miejscu ${state.table.findIndex(r=>r.clubId===state.team.club_id)+1}.`,
     }[outcome.type];
@@ -2391,7 +3056,7 @@ async function finishSeasonNow() {
     const row = state.table.find(r => r.clubId === state.team.club_id);
     const endYear = state.currentDate.getFullYear();
 
-    // 4. Budzet/premia
+    // 4. Budżet/premia
     state.budgetMillions = Math.max(0.5, round2(state.budgetMillions + outcome.budget));
 
     // 5. Wiadomosc koniec sezonu — jedyna widoczna dla gracza
@@ -2399,22 +3064,28 @@ async function finishSeasonNow() {
         `Koniec sezonu ${endYear - 1}/${endYear}. ` +
         `${state.team.name}: miejsce ${pos}/${state.table.length}, ` +
         `${row?.points || 0} pkt. ` +
-        `Budzet: ${outcome.budget >= 0 ? '+' : ''}€${formatMoney(outcome.budget)}M.`
+        `Budżet: ${outcome.budget >= 0 ? '+' : ''}€${formatMoney(outcome.budget)}M.`
     );
 
-    // 6. Baraze i awanse/spadki
+    // 6. Baraże i awanse/spadki
     const report = await applyAllPromotionsRelegations();
     if (report?.barazMsg) addNews(report.barazMsg);
 
     // 7. Wiadomosc o wyniku
     const labels = {
         champion:      `${state.team.name} — Mistrzowie ligi!`,
-        promoted:      `${state.team.name} awansuje do wyzszej klasy!`,
+        promoted:      `${state.team.name} awansuje do wyższej klasy!`,
         relegated:     `${state.team.name} spada z ligi.`,
-        playoff_promo: `${state.team.name} gra w barazu — wynik podany powyzej.`,
-        playoff_releg: `${state.team.name} gra w barazu — wynik podany powyzej.`,
+        playoff_promo: `${state.team.name} gra w barażu — wynik podany powyżej.`,
+        playoff_releg: `${state.team.name} gra w barażu — wynik podany powyżej.`,
     };
     if (labels[outcome.type]) addNews(labels[outcome.type]);
+    state.europeanEntry = outcome.europe ? {
+        code: outcome.europe.short === "LM" ? "UCL" : outcome.europe.short === "LE" ? "UEL" : "UECL",
+        short: outcome.europe.short,
+        name: outcome.europe.name,
+    } : null;
+    if(state.europeanEntry) addNews(`Europejskie puchary: ${state.team.name} zagra w ${state.europeanEntry.name}.`);
 
     // 8. Zaktualizuj lige gracza po ruchach
     if (state.allLeagueData) {
@@ -2439,7 +3110,7 @@ async function finishSeasonNow() {
     restartSeason();
 }
 
-function restartSeason() {
+function restartSeason(endNews) {
     const june = state.currentDate;
     const ny   = june.getMonth() <= 6 ? june.getFullYear() : june.getFullYear() + 1;
 
@@ -2449,24 +3120,46 @@ function restartSeason() {
     state.transferWindow = "summer";
     state.results  = [];
     state.matchLog = [];
+    
+    // Wyczyść stare struktury sezonowe
+    state.leagueFixtures = {};
+    state.europeanGroup  = null;
+    state.europeanOpponents = [];
 
     agePlayers();
     generateYouthPlayers(2);
+    
     state.players.forEach(p => {
         p.matches = 0; p.goals = 0; p.assists = 0;
         p.fitness = 96; p.morale = 82;
-        p.yellowCards = 0;
-        p.suspended   = false;
+        p.yellowCards = 0; p.redCards = 0;
+        p.suspended = false;
+        if(p.injury) delete p.injury;
     });
 
     generateFixtures(ny);
     initTable();
-    if (state.selectedLeagueCode && state.leagueData) {
+    
+    if (state.allLeagueData) {
+        for (const [code, league] of Object.entries(state.allLeagueData)) {
+            initLeagueTable(code, league);
+        }
+        generateAllLeagueFixtures(ny);
+    } else if (state.selectedLeagueCode && state.leagueData) {
         initLeagueTable(state.selectedLeagueCode, state.leagueData);
     }
+    
+    if(state.leagueData) state.allTeams = state.leagueData.clubs;
 
     autoPick();
-    addNews(`Sezon ${ny}/${ny + 1} rozpoczety. Budzet: €${formatMoney(state.budgetMillions)}M.`);
+    
+    if(endNews) addNews(endNews);
+    addNews(`Sezon ${ny}/${ny+1} rozpoczety. Budzet: €${formatMoney(state.budgetMillions)}M.`);
+    
+    if(state.europeanEntry) {
+        addNews(`Terminarz UEFA dodany: ${state.europeanEntry.name}.`);
+    }
+    
     renderAll();
 }
 
@@ -2480,8 +3173,14 @@ function showMatchResult(){
     const opp=myTeam?a.name:h.name;
     const result=myG>opG?"WYGRANA":myG===opG?"REMIS":"PRZEGRANA";
     const color=myG>opG?"#10b981":myG===opG?"#f59e0b":"#ef4444";
+    const report = fx.matchReport;
+    const reportHtml = report ? `<div class="match-report-grid">
+        <div class="match-report-stat"><span>Posiadanie</span><strong>${report.possessionHome}% - ${report.possessionAway}%</strong></div>
+        <div class="match-report-stat"><span>Strzaly</span><strong>${report.shotsHome} - ${report.shotsAway}</strong></div>
+        <div class="match-report-stat"><span>xG</span><strong>${report.xgHome} - ${report.xgAway}</strong></div>
+    </div><div style="text-align:left;max-height:150px;overflow:auto;background:rgba(0,0,0,.22);border-radius:8px;padding:.6rem;margin-bottom:1rem;">${report.events.map(e=>`<div style="font-size:.78rem;color:var(--muted);"><strong style="color:#fff;">${e.min}'</strong> ${escapeHtml(e.text)}</div>`).join("")}</div>` : "";
     const c=document.getElementById("modalContent");
-    c.innerHTML=`<div style="text-align:center;"><div style="font-size:.75rem;text-transform:uppercase;font-weight:700;color:${color};letter-spacing:.1em;margin-bottom:.5rem;">${result}</div><div style="display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:1rem;"><div style="text-align:center;"><div style="width:60px;height:60px;border-radius:50%;background:${h.color};margin:0 auto .3rem;background-image:url('${h.logo_url}');background-size:76%;background-repeat:no-repeat;background-position:center;"></div><div style="font-size:.8rem;max-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${escapeHtml(h.name)}</div></div><div style="font-size:2.5rem;font-weight:900;color:#fff;padding:0 .5rem;">${fx.homeGoals}:${fx.awayGoals}</div><div style="text-align:center;"><div style="width:60px;height:60px;border-radius:50%;background:${a.color};margin:0 auto .3rem;background-image:url('${a.logo_url}');background-size:76%;background-repeat:no-repeat;background-position:center;"></div><div style="font-size:.8rem;max-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${escapeHtml(a.name)}</div></div></div><div style="color:var(--muted);font-size:.85rem;margin-bottom:1.5rem;">${state.matchLog[0]||""}</div><div style="display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;"><button class="btn btn-primary" onclick="closeModal()">OK</button><button class="btn btn-accent" onclick="simulateDay();closeModal();"><i class="fi fi-rr-forward"></i> Kontynuuj</button></div></div>`;
+    c.innerHTML=`<div style="text-align:center;"><div style="font-size:.75rem;text-transform:uppercase;font-weight:700;color:${color};letter-spacing:.1em;margin-bottom:.5rem;">${result} · ${escapeHtml(getFixtureCompetitionLabel(fx))}</div><div style="display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:1rem;"><div style="text-align:center;"><div style="width:60px;height:60px;border-radius:50%;background:${h.color};margin:0 auto .3rem;background-image:url('${h.logo_url}');background-size:76%;background-repeat:no-repeat;background-position:center;"></div><div style="font-size:.8rem;max-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${escapeHtml(h.name)}</div></div><div style="font-size:2.5rem;font-weight:900;color:#fff;padding:0 .5rem;">${fx.homeGoals}:${fx.awayGoals}</div><div style="text-align:center;"><div style="width:60px;height:60px;border-radius:50%;background:${a.color};margin:0 auto .3rem;background-image:url('${a.logo_url}');background-size:76%;background-repeat:no-repeat;background-position:center;"></div><div style="font-size:.8rem;max-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${escapeHtml(a.name)}</div></div></div>${reportHtml}<div style="color:var(--muted);font-size:.85rem;margin-bottom:1.5rem;">${state.matchLog[0]||""}</div><div style="display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;"><button class="btn btn-primary" onclick="closeModal()">OK</button><button class="btn btn-accent" onclick="simulateDay();closeModal();"><i class="fi fi-rr-forward"></i> Kontynuuj</button></div></div>`;
     document.getElementById("modal").classList.add("active");
 }
 function buildPlayerTooltipHtml(player) {
@@ -2604,7 +3303,39 @@ function renewContract(playerId) {
 
 function sellPlayer(playerId){const idx=state.players.findIndex((p)=>p.id===playerId);if(idx<0)return;const p=state.players[idx];const fee=round2(p.valueMillions*0.78);state.budgetMillions=round2(state.budgetMillions+fee);state.wageBudgetMillions=round2(state.wageBudgetMillions+p.wageMillions);state.players.splice(idx,1);state.lineup=state.lineup.filter((pl)=>pl.id!==playerId);state.bench=state.bench.filter((pl)=>pl.id!==playerId);autoPick();addNews(`€ ${p.name} odchodzi za €${formatMoney(fee)}M`);renderAll();}
 function addNews(text){state.news.push({date:formatDateLong(state.currentDate),text});}
-function getClub(id){return state.allTeams.find((c)=>c.club_id===String(id));}
+function getClub(id){
+    const sid = String(id);
+    // Liga gracza
+    let club = state.allTeams?.find((c)=>String(c.club_id)===sid);
+    if(club) return club;
+    // Przeciwnicy europejscy
+    if(state.europeanOpponents){
+        club = state.europeanOpponents.find((c)=>String(c.club_id)===sid);
+        if(club) return club;
+    }
+    // Wszystkie pozostałe ligi
+    if(state.allLeagueData){
+        for(const league of Object.values(state.allLeagueData)){
+            club = league.clubs?.find((c)=>String(c.club_id)===sid);
+            if(club) return club;
+        }
+    }
+    // Fallback dla dynamicznych klubów UEFA
+    if(sid.startsWith("EURO-")) {
+        const parts = sid.split("-");
+        const cupCode = parts[1];
+        const num = parts[2];
+        const cup = UEFA_CUPS[cupCode];
+        return {
+            club_id: sid,
+            name: `UEFA Club ${num}`,
+            color: cupCode==="UCL"?"#1d4ed8":cupCode==="UEL"?"#ea580c":"#16a34a",
+            logo_url: "",
+            avg_rating: cupCode==="UCL"?78:cupCode==="UEL"?73:68
+        };
+    }
+    return null;
+}
 function getTableRow(cid){return state.table.find((r)=>r.clubId===String(cid));}
 function getFixturesByDate(iso){return state.fixtures.filter((f)=>f.date===iso);}
 function getUserFixtures(){return state.fixtures.filter((f)=>isUserFixture(f));}
@@ -2620,7 +3351,15 @@ function isPastSeasonEnd() {
     return d >= new Date(seasonStartYear + 1, 5, 1);
 }
 function isUserFixture(f){return f.homeClubId===state.team.club_id||f.awayClubId===state.team.club_id;}
-function describeDay(){const d=state.currentDate.getDay();if(d===1)return"Regeneracja";if(d===2||d===4)return"Trening taktyczny";if(d===3)return"Analiza przeciwnika";if(d===5)return"Przygotowanie meczowe";return"Dzien klubowy";}
+function getFixtureCompetitionLabel(fx){
+    if(!fx?.competition||fx.competition==="league") return "Liga";
+    return UEFA_CUPS[fx.competition]?.name || fx.competition;
+}
+function fixtureRoundLabel(fx){
+    if(!fx?.competition||fx.competition==="league") return `Kolejka ${fx.round}`;
+    return `${UEFA_CUPS[fx.competition]?.short || fx.competition} ${fx.stage || "Mecz"} ${fx.round}`;
+}
+function describeDay(){const d=state.currentDate.getDay();if(d===1)return"Regeneracja";if(d===2||d===4)return"Trening taktyczny";if(d===3)return"Analiza przeciwnika";if(d===5)return"Przygotowanie meczowe";return"Dzień klubowy";}
 function paintBadge(elId,url,color,fallback){const n=document.getElementById(elId);n.style.background=color||"var(--bg-light)";if(url){n.style.backgroundImage=`url('${url}')`;n.style.backgroundSize="78%";n.style.backgroundPosition="center";n.style.backgroundRepeat="no-repeat";n.textContent="";}else{n.style.backgroundImage="";n.textContent=fallback||"";}}
 function snapToMatchDay(d){
     const day=d.getDay();

@@ -1,0 +1,5220 @@
+{
+  "competition_code": "LI1",
+  "name": "Toplyga",
+  "url": "https://www.transfermarkt.pl/toplyga/startseite/wettbewerb/LI1",
+  "club_count": 10,
+  "league_logo_url": "https://tmssl.akamaized.net//images/logo/homepageWappen150x150/li1.png",
+  "country": "Inne",
+  "tier": 4,
+  "level": 1,
+  "label": "Toplyga",
+  "startBudget": 8,
+  "rules": {},
+  "clubs": [
+    {
+      "club_id": "40090",
+      "name": "FK Kauno Zalgiris",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/40090.png?lm=1705347033",
+      "league_url": "",
+      "color": "hsl(253 70% 48%)",
+      "avg_rating": 69,
+      "strength": 69,
+      "budget_millions": 1.21,
+      "squad_size": 23,
+      "players": [
+        {
+          "player_id": "214284",
+          "name": "Gratas Sirgėdas",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 31,
+          "date_of_birth": "17 gru 1994 (31)",
+          "market_value": "600 tys. €",
+          "market_value_eur": 600000,
+          "rating": 73,
+          "rating_base": 68,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/214284-1438329805.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "503855",
+          "name": "Amine Benchaib",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 27,
+          "date_of_birth": "18 cze 1998 (27)",
+          "market_value": "600 tys. €",
+          "market_value_eur": 600000,
+          "rating": 72,
+          "rating_base": 68,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/503855-1608842470.jpg?lm=1",
+          "nationalities": [
+            "Belgia",
+            "Maroko"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "352564",
+          "name": "Aldayr Hernández",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 30,
+          "date_of_birth": "4 sie 1995 (30)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 72,
+          "rating_base": 67,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/352564-1747765156.jpg?lm=1",
+          "nationalities": [
+            "Kolumbia"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "558714",
+          "name": "Joris Moutachy",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 28,
+          "date_of_birth": "4 lis 1997 (28)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 71,
+          "rating_base": 67,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/558714-1644081791.jpg?lm=1",
+          "nationalities": [
+            "Martynika",
+            "Francja"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "279580",
+          "name": "Deividas Mikelionis",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 31,
+          "date_of_birth": "8 maj 1995 (31)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 70,
+          "rating_base": 65,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/279580-1761686781.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "206844",
+          "name": "Tomas Švedkauskas",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 31,
+          "date_of_birth": "22 cze 1994 (31)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 70,
+          "rating_base": 65,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/206844-1681240083.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "153820",
+          "name": "Davis Ikaunieks",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 32,
+          "date_of_birth": "7 sty 1994 (32)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 68,
+          "rating_base": 63,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/153820-1699719713.png?lm=1",
+          "nationalities": [
+            "Łotwa"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "409511",
+          "name": "Damjan Pavlovic",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 24,
+          "date_of_birth": "9 lip 2001 (24)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 67,
+          "rating_base": 65,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/409511-1595420328.jpg?lm=1",
+          "nationalities": [
+            "Serbia",
+            "Belgia"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "582227",
+          "name": "Motiejus Burba",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 22,
+          "date_of_birth": "10 sie 2003 (22)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 67,
+          "rating_base": 65,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/582227-1583780930.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "655678",
+          "name": "Franco Baldassarra",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 27,
+          "date_of_birth": "29 wrz 1998 (27)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 67,
+          "rating_base": 63,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/655678-1724877385.jpg?lm=1",
+          "nationalities": [
+            "Argentyna",
+            "Włochy"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "345587",
+          "name": "Luka Racic",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 27,
+          "date_of_birth": "8 maj 1999 (27)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 67,
+          "rating_base": 63,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/345587-1684914912.jpg?lm=1",
+          "nationalities": [
+            "Dania",
+            "Czarnogóra"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "276841",
+          "name": "Nosa Iyobosa Edokpolor",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 29,
+          "date_of_birth": "22 wrz 1996 (29)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 67,
+          "rating_base": 63,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/276841-1692960889.jpg?lm=1",
+          "nationalities": [
+            "Austria",
+            "Nigeria"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "663764",
+          "name": "Anton Tolordava",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 29,
+          "date_of_birth": "2 sie 1996 (29)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 66,
+          "rating_base": 62,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/663764-1687738997.png?lm=1",
+          "nationalities": [
+            "Gruzja"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "554304",
+          "name": "Léo Ribeiro",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 31,
+          "date_of_birth": "4 cze 1994 (31)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 64,
+          "rating_base": 59,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/554304-1636610328.png?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "724740",
+          "name": "Yukiyoshi Karashima",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 29,
+          "date_of_birth": "15 sty 1997 (29)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 63,
+          "rating_base": 59,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/724740-1742397731.png?lm=1",
+          "nationalities": [
+            "Japonia"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "216533",
+          "name": "Fabien Ourega",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 33,
+          "date_of_birth": "7 gru 1992 (33)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 62,
+          "rating_base": 56,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/216533-1678335110.png?lm=1",
+          "nationalities": [
+            "Francja",
+            "Wybrzeże Kości Słoniowej"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "454655",
+          "name": "Valdas Paulauskas",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 25,
+          "date_of_birth": "4 lut 2001 (25)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 59,
+          "rating_base": 56,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/454655-1761686727.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "140540",
+          "name": "Fedor Černych",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 34,
+          "date_of_birth": "21 maj 1991 (34)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 59,
+          "rating_base": 53,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/140540-1709214470.JPG?lm=1",
+          "nationalities": [
+            "Litwa",
+            "Rosja"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "328802",
+          "name": "Rokas Lekiatas",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 27,
+          "date_of_birth": "7 lis 1998 (27)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 58,
+          "rating_base": 54,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/328802-1706125450.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "801400",
+          "name": "Eduardas Jurjonas",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 21,
+          "date_of_birth": "30 maj 2004 (21)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 55,
+          "rating_base": 54,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/801400-1712687845.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "875029",
+          "name": "Tautvydas Burdzilauskas",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 20,
+          "date_of_birth": "18 maj 2005 (20)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 54,
+          "rating_base": 53,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "937089",
+          "name": "Oyinlola Kayode",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 23,
+          "date_of_birth": "29 lis 2002 (23)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 49,
+          "rating_base": 47,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "40090"
+        },
+        {
+          "player_id": "819384",
+          "name": "Joris Aliukonis",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 20,
+          "date_of_birth": "1 maj 2006 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/819384-1740344863.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "40090"
+        }
+      ]
+    },
+    {
+      "club_id": "602",
+      "name": "FK Zalgiris Wilno",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/602.png?lm=1475601977",
+      "league_url": "",
+      "color": "hsl(152 70% 48%)",
+      "avg_rating": 67,
+      "strength": 67,
+      "budget_millions": 1.03,
+      "squad_size": 27,
+      "players": [
+        {
+          "player_id": "230649",
+          "name": "Klaudijus Upstas",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 31,
+          "date_of_birth": "30 paź 1994 (31)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 70,
+          "rating_base": 65,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/230649-1774886301.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "190520",
+          "name": "Ovidijus Verbickas",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 32,
+          "date_of_birth": "4 lip 1993 (32)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 70,
+          "rating_base": 65,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/190520-1774886766.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "263246",
+          "name": "Giedrius Matulevičius",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 29,
+          "date_of_birth": "5 mar 1997 (29)",
+          "market_value": "450 tys. €",
+          "market_value_eur": 450000,
+          "rating": 69,
+          "rating_base": 65,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/263246-1774885171.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "422801",
+          "name": "Matas Vareika",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 26,
+          "date_of_birth": "27 sty 2000 (26)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 68,
+          "rating_base": 65,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/422801-1773765702.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "457347",
+          "name": "Vincentas Šarkauskas",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 26,
+          "date_of_birth": "11 sie 1999 (26)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 68,
+          "rating_base": 65,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/457347-1774887303.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "714252",
+          "name": "Saba Mamatsashvili",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 23,
+          "date_of_birth": "23 sie 2002 (23)",
+          "market_value": "450 tys. €",
+          "market_value_eur": 450000,
+          "rating": 67,
+          "rating_base": 65,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/714252-1774887080.jpg?lm=1",
+          "nationalities": [
+            "Gruzja"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "328807",
+          "name": "Deividas Šešplaukis",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 28,
+          "date_of_birth": "2 lut 1998 (28)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 67,
+          "rating_base": 63,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/328807-1774884694.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "379150",
+          "name": "Paulius Golubickas",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 26,
+          "date_of_birth": "19 sie 1999 (26)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 66,
+          "rating_base": 63,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/379150-1774886834.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "451328",
+          "name": "Grigore Turda",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 28,
+          "date_of_birth": "24 lip 1997 (28)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 66,
+          "rating_base": 62,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/451328-1774886114.jpg?lm=1",
+          "nationalities": [
+            "Rumunia"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "593279",
+          "name": "Younn Zahary",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 27,
+          "date_of_birth": "20 paź 1998 (27)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 66,
+          "rating_base": 62,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/593279-1567581745.jpg?lm=1",
+          "nationalities": [
+            "Komory",
+            "Francja"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "657635",
+          "name": "Bryan Teixeira",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 25,
+          "date_of_birth": "1 wrz 2000 (25)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 65,
+          "rating_base": 62,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/657635-1774883989.png?lm=1",
+          "nationalities": [
+            "Republika Zielonego Przylądka",
+            "Francja"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "801377",
+          "name": "Dariuš Stankevičius",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 21,
+          "date_of_birth": "10 cze 2004 (21)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 63,
+          "rating_base": 62,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/801377-1774884645.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "484941",
+          "name": "Carlos Olses",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 25,
+          "date_of_birth": "5 wrz 2000 (25)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 62,
+          "rating_base": 59,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/484941-1774884411.jpg?lm=1",
+          "nationalities": [
+            "Wenezuela",
+            "Argentyna"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "222825",
+          "name": "Nemanja Mihajlović",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 30,
+          "date_of_birth": "19 sty 1996 (30)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 59,
+          "rating_base": 54,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/222825-1774886537.jpg?lm=1",
+          "nationalities": [
+            "Serbia"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "582224",
+          "name": "Gustas Jarusevičius",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 22,
+          "date_of_birth": "23 maj 2003 (22)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/582224-1774886188.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "832317",
+          "name": "Martynas Šetkus",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 20,
+          "date_of_birth": "7 paź 2005 (20)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 57,
+          "rating_base": 56,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/832317-1774886402.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "120773",
+          "name": "Yuriy Kendysh",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 35,
+          "date_of_birth": "10 cze 1990 (35)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 57,
+          "rating_base": 50,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/120773-1774887386.jpg?lm=1",
+          "nationalities": [
+            "Białoruś"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "336577",
+          "name": "Petar Bosančić",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 30,
+          "date_of_birth": "19 kwi 1996 (30)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 54,
+          "rating_base": 49,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/336577-1774886866.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja",
+            "Bośnia i Hercegowina"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "1061589",
+          "name": "Patrik Matyžonok",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 19,
+          "date_of_birth": "23 lip 2006 (19)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 53,
+          "rating_base": 53,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1061589-1774886803.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "552160",
+          "name": "Nikola Petković",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 29,
+          "date_of_birth": "23 wrz 1996 (29)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/552160-1774886654.jpg?lm=1",
+          "nationalities": [
+            "Serbia"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "123256",
+          "name": "Liviu Antal",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 36,
+          "date_of_birth": "2 cze 1989 (36)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 52,
+          "rating_base": 45,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/123256-1774886342.jpg?lm=1",
+          "nationalities": [
+            "Rumunia"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "801384",
+          "name": "Kajus Bička",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 21,
+          "date_of_birth": "29 lis 2004 (21)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/801384-1774886267.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "1306561",
+          "name": "Kevin Lukaševič",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 20,
+          "date_of_birth": "6 maj 2006 (20)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 48,
+          "rating_base": 47,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "921512",
+          "name": "Marko Capan",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 22,
+          "date_of_birth": "24 lut 2004 (22)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/921512-1774886370.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "1319507",
+          "name": "Vytis Pavilonis",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 19,
+          "date_of_birth": "1 sty 2007 (19)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1319507-1774887344.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "875026",
+          "name": "Nedas Klimavičius",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 21,
+          "date_of_birth": "10 lut 2005 (21)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 43,
+          "rating_base": 42,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/875026-1774886505.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "602"
+        },
+        {
+          "player_id": "1319510",
+          "name": "Dominykas Čekavičius",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 18,
+          "date_of_birth": "12 mar 2008 (18)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1319510-1774884892.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "602"
+        }
+      ]
+    },
+    {
+      "club_id": "42310",
+      "name": "FA Siauliai",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/42310.png?lm=1529072878",
+      "league_url": "",
+      "color": "hsl(250 70% 48%)",
+      "avg_rating": 65,
+      "strength": 65,
+      "budget_millions": 0.78,
+      "squad_size": 26,
+      "players": [
+        {
+          "player_id": "229320",
+          "name": "Daniel Romanovskij",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 29,
+          "date_of_birth": "19 cze 1996 (29)",
+          "market_value": "600 tys. €",
+          "market_value_eur": 600000,
+          "rating": 72,
+          "rating_base": 68,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/229320-1713341483.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "585794",
+          "name": "Marko Mandić",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 27,
+          "date_of_birth": "11 mar 1999 (27)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 69,
+          "rating_base": 65,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/585794-1761687482.png?lm=1",
+          "nationalities": [
+            "Serbia"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "874591",
+          "name": "Gustas Baliutavičius",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 25,
+          "date_of_birth": "27 sie 2000 (25)",
+          "market_value": "450 tys. €",
+          "market_value_eur": 450000,
+          "rating": 68,
+          "rating_base": 65,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/874591-1715412596.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "167367",
+          "name": "Martynas Dapkus",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 33,
+          "date_of_birth": "16 lut 1993 (33)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 68,
+          "rating_base": 62,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/167367-1761686502.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "479647",
+          "name": "Benny",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 24,
+          "date_of_birth": "31 maj 2001 (24)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 67,
+          "rating_base": 65,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/479647-1761687732.png?lm=1",
+          "nationalities": [
+            "Portugalia"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "668431",
+          "name": "Gabrielius Micevičius",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 23,
+          "date_of_birth": "25 kwi 2003 (23)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 67,
+          "rating_base": 65,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/668431-1761687635.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "582260",
+          "name": "Nojus Stankevičius",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 24,
+          "date_of_birth": "1 lut 2002 (24)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/582260-1741800976.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "560422",
+          "name": "Lazar Vukovic",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 28,
+          "date_of_birth": "11 kwi 1998 (28)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 60,
+          "rating_base": 56,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/560422-1759833530.jpg?lm=1",
+          "nationalities": [
+            "Serbia"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "874987",
+          "name": "Nedas Garbaliauskas",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 19,
+          "date_of_birth": "7 sty 2007 (19)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 59,
+          "rating_base": 59,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "340736",
+          "name": "Divine Naah",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 30,
+          "date_of_birth": "20 kwi 1996 (30)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 59,
+          "rating_base": 54,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/340736-1534930703.jpg?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "518384",
+          "name": "Karolis Žebrauskas",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 23,
+          "date_of_birth": "12 cze 2002 (23)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "353212",
+          "name": "Rui Batalha",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 29,
+          "date_of_birth": "29 cze 1996 (29)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/353212-1750784761.png?lm=1",
+          "nationalities": [
+            "Portugalia"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "320279",
+          "name": "Sammy Skytte",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 29,
+          "date_of_birth": "20 lut 1997 (29)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/320279-1719427438.JPG?lm=1",
+          "nationalities": [
+            "Dania"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "594053",
+          "name": "Deividas Dovydaitis",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 23,
+          "date_of_birth": "26 sty 2003 (23)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 56,
+          "rating_base": 54,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "819381",
+          "name": "Danielius Jarašius",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 19,
+          "date_of_birth": "12 lip 2006 (19)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 53,
+          "rating_base": 53,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/819381-1761686599.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "1121485",
+          "name": "Edgaras Bierontas",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 18,
+          "date_of_birth": "3 paź 2007 (18)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 49,
+          "rating_base": 49,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "803160",
+          "name": "Emilis Gasiūnas",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 22,
+          "date_of_birth": "12 cze 2003 (22)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 49,
+          "rating_base": 47,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "682333",
+          "name": "Kristupas Keršys",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "6 wrz 2003 (22)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 49,
+          "rating_base": 47,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/682333-1726557978.png?lm=1",
+          "nationalities": [
+            "Litwa",
+            "Łotwa"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "1179289",
+          "name": "Ugnius Vaitiekaitis",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 19,
+          "date_of_birth": "27 sie 2006 (19)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "1007775",
+          "name": "Brooklyn Leipus",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 18,
+          "date_of_birth": "8 sie 2007 (18)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa",
+            "Republika Południowej Afryki"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "684244",
+          "name": "Chidera Nwoga",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 25,
+          "date_of_birth": "27 sie 2000 (25)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "668432",
+          "name": "Gabijus Micevičius",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 23,
+          "date_of_birth": "25 kwi 2003 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "1171647",
+          "name": "Gustas Geštautas",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 19,
+          "date_of_birth": "27 lut 2007 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "819361",
+          "name": "Patrikas Pranckus",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 19,
+          "date_of_birth": "29 cze 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "826018",
+          "name": "Paulius Linkevičius",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 19,
+          "date_of_birth": "20 sie 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "42310"
+        },
+        {
+          "player_id": "832354",
+          "name": "Vilius Šivickas",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 20,
+          "date_of_birth": "4 lip 2005 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "42310"
+        }
+      ]
+    },
+    {
+      "club_id": "49149",
+      "name": "FK Panevezys",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/49149.png?lm=1459609321",
+      "league_url": "",
+      "color": "hsl(267 70% 48%)",
+      "avg_rating": 65,
+      "strength": 65,
+      "budget_millions": 0.83,
+      "squad_size": 26,
+      "players": [
+        {
+          "player_id": "454666",
+          "name": "Rokas Rasimavičius",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 24,
+          "date_of_birth": "21 wrz 2001 (24)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 69,
+          "rating_base": 67,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/454666-1761687991.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "422805",
+          "name": "Matas Ramanauskas",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 25,
+          "date_of_birth": "28 cze 2000 (25)",
+          "market_value": "450 tys. €",
+          "market_value_eur": 450000,
+          "rating": 68,
+          "rating_base": 65,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/422805-1761687849.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "247315",
+          "name": "Justinas Januševskij",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 32,
+          "date_of_birth": "26 mar 1994 (32)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 68,
+          "rating_base": 63,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/247315-1761687544.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "373941",
+          "name": "Joël Bopesu",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 31,
+          "date_of_birth": "25 sty 1995 (31)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 67,
+          "rating_base": 62,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/373941-1737871033.png?lm=1",
+          "nationalities": [
+            "Francja",
+            "Demokratyczna Republika Kongo"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "879631",
+          "name": "Laurit Krasniqi",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 24,
+          "date_of_birth": "14 lip 2001 (24)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 65,
+          "rating_base": 63,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/879631-1659086820.jpg?lm=1",
+          "nationalities": [
+            "Kosowo",
+            "Belgia"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "1114494",
+          "name": "Oleksandr Kurtsev",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 23,
+          "date_of_birth": "26 wrz 2002 (23)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 65,
+          "rating_base": 63,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1114494-1726557532.png?lm=1",
+          "nationalities": [
+            "Ukraina"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "1356348",
+          "name": "Salomon Kouadio",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 22,
+          "date_of_birth": "30 maj 2003 (22)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 65,
+          "rating_base": 63,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Wybrzeże Kości Słoniowej"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "422796",
+          "name": "Arijus Bražinskas",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 26,
+          "date_of_birth": "26 sty 2000 (26)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 65,
+          "rating_base": 62,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/422796-1761687792.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "719654",
+          "name": "Isaac Asante",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 23,
+          "date_of_birth": "29 sie 2002 (23)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/719654-1718282240.jpg?lm=1",
+          "nationalities": [
+            "Belgia",
+            "Ghana"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "528786",
+          "name": "Milan Delevic",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 28,
+          "date_of_birth": "23 lut 1998 (28)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 63,
+          "rating_base": 59,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/528786-1705603075.jpeg?lm=1",
+          "nationalities": [
+            "Serbia",
+            "Niemcy"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "164222",
+          "name": "Ernestas Veliulis",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 33,
+          "date_of_birth": "22 sie 1992 (33)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 60,
+          "rating_base": 54,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/164222-1508782318.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "316260",
+          "name": "Elivelto",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 34,
+          "date_of_birth": "2 sty 1992 (34)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 59,
+          "rating_base": 53,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/316260-1566949660.png?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "97830",
+          "name": "Vytautas Černiauskas",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 37,
+          "date_of_birth": "12 mar 1989 (37)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 56,
+          "rating_base": 49,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/97830-1615914453.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "870068",
+          "name": "Ernestas Burdzilauskas",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 22,
+          "date_of_birth": "22 cze 2003 (22)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "321157",
+          "name": "Edvin Muratovic",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 29,
+          "date_of_birth": "15 lut 1997 (29)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/321157-1751992673.png?lm=1",
+          "nationalities": [
+            "Luksemburg",
+            "Czarnogóra"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "537234",
+          "name": "Marko Bačanin",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 27,
+          "date_of_birth": "9 lip 1998 (27)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/537234-1735412589.jpg?lm=1",
+          "nationalities": [
+            "Serbia"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "745328",
+          "name": "Strahinja Kerkez",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 23,
+          "date_of_birth": "13 gru 2002 (23)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 52,
+          "rating_base": 50,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/745328-1733495277.png?lm=1",
+          "nationalities": [
+            "Cypr",
+            "Serbia"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "536512",
+          "name": "Lovro Grajfoner",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 26,
+          "date_of_birth": "25 sty 2000 (26)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 52,
+          "rating_base": 49,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/536512-1645111166.png?lm=1",
+          "nationalities": [
+            "Słowenia"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "871112",
+          "name": "Rayen Mzoughi",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 26,
+          "date_of_birth": "8 sty 2000 (26)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 52,
+          "rating_base": 49,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/871112-1700579044.png?lm=1",
+          "nationalities": [
+            "Tunezja"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "575086",
+          "name": "Kwadwo Asamoah",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 23,
+          "date_of_birth": "15 lip 2002 (23)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "891480",
+          "name": "Miano van den Bos",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 23,
+          "date_of_birth": "31 mar 2003 (23)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Tanzania",
+            "Holandia"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "205446",
+          "name": "Jérôme Simon",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 32,
+          "date_of_birth": "12 wrz 1993 (32)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 50,
+          "rating_base": 45,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/205446-1691089101.jpg?lm=1",
+          "nationalities": [
+            "Francja"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "1171644",
+          "name": "Dovydas Balsys",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 17,
+          "date_of_birth": "5 paź 2008 (17)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "1108676",
+          "name": "Ignas Lukoševičius",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 19,
+          "date_of_birth": "28 sty 2007 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "1271838",
+          "name": "Jesse Adah",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 21,
+          "date_of_birth": "20 lip 2004 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Holandia",
+            "Nigeria"
+          ],
+          "club_id": "49149"
+        },
+        {
+          "player_id": "1275735",
+          "name": "Liudvikas Valius",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 19,
+          "date_of_birth": "19 sty 2007 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "49149"
+        }
+      ]
+    },
+    {
+      "club_id": "8047",
+      "name": "FK Suduva Marijampole",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/8047.png?lm=1771444704",
+      "league_url": "",
+      "color": "hsl(211 70% 48%)",
+      "avg_rating": 65,
+      "strength": 65,
+      "budget_millions": 0.8,
+      "squad_size": 27,
+      "players": [
+        {
+          "player_id": "373226",
+          "name": "Domantas Antanavičius",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 27,
+          "date_of_birth": "18 lis 1998 (27)",
+          "market_value": "450 tys. €",
+          "market_value_eur": 450000,
+          "rating": 69,
+          "rating_base": 65,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/373226-1680711592.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "446767",
+          "name": "Steve Lawson",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 31,
+          "date_of_birth": "8 sie 1994 (31)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 68,
+          "rating_base": 63,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/446767-1624630422.jpg?lm=1",
+          "nationalities": [
+            "Togo",
+            "Francja"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "518381",
+          "name": "Žygimantas Baltrūnas",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 24,
+          "date_of_birth": "11 mar 2002 (24)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 67,
+          "rating_base": 65,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/518381-1563803291.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "527959",
+          "name": "Henry Uzochukwu",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 27,
+          "date_of_birth": "22 sty 1999 (27)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 67,
+          "rating_base": 63,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/527959-1689929168.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "187267",
+          "name": "Ignas Plūkas",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 32,
+          "date_of_birth": "8 gru 1993 (32)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 67,
+          "rating_base": 62,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/187267-1661276142.JPG?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "190483",
+          "name": "Markas Beneta",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 32,
+          "date_of_birth": "8 lip 1993 (32)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 67,
+          "rating_base": 62,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/190483-1552211786.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "394779",
+          "name": "Sidy Sanokho",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 29,
+          "date_of_birth": "8 maj 1997 (29)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 66,
+          "rating_base": 62,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Francja",
+            "Mali"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "999121",
+          "name": "Frankline Tangiri",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 24,
+          "date_of_birth": "11 gru 2001 (24)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Kamerun"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "1111775",
+          "name": "Ibrahima Seck",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 21,
+          "date_of_birth": "19 maj 2004 (21)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 63,
+          "rating_base": 62,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1111775-1738256107.jpg?lm=1",
+          "nationalities": [
+            "Senegal"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "531904",
+          "name": "Meinardas Mikulėnas",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 23,
+          "date_of_birth": "9 lip 2002 (23)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 61,
+          "rating_base": 59,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/531904-1741803168.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "798983",
+          "name": "Faustas Steponavičius",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 21,
+          "date_of_birth": "8 cze 2004 (21)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 60,
+          "rating_base": 59,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/798983-1690119362.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "328808",
+          "name": "Ernestas Stočkūnas",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 28,
+          "date_of_birth": "26 kwi 1998 (28)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 60,
+          "rating_base": 56,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/328808-1488234025.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "649288",
+          "name": "Amadou Sabo",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 25,
+          "date_of_birth": "30 maj 2000 (25)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 59,
+          "rating_base": 56,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Niger"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "1012747",
+          "name": "Giedrius Zenkevičius",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 28,
+          "date_of_birth": "29 paź 1997 (28)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "1380147",
+          "name": "Lucky Tom",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 20,
+          "date_of_birth": "1 kwi 2006 (20)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 55,
+          "rating_base": 54,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "448538",
+          "name": "Moutir Chajia",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 27,
+          "date_of_birth": "4 cze 1998 (27)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/448538-1724826700.jpg?lm=1",
+          "nationalities": [
+            "Belgia",
+            "Maroko"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "422803",
+          "name": "Titas Milašius",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 25,
+          "date_of_birth": "12 gru 2000 (25)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 52,
+          "rating_base": 49,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/422803-1729807543.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "1077430",
+          "name": "Rati Grigalava",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 19,
+          "date_of_birth": "22 cze 2006 (19)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 49,
+          "rating_base": 49,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1077430-1716367940.png?lm=1",
+          "nationalities": [
+            "Gruzja"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "415993",
+          "name": "Omran Haydary",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 28,
+          "date_of_birth": "13 sty 1998 (28)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 49,
+          "rating_base": 45,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/415993-1713340721.png?lm=1",
+          "nationalities": [
+            "Afganistan",
+            "Holandia"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "124197",
+          "name": "Aleksandar Živanović",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 39,
+          "date_of_birth": "8 kwi 1987 (39)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 49,
+          "rating_base": 42,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/124197-1508782459.png?lm=1",
+          "nationalities": [
+            "Serbia"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "1119449",
+          "name": "Dominykas Pudžemys",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 19,
+          "date_of_birth": "15 lis 2006 (19)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "1333998",
+          "name": "Walid Dhouib",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 19,
+          "date_of_birth": "1 sie 2006 (19)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1333998-1774605295.jpeg?lm=1",
+          "nationalities": [
+            "Tunezja",
+            "Francja"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "993665",
+          "name": "Emmanuel Agbor",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 22,
+          "date_of_birth": "21 cze 2003 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/993665-1764775366.jpg?lm=1",
+          "nationalities": [
+            "Kamerun"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "819365",
+          "name": "Ignas Skamarakas",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 19,
+          "date_of_birth": "1 sie 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "1243680",
+          "name": "Pijus Bičkauskas",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 18,
+          "date_of_birth": "15 lis 2007 (18)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "1037222",
+          "name": "Rokas Pačėsa",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 19,
+          "date_of_birth": "20 cze 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "8047"
+        },
+        {
+          "player_id": "1239007",
+          "name": "Yusuke Omori",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 21,
+          "date_of_birth": "3 maj 2005 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1239007-1712086209.jpg?lm=1",
+          "nationalities": [
+            "Japonia"
+          ],
+          "club_id": "8047"
+        }
+      ]
+    },
+    {
+      "club_id": "69752",
+      "name": "FC Hegelmann",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/69752.png?lm=1659959156",
+      "league_url": "",
+      "color": "hsl(269 70% 48%)",
+      "avg_rating": 64,
+      "strength": 64,
+      "budget_millions": 0.79,
+      "squad_size": 23,
+      "players": [
+        {
+          "player_id": "1236397",
+          "name": "Abdel Kader Njoya",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 22,
+          "date_of_birth": "5 paź 2003 (22)",
+          "market_value": "600 tys. €",
+          "market_value_eur": 600000,
+          "rating": 71,
+          "rating_base": 68,
+          "rating_experience": 2,
+          "rating_potential": 1,
+          "potential": 1,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1236397-1761686876.png?lm=1",
+          "nationalities": [
+            "Kamerun"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "229297",
+          "name": "Rimvydas Sadauskas",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 29,
+          "date_of_birth": "21 lip 1996 (29)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 71,
+          "rating_base": 67,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/229297-1470747610.JPG?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "452238",
+          "name": "Samuel Oum Gouet",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 28,
+          "date_of_birth": "14 gru 1997 (28)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 67,
+          "rating_base": 63,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/452238-1540455929.jpg?lm=1",
+          "nationalities": [
+            "Kamerun"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "455214",
+          "name": "Carlos Duke",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 26,
+          "date_of_birth": "28 lut 2000 (26)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 65,
+          "rating_base": 62,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/455214-1712085065.jpg?lm=1",
+          "nationalities": [
+            "Japonia"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "668420",
+          "name": "Matijus Remeikis",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 23,
+          "date_of_birth": "28 mar 2003 (23)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/668420-1727615035.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "461717",
+          "name": "Vedad Radonja",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 24,
+          "date_of_birth": "6 wrz 2001 (24)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/461717-1728394241.png?lm=1",
+          "nationalities": [
+            "Bośnia i Hercegowina"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "279536",
+          "name": "Vilius Armanavičius",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 31,
+          "date_of_birth": "8 maj 1995 (31)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 64,
+          "rating_base": 59,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/279536-1681117797.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "123279",
+          "name": "Artem Shchedryi",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 33,
+          "date_of_birth": "9 lis 1992 (33)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 62,
+          "rating_base": 56,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/123279-1639151632.png?lm=1",
+          "nationalities": [
+            "Ukraina"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "867676",
+          "name": "Darrell Tibell",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 24,
+          "date_of_birth": "20 lut 2002 (24)",
+          "market_value": "275 tys. €",
+          "market_value_eur": 275000,
+          "rating": 61,
+          "rating_base": 59,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/867676-1712186032.jpg?lm=1",
+          "nationalities": [
+            "Szwecja",
+            "Kamerun"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "167863",
+          "name": "Donatas Kazlauskas",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 32,
+          "date_of_birth": "31 mar 1994 (32)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 59,
+          "rating_base": 54,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/167863-1688466254.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "1068796",
+          "name": "Barry Isaac",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 24,
+          "date_of_birth": "28 sie 2001 (24)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1068796-1725458481.png?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "336030",
+          "name": "Lukas Paukštė",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 27,
+          "date_of_birth": "25 wrz 1998 (27)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 58,
+          "rating_base": 54,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/336030-1715412441.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "1033750",
+          "name": "Andrius Kaulinis",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 25,
+          "date_of_birth": "1 gru 2000 (25)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 56,
+          "rating_base": 53,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1033750-1741800766.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "464358",
+          "name": "Stefan Radinovic",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 26,
+          "date_of_birth": "9 gru 1999 (26)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 56,
+          "rating_base": 53,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Czarnogóra"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "1084078",
+          "name": "Wesley",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 22,
+          "date_of_birth": "30 sty 2004 (22)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "766579",
+          "name": "Ángel Puerto",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 23,
+          "date_of_birth": "13 lis 2002 (23)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/766579-1761245082.png?lm=1",
+          "nationalities": [
+            "Hiszpania"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "1347958",
+          "name": "Abdoul Harouna",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 20,
+          "date_of_birth": "17 lut 2006 (20)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 54,
+          "rating_base": 53,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Wybrzeże Kości Słoniowej"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "1052071",
+          "name": "Esmilis Kaušinis",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 21,
+          "date_of_birth": "31 maj 2004 (21)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 54,
+          "rating_base": 53,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "801398",
+          "name": "Domas Slendzoka",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "22 lut 2004 (22)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 52,
+          "rating_base": 50,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "1264294",
+          "name": "Dominykas Pašilys",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 21,
+          "date_of_birth": "19 wrz 2004 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "991433",
+          "name": "Lukas Jonaitis",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 19,
+          "date_of_birth": "30 paź 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/991433-1681239939.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "1518439",
+          "name": "Lukas Kolendo",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 18,
+          "date_of_birth": "8 sie 2007 (18)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "69752"
+        },
+        {
+          "player_id": "668419",
+          "name": "Rokas Bagdonavičius",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 22,
+          "date_of_birth": "20 sty 2004 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "69752"
+        }
+      ]
+    },
+    {
+      "club_id": "23559",
+      "name": "FK Banga Gargzdai",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/23559.png?lm=1418575836",
+      "league_url": "",
+      "color": "hsl(264 70% 48%)",
+      "avg_rating": 63,
+      "strength": 63,
+      "budget_millions": 0.63,
+      "squad_size": 24,
+      "players": [
+        {
+          "player_id": "882962",
+          "name": "Aaron Olugbogi",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 24,
+          "date_of_birth": "2 cze 2001 (24)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 67,
+          "rating_base": 65,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/882962-1737225848.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "422811",
+          "name": "Valdas Antužis",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 25,
+          "date_of_birth": "19 cze 2000 (25)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 66,
+          "rating_base": 63,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "718780",
+          "name": "Deividas Malžinskas",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 27,
+          "date_of_birth": "1 maj 1999 (27)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 66,
+          "rating_base": 62,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "668426",
+          "name": "Vaidas Magdušauskas",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 22,
+          "date_of_birth": "2 gru 2003 (22)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 65,
+          "rating_base": 63,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/668426-1621152385.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "725330",
+          "name": "Ignas Venckus",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 24,
+          "date_of_birth": "17 lip 2001 (24)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/725330-1761687022.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "531906",
+          "name": "Natanas Žebrauskas",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 24,
+          "date_of_birth": "18 lut 2002 (24)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/531906-1690641240.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "475654",
+          "name": "Rokas Filipavičius",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 26,
+          "date_of_birth": "22 gru 1999 (26)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 62,
+          "rating_base": 59,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "332144",
+          "name": "Volodymyr Krynskyi",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 29,
+          "date_of_birth": "14 sty 1997 (29)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 60,
+          "rating_base": 56,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/332144-1702193460.png?lm=1",
+          "nationalities": [
+            "Ukraina"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "190502",
+          "name": "Dovydas Norvilas",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 33,
+          "date_of_birth": "5 kwi 1993 (33)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 59,
+          "rating_base": 53,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "707663",
+          "name": "Aaron Appiah",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 22,
+          "date_of_birth": "18 maj 2003 (22)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/707663-1758801901.png?lm=1",
+          "nationalities": [
+            "Szwajcaria",
+            "Ghana"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "600304",
+          "name": "Kofi Fosuhene Asare",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 23,
+          "date_of_birth": "31 maj 2002 (23)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/600304-1724968163.jpg?lm=1",
+          "nationalities": [
+            "Szwecja",
+            "Ghana"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "871581",
+          "name": "Misaki Sato",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 27,
+          "date_of_birth": "11 wrz 1998 (27)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/871581-1695656576.jpg?lm=1",
+          "nationalities": [
+            "Japonia"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "695504",
+          "name": "Simão Júnior",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 27,
+          "date_of_birth": "29 sie 1998 (27)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Gwinea Bissau",
+            "Portugalia"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "445449",
+          "name": "Ricardo Henning",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 25,
+          "date_of_birth": "22 wrz 2000 (25)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 52,
+          "rating_base": 49,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/445449-1725630780.jpg?lm=1",
+          "nationalities": [
+            "Niemcy",
+            "Jamajka"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "801396",
+          "name": "Maksim Andrejev",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 21,
+          "date_of_birth": "9 cze 2004 (21)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 51,
+          "rating_base": 50,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "1108671",
+          "name": "Matas Ambrazaitis",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 19,
+          "date_of_birth": "3 mar 2007 (19)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 49,
+          "rating_base": 49,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "82654",
+          "name": "Armantas Vitkauskas",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 37,
+          "date_of_birth": "23 mar 1989 (37)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 49,
+          "rating_base": 42,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/82654-1488233638.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "479637",
+          "name": "Ronaldo Camará",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 23,
+          "date_of_birth": "5 sty 2003 (23)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 44,
+          "rating_base": 42,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/479637-1708458970.png?lm=1",
+          "nationalities": [
+            "Gwinea Bissau",
+            "Portugalia"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "1191585",
+          "name": "Armandas Razvadauskas",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 21,
+          "date_of_birth": "4 lut 2005 (21)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 43,
+          "rating_base": 42,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "1341817",
+          "name": "Sidas Praleika",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 18,
+          "date_of_birth": "25 maj 2007 (18)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "438241",
+          "name": "Aleksandr Levšin",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 26,
+          "date_of_birth": "14 sie 1999 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/438241-1681239710.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "1223933",
+          "name": "Cadu",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 21,
+          "date_of_birth": "7 sty 2005 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1223933-1769020010.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "832316",
+          "name": "Lukas Grinkevičius",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 20,
+          "date_of_birth": "9 lis 2005 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "23559"
+        },
+        {
+          "player_id": "892680",
+          "name": "Umaro Candé",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 21,
+          "date_of_birth": "28 gru 2004 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/892680-1724857725.jpg?lm=1",
+          "nationalities": [
+            "Gwinea Bissau"
+          ],
+          "club_id": "23559"
+        }
+      ]
+    },
+    {
+      "club_id": "28740",
+      "name": "FC Džiugas Telšiai",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/28740.png?lm=1498768861",
+      "league_url": "",
+      "color": "hsl(261 70% 48%)",
+      "avg_rating": 62,
+      "strength": 62,
+      "budget_millions": 0.54,
+      "squad_size": 25,
+      "players": [
+        {
+          "player_id": "231120",
+          "name": "Lukas Ankudinovas",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 30,
+          "date_of_birth": "10 sie 1995 (30)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 68,
+          "rating_base": 63,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/231120-1761687230.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "504027",
+          "name": "Marius Paukštė",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 31,
+          "date_of_birth": "15 gru 1994 (31)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 68,
+          "rating_base": 63,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "454668",
+          "name": "Vilius Piliukaitis",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 25,
+          "date_of_birth": "10 mar 2001 (25)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 66,
+          "rating_base": 63,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/454668-1761687366.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "1062376",
+          "name": "Ibrahim Cissé",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "6 gru 2003 (22)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1062376-1719231610.jpg?lm=1",
+          "nationalities": [
+            "Wybrzeże Kości Słoniowej"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "666967",
+          "name": "Bacary Sané",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 23,
+          "date_of_birth": "24 gru 2002 (23)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 61,
+          "rating_base": 59,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/666967-1726563452.png?lm=1",
+          "nationalities": [
+            "Senegal"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "540928",
+          "name": "Valentino Vermeulen",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 24,
+          "date_of_birth": "20 lip 2001 (24)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 61,
+          "rating_base": 59,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/540928-1718023294.jpg?lm=1",
+          "nationalities": [
+            "Holandia"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "930856",
+          "name": "Ronald Sobowale",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 28,
+          "date_of_birth": "19 lip 1997 (28)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 60,
+          "rating_base": 56,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/930856-1642615726.jpg?lm=1",
+          "nationalities": [
+            "Anglia",
+            "Nigeria"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "720660",
+          "name": "Deitonas Vinckus",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 24,
+          "date_of_birth": "17 kwi 2002 (24)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "900788",
+          "name": "Denis Ževžikovas",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 21,
+          "date_of_birth": "10 sie 2004 (21)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 57,
+          "rating_base": 56,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "726052",
+          "name": "Gastón Manuel Romano",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 27,
+          "date_of_birth": "25 maj 1998 (27)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/726052-1667499883.png?lm=1",
+          "nationalities": [
+            "Argentyna",
+            "Włochy"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "297231",
+          "name": "Jakub Wawszczyk",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 28,
+          "date_of_birth": "11 sty 1998 (28)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/297231-1741801445.jpg?lm=1",
+          "nationalities": [
+            "Polska"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "1041552",
+          "name": "Denys Bunchukov",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 22,
+          "date_of_birth": "20 cze 2003 (22)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1041552-1667205926.jpg?lm=1",
+          "nationalities": [
+            "Ukraina"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "1068964",
+          "name": "Artem Marchuk",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 19,
+          "date_of_birth": "3 lis 2006 (19)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 49,
+          "rating_base": 49,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1068964-1758385513.png?lm=1",
+          "nationalities": [
+            "Ukraina"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "938623",
+          "name": "Tomas Stelmokas",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 20,
+          "date_of_birth": "29 lip 2005 (20)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 48,
+          "rating_base": 47,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "801397",
+          "name": "Džiugas Aleksa",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 22,
+          "date_of_birth": "1 kwi 2004 (22)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/801397-1740344943.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "731763",
+          "name": "Josh Okpolokpo",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 23,
+          "date_of_birth": "31 mar 2003 (23)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/731763-1755627337.jpg?lm=1",
+          "nationalities": [
+            "Irlandia",
+            "Anglia"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "874616",
+          "name": "Nidas Vosylius",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 20,
+          "date_of_birth": "15 lip 2005 (20)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "1079342",
+          "name": "Gvidas Girdvainis",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 20,
+          "date_of_birth": "14 kwi 2006 (20)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 43,
+          "rating_base": 42,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "1408176",
+          "name": "Brendan Ifeanyi Asomugha",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 20,
+          "date_of_birth": "19 gru 2005 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "933751",
+          "name": "Iker Scotto",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 23,
+          "date_of_birth": "6 cze 2002 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Argentyna"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "1292540",
+          "name": "Mykyta Rybchynskyi",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 21,
+          "date_of_birth": "22 wrz 2004 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Ukraina"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "1007777",
+          "name": "Nikita Pavlovskij",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 19,
+          "date_of_birth": "30 sie 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "880256",
+          "name": "Pedro Bahia",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 24,
+          "date_of_birth": "1 lut 2002 (24)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/880256-1757533036.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "1381822",
+          "name": "Simas Rimantas Patella",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 20,
+          "date_of_birth": "26 wrz 2005 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "28740"
+        },
+        {
+          "player_id": "1159735",
+          "name": "Vladyslav Ryabenko",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 23,
+          "date_of_birth": "18 mar 2003 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1159735-1692364404.png?lm=1",
+          "nationalities": [
+            "Ukraina"
+          ],
+          "club_id": "28740"
+        }
+      ]
+    },
+    {
+      "club_id": "98841",
+      "name": "FK TransINVEST",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/98841.png?lm=1722263742",
+      "league_url": "",
+      "color": "hsl(270 70% 48%)",
+      "avg_rating": 59,
+      "strength": 59,
+      "budget_millions": 0.5,
+      "squad_size": 24,
+      "players": [
+        {
+          "player_id": "615293",
+          "name": "Mantas Bertašius",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 26,
+          "date_of_birth": "3 maj 2000 (26)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 68,
+          "rating_base": 65,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/615293-1740345296.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "505641",
+          "name": "Bruno Tavares",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 24,
+          "date_of_birth": "16 kwi 2002 (24)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/505641-1726495660.png?lm=1",
+          "nationalities": [
+            "Portugalia",
+            "Republika Zielonego Przylądka"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "167369",
+          "name": "Edvinas Girdvainis",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 33,
+          "date_of_birth": "17 sty 1993 (33)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 62,
+          "rating_base": 56,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/167369-1739714444.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "866548",
+          "name": "Jeudi Stevenson",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 21,
+          "date_of_birth": "17 paź 2004 (21)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 60,
+          "rating_base": 59,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/866548-1726557228.png?lm=1",
+          "nationalities": [
+            "Haiti"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "287182",
+          "name": "Denis Bosnjak",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 29,
+          "date_of_birth": "10 kwi 1997 (29)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 60,
+          "rating_base": 56,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/287182-1660643700.png?lm=1",
+          "nationalities": [
+            "Austria"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "300143",
+          "name": "Dominykas Barauskas",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 29,
+          "date_of_birth": "18 kwi 1997 (29)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 60,
+          "rating_base": 56,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/300143-1729185789.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "431338",
+          "name": "Nana Akosah-Bempah",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 28,
+          "date_of_birth": "29 sie 1997 (28)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 60,
+          "rating_base": 56,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/431338-1732183015.png?lm=1",
+          "nationalities": [
+            "Stany Zjednaczone",
+            "Ghana"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "386667",
+          "name": "Iker Bilbao",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 30,
+          "date_of_birth": "20 mar 1996 (30)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 55,
+          "rating_base": 50,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/386667-1732138301.jpg?lm=1",
+          "nationalities": [
+            "Hiszpania"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "383229",
+          "name": "Mykola Musolitin",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 27,
+          "date_of_birth": "21 sty 1999 (27)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 54,
+          "rating_base": 50,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/383229-1558950615.png?lm=1",
+          "nationalities": [
+            "Ukraina"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "317449",
+          "name": "Tomi Adeloye",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 30,
+          "date_of_birth": "17 lut 1996 (30)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 54,
+          "rating_base": 49,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria",
+            "Anglia"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "712166",
+          "name": "Julius Virvilas",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 21,
+          "date_of_birth": "3 cze 2004 (21)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/712166-1665439769.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "306131",
+          "name": "Stefan Milosevic",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 29,
+          "date_of_birth": "23 cze 1996 (29)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 49,
+          "rating_base": 45,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/306131-1563719671.jpg?lm=1",
+          "nationalities": [
+            "Czarnogóra"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "150668",
+          "name": "Artūras Žulpa",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 35,
+          "date_of_birth": "10 cze 1990 (35)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/150668-1680766009.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "819377",
+          "name": "Augustas Tamaševičius",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 20,
+          "date_of_birth": "26 sty 2006 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "1401444",
+          "name": "Deividas Česnauskis",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 17,
+          "date_of_birth": "23 lip 2008 (17)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "798980",
+          "name": "Domantas Šluta",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 21,
+          "date_of_birth": "1 paź 2004 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/798980-1743862154.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "328804",
+          "name": "Edvinas Kloniūnas",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 27,
+          "date_of_birth": "28 cze 1998 (27)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "809639",
+          "name": "Emmanuel Koffi",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 24,
+          "date_of_birth": "20 lis 2001 (24)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/809639-1700152518.png?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "1153852",
+          "name": "Hideyasu Tanaka",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 22,
+          "date_of_birth": "6 lip 2003 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Japonia"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "1258418",
+          "name": "Nojus Petkus",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 18,
+          "date_of_birth": "20 paź 2007 (18)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "1518055",
+          "name": "Oscar Boateng",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "22 mar 2004 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "300164",
+          "name": "Ričardas Šveikauskas",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 29,
+          "date_of_birth": "9 kwi 1997 (29)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "531453",
+          "name": "Xabi Auzmendi",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 29,
+          "date_of_birth": "1 maj 1997 (29)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/531453-1710357481.png?lm=1",
+          "nationalities": [
+            "Hiszpania"
+          ],
+          "club_id": "98841"
+        },
+        {
+          "player_id": "888313",
+          "name": "Yegor Glushach",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 23,
+          "date_of_birth": "21 lis 2002 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/888313-1621408280.jpg?lm=1",
+          "nationalities": [
+            "Ukraina"
+          ],
+          "club_id": "98841"
+        }
+      ]
+    },
+    {
+      "club_id": "32832",
+      "name": "FK Riteriai",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/32832.png?lm=1551614176",
+      "league_url": "",
+      "color": "hsl(258 70% 48%)",
+      "avg_rating": 58,
+      "strength": 58,
+      "budget_millions": 0.5,
+      "squad_size": 26,
+      "players": [
+        {
+          "player_id": "353698",
+          "name": "Leif Estevez Fernandez",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 29,
+          "date_of_birth": "4 kwi 1997 (29)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 66,
+          "rating_base": 62,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/353698-1741803449.jpg?lm=1",
+          "nationalities": [
+            "Niemcy"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "575518",
+          "name": "Artem Baftalovskyi",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 30,
+          "date_of_birth": "14 gru 1995 (30)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 61,
+          "rating_base": 56,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/575518-1708944261.png?lm=1",
+          "nationalities": [
+            "Ukraina"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "262101",
+          "name": "Vasilije Radenovic",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 32,
+          "date_of_birth": "10 maj 1994 (32)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 61,
+          "rating_base": 56,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/262101-1728311601.jpeg?lm=1",
+          "nationalities": [
+            "Czarnogóra",
+            "Serbia"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "999478",
+          "name": "Vukasin Bulatovic",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 25,
+          "date_of_birth": "8 lip 2000 (25)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 59,
+          "rating_base": 56,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/999478-1763832060.jpg?lm=1",
+          "nationalities": [
+            "Stany Zjednaczone",
+            "Serbia"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "242082",
+          "name": "Simone Moschin",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 30,
+          "date_of_birth": "20 sty 1996 (30)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 59,
+          "rating_base": 54,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/242082-1637252324.jpg?lm=1",
+          "nationalities": [
+            "Włochy"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "531901",
+          "name": "Deimantas Rimpa",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 24,
+          "date_of_birth": "11 mar 2002 (24)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/531901-1741803649.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "874583",
+          "name": "Milanas Rutkovskis",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 20,
+          "date_of_birth": "3 lip 2005 (20)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 57,
+          "rating_base": 56,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/874583-1741801110.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "750981",
+          "name": "Armandas Šveistrys",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 23,
+          "date_of_birth": "8 lip 2002 (23)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/750981-1741803705.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "192378",
+          "name": "Marko Karamarko",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 33,
+          "date_of_birth": "27 mar 1993 (33)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 55,
+          "rating_base": 49,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/192378-1583779343.jpg?lm=1",
+          "nationalities": [
+            "Niemcy",
+            "Chorwacja"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "832322",
+          "name": "Simas Civilka",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 21,
+          "date_of_birth": "6 mar 2005 (21)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 54,
+          "rating_base": 53,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/832322-1741803763.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "87444",
+          "name": "Arvydas Novikovas",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 35,
+          "date_of_birth": "18 gru 1990 (35)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 52,
+          "rating_base": 45,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/87444-1663339816.png?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "446431",
+          "name": "Michael Kedman",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 29,
+          "date_of_birth": "16 gru 1996 (29)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 51,
+          "rating_base": 47,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/446431-1600922706.jpeg?lm=1",
+          "nationalities": [
+            "Trynidad and Tobago",
+            "Anglia"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "819360",
+          "name": "Jonas Usavičius",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 20,
+          "date_of_birth": "23 sty 2006 (20)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/819360-1741802046.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "1279053",
+          "name": "Artiom Šankin",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 18,
+          "date_of_birth": "3 lut 2008 (18)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 49,
+          "rating_base": 49,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "874617",
+          "name": "Matas Latvys",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 19,
+          "date_of_birth": "14 gru 2006 (19)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 49,
+          "rating_base": 49,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/874617-1741804070.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "536565",
+          "name": "Amar Drina",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 23,
+          "date_of_birth": "30 maj 2002 (23)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 49,
+          "rating_base": 47,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/536565-1727293200.png?lm=1",
+          "nationalities": [
+            "Bośnia i Hercegowina"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "343176",
+          "name": "Dmytro Bondar",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 27,
+          "date_of_birth": "20 gru 1998 (27)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 49,
+          "rating_base": 45,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/343176-1615105981.png?lm=1",
+          "nationalities": [
+            "Ukraina"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "993316",
+          "name": "Petro Garapko",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 22,
+          "date_of_birth": "25 sty 2004 (22)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Ukraina",
+            "Węgry"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "1367814",
+          "name": "Tautvydas Alekna",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 18,
+          "date_of_birth": "1 wrz 2007 (18)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "1419700",
+          "name": "Albert Yakah",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 25,
+          "date_of_birth": "3 lut 2001 (25)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Stany Zjednaczone",
+            "Ghana"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "1262970",
+          "name": "Daumantas Lipinskas",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 20,
+          "date_of_birth": "2 paź 2005 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "1462422",
+          "name": "Dominykas Gelombickas",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 17,
+          "date_of_birth": "30 lis 2008 (17)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "1533101",
+          "name": "Joshua Maruingi",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 20,
+          "date_of_birth": "6 cze 2005 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Stany Zjednaczone"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "1367811",
+          "name": "Kajus Andraikėnas",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 18,
+          "date_of_birth": "20 wrz 2007 (18)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1367811-1741806594.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "1502354",
+          "name": "Slevin Krom",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 18,
+          "date_of_birth": "24 lis 2007 (18)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Holandia"
+          ],
+          "club_id": "32832"
+        },
+        {
+          "player_id": "1411883",
+          "name": "Vakaris Gurkšnys",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 19,
+          "date_of_birth": "8 lut 2007 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Litwa"
+          ],
+          "club_id": "32832"
+        }
+      ]
+    }
+  ]
+}

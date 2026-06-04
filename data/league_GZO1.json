@@ -1,0 +1,4324 @@
+{
+  "competition_code": "GZO1",
+  "name": "Gozo Football League First Division",
+  "url": "https://www.transfermarkt.pl/gozo-football-league-first-division/startseite/wettbewerb/GZO1",
+  "club_count": 7,
+  "league_logo_url": "https://tmssl.akamaized.net//images/logo/homepageWappen150x150/gzo1.png",
+  "country": "Inne",
+  "tier": 4,
+  "level": 1,
+  "label": "Gozo Football League First Division",
+  "startBudget": 8,
+  "rules": {},
+  "clubs": [
+    {
+      "club_id": "13092",
+      "name": "Kercem Ajax FC",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/13092.png?lm=1443519227",
+      "league_url": "",
+      "color": "hsl(255 70% 48%)",
+      "avg_rating": 42,
+      "strength": 42,
+      "budget_millions": 0.5,
+      "squad_size": 35,
+      "players": [
+        {
+          "player_id": "942698",
+          "name": "Gabriel Vella",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 20,
+          "date_of_birth": "2 gru 2005 (20)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "296688",
+          "name": "Donald Gauci",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 47,
+          "date_of_birth": "21 lut 1979 (47)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "246785",
+          "name": "Elton Vella",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 41,
+          "date_of_birth": "28 lis 1984 (41)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "252932",
+          "name": "Franklin Vella",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 36,
+          "date_of_birth": "26 paź 1989 (36)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "296700",
+          "name": "Jean Paul Mizzi",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 38,
+          "date_of_birth": "9 lut 1988 (38)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "295949",
+          "name": "Jerome Farrugia",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 36,
+          "date_of_birth": "27 wrz 1989 (36)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "246146",
+          "name": "Malcolm Vella",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 35,
+          "date_of_birth": "13 wrz 1990 (35)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "203384",
+          "name": "Michael Camilleri",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 33,
+          "date_of_birth": "23 mar 1993 (33)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "501296",
+          "name": "Andre Azzopardi",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 28,
+          "date_of_birth": "15 lut 1998 (28)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "374789",
+          "name": "Andrea Debrincat",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 30,
+          "date_of_birth": "30 lis 1995 (30)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "296699",
+          "name": "Andrew Mizzi",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 31,
+          "date_of_birth": "2 mar 1995 (31)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "643203",
+          "name": "André Martins",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 30,
+          "date_of_birth": "14 lut 1996 (30)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Portugalia"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "627504",
+          "name": "Angelo Brignoli",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 32,
+          "date_of_birth": "18 sie 1993 (32)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "412858",
+          "name": "Antonio Xuereb",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 31,
+          "date_of_birth": "13 kwi 1995 (31)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "988849",
+          "name": "Carlos Cutajar",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 20,
+          "date_of_birth": "6 cze 2005 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "515365",
+          "name": "Charlon Muscat",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 28,
+          "date_of_birth": "10 kwi 1998 (28)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "516295",
+          "name": "Christian Attard",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 32,
+          "date_of_birth": "9 sty 1994 (32)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "551352",
+          "name": "Daniel Cassar",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 23,
+          "date_of_birth": "25 lis 2002 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "516292",
+          "name": "Daniel Spiteri",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 30,
+          "date_of_birth": "16 maj 1996 (30)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "849188",
+          "name": "Dejan Bogdanovic",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 22,
+          "date_of_birth": "29 cze 2003 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta",
+            "Serbia"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "1251211",
+          "name": "Eduardo Coimbra",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 26,
+          "date_of_birth": "25 cze 1999 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1251211-1763139348.png?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "579425",
+          "name": "Gabriel Farrugia",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 25,
+          "date_of_birth": "1 lut 2001 (25)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "849143",
+          "name": "Gaetano Bugeja",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 24,
+          "date_of_birth": "18 cze 2001 (24)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "849205",
+          "name": "Gianluca Muscat",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 23,
+          "date_of_birth": "29 maj 2002 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "1069546",
+          "name": "Isaías Cruz",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 27,
+          "date_of_birth": "11 gru 1998 (27)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "411832",
+          "name": "Jason Theuma",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 30,
+          "date_of_birth": "20 mar 1996 (30)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "515369",
+          "name": "Justin Micallef",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 28,
+          "date_of_birth": "14 sty 1998 (28)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "296698",
+          "name": "Karol Mifsud",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 30,
+          "date_of_birth": "22 maj 1995 (30)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "459523",
+          "name": "Lorenzo Atzori",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 26,
+          "date_of_birth": "29 lut 2000 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Włochy"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "718931",
+          "name": "Mateus Lima",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 31,
+          "date_of_birth": "5 sie 1994 (31)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/718931-1763604410.jpeg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "551350",
+          "name": "Nathaniel Mercieca",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 24,
+          "date_of_birth": "4 lis 2001 (24)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "906168",
+          "name": "Neném",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 25,
+          "date_of_birth": "16 cze 2000 (25)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "1115734",
+          "name": "Romulo Bosqueiro",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 25,
+          "date_of_birth": "9 lis 2000 (25)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1115734-1685817973.jpg?lm=1",
+          "nationalities": [
+            "Brazylia",
+            "Włochy"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "987742",
+          "name": "Ryan Saliba",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 23,
+          "date_of_birth": "4 kwi 2003 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        },
+        {
+          "player_id": "849126",
+          "name": "Samuel Azzopardi",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 24,
+          "date_of_birth": "5 gru 2001 (24)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "13092"
+        }
+      ]
+    },
+    {
+      "club_id": "41450",
+      "name": "Qala Saints FC",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/41450.png?lm=1457444397",
+      "league_url": "",
+      "color": "hsl(254 70% 48%)",
+      "avg_rating": 42,
+      "strength": 42,
+      "budget_millions": 0.5,
+      "squad_size": 39,
+      "players": [
+        {
+          "player_id": "288316",
+          "name": "Alan Cini",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 39,
+          "date_of_birth": "21 cze 1986 (39)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "246329",
+          "name": "Alex Tramboo",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 44,
+          "date_of_birth": "28 wrz 1981 (44)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "288333",
+          "name": "John Rapa",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 39,
+          "date_of_birth": "4 wrz 1986 (39)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "412857",
+          "name": "Joseph Attard",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 47,
+          "date_of_birth": "17 gru 1978 (47)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "288321",
+          "name": "Kenny Grima",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 44,
+          "date_of_birth": "30 gru 1981 (44)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "288315",
+          "name": "Malcolm Cefai",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 38,
+          "date_of_birth": "13 cze 1987 (38)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "587788",
+          "name": "Simon Spiteri",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 41,
+          "date_of_birth": "17 sie 1984 (41)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "288328",
+          "name": "Francisco Mumford",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 34,
+          "date_of_birth": "30 sty 1992 (34)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "628247",
+          "name": "Gabriel Cardona",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 33,
+          "date_of_birth": "25 mar 1993 (33)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "579578",
+          "name": "Luke Attard",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 34,
+          "date_of_birth": "21 maj 1991 (34)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "246790",
+          "name": "Manuel Xerri",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 33,
+          "date_of_birth": "9 lis 1992 (33)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "288332",
+          "name": "Nathan Portelli",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 33,
+          "date_of_birth": "7 lip 1992 (33)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "517418",
+          "name": "William Cassar",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 34,
+          "date_of_birth": "26 wrz 1991 (34)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "288341",
+          "name": "Adrian Vella",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 30,
+          "date_of_birth": "19 sie 1995 (30)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "587791",
+          "name": "Armando Xerri",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 23,
+          "date_of_birth": "14 paź 2002 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "385913",
+          "name": "Bruno da Cruz",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 29,
+          "date_of_birth": "27 maj 1996 (29)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/385913-1737700867.png?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "1082664",
+          "name": "Christian Bartolo",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": null,
+          "date_of_birth": "(-)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "587792",
+          "name": "Daniel Portelli",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 31,
+          "date_of_birth": "21 lis 1994 (31)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "1081724",
+          "name": "Emanuel Buttigieg",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 29,
+          "date_of_birth": "7 sie 1996 (29)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "517414",
+          "name": "Franco Buttigieg",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 32,
+          "date_of_birth": "3 gru 1993 (32)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "707750",
+          "name": "Gilberto Carrara",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 31,
+          "date_of_birth": "25 cze 1994 (31)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "1465536",
+          "name": "Gustavo Lemos",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 24,
+          "date_of_birth": "17 sie 2001 (24)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "1465537",
+          "name": "Ibrahim Mohammed",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 19,
+          "date_of_birth": "30 maj 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "587790",
+          "name": "Jake Mifsud",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 26,
+          "date_of_birth": "18 paź 1999 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "246305",
+          "name": "Jason Pace",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 31,
+          "date_of_birth": "24 maj 1994 (31)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "497747",
+          "name": "Jordi Parnis",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 26,
+          "date_of_birth": "19 sty 2000 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "587789",
+          "name": "Joseph Buttigieg",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 25,
+          "date_of_birth": "1 sie 2000 (25)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "628102",
+          "name": "Joseph Zammit",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 25,
+          "date_of_birth": "18 sty 2001 (25)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "1096912",
+          "name": "Júnior Sergipe",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 26,
+          "date_of_birth": "17 lip 1999 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "278670",
+          "name": "Kevin Farrugia",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 32,
+          "date_of_birth": "15 paź 1993 (32)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "1081727",
+          "name": "Kurt Mifsud",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 22,
+          "date_of_birth": "30 sty 2004 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "288312",
+          "name": "Manuel Buttigieg",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 29,
+          "date_of_birth": "7 sie 1996 (29)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "628093",
+          "name": "Martin Buttigieg",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 22,
+          "date_of_birth": "14 lis 2003 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "1365109",
+          "name": "Matteo Camilleri",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 17,
+          "date_of_birth": "12 gru 2008 (17)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "288329",
+          "name": "Michael Mumford",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 32,
+          "date_of_birth": "12 sty 1994 (32)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "1081726",
+          "name": "Nathan Njoku",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 21,
+          "date_of_birth": "8 paź 2004 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta",
+            "Nigeria"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "965733",
+          "name": "Nicholas Inguanez",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 23,
+          "date_of_birth": "29 paź 2002 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "869086",
+          "name": "Owen Attard",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 26,
+          "date_of_birth": "1 sie 1999 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "41450"
+        },
+        {
+          "player_id": "874312",
+          "name": "Wallisson Bahia",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 25,
+          "date_of_birth": "28 sie 2000 (25)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "41450"
+        }
+      ]
+    },
+    {
+      "club_id": "17144",
+      "name": "Ghajnsielem FC",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/17144.png?lm=1705021559",
+      "league_url": "",
+      "color": "hsl(257 70% 48%)",
+      "avg_rating": 41,
+      "strength": 41,
+      "budget_millions": 0.5,
+      "squad_size": 23,
+      "players": [
+        {
+          "player_id": "412855",
+          "name": "Charlon Grima",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 40,
+          "date_of_birth": "10 lis 1985 (40)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "296460",
+          "name": "Matthew Portelli",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 46,
+          "date_of_birth": "12 maj 1980 (46)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "246762",
+          "name": "Paul Rapa",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 36,
+          "date_of_birth": "22 kwi 1990 (36)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "412859",
+          "name": "Kenny Hili",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 34,
+          "date_of_birth": "26 lut 1992 (34)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "290777",
+          "name": "Michael Bezzina",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 34,
+          "date_of_birth": "9 kwi 1992 (34)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "411828",
+          "name": "Richard Sammut",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 34,
+          "date_of_birth": "17 kwi 1992 (34)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "478691",
+          "name": "Alberto Xuereb",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 28,
+          "date_of_birth": "4 wrz 1997 (28)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "1332005",
+          "name": "Baldwin Igbinobaro",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 23,
+          "date_of_birth": "3 paź 2002 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria",
+            "Kanada"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "1519502",
+          "name": "Christopher Zerafa",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 25,
+          "date_of_birth": "25 lis 2000 (25)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "495688",
+          "name": "Daniel Murillo",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 27,
+          "date_of_birth": "1 lip 1998 (27)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Kolumbia"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "1139853",
+          "name": "Deison Cuero",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 28,
+          "date_of_birth": "4 maj 1998 (28)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Kolumbia"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "994756",
+          "name": "Dor Jok",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 25,
+          "date_of_birth": "27 lut 2001 (25)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/994756-1689000314.jpg?lm=1",
+          "nationalities": [
+            "Sudan Południowy",
+            "Australia"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "1182837",
+          "name": "Esneider",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 29,
+          "date_of_birth": "7 mar 1997 (29)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Kolumbia"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "863107",
+          "name": "Hayden Muscat",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 24,
+          "date_of_birth": "28 cze 2001 (24)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "633383",
+          "name": "Ibrahim Naim Belhadj",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 24,
+          "date_of_birth": "8 gru 2001 (24)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Algieria"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "374792",
+          "name": "James Tabone",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 32,
+          "date_of_birth": "25 lip 1993 (32)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "569595",
+          "name": "Jhon Alejandro González",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 25,
+          "date_of_birth": "13 kwi 2001 (25)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Wenezuela"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "497741",
+          "name": "Joshua Buttigieg",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 28,
+          "date_of_birth": "9 lip 1997 (28)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "1032251",
+          "name": "Joshua Micallef",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 20,
+          "date_of_birth": "11 sty 2006 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "1099434",
+          "name": "Mark Scicluna",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 21,
+          "date_of_birth": "22 lip 2004 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "373209",
+          "name": "Matthew Muscat",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 32,
+          "date_of_birth": "27 lut 1994 (32)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "691314",
+          "name": "Tom Tom",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 27,
+          "date_of_birth": "10 sie 1998 (27)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/691314-1765206758.jpeg?lm=1",
+          "nationalities": [
+            "Brazylia",
+            "Włochy"
+          ],
+          "club_id": "17144"
+        },
+        {
+          "player_id": "633384",
+          "name": "Wayne Hili",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 24,
+          "date_of_birth": "10 lip 2001 (24)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "17144"
+        }
+      ]
+    },
+    {
+      "club_id": "37651",
+      "name": "Nadur Youngsters FC",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/37651.png?lm=1417098461",
+      "league_url": "",
+      "color": "hsl(262 70% 48%)",
+      "avg_rating": 41,
+      "strength": 41,
+      "budget_millions": 0.5,
+      "squad_size": 26,
+      "players": [
+        {
+          "player_id": "253028",
+          "name": "Anthony Portelli",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 44,
+          "date_of_birth": "4 cze 1981 (44)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "369175",
+          "name": "Paul Camilleri",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 52,
+          "date_of_birth": "5 sie 1973 (52)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "1027976",
+          "name": "Sammy Attard",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 56,
+          "date_of_birth": "12 cze 1969 (56)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "256970",
+          "name": "Brandon Said",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 31,
+          "date_of_birth": "22 sty 1995 (31)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "253008",
+          "name": "Christian Debono",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 32,
+          "date_of_birth": "21 kwi 1994 (32)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "987732",
+          "name": "David Oliveira",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 29,
+          "date_of_birth": "15 maj 1997 (29)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "572822",
+          "name": "Diego Rodríguez",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 25,
+          "date_of_birth": "28 gru 2000 (25)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Kolumbia"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "498545",
+          "name": "Gaetano Bujega",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 24,
+          "date_of_birth": "18 cze 2001 (24)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "1466792",
+          "name": "John Mensah",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 25,
+          "date_of_birth": "10 lis 2000 (25)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "980113",
+          "name": "Johnny Wesley",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 28,
+          "date_of_birth": "6 sie 1997 (28)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "627501",
+          "name": "Joseph Owen Borg",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 26,
+          "date_of_birth": "9 lut 2000 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "654677",
+          "name": "Joseph Xerri",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 22,
+          "date_of_birth": "8 gru 2003 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "1144588",
+          "name": "Karl Hili",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 20,
+          "date_of_birth": "15 kwi 2006 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "1399629",
+          "name": "Kyle Xuereb",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 22,
+          "date_of_birth": "3 maj 2004 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "627500",
+          "name": "Lucas Barreto",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 31,
+          "date_of_birth": "18 lis 1994 (31)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/627500-1737435213.png?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "965747",
+          "name": "Matthias Mercieca",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 22,
+          "date_of_birth": "20 sie 2003 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "849206",
+          "name": "Michael Paul Camilleri",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 26,
+          "date_of_birth": "23 lip 1999 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "474830",
+          "name": "Murilo Scarpari",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 29,
+          "date_of_birth": "15 mar 1997 (29)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/474830-1658082363.jpg?lm=1",
+          "nationalities": [
+            "Brazylia",
+            "Włochy"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "849189",
+          "name": "Neil Mifsud",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 22,
+          "date_of_birth": "4 kwi 2004 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "849207",
+          "name": "Owen Peter Bugeja",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 22,
+          "date_of_birth": "15 wrz 2003 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "579391",
+          "name": "Peter Muscat",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 26,
+          "date_of_birth": "9 wrz 1999 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "631329",
+          "name": "Pierre Camilleri",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 27,
+          "date_of_birth": "1 lip 1998 (27)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "981135",
+          "name": "Rafael Favero",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 27,
+          "date_of_birth": "30 cze 1998 (27)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/981135-1765262358.jpeg?lm=1",
+          "nationalities": [
+            "Brazylia",
+            "Włochy"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "1479582",
+          "name": "Ricardo Pessoa",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 20,
+          "date_of_birth": "12 maj 2006 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "1522863",
+          "name": "Roberty",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 27,
+          "date_of_birth": "30 kwi 1999 (27)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1522863-1773254472.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "37651"
+        },
+        {
+          "player_id": "1030012",
+          "name": "Sylvan Xuereb",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 21,
+          "date_of_birth": "22 kwi 2005 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37651"
+        }
+      ]
+    },
+    {
+      "club_id": "37655",
+      "name": "Xaghra United FC",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/37655.png?lm=1748613751",
+      "league_url": "",
+      "color": "hsl(266 70% 48%)",
+      "avg_rating": 41,
+      "strength": 41,
+      "budget_millions": 0.5,
+      "squad_size": 35,
+      "players": [
+        {
+          "player_id": "241621",
+          "name": "Christopher Camilleri",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 46,
+          "date_of_birth": "2 paź 1979 (46)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "290863",
+          "name": "Marlon Mamo",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 35,
+          "date_of_birth": "18 wrz 1990 (35)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "869072",
+          "name": "Victor Agius",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 44,
+          "date_of_birth": "19 sty 1982 (44)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "453345",
+          "name": "Claudir",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 33,
+          "date_of_birth": "6 sie 1992 (33)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/453345-1549277146.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "628099",
+          "name": "Fabian Xuereb",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 34,
+          "date_of_birth": "29 paź 1991 (34)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "372745",
+          "name": "Lorjean Xuereb",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 34,
+          "date_of_birth": "1 lut 1992 (34)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "1081348",
+          "name": "Mattia Zammit",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 34,
+          "date_of_birth": "3 sty 1992 (34)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "143811",
+          "name": "Tom",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 34,
+          "date_of_birth": "30 paź 1991 (34)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/143811-1703209410.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "964785",
+          "name": "Calvin Galea",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 22,
+          "date_of_birth": "23 paź 2003 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "985528",
+          "name": "Carmelo Pace",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 26,
+          "date_of_birth": "5 gru 1999 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "516952",
+          "name": "Daniel Sowatey",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 31,
+          "date_of_birth": "1 lip 1994 (31)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/516952-1684563177.jpg?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "1201660",
+          "name": "Dean Vella",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 20,
+          "date_of_birth": "10 paź 2005 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "1316565",
+          "name": "Delan Saliba",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 17,
+          "date_of_birth": "15 sie 2008 (17)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "869069",
+          "name": "Etienne Xiberras",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 23,
+          "date_of_birth": "2 wrz 2002 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "1524831",
+          "name": "Frankie Azzopardi",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 32,
+          "date_of_birth": "10 sty 1994 (32)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "1192984",
+          "name": "Harry Paulin",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 22,
+          "date_of_birth": "25 maj 2003 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "630058",
+          "name": "Ibrahim Salis",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 26,
+          "date_of_birth": "3 lip 1999 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "975737",
+          "name": "Igor Jacaré",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 26,
+          "date_of_birth": "30 wrz 1999 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "550845",
+          "name": "Jack Vella",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 28,
+          "date_of_birth": "17 lip 1997 (28)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "579392",
+          "name": "Joe-Peter Mifsud",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 28,
+          "date_of_birth": "16 maj 1998 (28)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "301141",
+          "name": "Joel Xuereb",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 29,
+          "date_of_birth": "14 gru 1996 (29)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "516954",
+          "name": "Johann Bajada",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 26,
+          "date_of_birth": "3 lis 1999 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "516951",
+          "name": "John Saliba",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": null,
+          "date_of_birth": "(-)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "997770",
+          "name": "Jonathan Xiberras",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 24,
+          "date_of_birth": "8 lis 2001 (24)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "1407328",
+          "name": "Joseph Azzopardi",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 30,
+          "date_of_birth": "14 sty 1996 (30)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "985527",
+          "name": "Joseph Bajada",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": null,
+          "date_of_birth": "(-)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "1213021",
+          "name": "Kasem Darwish",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 18,
+          "date_of_birth": "20 sie 2007 (18)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Syria"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "997690",
+          "name": "Lucas Farrugia",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 23,
+          "date_of_birth": "19 cze 2002 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "1192292",
+          "name": "Melchior Gafa",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 20,
+          "date_of_birth": "23 lut 2006 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "1217201",
+          "name": "Neil Sultana",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 19,
+          "date_of_birth": "25 lut 2007 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "390970",
+          "name": "Pedrinho",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 32,
+          "date_of_birth": "18 cze 1993 (32)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/390970-1747375311.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "579422",
+          "name": "Savio Galea",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 26,
+          "date_of_birth": "8 lis 1999 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "579420",
+          "name": "Steve Sultana",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 31,
+          "date_of_birth": "6 gru 1994 (31)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "985526",
+          "name": "Tristen Agius",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 22,
+          "date_of_birth": "8 mar 2004 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37655"
+        },
+        {
+          "player_id": "1242554",
+          "name": "Yousouf Abedi Rodo",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 23,
+          "date_of_birth": "17 cze 2002 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1242554-1745572062.png?lm=1",
+          "nationalities": [
+            "Demokratyczna Republika Kongo"
+          ],
+          "club_id": "37655"
+        }
+      ]
+    },
+    {
+      "club_id": "29719",
+      "name": "Xewkija Tigers FC",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/29719.png?lm=1443519029",
+      "league_url": "",
+      "color": "hsl(268 70% 48%)",
+      "avg_rating": 41,
+      "strength": 41,
+      "budget_millions": 0.5,
+      "squad_size": 29,
+      "players": [
+        {
+          "player_id": "198786",
+          "name": "Adrian Parnis",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 35,
+          "date_of_birth": "19 wrz 1990 (35)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "246786",
+          "name": "John Vella",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 49,
+          "date_of_birth": "26 cze 1976 (49)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "246787",
+          "name": "Josmar Vella",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 35,
+          "date_of_birth": "29 sty 1991 (35)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "252920",
+          "name": "Kenneth Mercieca",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 38,
+          "date_of_birth": "29 paź 1987 (38)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "280174",
+          "name": "Claudio Francés",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 33,
+          "date_of_birth": "26 cze 1992 (33)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Argentyna"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "627499",
+          "name": "Marcelo Barbosa",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 34,
+          "date_of_birth": "10 sie 1991 (34)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/627499-1655298816.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "246686",
+          "name": "Rodney Buttigieg",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 34,
+          "date_of_birth": "22 lis 1991 (34)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "418022",
+          "name": "Abou Touré",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 30,
+          "date_of_birth": "12 lut 1996 (30)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Senegal"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "959681",
+          "name": "Brenner",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 26,
+          "date_of_birth": "25 lut 2000 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "998406",
+          "name": "Brian Parada",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 26,
+          "date_of_birth": "22 cze 1999 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/998406-1721496376.jpeg?lm=1",
+          "nationalities": [
+            "Argentyna"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "627498",
+          "name": "Carlo Abela",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 25,
+          "date_of_birth": "14 gru 2000 (25)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "849190",
+          "name": "Christian Axiak",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 21,
+          "date_of_birth": "15 wrz 2004 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "1217391",
+          "name": "Denzil Bugeja",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 18,
+          "date_of_birth": "21 paź 2007 (18)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "358784",
+          "name": "Ezequiel Ruiz",
+          "position": "NA",
+          "position_label": "Cofnięty napastnik",
+          "age": 30,
+          "date_of_birth": "16 wrz 1995 (30)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Argentyna"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "372750",
+          "name": "Gennaro Hili",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 30,
+          "date_of_birth": "20 kwi 1996 (30)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "476296",
+          "name": "Ian Buttigieg",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 27,
+          "date_of_birth": "16 maj 1999 (27)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "246791",
+          "name": "Ian Xuereb",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 32,
+          "date_of_birth": "19 paź 1993 (32)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "246748",
+          "name": "Ino Mifsud",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": null,
+          "date_of_birth": "(-)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "372752",
+          "name": "John Grech",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 27,
+          "date_of_birth": "28 paź 1998 (27)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "415625",
+          "name": "Joseph Vella",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 27,
+          "date_of_birth": "6 wrz 1998 (27)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "256957",
+          "name": "Josiah Buttigieg",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 31,
+          "date_of_birth": "9 gru 1994 (31)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "1193637",
+          "name": "Julian Vella",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 18,
+          "date_of_birth": "30 sie 2007 (18)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "628651",
+          "name": "Manuel Angel Bustos",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 30,
+          "date_of_birth": "27 cze 1995 (30)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Argentyna"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "1082684",
+          "name": "Matthias Bonnici",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 24,
+          "date_of_birth": "15 maj 2002 (24)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "1082331",
+          "name": "Matthias Said",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 20,
+          "date_of_birth": "11 sie 2005 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "684652",
+          "name": "Nikola Kosanin",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 31,
+          "date_of_birth": "6 lip 1994 (31)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/684652-1562700232.jpeg?lm=1",
+          "nationalities": [
+            "Serbia"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "515370",
+          "name": "Shaun Mizzi",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 24,
+          "date_of_birth": "8 sty 2002 (24)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "353830",
+          "name": "Stefan Cassar",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 28,
+          "date_of_birth": "29 paź 1997 (28)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        },
+        {
+          "player_id": "415626",
+          "name": "Thomas Vella",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 26,
+          "date_of_birth": "27 lip 1999 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "29719"
+        }
+      ]
+    },
+    {
+      "club_id": "37656",
+      "name": "SK Victoria Wanderers FC",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/37656.png?lm=1739414746",
+      "league_url": "",
+      "color": "hsl(267 70% 48%)",
+      "avg_rating": 40,
+      "strength": 40,
+      "budget_millions": 0.5,
+      "squad_size": 23,
+      "players": [
+        {
+          "player_id": "252890",
+          "name": "Agibade Adesina",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 36,
+          "date_of_birth": "20 sie 1989 (36)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "142937",
+          "name": "Mladen Kukrika",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 35,
+          "date_of_birth": "11 sty 1991 (35)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 42,
+          "rating_base": 35,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/s_142937_3451_2012_2.jpg?lm=1",
+          "nationalities": [
+            "Serbia",
+            "Bośnia i Hercegowina"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "239694",
+          "name": "Joseph Vella",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 34,
+          "date_of_birth": "6 cze 1991 (34)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 41,
+          "rating_base": 35,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "477257",
+          "name": "Aaron Touarha",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 29,
+          "date_of_birth": "4 mar 1997 (29)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "849146",
+          "name": "Adam Refalo",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "17 wrz 2003 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "1019499",
+          "name": "André Cutler",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "20 maj 2003 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Portoryko",
+            "Stany Zjednaczone"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "965182",
+          "name": "Deren Kuru",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 21,
+          "date_of_birth": "12 sty 2005 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Australia",
+            "Malta"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "628249",
+          "name": "Emerson Zammit",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 23,
+          "date_of_birth": "9 wrz 2002 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "1508882",
+          "name": "Ender Vielma",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 24,
+          "date_of_birth": "2 lut 2002 (24)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Kolumbia"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "1510689",
+          "name": "Juan Manuel Peña Ferrucho",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 23,
+          "date_of_birth": "27 wrz 2002 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Kolumbia"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "517662",
+          "name": "Kersten Grima",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 28,
+          "date_of_birth": "25 kwi 1998 (28)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "516246",
+          "name": "Kurt Grima",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 25,
+          "date_of_birth": "17 gru 2000 (25)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "985533",
+          "name": "Matthias Cordina",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 20,
+          "date_of_birth": "22 sie 2005 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "1498783",
+          "name": "Mustapha Amodu",
+          "position": "NA",
+          "position_label": "Napastnik",
+          "age": 19,
+          "date_of_birth": "8 cze 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "849173",
+          "name": "Neil Camilleri",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 23,
+          "date_of_birth": "2 maj 2003 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "851153",
+          "name": "Nicholas Grech",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "16 sty 2004 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "301140",
+          "name": "Nicholas Vella",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 32,
+          "date_of_birth": "20 lip 1993 (32)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "1508883",
+          "name": "Nicolas Montengro",
+          "position": "PO",
+          "position_label": "Pomocnik",
+          "age": 26,
+          "date_of_birth": "15 kwi 2000 (26)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Kolumbia"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "551291",
+          "name": "Omar Xuereb",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 23,
+          "date_of_birth": "12 wrz 2002 (23)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "849147",
+          "name": "Owen Fenech",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 22,
+          "date_of_birth": "9 lis 2003 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "965181",
+          "name": "Presley Clarke",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 22,
+          "date_of_birth": "28 lis 2003 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "508332",
+          "name": "Samuel Harland",
+          "position": "NA",
+          "position_label": "Cofnięty napastnik",
+          "age": 30,
+          "date_of_birth": "14 wrz 1995 (30)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Anglia"
+          ],
+          "club_id": "37656"
+        },
+        {
+          "player_id": "1385977",
+          "name": "Tristan Azzopardi",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 20,
+          "date_of_birth": "13 kwi 2006 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Malta"
+          ],
+          "club_id": "37656"
+        }
+      ]
+    }
+  ]
+}

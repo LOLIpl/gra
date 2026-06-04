@@ -131,47 +131,257 @@ body { background: var(--bg); color: var(--text); min-height: 100vh; overflow-x:
 }
 .start-actions { display:flex; gap:1rem; margin-bottom:2rem; flex-wrap:wrap; justify-content:center; position:relative; z-index:1; }
 
-.league-selector { width:min(1240px, 100%); }
-.carousel-shell { display:flex; align-items:center; gap:1rem; width:100%; }
+/* ============================================================
+   COUNTRY SELECT — identyczny wygląd jak team-select
+   ============================================================ */
+.country-select {
+    display:none; position:fixed; inset:0; z-index:998; overflow:hidden;
+}
+.country-select-inner {
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    height:100vh; padding:2rem; position:relative;
+    transition:background 0.6s ease;
+    background: linear-gradient(180deg, #050810 0%, #080c1a 100%);
+}
+.country-select-inner::before {
+    content:''; position:absolute; top:0; left:0; right:0; bottom:0;
+    pointer-events:none; z-index:0;
+    background:
+        repeating-linear-gradient(90deg, transparent, transparent 80px, rgba(255,255,255,0.012) 80px, rgba(255,255,255,0.012) 81px),
+        repeating-linear-gradient(0deg, transparent, transparent 80px, rgba(255,255,255,0.008) 80px, rgba(255,255,255,0.008) 81px);
+}
+.country-select-inner::after {
+    content:''; position:absolute; top:0; left:0; right:0; bottom:0;
+    pointer-events:none; z-index:0;
+    background:
+        radial-gradient(ellipse 60% 30% at 20% 0%, rgba(6,182,212,0.1) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 30% at 80% 0%, rgba(16,185,129,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 20% at 50% 100%, rgba(99,102,241,0.06) 0%, transparent 50%);
+}
+.country-select-floodlights {
+    position:absolute; inset:0; pointer-events:none; z-index:0; overflow:hidden;
+}
+.country-select-floodlights .fl {
+    position:absolute; width:3px;
+    background: linear-gradient(0deg, transparent 0%, rgba(6,182,212,0.12) 50%, rgba(255,255,255,0.2) 100%);
+    border-radius:2px; animation: stadiumLights 4s ease-in-out infinite;
+}
+.country-select-floodlights .fl:nth-child(1) { left:8%; top:-60px; height:220px; animation-delay:0s; }
+.country-select-floodlights .fl:nth-child(2) { left:28%; top:-40px; height:180px; animation-delay:0.8s; background: linear-gradient(0deg, transparent 0%, rgba(99,102,241,0.12) 50%, rgba(255,255,255,0.2) 100%); }
+.country-select-floodlights .fl:nth-child(3) { right:22%; top:-50px; height:200px; animation-delay:1.3s; background: linear-gradient(0deg, transparent 0%, rgba(16,185,129,0.12) 50%, rgba(255,255,255,0.2) 100%); }
+.country-select-floodlights .fl:nth-child(4) { right:5%; top:-70px; height:240px; animation-delay:0.5s; }
+.country-select-floodlights .pl {
+    position:absolute; height:1px; left:5%; right:5%;
+    background: linear-gradient(90deg, transparent 0%, rgba(6,182,212,0.08) 20%, rgba(99,102,241,0.08) 50%, rgba(16,185,129,0.08) 80%, transparent 100%);
+}
+.country-select-floodlights .pl:nth-child(5) { bottom:30%; }
+.country-select-floodlights .pl:nth-child(6) { bottom:25%; }
+.country-select-floodlights .pc {
+    position:absolute; bottom:calc(25% - 25px); left:50%; transform:translateX(-50%);
+    width:50px; height:50px; border:1px solid rgba(6,182,212,0.08); border-radius:50%;
+}
+.country-select-nav {
+    position:absolute; top:1rem; left:1rem; right:1rem; display:flex;
+    justify-content:space-between; align-items:center; z-index:10;
+}
+.country-select-title-area {
+    text-align:center; margin-top:-3rem; margin-bottom:0.3rem; z-index:1; position:relative;
+}
+.country-select-title-area h2 {
+    font-size:2rem; font-weight:800; color: var(--text);
+}
+.country-carousel-wrapper {
+    width:100%; max-width:1500px; position:relative;
+    padding:1rem 0; display:flex; align-items:center; overflow:hidden;
+    z-index:2;
+}
+.country-grid {
+    display:flex; gap:1.5rem; transition:transform 0.5s cubic-bezier(0.4,0,0.2,1);
+    will-change:transform; align-items:stretch;
+}
+.country-card {
+    border-radius:20px; padding:2rem 1.5rem; text-align:center; cursor:pointer;
+    transition:all 0.4s cubic-bezier(0.4,0,0.2,1);
+    position:relative; overflow:hidden;
+    min-width:240px; flex:0 0 auto; width:260px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    border:1px solid rgba(255,255,255,0.1);
+    background: var(--card-gradient);
+}
+.country-card::before {
+    content:''; position:absolute; inset:0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, transparent 100%);
+    pointer-events:none; z-index:0;
+}
+.country-card * { position:relative; z-index:1; }
+.country-card:hover { transform:scale(1.05); border-color:rgba(255,255,255,0.25); box-shadow:0 20px 50px rgba(0,0,0,0.5); z-index:5; }
+.country-card-active {
+    transform:scale(1.12); z-index:10;
+    box-shadow:0 0 50px rgba(0,0,0,0.5);
+    border-color:rgba(6,182,212,0.5) !important;
+}
+.country-card-active:hover { transform:scale(1.13); }
+.country-card-glow {
+    position:absolute; inset:0; border-radius:20px;
+    opacity:0.12; transition:opacity 0.4s;
+    pointer-events:none; z-index:0;
+}
+.country-card-active .country-card-glow { opacity:0.28; }
+.country-flag-img {
+    width:80px; height:56px; object-fit:cover; border-radius:8px; margin:0 auto 0.9rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+    border:2px solid rgba(255,255,255,0.1);
+    transition:transform 0.4s;
+}
+.country-card-active .country-flag-img { transform:scale(1.08); }
+.country-card h4 { font-size:1.1rem; margin-bottom:0.4rem; position:relative; z-index:1; font-weight:700; }
+.country-card .leagues-count { color:var(--text-muted); font-size:0.88rem; }
+.country-card-carousel-btn {
+    position:absolute; z-index:20; top:50%; transform:translateY(-50%);
+    width:56px; height:56px; border-radius:50%; border:1px solid rgba(255,255,255,0.2);
+    background:rgba(5,8,16,0.85); color:var(--text); font-size:1.8rem; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    backdrop-filter:blur(6px); transition:all 0.3s;
+}
+.country-card-carousel-btn:hover { border-color:var(--accent-cyan); color:var(--accent-cyan); transform:translateY(-50%) scale(1.1); }
+.country-card-carousel-btn:disabled { opacity:0.25; cursor:default; pointer-events:none; }
+.country-card-carousel-btn-left { left:40px; }
+.country-card-carousel-btn-right { right:40px; }
+
+/* ============================================================
+   LEAGUE SELECT — identyczny wygląd jak team-select
+   ============================================================ */
+.league-selector-screen {
+    display:none; position:fixed; inset:0; z-index:997; overflow:hidden;
+}
+.league-selector-inner {
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    height:100vh; padding:2rem; position:relative;
+    transition:background 0.6s ease;
+    background: linear-gradient(180deg, #050810 0%, #080c1a 100%);
+}
+.league-selector-inner::before {
+    content:''; position:absolute; top:0; left:0; right:0; bottom:0;
+    pointer-events:none; z-index:0;
+    background:
+        repeating-linear-gradient(90deg, transparent, transparent 80px, rgba(255,255,255,0.012) 80px, rgba(255,255,255,0.012) 81px),
+        repeating-linear-gradient(0deg, transparent, transparent 80px, rgba(255,255,255,0.008) 80px, rgba(255,255,255,0.008) 81px);
+}
+.league-selector-inner::after {
+    content:''; position:absolute; top:0; left:0; right:0; bottom:0;
+    pointer-events:none; z-index:0;
+    background:
+        radial-gradient(ellipse 60% 30% at 20% 0%, rgba(168,85,247,0.1) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 30% at 80% 0%, rgba(6,182,212,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 20% at 50% 100%, rgba(16,185,129,0.06) 0%, transparent 50%);
+}
+.league-selector-floodlights {
+    position:absolute; inset:0; pointer-events:none; z-index:0; overflow:hidden;
+}
+.league-selector-floodlights .fl {
+    position:absolute; width:3px;
+    background: linear-gradient(0deg, transparent 0%, rgba(168,85,247,0.12) 50%, rgba(255,255,255,0.2) 100%);
+    border-radius:2px; animation: stadiumLights 4s ease-in-out infinite;
+}
+.league-selector-floodlights .fl:nth-child(1) { left:8%; top:-60px; height:220px; animation-delay:0s; }
+.league-selector-floodlights .fl:nth-child(2) { left:25%; top:-40px; height:180px; animation-delay:0.7s; background: linear-gradient(0deg, transparent 0%, rgba(6,182,212,0.12) 50%, rgba(255,255,255,0.2) 100%); }
+.league-selector-floodlights .fl:nth-child(3) { right:20%; top:-50px; height:200px; animation-delay:1.2s; background: linear-gradient(0deg, transparent 0%, rgba(16,185,129,0.12) 50%, rgba(255,255,255,0.2) 100%); }
+.league-selector-floodlights .fl:nth-child(4) { right:5%; top:-70px; height:240px; animation-delay:0.5s; }
+.league-selector-floodlights .pl {
+    position:absolute; height:1px; left:5%; right:5%;
+    background: linear-gradient(90deg, transparent 0%, rgba(168,85,247,0.08) 20%, rgba(6,182,212,0.08) 50%, rgba(16,185,129,0.08) 80%, transparent 100%);
+}
+.league-selector-floodlights .pl:nth-child(5) { bottom:30%; }
+.league-selector-floodlights .pl:nth-child(6) { bottom:25%; }
+.league-selector-floodlights .pc {
+    position:absolute; bottom:calc(25% - 25px); left:50%; transform:translateX(-50%);
+    width:50px; height:50px; border:1px solid rgba(168,85,247,0.08); border-radius:50%;
+}
+.league-selector-nav {
+    position:absolute; top:1rem; left:1rem; right:1rem; display:flex;
+    justify-content:space-between; align-items:center; z-index:10;
+}
+.league-select-country-info {
+    display:flex; align-items:center; gap:0.8rem; z-index:1; position:relative;
+}
+.league-select-country-flag {
+    width:48px; height:34px; object-fit:cover; border-radius:6px;
+    border:2px solid rgba(255,255,255,0.15); box-shadow:0 4px 12px rgba(0,0,0,0.4);
+}
+.league-select-title-area {
+    text-align:center; margin-top:-3rem; margin-bottom:0.3rem; z-index:1; position:relative;
+}
+.league-select-title-area h2 {
+    font-size:2rem; font-weight:800; color: var(--text);
+}
+.league-carousel-wrapper {
+    width:100%; max-width:1500px; position:relative;
+    padding:1rem 0; display:flex; align-items:center; overflow:hidden;
+    z-index:2;
+}
+.league-grid-track {
+    display:flex; gap:1.5rem; transition:transform 0.5s cubic-bezier(0.4,0,0.2,1);
+    will-change:transform; align-items:stretch;
+}
+.league-card {
+    border-radius:20px; padding:2rem 1.5rem; text-align:center; cursor:pointer;
+    transition:all 0.4s cubic-bezier(0.4,0,0.2,1);
+    position:relative; overflow:hidden;
+    min-width:240px; flex:0 0 auto; width:260px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    border:1px solid rgba(255,255,255,0.1);
+    background: var(--card-gradient);
+}
+.league-card::before {
+    content:''; position:absolute; inset:0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.06) 0%, transparent 100%);
+    pointer-events:none; z-index:0;
+}
+.league-card * { position:relative; z-index:1; }
+.league-card:hover { transform:scale(1.05); border-color:rgba(255,255,255,0.25); box-shadow:0 20px 50px rgba(0,0,0,0.5); z-index:5; }
+.league-card-active {
+    transform:scale(1.12); z-index:10;
+    box-shadow:0 0 50px rgba(0,0,0,0.5);
+    border-color:rgba(168,85,247,0.5) !important;
+}
+.league-card-active:hover { transform:scale(1.13); }
+.league-card-glow {
+    position:absolute; inset:0; border-radius:20px;
+    opacity:0.12; transition:opacity 0.4s;
+    pointer-events:none; z-index:0;
+    background: radial-gradient(circle at 50% 30%, var(--accent-purple), transparent 70%);
+}
+.league-card-active .league-card-glow { opacity:0.28; }
+.league-logo {
+    width:90px; height:90px; object-fit:contain; margin:0 auto 1rem;
+    filter:drop-shadow(0 6px 20px rgba(0,0,0,0.4));
+    transition:transform 0.4s;
+}
+.league-card-active .league-logo { transform:scale(1.08); }
+.league-card h4 { font-size:1.1rem; margin-bottom:0.5rem; position:relative; z-index:1; font-weight:700; }
+.league-card p { color:var(--text-muted); font-size:0.88rem; }
+.league-carousel-btn {
+    position:absolute; z-index:20; top:50%; transform:translateY(-50%);
+    width:56px; height:56px; border-radius:50%; border:1px solid rgba(255,255,255,0.2);
+    background:rgba(5,8,16,0.85); color:var(--text); font-size:1.8rem; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    backdrop-filter:blur(6px); transition:all 0.3s;
+}
+.league-carousel-btn:hover { border-color:var(--primary); color:var(--primary-light); transform:translateY(-50%) scale(1.1); }
+.league-carousel-btn:disabled { opacity:0.25; cursor:default; pointer-events:none; }
+.league-carousel-btn-left { left:40px; }
+.league-carousel-btn-right { right:40px; }
+
+/* stary .league-selector / .country-bar / .league-grid — ukryte */
+.league-selector { display:none; }
+.country-bar { display:none; }
+.league-grid { display:none; }
+
 .carousel-btn {
     width:52px; height:52px; border-radius:50%; border:1px solid rgba(255,255,255,0.18);
     background:rgba(15,23,42,0.72); color:var(--text); font-size:1.5rem; cursor:pointer; flex:0 0 auto;
 }
 .carousel-btn:hover { border-color:var(--primary); color:var(--primary-light); }
-.carousel-viewport { overflow:hidden; width:100%; }
-.carousel-track { display:grid; grid-auto-flow:column; gap:1.25rem; transition:transform 0.5s cubic-bezier(0.4,0,0.2,1); will-change:transform; }
-.league-track { grid-auto-columns:calc((100% - 5rem) / 5); }
-@media (max-width:1100px) {
-    .league-track { grid-auto-columns:calc((100% - 2.5rem) / 3); }
-}
-@media (max-width:700px) {
-    .league-track { grid-auto-columns:100%; }
-}
-.league-card {
-    background: var(--card-gradient); backdrop-filter: blur(10px);
-    border:1px solid var(--border); border-radius:20px;
-    padding:1.5rem; cursor:pointer; transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
-    position: relative; overflow: hidden;
-    min-height:240px; display:flex; flex-direction:column; justify-content:space-between;
-}
-.league-card::before {
-    content:''; position:absolute; top:0; left:0; right:0; height:3px;
-    background: linear-gradient(90deg,var(--primary),var(--accent-cyan),var(--accent-purple));
-    opacity:0; transition:opacity 0.4s;
-}
-.league-card::after {
-    content:''; position:absolute; inset:0;
-    background: radial-gradient(circle at 50% 0%, rgba(99,102,241,0.08) 0%, transparent 60%);
-    opacity:0; transition:opacity 0.4s;
-    pointer-events:none;
-}
-.league-card:hover { transform:translateY(-6px); border-color:var(--primary); box-shadow:0 25px 50px rgba(0,0,0,0.5), 0 0 30px rgba(99,102,241,0.1); }
-.league-card:hover::before { opacity:1; }
-.league-card:hover::after { opacity:1; }
-.league-card h3 { font-size:1.3rem; margin-bottom:0.3rem; color:var(--text); font-weight:700; }
-.league-card p { color:var(--text-muted); font-size:0.85rem; }
-.league-logo { width:80px; height:80px; object-fit:contain; margin-bottom:0.8rem; filter:drop-shadow(0 10px 24px rgba(0,0,0,0.4)); transition:transform 0.4s; }
-.league-card:hover .league-logo { transform:scale(1.08); }
 .league-meta, .team-meta-list { display:flex; flex-direction:column; gap:0.45rem; align-items:flex-start; }
 .stat-chip {
     display:inline-flex; align-items:center; gap:0.4rem; padding:0.35rem 0.7rem; border-radius:999px;
@@ -563,77 +773,6 @@ tr.highlight td { background:rgba(99,102,241,0.12); color:var(--primary-light); 
     .score-display { font-size:3rem; }
     .start-screen h1 { font-size:2rem; }
 }
-@media(max-width:600px){
-    .start-screen h1{font-size:1.6rem;}
-    .start-screen .subtitle{font-size:1rem;}
-    .start-actions{flex-direction:column;align-items:center;}
-    .start-actions .btn{width:100%;justify-content:center;}
-    .league-card{min-height:180px;padding:1rem;}
-    .league-card h3{font-size:1.1rem;}
-    .league-logo{width:56px;height:56px;}
-    .carousel-btn{width:40px;height:40px;font-size:1.2rem;}
-    .carousel-shell{gap:.5rem;}
-    .stat-chip{font-size:.72rem;padding:.25rem .5rem;}
-    .team-select-inner{padding:1rem;}
-    .team-select-title-area{margin-top:0;}
-    .team-select-title-area h2{font-size:1.4rem;}
-    .team-select-logo{width:64px;height:64px;}
-    .team-card{min-width:180px;width:200px;padding:1.2rem 1rem;}
-    .team-logo{width:64px;height:64px;}
-    .team-card h4{font-size:.95rem;}
-    .team-carousel-btn{width:40px;height:40px;font-size:1.2rem;}
-    .team-carousel-btn-left{left:10px;}
-    .team-carousel-btn-right{right:10px;}
-    nav{padding:.6rem 1rem;}
-    nav .brand{font-size:1rem;}
-    nav .nav-links{gap:.3rem;}
-    nav button{font-size:.78rem;padding:.35rem .6rem;}
-    main{padding:1rem;}
-    .card{padding:1rem;}
-    .card-header{flex-direction:column;align-items:stretch;}
-    .card-header h2{font-size:1.1rem;}
-    .match-day{padding:1rem;}
-    .team-display .big-logo{width:72px;height:72px;font-size:1.8rem;}
-    .team-display h3{font-size:1.1rem;}
-    .score-display{font-size:2.5rem;}
-    .match-controls{gap:.5rem;}
-    .pitch-container{grid-template-columns:1fr;}
-    .formation-bar{gap:.25rem;}
-    .formation-bar button{font-size:.78rem;padding:.35rem .6rem;}
-    .table-container{overflow-x:auto;}
-    table{font-size:.78rem;}
-    th,td{padding:.4rem;}
-    .search-box{max-width:100%;}
-    .btn{font-size:.85rem;padding:.5rem 1rem;}
-    .btn-sm{font-size:.75rem;padding:.35rem .6rem;}
-    .calendar-shell{grid-template-columns:1fr;}
-    .filters-bar{grid-template-columns:1fr;}
-    .squad-panel{grid-template-columns:1fr;}
-}
-@media(max-width:480px){
-    .start-screen h1{font-size:1.3rem;}
-    .start-screen .subtitle{font-size:.85rem;}
-    .league-card{min-height:150px;}
-    .team-select-title-area h2{font-size:1.1rem;}
-    .team-card{min-width:150px;width:170px;padding:1rem .75rem;}
-    .team-logo{width:52px;height:52px;}
-    .team-card h4{font-size:.82rem;}
-    nav{padding:.4rem .6rem;}
-    nav .brand{font-size:.85rem;}
-    nav button{font-size:.7rem;padding:.25rem .4rem;}
-    main{padding:.5rem;}
-    .card{padding:.75rem;}
-    .card-header h2{font-size:.95rem;}
-    .match-day{padding:.75rem;}
-    .team-display .big-logo{width:56px;height:56px;font-size:1.4rem;}
-    .team-display h3{font-size:.9rem;}
-    .score-display{font-size:2rem;min-width:80px;}
-    .btn{font-size:.78rem;padding:.4rem .75rem;min-height:36px;}
-    .btn-sm{font-size:.7rem;padding:.25rem .5rem;min-height:28px;}
-    table{font-size:.7rem;}
-    th,td{padding:.25rem .15rem;}
-    .pos{width:22px;height:22px;line-height:22px;font-size:.65rem;}
-}
 
 ::-webkit-scrollbar { width:8px; }
 ::-webkit-scrollbar-track { background:var(--bg); }
@@ -712,28 +851,67 @@ nav button .fi { margin-right:3px; }
         <div class="pitch-circle"></div>
     </div>
     <div style="position:relative;z-index:1;">
-        <h1><img src="/logo.png" alt="PolskiWidok" class="brand-logo" style="height:36px;vertical-align:middle;"></h1>
+        <h1><img src="./logo.png" alt="PolskiWidok" class="brand-logo" style="height:36px;vertical-align:middle;"></h1>
         <p class="subtitle"><span>symuluj piłkę europejską</span> — realne dane z Transfermarkt</p>
     </div>
     <div class="start-actions">
         <button class="btn btn-accent btn-lg animate-fade-up" onclick="document.getElementById('loadGameInput').click()" style="animation-delay:0.1s;"><i class="fi fi-sr-upload"></i> Wczytaj zapis</button>
         <input type="file" id="loadGameInput" accept=".json" style="display:none" onchange="loadGameFromFile(event)">
     </div>
-    <div class="league-selector animate-fade-up" style="animation-delay:0.2s;" id="leagueSelector">
-        <div class="carousel-shell">
-            <button class="carousel-btn" onclick="scrollLeagueCarousel(-1)">‹</button>
-            <div class="carousel-viewport">
-                <div class="carousel-track league-track" id="leagueTrack">
-                    <div class="league-card">
-                        <h3>Ładowanie lig...</h3>
-                        <p>Dane są pobierane z lokalnego API.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-btn" onclick="scrollLeagueCarousel(1)">›</button>
+    <div class="start-actions animate-fade-up" style="animation-delay:0.2s;margin-top:0.5rem;">
+        <button class="btn btn-primary btn-lg" onclick="openCountrySelect()" style="font-size:1.1rem;padding:1rem 2.5rem;">
+            <i class="fi fi-br-football"></i> Wybierz ligę i drużynę
+        </button>
+    </div>
+    <p class="shortcut-hint animate-fade-up" style="margin-top:1.5rem;animation-delay:0.3s;"><i class="fi fi-br-info"></i> Klawisze: <kbd>1</kbd>-<kbd>6</kbd> zakładki · <kbd>Spacja</kbd> mecz · <kbd>D</kbd> dzień</p>
+</div>
+
+<!-- COUNTRY SELECT -->
+<div class="country-select" id="countrySelect">
+    <div class="country-select-inner" id="countrySelectInner">
+        <div class="country-select-floodlights">
+            <div class="fl"></div><div class="fl"></div><div class="fl"></div><div class="fl"></div>
+            <div class="pl"></div><div class="pl"></div><div class="pc"></div>
+        </div>
+        <div class="country-select-nav">
+            <div class="team-select-brand"><img src="./logo.png" alt="PolskiWidok" style="height:24px;vertical-align:middle;"></div>
+            <button class="btn btn-secondary btn-sm" onclick="backToStartFromCountry()"><i class="fi fi-ts-arrow-left"></i> Powrót</button>
+        </div>
+        <div class="country-select-title-area">
+            <h2>Wybierz kraj</h2>
+        </div>
+        <div class="country-carousel-wrapper">
+            <button class="country-card-carousel-btn country-card-carousel-btn-left" id="countryCarouselLeft" onclick="scrollCountryCarousel(-1)">&#8249;</button>
+            <div class="country-grid" id="countryGrid"></div>
+            <button class="country-card-carousel-btn country-card-carousel-btn-right" id="countryCarouselRight" onclick="scrollCountryCarousel(1)">&#8250;</button>
         </div>
     </div>
-    <p class="shortcut-hint animate-fade-up" style="margin-top:2rem;animation-delay:0.3s;"><i class="fi fi-br-info"></i> Klawisze: <kbd>1</kbd>-<kbd>6</kbd> zakładki · <kbd>Spacja</kbd> mecz · <kbd>D</kbd> dzień</p>
+</div>
+
+<!-- LEAGUE SELECTOR SCREEN -->
+<div class="league-selector-screen" id="leagueSelectorScreen">
+    <div class="league-selector-inner" id="leagueSelectorInner">
+        <div class="league-selector-floodlights">
+            <div class="fl"></div><div class="fl"></div><div class="fl"></div><div class="fl"></div>
+            <div class="pl"></div><div class="pl"></div><div class="pc"></div>
+        </div>
+        <div class="league-selector-nav">
+            <div class="team-select-brand"><img src="./logo.png" alt="PolskiWidok" style="height:24px;vertical-align:middle;"></div>
+            <button class="btn btn-secondary btn-sm" onclick="backToCountrySelect()"><i class="fi fi-ts-arrow-left"></i> Zmień kraj</button>
+        </div>
+        <div class="league-select-title-area">
+            <div class="league-select-country-info" style="justify-content:center;margin-bottom:0.5rem;">
+                <img class="league-select-country-flag" id="leagueSelectFlag" src="" alt="">
+                <span id="leagueSelectCountryName" style="font-size:1.1rem;font-weight:700;color:var(--text-muted);"></span>
+            </div>
+            <h2>Wybierz ligę</h2>
+        </div>
+        <div class="league-carousel-wrapper">
+            <button class="league-carousel-btn league-carousel-btn-left" id="leagueCarouselLeft" onclick="scrollLeagueCarousel(-1)">&#8249;</button>
+            <div class="league-grid-track" id="leagueGridTrack"></div>
+            <button class="league-carousel-btn league-carousel-btn-right" id="leagueCarouselRight" onclick="scrollLeagueCarousel(1)">&#8250;</button>
+        </div>
+    </div>
 </div>
 
 <!-- TEAM SELECT -->
@@ -744,7 +922,7 @@ nav button .fi { margin-right:3px; }
             <div class="pl"></div><div class="pl"></div><div class="pc"></div>
         </div>
         <div class="team-select-nav">
-            <div class="team-select-brand"><img src="/logo.png" alt="PolskiWidok" style="height:24px;vertical-align:middle;"></div>
+            <div class="team-select-brand"><img src="./logo.png" alt="PolskiWidok" style="height:24px;vertical-align:middle;"></div>
             <button class="btn btn-secondary btn-sm" onclick="backToStart()"><i class="fi fi-ts-arrow-left"></i> Powrót</button>
         </div>
         <div class="team-select-title-area">
@@ -762,7 +940,7 @@ nav button .fi { margin-right:3px; }
 <!-- GLOBALNY EKRAN ŁADOWANIA -->
 <div id="globalLoading" style="display:none;position:fixed;inset:0;background:#0b0f19;z-index:9999;flex-direction:column;align-items:center;justify-content:center;">
   <div class="loader-spinner" style="border:4px solid rgba(255,255,255,.1);border-left-color:#3b82f6;border-radius:50%;width:48px;height:48px;animation:spin .8s linear infinite;"></div>
-  <img src="/logo.png" alt="PolskiWidok" style="height:28px;margin-top:1rem;">
+  <img src="./logo.png" alt="PolskiWidok" style="height:28px;margin-top:1rem;">
   <p style="color:#9ca3af;font-size:0.85rem;margin:0.5rem 0 1.5rem;" id="globalLoadingText">Inicjalizacja...</p>
   <div style="width:320px;height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden;">
     <div id="globalProgressFill" style="height:100%;width:0%;background:linear-gradient(90deg,#2563eb,#06b6d4);border-radius:3px;transition:width .3s ease;"></div>
@@ -779,7 +957,7 @@ nav button .fi { margin-right:3px; }
     <div class="modal" id="modalContent"></div>
 </div>
 
-<script src="/app.js"></script>
-<script src="/career.js"></script>
+ <script src="./app.js"></script>
+ <script src="./career.js"></script>
 </body>
 </html>

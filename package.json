@@ -1,9 +1,0 @@
-{
-  "name": "polskiwidok",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "build": "python build.py",
-    "dev": "python server.py"
-  }
-}

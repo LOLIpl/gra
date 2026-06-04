@@ -24,6 +24,39 @@ const state = {
     transferWindow: null,
 };
 
+const COUNTRY_CODES = {
+  'polska':'PL','anglia':'GB','anglika':'GB','wielka brytania':'GB','szkocja':'GB',
+  'niemcy':'DE','hiszpania':'ES','włochy':'IT','francja':'FR','holandia':'NL',
+  'portugalia':'PT','belgia':'BE','austria':'AT','szwajcaria':'CH','dania':'DK',
+  'szwecja':'SE','norwegia':'NO','finlandia':'FI','rosja':'RU','ukraina':'UA',
+  'turcja':'TR','grecja':'GR','chorwacja':'HR','serbia':'RS','czechy':'CZ','czesko':'CZ',
+  'słowacja':'SK','słowenia':'SI','węgry':'HU','rumunia':'RO','bułgaria':'BG',
+  'usa':'US','meksyk':'MX','mexyk':'MX','brazylia':'BR','argentyna':'AR','chile':'CL',
+  'japonia':'JP','korea':'KR','chiny':'CN','arabia saudyjska':'SA',
+  'zea':'AE','zjednoczone emiraty arabskie':'AE','katar':'QA','australia':'AU',
+  'irlandia':'IE','izrael':'IL','cypr':'CY',
+  'albania':'AL','bośnia':'BA','czarnogóra':'ME','macedonia':'MK','kosowo':'XK',
+  'litwa':'LT','łotwa':'LV','estonia':'EE','białoruś':'BY','mołdawia':'MD',
+  'kazachstan':'KZ','azerbejdżan':'AZ','armenia':'AM','gruzja':'GE',
+  'inne':'WW'
+};
+
+function countryToFlag(countryName) {
+  const c = (countryName||'').toLowerCase().trim();
+  if (COUNTRY_CODES[c]) {
+    const code = COUNTRY_CODES[c];
+    if (code === 'XX' || code === 'WW') return '🌍';
+    return String.fromCodePoint(0x1F1E6 + code.charCodeAt(0) - 65, 0x1F1E6 + code.charCodeAt(1) - 65);
+  }
+  for (const [key, val] of Object.entries(COUNTRY_CODES)) {
+    if (c.includes(key) || key.includes(c)) {
+      if (val === 'XX' || val === 'WW') return '🌍';
+      return String.fromCodePoint(0x1F1E6 + val.charCodeAt(0) - 65, 0x1F1E6 + val.charCodeAt(1) - 65);
+    }
+  }
+  return '🌍';
+}
+
 document.addEventListener("DOMContentLoaded", initApp);
 
 async function initApp() {
@@ -39,42 +72,48 @@ async function initApp() {
 
     } catch (error) {
         console.error(error);
-        document.getElementById("leagueTrack").innerHTML = `
-            <div class="league-card"><h3>Blad ladowania</h3><p>${escapeHtml(error.message)}</p></div>`;
+        document.getElementById("leagueGrid").innerHTML = `
+            <p style="color:var(--text-muted);text-align:center;padding:2rem;">Błąd ładowania: ${escapeHtml(error.message)}</p>`;
     }
 }
 
 
-
-const IS_STATIC = !location.hostname.includes('localhost') && location.hostname !== '127.0.0.1';
-
-function staticApiPath(path) {
-    if (path === '/api/bootstrap') return '/data/bootstrap.json';
-    if (path === '/api/transfers') return '/data/transfers.json';
-    if (path === '/api/leagues') return '/data/leagues.json';
-    if (path === '/api/uefa') return '/data/uefa.json';
-    if (path === '/api/save' || path === '/api/save-exists') return null;
-    const m = path.match(/^\/api\/league\/(.+)$/);
-    if (m) return `/data/league/${m[1]}.json`;
-    return path;
-}
 
 async function apiGet(url) {
-    const sp = IS_STATIC ? staticApiPath(url) : url;
-    if (sp === null) {
-        if (url === '/api/save-exists') return { exists: false };
-        if (url === '/api/save') return { exists: false };
-        return null;
+    const fileMap = {
+        "/api/bootstrap": "./data/bootstrap.json",
+        "/api/transfers": "./data/transfers.json",
+        "/api/leagues":   "./data/leagues.json",
+        "/api/uefa":      "./data/uefa.json",
+    };
+    if (fileMap[url] !== undefined) {
+        const r = await fetch(fileMap[url]);
+        if (!r.ok) throw new Error(`Błąd ładowania ${url}`);
+        return r.json();
     }
-    const r = await fetch(sp);
-    if (!r.ok) throw new Error(`Blad serwera dla ${url}`);
-    return r.json();
+    if (url.startsWith("/api/league/")) {
+        const code = url.split("/").pop().toUpperCase();
+        const r = await fetch(`./data/league_${code}.json`);
+        if (!r.ok) throw new Error(`Błąd ładowania ligi ${code}`);
+        return r.json();
+    }
+    if (url === "/api/save-exists") {
+        const data = localStorage.getItem("pw_career_save");
+        return { exists: data !== null };
+    }
+    if (url === "/api/save") {
+        const data = localStorage.getItem("pw_career_save");
+        if (data === null) return { exists: false };
+        return { exists: true, state: JSON.parse(data) };
+    }
+    throw new Error(`Nieznany endpoint: ${url}`);
 }
 async function apiPost(url, payload) {
-    if (IS_STATIC) throw new Error('Zapis niedostepny w wersji statycznej');
-    const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
-    if (!r.ok) throw new Error(`Blad serwera dla ${url}`);
-    return r.json();
+    if (url === "/api/save") {
+        localStorage.setItem("pw_career_save", JSON.stringify(payload));
+        return { ok: true, path: "localStorage" };
+    }
+    throw new Error(`Nieznany endpoint POST: ${url}`);
 }
 
 async function loadBootstrap() {
@@ -92,7 +131,7 @@ async function loadLeague(code) {
 async function loadTransfers() {
     if (cache.transfers) return cache.transfers;
     const p = await apiGet("/api/transfers");
-    cache.transfers = p.players;
+    cache.transfers = p.players || p;
     return cache.transfers;
 }
 async function loadAllLeagues() {
@@ -102,34 +141,253 @@ async function loadAllLeagues() {
 }
 async function loadSavedCareer() { return apiGet("/api/save-exists"); }
 
-function renderLeagueSelector() {
-    const leagues = cache.bootstrap.leagues || [];
-    const track = document.getElementById("leagueTrack");
-    if (!track.dataset.rendered) {
-        track.innerHTML = leagues.map((l) => `
-            <div class="league-card" onclick="selectLeague('${escapeHtml(l.competition_code)}')">
-                <div><img class="league-logo" src="${l.league_logo_url}" alt="${escapeHtml(l.name)}" loading="lazy"><h3>${escapeHtml(l.name)}</h3></div>
-            </div>
-        `).join("");
-        track.dataset.rendered = "1";
+function getCountryGroups() {
+    const leagues = cache.bootstrap?.leagues || [];
+    const map = new Map();
+    leagues.forEach(l => {
+        const c = l.country || 'Inne';
+        if (!map.has(c)) map.set(c, []);
+        map.get(c).push(l);
+    });
+    return [...map.entries()].sort((a, b) => b[1].length - a[1].length);
+}
+
+// ============================================================
+// COUNTRY → LEAGUE → TEAM selection (full-screen carousels)
+// ============================================================
+
+const COUNTRY_CODES_ISO2 = {
+  'polska':'pl','anglia':'gb','wielka brytania':'gb','szkocja':'gb-sct',
+  'niemcy':'de','hiszpania':'es','włochy':'it','francja':'fr','holandia':'nl',
+  'portugalia':'pt','belgia':'be','austria':'at','szwajcaria':'ch','dania':'dk',
+  'szwecja':'se','norwegia':'no','finlandia':'fi','rosja':'ru','ukraina':'ua',
+  'turcja':'tr','grecja':'gr','chorwacja':'hr','serbia':'rs','czechy':'cz',
+  'słowacja':'sk','słowenia':'si','węgry':'hu','rumunia':'ro','bułgaria':'bg',
+  'usa':'us','meksyk':'mx','brazylia':'br','argentyna':'ar','chile':'cl',
+  'japonia':'jp','korea':'kr','chiny':'cn','arabia saudyjska':'sa',
+  'zea':'ae','katar':'qa','australia':'au','irlandia':'ie','izrael':'il','cypr':'cy',
+  'albania':'al','bośnia':'ba','czarnogóra':'me','macedonia':'mk','kosowo':'xk',
+  'litwa':'lt','łotwa':'lv','estonia':'ee','białoruś':'by','mołdawia':'md',
+  'kazachstan':'kz','azerbejdżan':'az','armenia':'am','gruzja':'ge',
+};
+
+function getFlagUrl(countryName) {
+  const c = (countryName||'').toLowerCase().trim();
+  let code = COUNTRY_CODES_ISO2[c];
+  if (!code) {
+    for (const [key, val] of Object.entries(COUNTRY_CODES_ISO2)) {
+      if (c.includes(key) || key.includes(c)) { code = val; break; }
     }
-    const cardW = track.querySelector(".league-card")?.offsetWidth || 280;
-    const step = cardW + 20;
-    track.style.transform = `translateX(-${state.leagueCarouselStart * step}px)`;
+  }
+  if (!code) return '';
+  // flagcdn.com — darmowe flagi PNG
+  return `https://flagcdn.com/w80/${code}.png`;
 }
-function scrollLeagueCarousel(direction) {
-    const maxStart = Math.max(0, (cache.bootstrap?.leagues?.length || 0) - state.leaguePageSize);
-    state.leagueCarouselStart = clamp(state.leagueCarouselStart + direction, 0, maxStart);
-    const cardW = document.querySelector("#leagueTrack .league-card")?.offsetWidth || 280;
-    const step = cardW + 20;
-    document.getElementById("leagueTrack").style.transform = `translateX(-${state.leagueCarouselStart * step}px)`;
+
+// --- State dla karuzeli ---
+let _countryCarouselIdx = 0;
+let _leagueCarouselIdx = 0;
+let _countryScrolling = false;
+let _leagueScrolling = false;
+const CAROUSEL_SCROLL_MS = 500;
+
+function openCountrySelect() {
+    document.getElementById('startScreen').style.display = 'none';
+    const el = document.getElementById('countrySelect');
+    el.style.display = 'block';
+    _countryCarouselIdx = 0;
+    renderCountryCarousel();
 }
+
+function backToStartFromCountry() {
+    document.getElementById('countrySelect').style.display = 'none';
+    document.getElementById('startScreen').style.display = 'flex';
+}
+
+function backToCountrySelect() {
+    document.getElementById('leagueSelectorScreen').style.display = 'none';
+    document.getElementById('countrySelect').style.display = 'block';
+}
+
+function getCountryGroups() {
+    const leagues = cache.bootstrap?.leagues || [];
+    const map = new Map();
+    leagues.forEach(l => {
+        const c = l.country || 'Inne';
+        if (!map.has(c)) map.set(c, []);
+        map.get(c).push(l);
+    });
+    return [...map.entries()].sort((a, b) => b[1].length - a[1].length);
+}
+
+function getMiddleCountryIndex() {
+    return _countryCarouselIdx + Math.floor(5 / 2);
+}
+
+function renderCountryCarousel() {
+    const track = document.getElementById('countryGrid');
+    const container = document.getElementById('countrySelectInner');
+    if (!track) return;
+    const groups = getCountryGroups();
+
+    const needsRebuild = !track.dataset.rendered;
+    if (needsRebuild) {
+        track.innerHTML = '';
+        track.style.transform = 'none';
+        groups.forEach(([country, leagues], idx) => {
+            const flagUrl = getFlagUrl(country);
+            const card = document.createElement('div');
+            card.className = 'country-card';
+            card.dataset.index = idx;
+            card.onclick = () => openLeagueSelect(country);
+            card.innerHTML = `
+                <div class="country-card-glow"></div>
+                ${flagUrl
+                    ? `<img class="country-flag-img" src="${flagUrl}" alt="${escapeHtml(country)}" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+                       <div style="display:none;font-size:2.8rem;margin-bottom:0.9rem;">${countryToFlag(country)}</div>`
+                    : `<div style="font-size:2.8rem;margin-bottom:0.9rem;">${countryToFlag(country)}</div>`
+                }
+                <h4>${escapeHtml(country)}</h4>
+                <span class="leagues-count">${leagues.length} lig${leagues.length===1?'a':leagues.length<5?'i':'</span>'}</span>
+            `;
+            track.appendChild(card);
+        });
+        track.dataset.rendered = '1';
+        track.offsetHeight;
+    }
+
+    const middleIdx = clamp(getMiddleCountryIndex(), 0, groups.length - 1);
+    const allCards = track.querySelectorAll('.country-card');
+    allCards.forEach((card, i) => card.classList.toggle('country-card-active', i === middleIdx));
+
+    const cardW = allCards[0]?.offsetWidth || 260;
+    const step = cardW + 24;
+    const viewW = track.parentElement?.offsetWidth || 1200;
+    const offset = (viewW / 2) - (cardW / 2) - (middleIdx * step);
+    if (needsRebuild) {
+        track.style.transition = 'none';
+        track.style.transform = `translateX(${offset}px)`;
+        track.offsetHeight;
+        track.style.transition = '';
+    } else {
+        track.style.transform = `translateX(${offset}px)`;
+    }
+    const leftBtn = document.getElementById('countryCarouselLeft');
+    const rightBtn = document.getElementById('countryCarouselRight');
+    if (leftBtn) leftBtn.disabled = middleIdx <= 0;
+    if (rightBtn) rightBtn.disabled = middleIdx >= groups.length - 1;
+    setTimeout(() => { _countryScrolling = false; }, CAROUSEL_SCROLL_MS);
+}
+
+function scrollCountryCarousel(dir) {
+    if (_countryScrolling) return;
+    _countryScrolling = true;
+    _countryCarouselIdx += dir;
+    renderCountryCarousel();
+}
+
+function openLeagueSelect(country) {
+    const groups = getCountryGroups();
+    state.selectedCountry = country;
+    document.getElementById('countrySelect').style.display = 'none';
+    const el = document.getElementById('leagueSelectorScreen');
+    el.style.display = 'block';
+    _leagueCarouselIdx = 0;
+    // Flaga i nazwa kraju w nagłówku
+    const flagEl = document.getElementById('leagueSelectFlag');
+    const nameEl = document.getElementById('leagueSelectCountryName');
+    const flagUrl = getFlagUrl(country);
+    if (flagEl) { flagEl.src = flagUrl; flagEl.alt = country; flagEl.style.display = flagUrl ? '' : 'none'; }
+    if (nameEl) nameEl.textContent = country;
+    renderLeagueCarousel(groups);
+}
+
+function renderLeagueCarousel(groups) {
+    const track = document.getElementById('leagueGridTrack');
+    const container = document.getElementById('leagueSelectorInner');
+    if (!track) return;
+    const entry = (groups || getCountryGroups()).find(([c]) => c === state.selectedCountry);
+    const leagues = entry ? entry[1] : [];
+
+    // Rebuild always (może być nowy kraj)
+    track.innerHTML = '';
+    track.style.transform = 'none';
+    leagues.forEach((l, idx) => {
+        const card = document.createElement('div');
+        card.className = 'league-card';
+        card.dataset.index = idx;
+        card.onclick = () => selectLeague(l.competition_code);
+        card.innerHTML = `
+            <div class="league-card-glow"></div>
+            <img class="league-logo" src="${escapeHtml(l.league_logo_url||'')}" alt="${escapeHtml(l.name)}" loading="lazy"
+                 onerror="this.style.opacity='0.3'">
+            <h4>${escapeHtml(l.name)}</h4>
+            <div class="league-meta" style="align-items:center;margin-top:0.5rem;">
+                <span class="stat-chip"><i class="fi fi-sr-users"></i> ${l.club_count} klubów</span>
+                <span class="stat-chip"><i class="fi fi-sr-star"></i> Poziom ${l.level||'?'}</span>
+            </div>
+        `;
+        track.appendChild(card);
+    });
+    track.offsetHeight;
+    _updateLeagueCarouselPosition(leagues.length);
+}
+
+function _updateLeagueCarouselPosition(total) {
+    const track = document.getElementById('leagueGridTrack');
+    if (!track) return;
+    const allCards = track.querySelectorAll('.league-card');
+    if (!allCards.length) return;
+    const middleIdx = clamp(_leagueCarouselIdx + Math.floor(5/2), 0, total - 1);
+    allCards.forEach((card, i) => card.classList.toggle('league-card-active', i === middleIdx));
+
+    const container = document.getElementById('leagueSelectorInner');
+    const activeLeague = null; // brak koloru jak drużyny
+    if (container) {
+        container.style.background = `
+            radial-gradient(ellipse 60% 30% at 20% 0%, rgba(168,85,247,0.1) 0%, transparent 60%),
+            radial-gradient(ellipse 60% 30% at 80% 0%, rgba(6,182,212,0.08) 0%, transparent 60%),
+            linear-gradient(180deg, #050810 0%, #080c1a 100%)`;
+    }
+    const cardW = allCards[0].offsetWidth || 260;
+    const step = cardW + 24;
+    const viewW = track.parentElement?.offsetWidth || 1200;
+    const offset = (viewW / 2) - (cardW / 2) - (middleIdx * step);
+    track.style.transform = `translateX(${offset}px)`;
+
+    const leftBtn = document.getElementById('leagueCarouselLeft');
+    const rightBtn = document.getElementById('leagueCarouselRight');
+    if (leftBtn) leftBtn.disabled = middleIdx <= 0;
+    if (rightBtn) rightBtn.disabled = middleIdx >= total - 1;
+    setTimeout(() => { _leagueScrolling = false; }, CAROUSEL_SCROLL_MS);
+}
+
+function scrollLeagueCarousel(dir) {
+    if (_leagueScrolling) return;
+    _leagueScrolling = true;
+    _leagueCarouselIdx += dir;
+    const groups = getCountryGroups();
+    const entry = groups.find(([c]) => c === state.selectedCountry);
+    const total = entry ? entry[1].length : 0;
+    _updateLeagueCarouselPosition(total);
+}
+
+// Stary renderLeagueSelector potrzebny do inicjalizacji danych (nie renderuje już UI)
+function renderLeagueSelector() {
+    // dane są gotowe, nic nie renderujemy — użytkownik klika przycisk
+}
+
+// Stare funkcje zachowane dla kompatybilności
+function renderCountryBar() {}
+function renderLeagueGrid() {}
+function selectCountry(country) { openLeagueSelect(country); }
+function shiftCountry() {}
 
 async function selectLeague(code) {
     state.selectedLeagueCode = code;
     state.pendingLeagueData = deepClone(await loadLeague(code));
     state.teamCarouselStart = 0;
-    document.getElementById("startScreen").style.display = "none";
+    document.getElementById("leagueSelectorScreen").style.display = "none";
     document.getElementById("teamSelect").style.display = "block";
     document.getElementById("teamSelectTitle").textContent = "Wybierz drużynę";
     const logo = document.getElementById("teamSelectLeagueLogo");
@@ -140,7 +398,7 @@ async function selectLeague(code) {
 }
 function backToStart() {
     document.getElementById("teamSelect").style.display = "none";
-    document.getElementById("startScreen").style.display = "flex";
+    document.getElementById("leagueSelectorScreen").style.display = "block";
 }
 
 function getMiddleClubIndex() {
@@ -267,7 +525,7 @@ async function startCareer(clubId) {
     const container = document.getElementById("gameContainer");
     container.style.display = "block";
     try {
-        const resp = await fetch("/career.html");
+        const resp = await fetch("./career.html");
         if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
         const html = await resp.text();
         container.innerHTML = html;
