@@ -11,6 +11,7 @@
   "startBudget": 5,
   "rules": {
     "up": "PL1",
+    "down": "PL2L",
     "promotion": 2,
     "playoffPromotion": [
       3,
