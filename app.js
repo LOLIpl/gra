@@ -550,3 +550,124 @@ function formatMoney(v) { return Number(v||0).toFixed(2); }
 function clamp(v,min,max) { return Math.max(min,Math.min(max,v)); }
 function deepClone(v) { return JSON.parse(JSON.stringify(v)); }
 function round2(v) { return Math.round(Number(v||0)*100)/100; }
+
+// ============================================================
+// Drag-to-scroll dla karuzeli (kraj / liga / drużyna)
+// ============================================================
+
+function setupCarouselDrag(trackId, opts) {
+    const track = document.getElementById(trackId);
+    if (!track) return;
+
+    let isDragging = false;
+    let startX = 0;
+    let startTransform = 0;
+    let dragDx = 0;
+
+    function getTransformX(el) {
+        const t = window.getComputedStyle(el).transform;
+        if (t === 'none') return 0;
+        const m = t.match(/matrix.*\((.+)\)/);
+        return m ? parseFloat(m[1].split(', ')[4] || 0) : 0;
+    }
+
+    function onPointerDown(e) {
+        if (e.type === 'mousedown' && e.button !== 0) return;
+        isDragging = true;
+        startX = e.type.startsWith('touch') ? e.touches[0].clientX : e.clientX;
+        startTransform = getTransformX(track);
+        dragDx = 0;
+        track.style.transition = 'none';
+        track.style.cursor = 'grabbing';
+        document.body.style.userSelect = 'none';
+        e.preventDefault();
+    }
+
+    function onPointerMove(e) {
+        if (!isDragging) return;
+        const cx = e.type.startsWith('touch') ? e.touches[0].clientX : e.clientX;
+        dragDx = cx - startX;
+        track.style.transform = `translateX(${startTransform + dragDx}px)`;
+        e.preventDefault();
+    }
+
+    function onPointerUp() {
+        if (!isDragging) return;
+        isDragging = false;
+        track.style.cursor = '';
+        document.body.style.userSelect = '';
+
+        if (Math.abs(dragDx) < 6) {
+            track.style.transition = '';
+            track.style.transform = `translateX(${startTransform}px)`;
+            return;
+        }
+
+        track.style.transition = '';
+
+        const children = track.children;
+        if (!children.length) return;
+
+        const total = opts.getTotal();
+        if (total === 0) return;
+
+        const parentW = track.parentElement?.offsetWidth || 1200;
+        const cardW = children[0].offsetWidth || 260;
+        const step = cardW + (opts.gap || 24);
+        const finalX = startTransform + dragDx;
+        const middleIdx = Math.round((parentW / 2 - cardW / 2 - finalX) / step);
+        const clampedMiddle = clamp(middleIdx, 0, total - 1);
+
+        opts.onSnap(clampedMiddle);
+    }
+
+    track.addEventListener('mousedown', onPointerDown);
+    document.addEventListener('mousemove', onPointerMove);
+    document.addEventListener('mouseup', onPointerUp);
+    track.addEventListener('touchstart', onPointerDown, { passive: false });
+    document.addEventListener('touchmove', onPointerMove, { passive: false });
+    document.addEventListener('touchend', onPointerUp);
+}
+
+// Inicjalizacja drag-to-scroll dla wszystkich karuzeli
+(function initCarouselDrag() {
+    // Karuzela krajów
+    setupCarouselDrag('countryGrid', {
+        getTotal: () => getCountryGroups().length,
+        gap: 24,
+        onSnap: (middleIdx) => {
+            const total = getCountryGroups().length;
+            _countryCarouselIdx = clamp(middleIdx - Math.floor(5 / 2), 0, Math.max(0, total - 1));
+            _countryScrolling = true;
+            renderCountryCarousel();
+        }
+    });
+
+    // Karuzela lig
+    setupCarouselDrag('leagueGridTrack', {
+        getTotal: () => {
+            const entry = getCountryGroups().find(([c]) => c === state.selectedCountry);
+            return entry ? entry[1].length : 0;
+        },
+        gap: 24,
+        onSnap: (middleIdx) => {
+            const entry = getCountryGroups().find(([c]) => c === state.selectedCountry);
+            const total = entry ? entry[1].length : 0;
+            _leagueCarouselIdx = clamp(middleIdx - Math.floor(5 / 2), 0, Math.max(0, total - 1));
+            _leagueScrolling = true;
+            _updateLeagueCarouselPosition(total);
+        }
+    });
+
+    // Karuzela drużyn
+    setupCarouselDrag('teamGrid', {
+        getTotal: () => state.pendingLeagueData?.clubs?.length || 0,
+        gap: 24,
+        onSnap: (middleIdx) => {
+            const total = state.pendingLeagueData?.clubs?.length || 0;
+            state.teamCarouselStart = clamp(middleIdx - Math.floor(state.teamPageSize / 2), 0, Math.max(0, total - 1));
+            _teamScrolling = true;
+            renderTeamGrid();
+        }
+    });
+})();
