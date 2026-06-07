@@ -10,7 +10,7 @@
   "label": "Betclic 2 Liga",
   "startBudget": 4,
   "rules": {
-    "up": "PL2".
+    "up": "PL2",
     "down": null,
     "promotion": 2,
     "relegation": 4,
