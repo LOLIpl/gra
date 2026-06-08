@@ -468,7 +468,13 @@ table tbody tr.my-team td {
                 <div class="table-header-broad">
                     <div class="th-left">
                         <h1><i class="fi fi-ss-trophy-achievement-skill"></i> Oficjalna Tabela</h1>
-                        <select class="league-selector-dark" id="leagueTableSelector" onchange="switchLeagueTable()"></select>
+                        <div style="display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;">
+                            <select class="league-selector-dark" id="leagueTableSelector" onchange="switchLeagueTable()"></select>
+                            <select class="league-selector-dark" id="cupTableSelector" onchange="switchCupTable()">
+                                <option value="">— Liga</option>
+                                <option value="cup">Puchary</option>
+                            </select>
+                        </div>
                     </div>
                     <span class="badge badge-blue badge-lg" id="tableMatchDay">Po 0 kolejkach</span>
                 </div>

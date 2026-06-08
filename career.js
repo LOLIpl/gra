@@ -1179,7 +1179,7 @@ function showSection(sectionId) {
     const btn=document.getElementById(`btn-${sectionId}`);
     if(btn)btn.classList.add("active");
     if(sectionId==="gra"||sectionId==="simulation"){renderCurrentMatchPanels();renderCalendar?.();renderSchedule?.();}
-    if(sectionId==="table"){fillLeagueTableSelector();renderTable();const sel=document.getElementById("leagueTableSelector");const code=sel?.value||state.selectedLeagueCode;const league=state.allLeagueData?.[code];if(league)updateNav(league.name);else updateNav();}
+    if(sectionId==="table"){fillLeagueTableSelector();renderTable();const cupSel=document.getElementById("cupTableSelector");if(cupSel&&cupSel.value==="cup")updateNav("Puchar Krajowy");else{const sel=document.getElementById("leagueTableSelector");const code=sel?.value||state.selectedLeagueCode;const league=state.allLeagueData?.[code];updateNav(league?league.name:"Puchar Krajowy");}}
     else updateNav();
     if(sectionId==="transfers")renderTransfers();
     if(sectionId==="settings")updateSaveStatus();
@@ -2448,12 +2448,34 @@ function previousMonth(){changeCalendarMonth(-1);}
 function nextMonth(){changeCalendarMonth(1);}
 function renderSchedule(){const tbody=document.querySelector("#scheduleTable tbody");tbody.innerHTML="";getUserFixtures().forEach((f)=>{const h=getClub(f.homeClubId),a=getClub(f.awayClubId);tbody.innerHTML+=`<tr><td>${fixtureRoundLabel(f)}</td><td>${formatDateLong(fromIsoDate(f.date))}</td><td>${clubCrestHtml(h?.logo_url,h?.name)}${escapeHtml(h?.name||"?")}</td><td style="font-weight:800;">${f.played?`${f.homeGoals}:${f.awayGoals}`:"-:-"}</td><td>${clubCrestHtml(a?.logo_url,a?.name)}${escapeHtml(a?.name||"?")}</td><td>${f.played?'<span class="badge badge-green"><i class="fi fi-rr-check"></i> Rozegrany</span>':f.date===toIsoDate(state.currentDate)?'<span class="badge badge-orange"><i class="fi fi-rr-calendar-arrow-up"></i> Dzisiaj</span>':'<span class="badge badge-blue"><i class="fi fi-rr-calendar-arrow-up"></i> Plan</span>'}</td></tr>`;});}
 
-function renderTable(){const code=state.activeLeagueTable||state.selectedLeagueCode;const tbl=state.leagueTables[code]||state.table;const tbody=document.querySelector("#leagueTable tbody");if(!tbody)return;tbody.innerHTML="";const zones=getLeagueZones(code,tbl);tbl.forEach((r,i)=>{const z=zones.get(i+1);const isUser=r.clubId===state.team.club_id;const cls=[isUser?"my-team":"",z?.rowClass||""].filter(Boolean).join(" ");const posCls=z?.rowClass||"pos-normal";const form=r.form.map((v)=>FORM_ICON[v]||v).join(" ");const crest=clubCrestHtml(r.logo_url,r.name);const teamBg=!isUser&&r.color?` style="background:linear-gradient(90deg,${r.color}18,transparent 50%);"`:"";tbody.innerHTML+=`<tr class="${cls}"${teamBg}><td><span class="pos ${posCls}">${i+1}</span></td><td>${crest}${escapeHtml(r.name)}</td><td>${r.played}</td><td>${r.won}</td><td>${r.drawn}</td><td>${r.lost}</td><td>${r.gf}</td><td>${r.ga}</td><td>${r.gf-r.ga}</td><td style="font-weight:800;color:var(--primary-light);">${r.points}</td><td>${z?`<span class="zone-chip ${z.className}">${escapeHtml(z.label)}</span>`:"-"}</td><td>${form}</td></tr>`;});const e=document.getElementById("tableMatchDay");if(e)e.textContent=`Po ${(state.leagueTables[code]&&state.leagueTables[code][0]?.played)||0} kolejkach`;renderOtherLeaguePreviews();}
+function renderTable(){const cupSel=document.getElementById("cupTableSelector");if(cupSel&&cupSel.value==="cup"){renderCupTable();return;}const code=state.activeLeagueTable||state.selectedLeagueCode;const tbl=state.leagueTables[code]||state.table;const tbody=document.querySelector("#leagueTable tbody");if(!tbody)return;tbody.innerHTML="";const zones=getLeagueZones(code,tbl);tbl.forEach((r,i)=>{const z=zones.get(i+1);const isUser=r.clubId===state.team.club_id;const cls=[isUser?"my-team":"",z?.rowClass||""].filter(Boolean).join(" ");const posCls=z?.rowClass||"pos-normal";const form=r.form.map((v)=>FORM_ICON[v]||v).join(" ");const crest=clubCrestHtml(r.logo_url,r.name);const teamBg=!isUser&&r.color?` style="background:linear-gradient(90deg,${r.color}18,transparent 50%);"`:"";tbody.innerHTML+=`<tr class="${cls}"${teamBg}><td><span class="pos ${posCls}">${i+1}</span></td><td>${crest}${escapeHtml(r.name)}</td><td>${r.played}</td><td>${r.won}</td><td>${r.drawn}</td><td>${r.lost}</td><td>${r.gf}</td><td>${r.ga}</td><td>${r.gf-r.ga}</td><td style="font-weight:800;color:var(--primary-light);">${r.points}</td><td>${z?`<span class="zone-chip ${z.className}">${escapeHtml(z.label)}</span>`:"-"}</td><td>${form}</td></tr>`;});const e=document.getElementById("tableMatchDay");if(e)e.textContent=`Po ${(state.leagueTables[code]&&state.leagueTables[code][0]?.played)||0} kolejkach`;renderOtherLeaguePreviews();}
 
 function renderOtherLeaguePreviews(){const cont=document.getElementById("otherLeaguesPreview");if(!cont||!state.allLeagueData){if(cont)cont.innerHTML="";return;}const toShow=Object.entries(state.allLeagueData).filter(([c])=>c!==state.selectedLeagueCode).slice(0,4);cont.innerHTML=toShow.map(([code,league])=>{const tbl=state.leagueTables[code]||[];const top3=tbl.slice(0,3);return`<div class="card" style="margin:0;padding:1rem;"><div class="card-header" style="margin-bottom:0.5rem;padding-bottom:0.5rem;"><h3>${escapeHtml(league.name)}</h3></div>${top3.map((r,i)=>`<div style="display:flex;justify-content:space-between;align-items:center;padding:0.2rem 0;font-size:0.85rem;"><span>${i+1}. ${clubCrestHtml(r.logo_url,r.name,"club-crest-sm")}${escapeHtml(r.name)}</span><span style="font-weight:700;">${r.points} pkt</span></div>`).join("")||"<div style='font-size:0.85rem;color:var(--text-muted);'>Brak danych</div>"}</div>`;}).join("");}
 
 async function fillLeagueTableSelector(){const sel=document.getElementById("leagueTableSelector");if(!sel)return;if(state.allLeagueData){sel.innerHTML=Object.entries(state.allLeagueData).map(([code,league])=>`<option value="${escapeHtml(code)}" ${code===state.selectedLeagueCode?"selected":""}>${escapeHtml(league.name)}</option>`).join("");}else{sel.innerHTML=`<option value="${escapeHtml(state.selectedLeagueCode)}">${escapeHtml(state.leagueData.name)}</option>`;}state.activeLeagueTable=state.selectedLeagueCode;}
-function switchLeagueTable(){state.activeLeagueTable=document.getElementById("leagueTableSelector")?.value||state.selectedLeagueCode;renderTable();const league=state.allLeagueData?.[state.activeLeagueTable];if(league)updateNav(league.name);}
+function switchLeagueTable(){const cupSel=document.getElementById("cupTableSelector");if(cupSel)cupSel.value="";state.activeLeagueTable=document.getElementById("leagueTableSelector")?.value||state.selectedLeagueCode;renderTable();const league=state.allLeagueData?.[state.activeLeagueTable];if(league)updateNav(league.name);}
+
+function switchCupTable(){
+    const cupSel=document.getElementById("cupTableSelector");
+    if(cupSel.value==="cup"){
+        renderCupTable();
+        updateNav("Puchary");
+    } else {
+        switchLeagueTable();
+    }
+}
+
+function renderCupTable(){
+    const tbody=document.querySelector("#leagueTable tbody");
+    if(!tbody)return;
+    const e=document.getElementById("tableMatchDay");
+    if(e)e.textContent="";
+    tbody.innerHTML=`<tr><td colspan="12" style="text-align:center;color:var(--muted);padding:3rem 1rem;">
+        <div style="font-size:2.5rem;margin-bottom:1rem;">🏆</div>
+        <div style="font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:.5rem;">Puchar Krajowy</div>
+        <p style="margin:0;line-height:1.6;">Drabinka pucharowa będzie dostępna w przyszłej aktualizacji.</p>
+    </td></tr>`;
+}
 
 async function saveCareer(){if(!state.team)return;try{const payload=serializeState();await apiPost("/api/save",payload);const label=state.coachName?`${state.coachName} - ${state.team.name}`:state.team.name;state.saveStatus=` Zapisano: ${label}`;}catch(e){state.saveStatus=` Błąd zapisu: ${e.message}`;}updateSaveStatus();}
 async function loadCareer(){let p;try{p=await apiGet("/api/save");}catch(e){state.saveStatus=" Błąd ładowania: serwer nie odpowiada.";updateSaveStatus();return;}if(!p||!p.exists){state.saveStatus=" Brak zapisu na serwerze.";updateSaveStatus();return;}if(!p.state){state.saveStatus=" Uszkodzony zapis.";updateSaveStatus();return;}try{await applySavedState(p.state);}catch(e){state.saveStatus=" Błąd wczytywania: "+e.message;updateSaveStatus();return;}if(!state.uefaData){try{const u=await apiGet("/api/uefa");state.uefaData=u;if(u&&u.rankings){state.uefaPoints={};u.rankings.forEach(r=>{state.uefaPoints[r.competition_code]=r.coefficient;});}}catch(e){}}}
