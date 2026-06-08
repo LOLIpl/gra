@@ -372,9 +372,31 @@ table tbody tr.my-team td {
                     <i class="fi fi-rr-search"></i>
                     <input type="text" id="transferNameFilter" placeholder="Szukaj po nazwisku..." oninput="updateTransferFilters()">
                 </div>
-                <div class="filters-row" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.5rem;">
-                    <select id="transferLeagueFilter" onchange="updateTransferFilters()"><option value="">Wszystkie ligi</option></select>
-                    <select id="transferClubFilter" onchange="updateTransferFilters()"><option value="">Wszystkie kluby</option></select>
+
+                <div class="cascade-filter-row">
+                    <div class="cascade-filter-group">
+                        <label><i class="fi fi-rr-globe"></i> Kraj</label>
+                        <select id="transferCountryFilter" onchange="onCountryChange()">
+                            <option value="">Wszystkie kraje</option>
+                        </select>
+                    </div>
+                    <div class="cascade-arrow"><i class="fi fi-rr-caret-right"></i></div>
+                    <div class="cascade-filter-group">
+                        <label><i class="fi fi-rr-trophy"></i> Liga</label>
+                        <select id="transferLeagueFilter" onchange="onLeagueChange()">
+                            <option value="">Wszystkie ligi</option>
+                        </select>
+                    </div>
+                    <div class="cascade-arrow"><i class="fi fi-rr-caret-right"></i></div>
+                    <div class="cascade-filter-group">
+                        <label><i class="fi fi-rr-shield"></i> Klub</label>
+                        <select id="transferClubFilter" onchange="updateTransferFilters()">
+                            <option value="">Wszystkie kluby</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filters-row">
                     <select id="transferNatFilter" onchange="updateTransferFilters()"><option value="">Każda nacja</option></select>
                     <div style="display:flex;gap:.3rem;">
                         <input type="number" id="transferAgeMin" placeholder="Min wiek" min="15" max="45" oninput="updateTransferFilters()" style="width:100%;">

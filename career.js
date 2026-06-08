@@ -365,6 +365,13 @@ nav button.active{color:#fff;background:var(--primary);border-color:var(--primar
 .filters-row{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;}
 .filters-row select,.filters-row input{background:#1f2937;border:1px solid #374151;color:#fff;border-radius:6px;padding:.5rem;font-size:.78rem;}
 .position-quick-filters{display:flex;gap:.3rem;flex-wrap:wrap;justify-content:center;padding-top:.8rem;border-top:1px solid rgba(255,255,255,.05);}
+.cascade-filter-row{display:flex;align-items:flex-end;gap:.5rem;flex-wrap:wrap;}
+.cascade-filter-group{flex:1;min-width:140px;display:flex;flex-direction:column;gap:.25rem;}
+.cascade-filter-group label{font-size:.7rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;display:flex;align-items:center;gap:.3rem;}
+.cascade-filter-group label i{font-size:.75rem;color:var(--primary-light);}
+.cascade-filter-group select{background:#1f2937;border:1px solid #374151;color:#fff;border-radius:8px;padding:.55rem .7rem;font-size:.82rem;font-weight:600;cursor:pointer;transition:border-color .15s;}
+.cascade-filter-group select:focus{border-color:var(--primary);outline:none;}
+.cascade-arrow{color:var(--muted);font-size:1.1rem;padding-bottom:.3rem;flex-shrink:0;}
 /* --- NOWE KARTY TRANSFEROWE --- */
 .tc-card{
   background:var(--card);border:1px solid var(--border);border-radius:14px;
@@ -493,6 +500,9 @@ kbd{background:#e1e1e1;color:#000;border-radius:3px;border:1px solid #b4b4b4;col
   .calendar-sidebar{flex:auto;}
   .finance-display-row{flex-direction:column;}
   .filters-row{grid-template-columns:1fr;}
+  .cascade-filter-row{flex-direction:column;gap:.4rem;}
+  .cascade-arrow{display:none;}
+  .cascade-filter-group{min-width:100%;}
   .squad-bottom-grid{flex-direction:column;}
   .pitch-visual{min-height:380px;}
 }
@@ -638,7 +648,7 @@ async function initCareer() {
     state.transferPlayers=[];state._transfersLoaded=false;state.allLeagueData=null;state._youthCnt=state._youthCnt||0;
 
     setLoadProgress(40,"Generowanie terminarza...","fixtures");
-    state.europeanEntry=null;state.europeanOpponents=[];
+    state.europeanEntry=null;state.europeanOpponents=[];state.uclLeague=null;
     generateFixtures(2025);initTable();
 
     setLoadProgress(65,"Ustawianie składu...","squad");
@@ -734,6 +744,14 @@ function generateFixtures(startYear) {
 
 function generateEuropeanFixtures(startYear){
     if(!state.europeanEntry) return;
+    
+    if(state.europeanEntry.code==='UCL'){
+        state.fixtures=state.fixtures.filter(f=>f.competition!=='UCL');
+        state.uclLeague=null;
+        generateUclLeaguePhase(startYear);
+        return;
+    }
+    
     const cup = UEFA_CUPS[state.europeanEntry.code];
     if(!cup) return;
     
@@ -831,6 +849,269 @@ function buildEuropeanOpponents(cupCode, count){
     }));
 }
 
+// === UCL — 36 drużyn, 8 meczów faza ligowa + play-offy + puchary ===
+
+const UCL_LEAGUE_DATES=[[0,8,17],[0,9,1],[0,9,22],[0,10,5],[0,10,26],[0,11,10],[0,11,18],[1,0,21]];
+const UCL_KNOCKOUT_DATES={po1:[1,1,11],po2:[1,1,18],r16_1:[1,2,4],r16_2:[1,2,11],qf_1:[1,3,1],qf_2:[1,3,8],sf_1:[1,3,29],sf_2:[1,4,6],final:[1,4,30]};
+
+function getUclDirectSpots(){if(!state.uefaData?.rankings)return{};const spots={};let total=0;const MAX=29;for(const r of state.uefaData.rankings){if(total>=MAX)break;let ls=0;if(r.rank<=4)ls=4;else if(r.rank<=6)ls=2;else if(r.rank<=15)ls=1;else continue;ls=Math.min(ls,MAX-total);if(ls>0){spots[r.competition_code]=ls;total+=ls;}}return spots;}
+
+function buildUclLeagueTeams(){const directSpots=getUclDirectSpots();const teams=[];const usedIds=new Set();if(state.allLeagueData){for(const[code,n]of Object.entries(directSpots)){const league=state.allLeagueData[code];if(!league?.clubs)continue;const sorted=[...league.clubs].sort((a,b)=>(b.avg_rating||0)-(a.avg_rating||0));let added=0;for(const c of sorted){if(added>=n)break;const id=String(c.club_id);if(usedIds.has(id))continue;usedIds.add(id);teams.push({...c,qualType:'direct',qualFrom:code});added++;}}}const usedCodes=new Set(Object.keys(directSpots));const qualTeams=[];if(state.uefaData?.rankings&&state.allLeagueData){const avail=state.uefaData.rankings.filter(r=>!usedCodes.has(r.competition_code)).sort((a,b)=>b.rank-a.rank);for(const r of avail){if(qualTeams.length>=7)break;const league=state.allLeagueData[r.competition_code];if(!league?.clubs?.length)continue;const top=[...league.clubs].sort((a,b)=>(b.avg_rating||0)-(a.avg_rating||0))[0];if(!top||usedIds.has(String(top.club_id)))continue;usedIds.add(String(top.club_id));qualTeams.push({...top,qualType:'qualifier',qualFrom:r.competition_code});}}while(qualTeams.length<7){const n=teams.length+qualTeams.length+1;qualTeams.push({club_id:`UCL-Q${n}`,name:`Kwalifikant ${n}`,color:`hsl(${rand(0,360)} 70% 48%)`,logo_url:'',avg_rating:62+rand(0,5),qualType:'qualifier',qualFrom:'N/A'});}return[...teams,...qualTeams.slice(0,7)];}
+
+function generateUclLeaguePhase(startYear){
+    const allTeams=buildUclLeagueTeams();if(allTeams.length<2)return;
+    const n=allTeams.length;const ids=allTeams.map(t=>String(t.club_id));let arr=[...ids];const rounds=[];
+    for(let r=0;r<8;r++){const matches=[];for(let i=0;i<n/2;i++){let home=arr[i],away=arr[n-1-i];if(r%2===1)[home,away]=[away,home];matches.push({homeClubId:home,awayClubId:away});}rounds.push(matches);const last=arr.pop();arr.splice(1,0,last);}
+    const dates=UCL_LEAGUE_DATES.map(([y,m,d])=>toIsoDate(new Date(startYear+y,m,d)));
+    const fixtures=[];
+    rounds.forEach((rm,ri)=>{const date=dates[ri];rm.forEach(m=>{fixtures.push({id:`UCL-L${ri+1}-${m.homeClubId}-${m.awayClubId}`,competition:'UCL',round:ri+1,stage:`Faza ligowa — Kolejka ${ri+1}`,date,homeClubId:m.homeClubId,awayClubId:m.awayClubId,played:false,homeGoals:null,awayGoals:null});});});
+    state.uclLeague={teams:allTeams.map(t=>({club_id:String(t.club_id),name:t.name,color:t.color||'#3b82f6',logo_url:t.logo_url||'',avg_rating:t.avg_rating||70,qualType:t.qualType,qualFrom:t.qualFrom||'',played:0,won:0,drawn:0,lost:0,gf:0,ga:0,points:0,form:[]})),fixtures};
+    state.uclKnockout=null;
+    state.fixtures=[...state.fixtures,...fixtures].sort((a,b)=>a.date.localeCompare(b.date));
+}
+
+function buildUclLeagueTable(){if(!state.uclLeague)return[];const rows=state.uclLeague.teams.map(t=>({...t}));const map=new Map(rows.map(r=>[r.club_id,r]));(state.fixtures||[]).filter(f=>f.competition==='UCL'&&f.stage?.startsWith('Faza ligowa')&&f.played).forEach(f=>{const h=map.get(String(f.homeClubId)),a=map.get(String(f.awayClubId));if(!h||!a)return;h.played++;a.played++;h.gf+=f.homeGoals;h.ga+=f.awayGoals;a.gf+=f.awayGoals;a.ga+=f.homeGoals;if(f.homeGoals>f.awayGoals){h.won++;h.points+=3;a.lost++;pushForm(h,"W");pushForm(a,"L");}else if(f.homeGoals<f.awayGoals){a.won++;a.points+=3;h.lost++;pushForm(a,"W");pushForm(h,"L");}else{h.drawn++;a.drawn++;h.points++;a.points++;pushForm(h,"D");pushForm(a,"D");}});return rows.sort((a,b)=>(b.points-a.points)||((b.gf-b.ga)-(a.gf-a.ga))||(b.gf-a.gf)||a.name.localeCompare(b.name,"pl"));}
+
+function uclKnockoutTeamName(id){if(!id||id.startsWith('UCL-'))return'?';if(state.uclLeague){const t=state.uclLeague.teams.find(t=>String(t.club_id)===id);if(t)return t.name;}const c=getClub(id);return c?.name||'?';}
+function uclKnockoutTeamLogo(id){if(!id||id.startsWith('UCL-'))return'';if(state.uclLeague){const t=state.uclLeague.teams.find(t=>String(t.club_id)===id);if(t)return t.logo_url||'';}const c=getClub(id);return c?.logo_url||'';}
+function uclKnockoutTeamColor(id){if(!id||id.startsWith('UCL-'))return'#3b82f6';if(state.uclLeague){const t=state.uclLeague.teams.find(t=>String(t.club_id)===id);if(t)return t.color||'#3b82f6';}const c=getClub(id);return c?.color||'#3b82f6';}
+
+function checkAndGenerateUclKnockout(){
+    if(!state.uclLeague)return;
+    const ko=state.uclKnockout;
+    if(!ko||!ko.generated){
+        const leagueFx=state.uclLeague.fixtures;
+        if(!leagueFx.every(f=>f.played))return;
+        _generateUclPlayoffs();
+        return;
+    }
+    if(ko.playoffsPending&&ko.playoffs.every(t=>t.winner)){
+        ko.playoffsPending=false;
+        _generateUclR16();
+        return;
+    }
+    if(ko.r16Pending&&ko.r16.every(t=>t.winner)){
+        ko.r16Pending=false;
+        _generateUclQF();
+        return;
+    }
+    if(ko.qfPending&&ko.qf.every(t=>t.winner)){
+        ko.qfPending=false;
+        _generateUclSF();
+        return;
+    }
+    if(ko.sfPending&&ko.sf.every(t=>t.winner)){
+        ko.sfPending=false;
+        _generateUclFinal();
+        return;
+    }
+}
+
+function _uclKnDates(){const ko=state.uclKnockout;const d=UCL_KNOCKOUT_DATES;const y=parseInt(state.fixtures[0]?.date?.split('-')[0])||2025;const kd={};for(const[k,v]of Object.entries(d))kd[k]=toIsoDate(new Date(y+v[0],v[1],v[2]));return kd;}
+
+function _generateUclPlayoffs(){
+    const tbl=buildUclLeagueTable();
+    const pairs=[];for(let i=8;i<16;i++)pairs.push({home:tbl[i],away:tbl[31-i]});
+    const kd=_uclKnDates();const fixtures=[];
+    const playoffs=pairs.map((p,i)=>{
+        fixtures.push({id:`UCL-PO${i+1}-L1`,competition:'UCL',round:9,stage:'Playoff — 1. mecz',date:kd.po1,homeClubId:p.home.club_id,awayClubId:p.away.club_id,played:false,homeGoals:null,awayGoals:null});
+        fixtures.push({id:`UCL-PO${i+1}-L2`,competition:'UCL',round:10,stage:'Playoff — 2. mecz',date:kd.po2,homeClubId:p.away.club_id,awayClubId:p.home.club_id,played:false,homeGoals:null,awayGoals:null});
+        return{home:p.home.club_id,away:p.away.club_id,homeName:p.home.name,awayName:p.away.name,leg1:[null,null],leg2:[null,null],winner:null};
+    });
+    state.uclKnockout={generated:true,playoffsPending:true,r16Pending:false,qfPending:false,sfPending:false,dates:kd,playoffs,r16:Array(8).fill(null).map(()=>({home:null,away:null,homeName:'?',awayName:'?',leg1:[null,null],leg2:[null,null],winner:null})),qf:Array(4).fill(null).map(()=>({home:null,away:null,homeName:'?',awayName:'?',leg1:[null,null],leg2:[null,null],winner:null})),sf:Array(2).fill(null).map(()=>({home:null,away:null,homeName:'?',awayName:'?',leg1:[null,null],leg2:[null,null],winner:null})),final:{home:null,away:null,homeGoals:null,awayGoals:null,winner:null}};
+    state.fixtures=[...state.fixtures,...fixtures].sort((a,b)=>a.date.localeCompare(b.date));
+}
+
+function _generateUclR16(){
+    const ko=state.uclKnockout;const tbl=buildUclLeagueTable();const kd=ko.dates;const fixtures=[];
+    const top8=tbl.slice(0,8);const poWinners=ko.playoffs.map(t=>t.winner);
+    const seeds=[[top8[0],poWinners[7]],[top8[1],poWinners[6]],[top8[2],poWinners[5]],[top8[3],poWinners[4]],[top8[4],poWinners[3]],[top8[5],poWinners[2]],[top8[6],poWinners[1]],[top8[7],poWinners[0]]];
+    ko.r16=seeds.map(([h,a])=>{
+        const hid=typeof h==='object'?h.club_id:h;const aid=typeof a==='object'?a.club_id:a;
+        return{home:hid,away:aid,homeName:uclKnockoutTeamName(hid),awayName:uclKnockoutTeamName(aid),leg1:[null,null],leg2:[null,null],winner:null};
+    });
+    ko.r16.forEach((t,i)=>{
+        fixtures.push({id:`UCL-R16-${i+1}-L1`,competition:'UCL',round:11,stage:'1/8 finału — 1. mecz',date:kd.r16_1,homeClubId:t.home,awayClubId:t.away,played:false,homeGoals:null,awayGoals:null});
+        fixtures.push({id:`UCL-R16-${i+1}-L2`,competition:'UCL',round:12,stage:'1/8 finału — 2. mecz',date:kd.r16_2,homeClubId:t.away,awayClubId:t.home,played:false,homeGoals:null,awayGoals:null});
+    });
+    ko.r16Pending=true;
+    state.fixtures=[...state.fixtures,...fixtures].sort((a,b)=>a.date.localeCompare(b.date));
+}
+
+function _generateUclQF(){
+    const ko=state.uclKnockout;const kd=ko.dates;const fixtures=[];
+    const w=ko.r16.map(t=>t.winner);
+    ko.qf=[[w[0],w[1]],[w[2],w[3]],[w[4],w[5]],[w[6],w[7]]].map(([h,a])=>({home:h,away:a,homeName:uclKnockoutTeamName(h),awayName:uclKnockoutTeamName(a),leg1:[null,null],leg2:[null,null],winner:null}));
+    ko.qf.forEach((t,i)=>{
+        fixtures.push({id:`UCL-QF-${i+1}-L1`,competition:'UCL',round:13,stage:'1/4 finału — 1. mecz',date:kd.qf_1,homeClubId:t.home,awayClubId:t.away,played:false,homeGoals:null,awayGoals:null});
+        fixtures.push({id:`UCL-QF-${i+1}-L2`,competition:'UCL',round:14,stage:'1/4 finału — 2. mecz',date:kd.qf_2,homeClubId:t.away,awayClubId:t.home,played:false,homeGoals:null,awayGoals:null});
+    });
+    ko.qfPending=true;
+    state.fixtures=[...state.fixtures,...fixtures].sort((a,b)=>a.date.localeCompare(b.date));
+}
+
+function _generateUclSF(){
+    const ko=state.uclKnockout;const kd=ko.dates;const fixtures=[];
+    const w=ko.qf.map(t=>t.winner);
+    ko.sf=[[w[0],w[1]],[w[2],w[3]]].map(([h,a])=>({home:h,away:a,homeName:uclKnockoutTeamName(h),awayName:uclKnockoutTeamName(a),leg1:[null,null],leg2:[null,null],winner:null}));
+    ko.sf.forEach((t,i)=>{
+        fixtures.push({id:`UCL-SF-${i+1}-L1`,competition:'UCL',round:15,stage:'1/2 finału — 1. mecz',date:kd.sf_1,homeClubId:t.home,awayClubId:t.away,played:false,homeGoals:null,awayGoals:null});
+        fixtures.push({id:`UCL-SF-${i+1}-L2`,competition:'UCL',round:16,stage:'1/2 finału — 2. mecz',date:kd.sf_2,homeClubId:t.away,awayClubId:t.home,played:false,homeGoals:null,awayGoals:null});
+    });
+    ko.sfPending=true;
+    state.fixtures=[...state.fixtures,...fixtures].sort((a,b)=>a.date.localeCompare(b.date));
+}
+
+function _generateUclFinal(){
+    const ko=state.uclKnockout;const kd=ko.dates;
+    const h=ko.sf[0].winner,a=ko.sf[1].winner;
+    ko.final={home:h,away:a,homeName:uclKnockoutTeamName(h),awayName:uclKnockoutTeamName(a),homeGoals:null,awayGoals:null,winner:null};
+    state.fixtures.push({id:'UCL-FINAL',competition:'UCL',round:17,stage:'🏆 FINAŁ',date:kd.final,homeClubId:h,awayClubId:a,played:false,homeGoals:null,awayGoals:null});
+    state.fixtures.sort((a,b)=>a.date.localeCompare(b.date));
+}
+
+function uclResolveKnockoutTie(fx){
+    const ko=state.uclKnockout;if(!ko)return;
+    const resolve=(arr)=>{
+        for(const tie of arr){
+            if(tie.winner)continue;
+            if(tie.leg1[0]===null||tie.leg2[0]===null)continue;
+            const aggH=tie.leg1[0]+tie.leg2[1];
+            const aggA=tie.leg1[1]+tie.leg2[0];
+            tie.winner=aggH>=aggA?tie.home:tie.away;
+        }
+    };
+    const isPoFx=fx.id.startsWith('UCL-PO');
+    if(isPoFx){const i=parseInt(fx.id.match(/PO(\d+)/)?.[1]||0)-1;if(i>=0&&i<ko.playoffs.length){const tie=ko.playoffs[i];if(fx.stage?.includes('1.')){tie.leg1=[fx.homeGoals,fx.awayGoals];}else{tie.leg2=[fx.homeGoals,fx.awayGoals];}resolve(ko.playoffs);}}
+    const isR16Fx=fx.id.startsWith('UCL-R16');
+    if(isR16Fx){const i=parseInt(fx.id.match(/R16-(\d+)/)?.[1]||0)-1;if(i>=0&&i<ko.r16.length){const tie=ko.r16[i];if(fx.stage?.includes('1.')){tie.leg1=[fx.homeGoals,fx.awayGoals];}else{tie.leg2=[fx.homeGoals,fx.awayGoals];}resolve(ko.r16);}}
+    const isQfFx=fx.id.startsWith('UCL-QF');
+    if(isQfFx){const i=parseInt(fx.id.match(/QF-(\d+)/)?.[1]||0)-1;if(i>=0&&i<ko.qf.length){const tie=ko.qf[i];if(fx.stage?.includes('1.')){tie.leg1=[fx.homeGoals,fx.awayGoals];}else{tie.leg2=[fx.homeGoals,fx.awayGoals];}resolve(ko.qf);}}
+    const isSfFx=fx.id.startsWith('UCL-SF');
+    if(isSfFx){const i=parseInt(fx.id.match(/SF-(\d+)/)?.[1]||0)-1;if(i>=0&&i<ko.sf.length){const tie=ko.sf[i];if(fx.stage?.includes('1.')){tie.leg1=[fx.homeGoals,fx.awayGoals];}else{tie.leg2=[fx.homeGoals,fx.awayGoals];}resolve(ko.sf);}}
+    if(fx.id==='UCL-FINAL'){ko.final.homeGoals=fx.homeGoals;ko.final.awayGoals=fx.awayGoals;ko.final.winner=fx.homeGoals>=fx.awayGoals?ko.final.home:ko.final.away;}
+}
+
+function renderUclLeagueTable(){
+    const el=document.getElementById("europeanTables");if(!el)return;
+    if(!state.uclLeague){el.innerHTML=`<div class="card" style="text-align:center;padding:3rem 2rem;color:var(--muted);"><div style="font-size:3rem;margin-bottom:1rem;">🏆</div><h2 style="color:#fff;margin-bottom:.5rem;">Brak Ligi Mistrzów</h2><p>Zajmij odpowiednie miejsce w lidze.</p></div>`;return;}
+    const tbl=buildUclLeagueTable();
+    let html=`<div class="euro-table-card" style="margin-bottom:1.25rem;border:1px solid #3b82f633;">
+        <div style="display:flex;align-items:center;gap:.75rem;padding:.9rem 1.2rem;border-bottom:1px solid var(--border);background:rgba(0,0,0,.2);">
+            <div style="width:36px;height:36px;border-radius:50%;background:#3b82f6;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:.8rem;">LM</div>
+            <div><div style="font-size:1.1rem;font-weight:800;color:#fff;">Liga Mistrzów — Faza Ligowa</div>
+            <div style="font-size:.78rem;color:var(--muted);">36 drużyn · 8 kolejek · po 8 meczów</div></div>
+        </div>
+        <div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-size:.82rem;">
+            <thead><tr style="background:rgba(0,0,0,.25);">
+                <th style="padding:.6rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">#</th>
+                <th style="padding:.6rem .4rem;text-align:left;color:var(--muted);font-size:.65rem;">Drużyna</th>
+                <th style="padding:.6rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">M</th>
+                <th style="padding:.6rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">W</th>
+                <th style="padding:.6rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">R</th>
+                <th style="padding:.6rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">P</th>
+                <th style="padding:.6rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">B+</th>
+                <th style="padding:.6rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">B-</th>
+                <th style="padding:.6rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">RB</th>
+                <th style="padding:.6rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">Pkt</th>
+                <th style="padding:.6rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">Forma</th>
+            </tr></thead><tbody>`;
+    tbl.forEach((r,i)=>{
+        const pos=i+1;const isUser=String(r.club_id)===String(state.team?.club_id);
+        let posBg="",posColor="var(--muted)";
+        if(pos<=8){posBg="background:rgba(16,185,129,.1);";posColor="#10b981";}
+        else if(pos<=24){posBg="background:rgba(245,158,11,.08);";posColor="#f59e0b";}
+        else{posBg="background:rgba(239,68,68,.06);";posColor="#ef4444";}
+        if(isUser)posBg="background:rgba(37,99,235,.2);";
+        const nameStyle=isUser?"color:#93c5fd;font-weight:800;":"color:#fff;font-weight:600;";
+        const ptsStyle=isUser?"color:#fff;font-weight:900;font-size:1rem;":`color:${posColor};font-weight:800;`;
+        const badge=isUser?' <span style="background:var(--primary);color:#fff;font-size:.55rem;padding:2px 5px;border-radius:4px;margin-left:.3rem;">TY</span>':'';
+        const qualBadge=r.qualType==='qualifier'?' <span style="background:#f97316;color:#fff;font-size:.5rem;padding:1px 4px;border-radius:3px;margin-left:.2rem;">Q</span>':'';
+        const form=(r.form||[]).slice(-5).map(v=>FORM_ICON[v]||v).join(" ")||"-";
+        const gd=r.gf-r.ga;const gdColor=gd>0?'#10b981':gd<0?'#ef4444':'var(--muted)';
+        html+=`<tr style="${posBg}border-bottom:1px solid rgba(255,255,255,.03);"><td style="padding:.55rem .4rem;text-align:center;font-weight:900;color:${posColor};font-size:.88rem;">${pos}</td><td style="padding:.55rem .4rem;text-align:left;${nameStyle}white-space:nowrap;">${clubCrestHtml(r.logo_url,r.name,"club-crest-sm")}${escapeHtml(r.name)}${badge}${qualBadge}</td><td style="padding:.55rem .4rem;text-align:center;color:var(--muted);">${r.played}</td><td style="padding:.55rem .4rem;text-align:center;color:#10b981;font-weight:700;">${r.won}</td><td style="padding:.55rem .4rem;text-align:center;color:#9ca3af;font-weight:700;">${r.drawn}</td><td style="padding:.55rem .4rem;text-align:center;color:#ef4444;font-weight:700;">${r.lost}</td><td style="padding:.55rem .4rem;text-align:center;color:var(--muted);">${r.gf}</td><td style="padding:.55rem .4rem;text-align:center;color:var(--muted);">${r.ga}</td><td style="padding:.55rem .4rem;text-align:center;font-weight:800;color:${gdColor};">${gd>0?'+':''}${gd}</td><td style="padding:.55rem .4rem;text-align:center;${ptsStyle}">${r.points}</td><td style="padding:.55rem .4rem;text-align:center;font-size:.72rem;white-space:nowrap;">${form}</td></tr>`;
+    });
+    html+=`</tbody></table></div>
+        <div style="display:flex;gap:1.2rem;padding:.7rem 1.1rem;font-size:.75rem;color:var(--muted);border-top:1px solid var(--border);flex-wrap:wrap;background:rgba(0,0,0,.15);">
+            <span style="display:flex;align-items:center;gap:.35rem;"><span style="width:10px;height:10px;background:#10b981;border-radius:3px;"></span>1–8: Awans do 1/8</span>
+            <span style="display:flex;align-items:center;gap:.35rem;"><span style="width:10px;height:10px;background:#f59e0b;border-radius:3px;"></span>9–24: Playoff</span>
+            <span style="display:flex;align-items:center;gap:.35rem;"><span style="width:10px;height:10px;background:#ef4444;border-radius:3px;"></span>25–36: Odpadnięcie</span>
+        </div></div>`;
+
+    const ko=state.uclKnockout;
+    if(ko){
+        const _renderTie=(tie,label)=>{
+            if(!tie.home&&!tie.away)return'';
+            const hn=uclKnockoutTeamName(tie.home),an=uclKnockoutTeamName(tie.away);
+            const hLogo=uclKnockoutTeamLogo(tie.home),aLogo=uclKnockoutTeamLogo(tie.away);
+            const l1=tie.leg1,l2=tie.leg2;
+            const aggH=(l1[0]||0)+(l2[1]||0),aggA=(l1[1]||0)+(l2[0]||0);
+            const done=tie.winner!==null;
+            const isUser=(String(tie.home)===String(state.team?.club_id))||(String(tie.away)===String(state.team?.club_id));
+            const borderDone=done?'border:1px solid rgba(16,185,129,.3);':'border:1px solid var(--border);';
+            const bgDone=isUser?'background:rgba(37,99,235,.1);':done?'background:rgba(16,185,129,.05);':'background:rgba(0,0,0,.15);';
+            return`<div style="${bgDone}${borderDone}border-radius:10px;padding:.7rem .9rem;margin-bottom:.5rem;">
+                <div style="font-size:.65rem;color:var(--muted);text-transform:uppercase;font-weight:700;margin-bottom:.4rem;">${escapeHtml(label)}</div>
+                <div style="display:flex;align-items:center;gap:.5rem;">
+                    <div style="flex:1;text-align:right;display:flex;align-items:center;justify-content:flex-end;gap:.4rem;${String(tie.winner)===String(tie.home)?'color:#10b981;font-weight:800;':'color:#fff;font-weight:600;'}">
+                        ${clubCrestHtml(hLogo,hn,"club-crest-sm")}<span style="font-size:.82rem;">${escapeHtml(hn)}</span>
+                    </div>
+                    <div style="text-align:center;min-width:90px;">
+                        <div style="font-size:.75rem;color:var(--muted);">${l1[0]!==null?`${l1[0]}:${l1[1]}`:'– : –'}</div>
+                        <div style="font-size:.85rem;font-weight:900;color:#fff;">${done?`${aggH}:${aggA}`:l2[0]!==null?`${l2[0]}:${l2[1]}`:'– : –'}</div>
+                    </div>
+                    <div style="flex:1;text-align:left;display:flex;align-items:center;gap:.4rem;${String(tie.winner)===String(tie.away)?'color:#10b981;font-weight:800;':'color:#fff;font-weight:600;'}">
+                        <span style="font-size:.82rem;">${escapeHtml(an)}</span>${clubCrestHtml(aLogo,an,"club-crest-sm")}
+                    </div>
+                </div></div>`;
+        };
+
+        if(ko.playoffs.length&&ko.playoffsPending!==false){
+            html+=`<div class="euro-table-card" style="margin-bottom:1rem;border:1px solid #f9731633;"><div style="display:flex;align-items:center;gap:.75rem;padding:.8rem 1.1rem;border-bottom:1px solid var(--border);background:rgba(0,0,0,.2);"><div style="width:30px;height:30px;border-radius:50%;background:#f97316;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:.7rem;">PO</div><div><div style="font-size:.95rem;font-weight:800;color:#fff;">Playoff</div><div style="font-size:.72rem;color:var(--muted);">Miejsca 9–24 · 2 mecze</div></div></div><div style="padding:.8rem 1rem;">`;
+            ko.playoffs.forEach((t,i)=>{html+=_renderTie(t,`Playoff ${i+1}`);});
+            html+=`</div></div>`;
+        }
+        if(ko.r16.some(t=>t.home)){
+            html+=`<div class="euro-table-card" style="margin-bottom:1rem;border:1px solid #3b82f633;"><div style="display:flex;align-items:center;gap:.75rem;padding:.8rem 1.1rem;border-bottom:1px solid var(--border);background:rgba(0,0,0,.2);"><div style="width:30px;height:30px;border-radius:50%;background:#3b82f6;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:.7rem;">1/8</div><div><div style="font-size:.95rem;font-weight:800;color:#fff;">1/8 Finału</div><div style="font-size:.72rem;color:var(--muted);">2 mecze</div></div></div><div style="padding:.8rem 1rem;">`;
+            ko.r16.forEach((t,i)=>{if(t.home)html+=_renderTie(t,`1/8 Finału ${i+1}`);});
+            html+=`</div></div>`;
+        }
+        if(ko.qf.some(t=>t.home)){
+            html+=`<div class="euro-table-card" style="margin-bottom:1rem;border:1px solid #8b5cf633;"><div style="display:flex;align-items:center;gap:.75rem;padding:.8rem 1.1rem;border-bottom:1px solid var(--border);background:rgba(0,0,0,.2);"><div style="width:30px;height:30px;border-radius:50%;background:#8b5cf6;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:.7rem;">1/4</div><div><div style="font-size:.95rem;font-weight:800;color:#fff;">Ćwierćfinał</div><div style="font-size:.72rem;color:var(--muted);">2 mecze</div></div></div><div style="padding:.8rem 1rem;">`;
+            ko.qf.forEach((t,i)=>{if(t.home)html+=_renderTie(t,`Ćwierćfinał ${i+1}`);});
+            html+=`</div></div>`;
+        }
+        if(ko.sf.some(t=>t.home)){
+            html+=`<div class="euro-table-card" style="margin-bottom:1rem;border:1px solid #ec489933;"><div style="display:flex;align-items:center;gap:.75rem;padding:.8rem 1.1rem;border-bottom:1px solid var(--border);background:rgba(0,0,0,.2);"><div style="width:30px;height:30px;border-radius:50%;background:#ec4899;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:.7rem;">1/2</div><div><div style="font-size:.95rem;font-weight:800;color:#fff;">Półfinał</div><div style="font-size:.72rem;color:var(--muted);">2 mecze</div></div></div><div style="padding:.8rem 1rem;">`;
+            ko.sf.forEach((t,i)=>{if(t.home)html+=_renderTie(t,`Półfinał ${i+1}`);});
+            html+=`</div></div>`;
+        }
+        if(ko.final&&ko.final.home){
+            const fh=ko.final.home,fa=ko.final.away;
+            const fhName=uclKnockoutTeamName(fh),faName=uclKnockoutTeamName(fa);
+            const fhLogo=uclKnockoutTeamLogo(fh),faLogo=uclKnockoutTeamLogo(fa);
+            const finalDone=ko.final.winner!==null;
+            html+=`<div class="euro-table-card" style="margin-bottom:1rem;border:2px solid #fbbf2444;background:linear-gradient(135deg,rgba(251,191,36,.05),rgba(0,0,0,.2));">
+                <div style="text-align:center;padding:1rem;"><div style="font-size:2rem;margin-bottom:.3rem;">🏆</div><div style="font-size:1.1rem;font-weight:900;color:#fbbf24;letter-spacing:.05em;">FINAŁ</div><div style="font-size:.78rem;color:var(--muted);margin-top:.2rem;">30 maja</div></div>
+                <div style="display:flex;align-items:center;justify-content:center;gap:1.5rem;padding:1rem 1.5rem;">
+                    <div style="text-align:center;${String(ko.final.winner)===String(fh)?'color:#10b981;':'color:#fff;'}">
+                        <div style="width:60px;height:60px;border-radius:50%;background:${uclKnockoutTeamColor(fh)};margin:0 auto .4rem;background-image:url('${fhLogo}');background-size:76%;background-repeat:no-repeat;background-position:center;"></div>
+                        <div style="font-size:.85rem;font-weight:800;max-width:120px;">${escapeHtml(fhName)}</div>
+                    </div>
+                    <div style="text-align:center;">
+                        <div style="font-size:2rem;font-weight:900;color:#fbbf24;">${finalDone?`${ko.final.homeGoals} : ${ko.final.awayGoals}`:'VS'}</div>
+                        ${finalDone?`<div style="font-size:.75rem;font-weight:700;color:#10b981;margin-top:.3rem;">🏆 ${escapeHtml(uclKnockoutTeamName(ko.final.winner))}</div>`:''}
+                    </div>
+                    <div style="text-align:center;${String(ko.final.winner)===String(fa)?'color:#10b981;':'color:#fff;'}">
+                        <div style="width:60px;height:60px;border-radius:50%;background:${uclKnockoutTeamColor(fa)};margin:0 auto .4rem;background-image:url('${faLogo}');background-size:76%;background-repeat:no-repeat;background-position:center;"></div>
+                        <div style="font-size:.85rem;font-weight:800;max-width:120px;">${escapeHtml(faName)}</div>
+                    </div>
+                </div></div>`;
+        }
+    }
+    el.innerHTML=html;
+}
+
 function generateAllLeagueFixtures(startYear) {
     if(!state.allLeagueData) return;
     state.leagueFixtures={}; state.leagueTables={};
@@ -874,16 +1155,95 @@ async function prepareTransferPool() {
     state._transfersLoaded = true;
 }
 function fillTransferFilterOptions() {
-    const cS = document.getElementById("transferClubFilter");
-    const lS = document.getElementById("transferLeagueFilter");
     const nS = document.getElementById("transferNatFilter");
-    if (!cS || !lS) return;
-    const clubs   = [...new Set(state.transferPlayers.map(p => p.club_name  || ""))].filter(Boolean).sort((a, b) => a.localeCompare(b, "pl"));
-    const leagues = [...new Set(state.transferPlayers.map(p => p.league_name || ""))].filter(Boolean).sort((a, b) => a.localeCompare(b, "pl"));
-    const nats    = [...new Set(state.transferPlayers.flatMap(p => (p.nationalities || []).map(n => n.name || n)))].filter(Boolean).sort();
-    cS.innerHTML = `<option value="">Wszystkie kluby</option>${clubs.map(c   => `<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join("")}`;
-    lS.innerHTML = `<option value="">Wszystkie ligi</option>${leagues.map(l  => `<option value="${escapeHtml(l)}">${escapeHtml(l)}</option>`).join("")}`;
+    if (!state.transferPlayers.length) return;
+
+    const countries = new Map();
+    state.transferPlayers.forEach(p => {
+        const code = p.competition_code || "";
+        const leagueName = p.league_name || "";
+        const clubName = p.club_name || "";
+        if (!code || !leagueName) return;
+
+        const leagueInfo = state.allLeagueData?.[code];
+        const country = leagueInfo?.country || "Inne";
+
+        if (!countries.has(country)) countries.set(country, new Map());
+        const leaguesMap = countries.get(country);
+        if (!leaguesMap.has(leagueName)) leaguesMap.set(leagueName, new Set());
+        leaguesMap.get(leagueName).add(clubName);
+    });
+
+    state._countryLeagueClubMap = countries;
+
+    const sortedCountries = [...countries.keys()].sort((a, b) => a.localeCompare(b, "pl"));
+    const cS = document.getElementById("transferCountryFilter");
+    if (cS) {
+        cS.innerHTML = `<option value="">Wszystkie kraje</option>${sortedCountries.map(c => `<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join("")}`;
+    }
+
+    const nats = [...new Set(state.transferPlayers.flatMap(p => (p.nationalities || []).map(n => n.name || n)))].filter(Boolean).sort();
     if (nS) nS.innerHTML = `<option value="">Każda nacja</option>${nats.map(n => `<option value="${escapeHtml(n)}">${escapeHtml(n)}</option>`).join("")}`;
+
+    _populateLeagueSelect("");
+    _populateClubSelect("", "");
+}
+
+function _populateLeagueSelect(country) {
+    const lS = document.getElementById("transferLeagueFilter");
+    if (!lS) return;
+    const map = state._countryLeagueClubMap;
+    if (!map) { lS.innerHTML = `<option value="">Wszystkie ligi</option>`; return; }
+
+    let leagues;
+    if (country && map.has(country)) {
+        leagues = [...map.get(country).keys()];
+    } else {
+        leagues = [...new Set(state.transferPlayers.map(p => p.league_name || ""))].filter(Boolean);
+    }
+    leagues.sort((a, b) => a.localeCompare(b, "pl"));
+    lS.innerHTML = `<option value="">Wszystkie ligi</option>${leagues.map(l => `<option value="${escapeHtml(l)}">${escapeHtml(l)}</option>`).join("")}`;
+}
+
+function _populateClubSelect(country, league) {
+    const cS = document.getElementById("transferClubFilter");
+    if (!cS) return;
+    const map = state._countryLeagueClubMap;
+    if (!map) { cS.innerHTML = `<option value="">Wszystkie kluby</option>`; return; }
+
+    let clubs = new Set();
+    if (country && league && map.has(country)) {
+        const leaguesMap = map.get(country);
+        if (leaguesMap.has(league)) clubs = leaguesMap.get(league);
+    } else if (country && map.has(country)) {
+        map.get(country).forEach(lc => lc.forEach(c => clubs.add(c)));
+    } else {
+        state.transferPlayers.forEach(p => { if (p.club_name) clubs.add(p.club_name); });
+    }
+    const sorted = [...clubs].sort((a, b) => a.localeCompare(b, "pl"));
+    cS.innerHTML = `<option value="">Wszystkie kluby</option>${sorted.map(c => `<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join("")}`;
+}
+
+function onCountryChange() {
+    const country = document.getElementById("transferCountryFilter")?.value || "";
+    state.transferCountry = country;
+    _populateLeagueSelect(country);
+    _populateClubSelect(country, "");
+    state.transferLeague = "";
+    state.transferClub = "";
+    document.getElementById("transferLeagueFilter").value = "";
+    document.getElementById("transferClubFilter").value = "";
+    updateTransferFilters();
+}
+
+function onLeagueChange() {
+    const country = document.getElementById("transferCountryFilter")?.value || "";
+    const league = document.getElementById("transferLeagueFilter")?.value || "";
+    state.transferLeague = league;
+    _populateClubSelect(country, league);
+    state.transferClub = "";
+    document.getElementById("transferClubFilter").value = "";
+    updateTransferFilters();
 }
 
 let _statsSort = "goals";
@@ -1030,6 +1390,11 @@ function renderEuropeanTables(){
         return;
     }
     
+    if(state.europeanEntry.code==='UCL'){
+        renderUclLeagueTable();
+        return;
+    }
+    
     const cupCode = state.europeanEntry.code;
     const cup = UEFA_CUPS[cupCode];
     const tbl = buildEuropeanTable(cupCode);
@@ -1152,6 +1517,7 @@ function renderEuropeanTables(){
 }
 
 function buildEuropeanTable(cupCode){
+    if(cupCode==='UCL') return buildUclLeagueTable();
     if(!state.europeanGroup || state.europeanGroup.code !== cupCode) return [];
     const rows = state.europeanGroup.teams.map(t => ({...t, played:0, won:0, drawn:0, lost:0, gf:0, ga:0, points:0, form:[]}));
     const map = new Map(rows.map(r => [String(r.club_id), r]));
@@ -1344,18 +1710,21 @@ function updateTransferFilters() {
     state.transferClub    = document.getElementById("transferClubFilter")?.value   || "";
     state.transferLeague  = document.getElementById("transferLeagueFilter")?.value || "";
     state.transferNat     = document.getElementById("transferNatFilter")?.value    || "";
+    state.transferCountry = document.getElementById("transferCountryFilter")?.value || "";
     state.transferSortBy  = document.getElementById("transferSortBy")?.value       || "rating";
     renderTransfers();
 }
 
 function clearTransferFilters() {
     ["transferNameFilter","transferAgeMin","transferAgeMax","transferRatingMin",
-     "transferRatingMax","transferValueMax","transferClubFilter","transferLeagueFilter","transferNatFilter"]
+     "transferRatingMax","transferValueMax","transferClubFilter","transferLeagueFilter","transferNatFilter","transferCountryFilter"]
         .forEach(id => { const el = document.getElementById(id); if (el) el.value = ""; });
     state.transferQuery = state.transferAgeMin = state.transferAgeMax = "";
     state.transferRatingMin = state.transferRatingMax = state.transferValueMax = "";
     state.transferClub = state.transferLeague = state.transferNat = "";
+    state.transferCountry = "";
     state.transferFilter = "all";
+    fillTransferFilterOptions();
     renderTransfers();
 }
 
@@ -1367,7 +1736,7 @@ function renderTransfers() {
     const wbEl = document.getElementById("wageBudgetDisplay");
     if (wbEl) wbEl.textContent = `${wageToKPerWeek(state.wageBudgetMillions)}K/tydz`;
     const scEl = document.getElementById("squadCountDisplay");
-    if (scEl) scEl.textContent = `${state.players.length} / 30`;
+    if (scEl) scEl.textContent = `${state.players.length}`;
 
     document.querySelectorAll(".position-quick-filters .btn").forEach(b => {
         const f = b.getAttribute("onclick")?.match(/'([^']+)'/)?.[1] || "all";
@@ -1407,6 +1776,7 @@ function renderTransfers() {
         const val   = Number(p.valueMillions || 0);
         const pNats = (p.nationalities || []).map(n => n.name || n);
         const posOk = state.transferFilter === "all" || p.position === state.transferFilter;
+        const playerCountry = state.allLeagueData?.[p.competition_code]?.country || "";
         return posOk
             && (!state.transferQuery    || name.includes(state.transferQuery))
             && (!state.transferAgeMin   || age  >= Number(state.transferAgeMin))
@@ -1416,7 +1786,8 @@ function renderTransfers() {
             && (!state.transferValueMax || val  <= Number(state.transferValueMax))
             && (!state.transferClub     || cn   === state.transferClub)
             && (!state.transferLeague   || ln   === state.transferLeague)
-            && (!state.transferNat      || pNats.includes(state.transferNat));
+            && (!state.transferNat      || pNats.includes(state.transferNat))
+            && (!state.transferCountry  || playerCountry === state.transferCountry);
     });
 
     const sortKey = state.transferSortBy || "rating";
@@ -1650,7 +2021,6 @@ function submitOffer(rawPid, safePid) {
     }
 
     const squadSize=(state.players?.length||0)+(state.bench?.length||0)+(state.reserves?.length||0);
-    if(squadSize>=30){alert('Skład jest pełny (30 zawodników). Najpierw sprzedaj kogoś.');p.lastResult={ok:false,msg:' Skład pełny (30).'};renderTransfers();return;}
 
     const nid = state.players.reduce((m, sp) => Math.max(m, Number(sp.id) || 0), 0) + 1;
     const signed = enrichPlayer({
@@ -2122,6 +2492,8 @@ async function simulateDay() {
 
     if (hadFixture) simulateFixturesForDate(iso);
 
+    checkAndGenerateUclKnockout();
+
     state.players.forEach(p => {
         if (p.fitness < 96) p.fitness = Math.min(96, p.fitness + (p.position === "BR" ? 3 : 2));
     });
@@ -2479,9 +2851,9 @@ function renderCupTable(){
 
 async function saveCareer(){if(!state.team)return;try{const payload=serializeState();await apiPost("/api/save",payload);const label=state.coachName?`${state.coachName} - ${state.team.name}`:state.team.name;state.saveStatus=` Zapisano: ${label}`;}catch(e){state.saveStatus=` Błąd zapisu: ${e.message}`;}updateSaveStatus();}
 async function loadCareer(){let p;try{p=await apiGet("/api/save");}catch(e){state.saveStatus=" Błąd ładowania: serwer nie odpowiada.";updateSaveStatus();return;}if(!p||!p.exists){state.saveStatus=" Brak zapisu na serwerze.";updateSaveStatus();return;}if(!p.state){state.saveStatus=" Uszkodzony zapis.";updateSaveStatus();return;}try{await applySavedState(p.state);}catch(e){state.saveStatus=" Błąd wczytywania: "+e.message;updateSaveStatus();return;}if(!state.uefaData){try{const u=await apiGet("/api/uefa");state.uefaData=u;if(u&&u.rankings){state.uefaPoints={};u.rankings.forEach(r=>{state.uefaPoints[r.competition_code]=r.coefficient;});}}catch(e){}}}
-function serializeState(){return{selectedLeagueCode:state.selectedLeagueCode,teamId:state.team.club_id,coachName:state.coachName||"",currentDate:toIsoDate(state.currentDate),calendarDate:toIsoDate(state.calendarDate),budgetMillions:state.budgetMillions,wageBudgetMillions:state.wageBudgetMillions,formation:state.formation,tactics:state.tactics,seasonFinished:state.seasonFinished,transferWindow:state.transferWindow,europeanEntry:state.europeanEntry||null,europeanOpponents:state.europeanOpponents||[],players:state.players,lineupIds:state.lineup.map((p)=>p.id),benchIds:state.bench.map((p)=>p.id),table:state.table,fixtures:state.fixtures,results:state.results,news:state.news,matchLog:state.matchLog,leagueTables:state.leagueTables,leagueFixtures:state.leagueFixtures,uefaData:state.uefaData,uefaPoints:state.uefaPoints,trainingFocus:state.trainingFocus||null,trainingLog:state.trainingLog||[],currentMatch:state.currentMatch||null};}
+function serializeState(){return{selectedLeagueCode:state.selectedLeagueCode,teamId:state.team.club_id,coachName:state.coachName||"",currentDate:toIsoDate(state.currentDate),calendarDate:toIsoDate(state.calendarDate),budgetMillions:state.budgetMillions,wageBudgetMillions:state.wageBudgetMillions,formation:state.formation,tactics:state.tactics,seasonFinished:state.seasonFinished,transferWindow:state.transferWindow,europeanEntry:state.europeanEntry||null,europeanOpponents:state.europeanOpponents||[],uclLeague:state.uclLeague||null,uclKnockout:state.uclKnockout||null,players:state.players,lineupIds:state.lineup.map((p)=>p.id),benchIds:state.bench.map((p)=>p.id),table:state.table,fixtures:state.fixtures,results:state.results,news:state.news,matchLog:state.matchLog,leagueTables:state.leagueTables,leagueFixtures:state.leagueFixtures,uefaData:state.uefaData,uefaPoints:state.uefaPoints,trainingFocus:state.trainingFocus||null,trainingLog:state.trainingLog||[],currentMatch:state.currentMatch||null};}
 
-async function applySavedState(snapshot){const ld=deepClone(await loadLeague(snapshot.selectedLeagueCode));state.selectedLeagueCode=snapshot.selectedLeagueCode;state.leagueData=ld;state.allTeams=ld.clubs;state.team=ld.clubs.find((c)=>c.club_id===String(snapshot.teamId))||ld.clubs[0];state.coachName=snapshot.coachName||"";state.players=snapshot.players;state.formation=snapshot.formation||"4-3-3";state.tactics=snapshot.tactics||{style:"balanced",pressing:"medium",width:"normal"};state.budgetMillions=snapshot.budgetMillions;state.wageBudgetMillions=snapshot.wageBudgetMillions;state.currentDate=fromIsoDate(snapshot.currentDate);state.calendarDate=fromIsoDate(snapshot.calendarDate);state.seasonFinished=!!snapshot.seasonFinished;state.transferWindow=snapshot.transferWindow||null;state.europeanEntry=snapshot.europeanEntry||null;state.europeanOpponents=snapshot.europeanOpponents||[];state.table=snapshot.table;state.fixtures=snapshot.fixtures;state.results=snapshot.results;state.news=snapshot.news;state.matchLog=snapshot.matchLog;state.lineup=snapshot.lineupIds.map((id)=>state.players.find((p)=>p.id===id)).filter(Boolean);state.bench=snapshot.benchIds.map((id)=>state.players.find((p)=>p.id===id)).filter(Boolean);if(snapshot.leagueTables)state.leagueTables=snapshot.leagueTables;if(snapshot.leagueFixtures)state.leagueFixtures=snapshot.leagueFixtures;if(snapshot.uefaData)state.uefaData=snapshot.uefaData;if(snapshot.uefaPoints)state.uefaPoints=snapshot.uefaPoints;state.trainingFocus=snapshot.trainingFocus||null;state.trainingLog=snapshot.trainingLog||[];state.currentMatch=snapshot.currentMatch||null;
+async function applySavedState(snapshot){const ld=deepClone(await loadLeague(snapshot.selectedLeagueCode));state.selectedLeagueCode=snapshot.selectedLeagueCode;state.leagueData=ld;state.allTeams=ld.clubs;state.team=ld.clubs.find((c)=>c.club_id===String(snapshot.teamId))||ld.clubs[0];state.coachName=snapshot.coachName||"";state.players=snapshot.players;state.formation=snapshot.formation||"4-3-3";state.tactics=snapshot.tactics||{style:"balanced",pressing:"medium",width:"normal"};state.budgetMillions=snapshot.budgetMillions;state.wageBudgetMillions=snapshot.wageBudgetMillions;state.currentDate=fromIsoDate(snapshot.currentDate);state.calendarDate=fromIsoDate(snapshot.calendarDate);state.seasonFinished=!!snapshot.seasonFinished;state.transferWindow=snapshot.transferWindow||null;state.europeanEntry=snapshot.europeanEntry||null;state.europeanOpponents=snapshot.europeanOpponents||[];state.uclLeague=snapshot.uclLeague||null;state.uclKnockout=snapshot.uclKnockout||null;state.table=snapshot.table;state.fixtures=snapshot.fixtures;state.results=snapshot.results;state.news=snapshot.news;state.matchLog=snapshot.matchLog;state.lineup=snapshot.lineupIds.map((id)=>state.players.find((p)=>p.id===id)).filter(Boolean);state.bench=snapshot.benchIds.map((id)=>state.players.find((p)=>p.id===id)).filter(Boolean);if(snapshot.leagueTables)state.leagueTables=snapshot.leagueTables;if(snapshot.leagueFixtures)state.leagueFixtures=snapshot.leagueFixtures;if(snapshot.uefaData)state.uefaData=snapshot.uefaData;if(snapshot.uefaPoints)state.uefaPoints=snapshot.uefaPoints;state.trainingFocus=snapshot.trainingFocus||null;state.trainingLog=snapshot.trainingLog||[];state.currentMatch=snapshot.currentMatch||null;
     // Szybkie renderowanie przed załadowaniem transferów
     renderFormationButtons();updateTacticsInputs();updateNav();await fillLeagueTableSelector();renderAll();
     document.getElementById("startScreen").style.display="none";document.getElementById("teamSelect").style.display="none";
@@ -2727,6 +3099,25 @@ function formatDateShort(iso){
 }
 
 function applyEuropeanResult(fx){
+    if(fx.competition==='UCL'&&state.uclLeague){
+        const isLeaguePhase=fx.stage?.startsWith('Faza ligowa');
+        if(isLeaguePhase){
+            const h=state.uclLeague.teams.find(r=>String(r.club_id)===String(fx.homeClubId));
+            const a=state.uclLeague.teams.find(r=>String(r.club_id)===String(fx.awayClubId));
+            if(h&&a){
+                h.played++;a.played++;
+                h.gf+=fx.homeGoals;h.ga+=fx.awayGoals;
+                a.gf+=fx.awayGoals;a.ga+=fx.homeGoals;
+                if(fx.homeGoals>fx.awayGoals){h.won++;h.points+=3;a.lost++;pushForm(h,"W");pushForm(a,"L");}
+                else if(fx.homeGoals<fx.awayGoals){a.won++;a.points+=3;h.lost++;pushForm(a,"W");pushForm(h,"L");}
+                else{h.drawn++;a.drawn++;h.points++;a.points++;pushForm(h,"D");pushForm(a,"D");}
+            }
+        }
+        if(fx.id?.startsWith('UCL-PO')||fx.id?.startsWith('UCL-R16')||fx.id?.startsWith('UCL-QF')||fx.id?.startsWith('UCL-SF')||fx.id==='UCL-FINAL'){
+            uclResolveKnockoutTie(fx);
+        }
+        return;
+    }
     if(!state.europeanGroup) return;
     const h = state.europeanGroup.teams.find(r => String(r.club_id) === String(fx.homeClubId));
     const a = state.europeanGroup.teams.find(r => String(r.club_id) === String(fx.awayClubId));
@@ -3160,6 +3551,7 @@ function restartSeason(endNews) {
     state.leagueFixtures = {};
     state.europeanGroup  = null;
     state.europeanOpponents = [];
+    state.uclLeague = null;
 
     agePlayers();
     generateYouthPlayers(2);
@@ -3340,30 +3732,30 @@ function sellPlayer(playerId){const idx=state.players.findIndex((p)=>p.id===play
 function addNews(text){state.news.push({date:formatDateLong(state.currentDate),text});}
 function getClub(id){
     const sid = String(id);
-    // Liga gracza
     let club = state.allTeams?.find((c)=>String(c.club_id)===sid);
     if(club) return club;
-    // Przeciwnicy europejscy
     if(state.europeanOpponents){
         club = state.europeanOpponents.find((c)=>String(c.club_id)===sid);
         if(club) return club;
     }
-    // Wszystkie pozostałe ligi
+    if(state.uclLeague){
+        club = state.uclLeague.teams.find((c)=>String(c.club_id)===sid);
+        if(club) return club;
+    }
     if(state.allLeagueData){
         for(const league of Object.values(state.allLeagueData)){
             club = league.clubs?.find((c)=>String(c.club_id)===sid);
             if(club) return club;
         }
     }
-    // Fallback dla dynamicznych klubów UEFA
-    if(sid.startsWith("EURO-")) {
+    if(sid.startsWith("EURO-")||sid.startsWith("UCL-Q")) {
         const parts = sid.split("-");
-        const cupCode = parts[1];
-        const num = parts[2];
+        const cupCode = parts[0]==="UCL"?"UCL":parts[1];
+        const num = parts[0]==="UCL"?parts[2]:parts[2];
         const cup = UEFA_CUPS[cupCode];
         return {
             club_id: sid,
-            name: `UEFA Club ${num}`,
+            name: sid.startsWith("UCL-Q")?`Kwalifikant ${num}`:`UEFA Club ${num}`,
             color: cupCode==="UCL"?"#1d4ed8":cupCode==="UEL"?"#ea580c":"#16a34a",
             logo_url: "",
             avg_rating: cupCode==="UCL"?78:cupCode==="UEL"?73:68
