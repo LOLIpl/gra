@@ -494,7 +494,10 @@ table tbody tr.my-team td {
                             <select class="league-selector-dark" id="leagueTableSelector" onchange="switchLeagueTable()"></select>
                             <select class="league-selector-dark" id="cupTableSelector" onchange="switchCupTable()">
                                 <option value="">— Liga</option>
-                                <option value="cup">Puchary</option>
+                                <option value="cup">🏆 Puchar Krajowy</option>
+                                <option value="UCL">⚽ Liga Mistrzow</option>
+                                <option value="UEL">⚽ Liga Europy</option>
+                                <option value="UECL">⚽ Liga Konferencji</option>
                             </select>
                         </div>
                     </div>
@@ -513,7 +516,7 @@ table tbody tr.my-team td {
                     </table>
                 </div>
 
-                <div class="table-legend-expressive">
+                <div class="table-legend-expressive" id="tableLegend">
                     <span><span class="leg-box promo"></span> Puchary / awans</span>
                     <span><span class="leg-box playoff"></span> Baraż</span>
                     <span><span class="leg-box releg"></span> Spadek</span>
