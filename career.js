@@ -20,6 +20,12 @@ const MONTHS = ["Styczeń","Luty","Marzec","Kwiecień","Maj","Czerwiec","Lipiec"
 const DAY_NAMES = ["Pn","Wt","Sr","Cz","Pt","Sb","Nd"];
 const POS_ICON = {BR:"BR",OB:"ŚO",PO:"ŚP",NA:"N"};
 const AI_STYLES = ["balanced","attacking","defensive","possession","counter"];
+const FORM_ICON = window.FORM_ICON = {W:'<span style="color:#10b981;font-weight:800;">W</span>',D:'<span style="color:#9ca3af;font-weight:800;">R</span>',L:'<span style="color:#ef4444;font-weight:800;">P</span>'};
+const UEFA_CUPS = window.UEFA_CUPS = {
+    UCL: { short:"LM", name:"Liga Mistrzow", className:"ucl", color:"#3b82f6", groupLabel:"Faza ligowa", matches:8 },
+    UEL: { short:"LE", name:"Liga Europy", className:"uel", color:"#f97316", groupLabel:"Faza ligowa", matches:8 },
+    UECL:{ short:"LK", name:"Liga Konferencji", className:"uecl", color:"#22c55e", groupLabel:"Faza ligowa", matches:6 },
+};
 // FORM_ICON, UEFA_CUPS, UEFA_CODE_ALIASES — w uefa-mechanics.js
 const LEAGUE_RULES = {
     GB1:{down:"GB2",relegation:3,playoffRelegation:0}, GB2:{up:"GB1",promotion:2,playoffPromotion:[3,4,5,6],relegation:3},
