@@ -1,4 +1,4 @@
-﻿if(typeof rand==="undefined") window.rand=(min,max)=>Math.floor(Math.random()*(max-min+1))+min;
+if(typeof rand==="undefined") window.rand=(min,max)=>Math.floor(Math.random()*(max-min+1))+min;
 if(typeof clamp==="undefined") window.clamp=(v,min,max)=>Math.max(min,Math.min(max,v));
 
 // === FUNKCJE POMOCNICZE ===
