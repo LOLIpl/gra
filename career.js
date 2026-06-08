@@ -531,67 +531,10 @@ kbd{background:#e1e1e1;color:#000;border-radius:3px;border:1px solid #b4b4b4;col
   document.head.appendChild(s);
 }
 
-const LOADING_STEPS = [
-  { id: 'init', label: 'Inicjalizacja danych' },
-  { id: 'uefa', label: 'Ładowanie rankingu UEFA' },
-  { id: 'fixtures', label: 'Generowanie terminarza' },
-  { id: 'squad', label: 'Ustawianie składu' },
-  { id: 'transfers', label: 'Ładowanie transferów' },
-  { id: 'leagues', label: 'Ładowanie lig' },
-  { id: 'tables', label: 'Generowanie tabel ligowych' },
-  { id: 'render', label: 'Renderowanie interfejsu' },
-  { id: 'done', label: 'Gotowe!' },
-];
-
-let _loadedStep = -1;
-
+// LOADING_STEPS, _loadedStep, setLoadProgress, renderLoadingItems,
+// showGlobalLoading i hideGlobalLoading są zdefiniowane w app.js
+// (muszą być dostępne zanim career.js zostanie załadowany)
 // getUefaForLeague, loadUefaData
-
-function setLoadProgress(pct, msg, stepId){
-  const lt=document.getElementById("loadingText");if(lt)lt.textContent=msg||"";
-  const pf=document.getElementById("progressFill");if(pf)pf.style.width=Math.min(100,Math.max(0,pct))+"%";
-  const glt=document.getElementById("globalLoadingText");if(glt)glt.textContent=msg||"";
-  const gpf=document.getElementById("globalProgressFill");if(gpf)gpf.style.width=Math.min(100,Math.max(0,pct))+"%";
-
-  if(stepId){
-    const idx = LOADING_STEPS.findIndex(s => s.id === stepId);
-    if(idx >= 0 && idx > _loadedStep){
-      _loadedStep = idx;
-      const counter = document.getElementById("globalProgressCounter");
-      if(counter) counter.textContent = `${idx+1} / ${LOADING_STEPS.length}`;
-      renderLoadingItems(idx);
-    }
-  }
-}
-
-function renderLoadingItems(activeIdx){
-  const cont = document.getElementById("globalLoadingItems");
-  if(!cont) return;
-  cont.innerHTML = LOADING_STEPS.map((s, i) => {
-    let cls = 'loading-item';
-    if(i < activeIdx) cls += ' done';
-    else if(i === activeIdx) cls += ' active';
-    return `<div class="${cls}"><span class="dot"></span>${s.label}</div>`;
-  }).join('');
-}
-
-function showGlobalLoading(){
-  const el = document.getElementById("globalLoading");
-  if(!el) return;
-  _loadedStep = -1;
-  el.style.display = 'flex';
-  el.style.opacity = '1';
-  const counter = document.getElementById("globalProgressCounter");
-  if(counter) counter.textContent = `0 / ${LOADING_STEPS.length}`;
-  renderLoadingItems(-1);
-}
-
-function hideGlobalLoading(){
-  const el = document.getElementById("globalLoading");
-  if(!el) return;
-  el.style.opacity = '0';
-  setTimeout(() => { el.style.display = 'none'; }, 400);
-}
 async function initCareer() {
     injectGameplayStyles();
     const loader=document.getElementById("loadingScreen");
