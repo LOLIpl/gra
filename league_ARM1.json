@@ -1,0 +1,5561 @@
+{
+  "competition_code": "ARM1",
+  "name": "Premier League",
+  "url": "https://www.transfermarkt.pl/premier-league/startseite/wettbewerb/ARM1",
+  "club_count": 10,
+  "league_logo_url": "https://tmssl.akamaized.net//images/logo/homepageWappen150x150/arm1.png",
+  "country": "Inne",
+  "tier": 4,
+  "level": 1,
+  "label": "Premier League",
+  "startBudget": 8,
+  "rules": {},
+  "clubs": [
+    {
+      "club_id": "60368",
+      "name": "FC Noah Erewan",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/60368.png?lm=1721150323",
+      "league_url": "",
+      "color": "hsl(263 70% 48%)",
+      "avg_rating": 74,
+      "strength": 74,
+      "budget_millions": 2.29,
+      "squad_size": 28,
+      "players": [
+        {
+          "player_id": "775886",
+          "name": "Takuto Oshima",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 27,
+          "date_of_birth": "1 cze 1998 (27)",
+          "market_value": "1,00 mln €",
+          "market_value_eur": 1000000,
+          "rating": 76,
+          "rating_base": 72,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/775886-1732192873.png?lm=1",
+          "nationalities": [
+            "Japonia"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "341391",
+          "name": "Valentin Costache",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 27,
+          "date_of_birth": "2 sie 1998 (27)",
+          "market_value": "1,00 mln €",
+          "market_value_eur": 1000000,
+          "rating": 76,
+          "rating_base": 72,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/341391-1721717179.png?lm=1",
+          "nationalities": [
+            "Rumunia"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "541420",
+          "name": "Timothy Fayulu",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 26,
+          "date_of_birth": "24 lip 1999 (26)",
+          "market_value": "1,00 mln €",
+          "market_value_eur": 1000000,
+          "rating": 75,
+          "rating_base": 72,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/541420-1739451911.jpg?lm=1",
+          "nationalities": [
+            "Demokratyczna Republika Kongo",
+            "Szwajcaria"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "641152",
+          "name": "Gustavo Sangaré",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 29,
+          "date_of_birth": "8 lis 1996 (29)",
+          "market_value": "800 tys. €",
+          "market_value_eur": 800000,
+          "rating": 74,
+          "rating_base": 70,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/641152-1725370661.png?lm=1",
+          "nationalities": [
+            "Burkina Faso",
+            "Francja"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "350311",
+          "name": "Hélder Ferreira",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 29,
+          "date_of_birth": "5 kwi 1997 (29)",
+          "market_value": "800 tys. €",
+          "market_value_eur": 800000,
+          "rating": 74,
+          "rating_base": 70,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/350311-1725371039.png?lm=1",
+          "nationalities": [
+            "Portugalia"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "261963",
+          "name": "Marin Jakolis",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 29,
+          "date_of_birth": "26 gru 1996 (29)",
+          "market_value": "800 tys. €",
+          "market_value_eur": 800000,
+          "rating": 74,
+          "rating_base": 70,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/261963-1614710658.jpg?lm=1",
+          "nationalities": [
+            "Chorwacja",
+            "Australia"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "397771",
+          "name": "Nardin Mulahusejnovic",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 28,
+          "date_of_birth": "9 lut 1998 (28)",
+          "market_value": "800 tys. €",
+          "market_value_eur": 800000,
+          "rating": 74,
+          "rating_base": 70,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/397771-1736616936.jpg?lm=1",
+          "nationalities": [
+            "Bośnia i Hercegowina"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "297784",
+          "name": "Yan Eteki",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 28,
+          "date_of_birth": "26 sie 1997 (28)",
+          "market_value": "800 tys. €",
+          "market_value_eur": 800000,
+          "rating": 74,
+          "rating_base": 70,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/297784-1702510690.png?lm=1",
+          "nationalities": [
+            "Kamerun",
+            "Hiszpania"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "342704",
+          "name": "Imran Oulad Omar",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 28,
+          "date_of_birth": "11 gru 1997 (28)",
+          "market_value": "700 tys. €",
+          "market_value_eur": 700000,
+          "rating": 73,
+          "rating_base": 69,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/342704-1725370620.png?lm=1",
+          "nationalities": [
+            "Holandia",
+            "Maroko"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "404156",
+          "name": "Gonçalo Gregório",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 30,
+          "date_of_birth": "14 cze 1995 (30)",
+          "market_value": "600 tys. €",
+          "market_value_eur": 600000,
+          "rating": 73,
+          "rating_base": 68,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/404156-1725371109.png?lm=1",
+          "nationalities": [
+            "Portugalia"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "268875",
+          "name": "Eric Boakye",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 26,
+          "date_of_birth": "19 lis 1999 (26)",
+          "market_value": "600 tys. €",
+          "market_value_eur": 600000,
+          "rating": 71,
+          "rating_base": 68,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/268875-1732988485.png?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "585950",
+          "name": "Nathanaël Saintini",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 25,
+          "date_of_birth": "30 maj 2000 (25)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 70,
+          "rating_base": 67,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/585950-1708689508.png?lm=1",
+          "nationalities": [
+            "Gwadelupa",
+            "Francja"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "369706",
+          "name": "Matheus Aiás",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 29,
+          "date_of_birth": "30 gru 1996 (29)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 69,
+          "rating_base": 65,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/369706-1725371088.png?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "817388",
+          "name": "Sergey Muradyan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 21,
+          "date_of_birth": "27 sie 2004 (21)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 68,
+          "rating_base": 67,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/817388-1712677265.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "131740",
+          "name": "Nermin Zolotic",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 32,
+          "date_of_birth": "7 lip 1993 (32)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 68,
+          "rating_base": 63,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/131740-1663602163.png?lm=1",
+          "nationalities": [
+            "Bośnia i Hercegowina"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "344540",
+          "name": "David Sualehe",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 29,
+          "date_of_birth": "23 mar 1997 (29)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 67,
+          "rating_base": 63,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/344540-1723991859.jpg?lm=1",
+          "nationalities": [
+            "Portugalia",
+            "Mozambik"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "339980",
+          "name": "Hovhannes Harutyunyan",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 26,
+          "date_of_birth": "25 maj 1999 (26)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 66,
+          "rating_base": 63,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/339980-1706113011.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "773795",
+          "name": "Gor Manvelyan",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 24,
+          "date_of_birth": "9 kwi 2002 (24)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 65,
+          "rating_base": 63,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/773795-1725370723.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Francja"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "496871",
+          "name": "Rob Nizet",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 24,
+          "date_of_birth": "14 kwi 2002 (24)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 64,
+          "rating_base": 62,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/496871-1745227105.jpg?lm=1",
+          "nationalities": [
+            "Belgia",
+            "Senegal"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "116565",
+          "name": "Hovhannes Hambardzumyan",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 35,
+          "date_of_birth": "4 paź 1990 (35)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 63,
+          "rating_base": 56,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/116565-1725370478.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "194214",
+          "name": "Gonçalo Silva",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 34,
+          "date_of_birth": "4 cze 1991 (34)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 62,
+          "rating_base": 56,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/194214-1725370500.png?lm=1",
+          "nationalities": [
+            "Portugalia"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "461705",
+          "name": "Artem Avanesyan",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 26,
+          "date_of_birth": "17 lip 1999 (26)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 59,
+          "rating_base": 56,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/461705-1725371156.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "719163",
+          "name": "Misak Hakobyan",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 21,
+          "date_of_birth": "11 cze 2004 (21)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 55,
+          "rating_base": 54,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/719163-1757593878.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "816474",
+          "name": "Aleksey Ploshchadnyi",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 22,
+          "date_of_birth": "21 kwi 2004 (22)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/816474-1725370369.png?lm=1",
+          "nationalities": [
+            "Rosja"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "1130532",
+          "name": "Zaven Khudaverdyan",
+          "position": "NA",
+          "position_label": "Cofnięty napastnik",
+          "age": 18,
+          "date_of_birth": "15 cze 2007 (18)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 54,
+          "rating_base": 54,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1130532-1683853950.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "471095",
+          "name": "Aram Khamoyan",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 26,
+          "date_of_birth": "10 sty 2000 (26)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 53,
+          "rating_base": 50,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/471095-1507205034.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "997489",
+          "name": "Arthur Coneglian",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 21,
+          "date_of_birth": "30 maj 2004 (21)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 51,
+          "rating_base": 50,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/997489-1725370395.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Brazylia"
+          ],
+          "club_id": "60368"
+        },
+        {
+          "player_id": "994280",
+          "name": "Bilal Fofana",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 19,
+          "date_of_birth": "7 lip 2006 (19)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 50,
+          "rating_base": 50,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Francja",
+            "Wybrzeże Kości Słoniowej"
+          ],
+          "club_id": "60368"
+        }
+      ]
+    },
+    {
+      "club_id": "53453",
+      "name": "FC Ararat-Armenia",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/53453.png?lm=1535881663",
+      "league_url": "",
+      "color": "hsl(260 70% 48%)",
+      "avg_rating": 68,
+      "strength": 68,
+      "budget_millions": 1.14,
+      "squad_size": 25,
+      "players": [
+        {
+          "player_id": "408963",
+          "name": "Zidane Banjaqui",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 27,
+          "date_of_birth": "15 gru 1998 (27)",
+          "market_value": "600 tys. €",
+          "market_value_eur": 600000,
+          "rating": 72,
+          "rating_base": 68,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/408963-1569364141.jpg?lm=1",
+          "nationalities": [
+            "Gwinea Bissau",
+            "Portugalia"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "393962",
+          "name": "Balanta Jr.",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 29,
+          "date_of_birth": "3 mar 1997 (29)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 71,
+          "rating_base": 67,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/393962-1757593391.png?lm=1",
+          "nationalities": [
+            "Kolumbia"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "431746",
+          "name": "Zhirayr Shaghoyan",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 25,
+          "date_of_birth": "10 kwi 2001 (25)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 70,
+          "rating_base": 67,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/431746-1757593721.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "623120",
+          "name": "Artur Serobyan",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 22,
+          "date_of_birth": "2 lip 2003 (22)",
+          "market_value": "500 tys. €",
+          "market_value_eur": 500000,
+          "rating": 69,
+          "rating_base": 67,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/623120-1757593699.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "513295",
+          "name": "Alioune Ndour",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 28,
+          "date_of_birth": "21 paź 1997 (28)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 69,
+          "rating_base": 65,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/513295-1709895866.jpeg?lm=1",
+          "nationalities": [
+            "Senegal"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "610253",
+          "name": "Junior Julio",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 29,
+          "date_of_birth": "3 wrz 1996 (29)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 69,
+          "rating_base": 65,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/610253-1757593132.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Kolumbia"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "155425",
+          "name": "Kamo Hovhannisyan",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 33,
+          "date_of_birth": "5 paź 1992 (33)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 69,
+          "rating_base": 63,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/155425-1757592990.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "415642",
+          "name": "João Queirós",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 28,
+          "date_of_birth": "22 kwi 1998 (28)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 67,
+          "rating_base": 63,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/415642-1757593158.png?lm=1",
+          "nationalities": [
+            "Portugalia"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "340001",
+          "name": "Edgar Grigoryan",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 27,
+          "date_of_birth": "25 sie 1998 (27)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 66,
+          "rating_base": 62,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/340001-1757593310.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "969934",
+          "name": "Bouchaib Arrassi",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 26,
+          "date_of_birth": "6 sty 2000 (26)",
+          "market_value": "325 tys. €",
+          "market_value_eur": 325000,
+          "rating": 65,
+          "rating_base": 62,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/969934-1755177759.jpeg?lm=1",
+          "nationalities": [
+            "Maroko"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "601666",
+          "name": "Paul Ayongo",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 29,
+          "date_of_birth": "16 lis 1996 (29)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 63,
+          "rating_base": 59,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/601666-1757593743.png?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "527193",
+          "name": "Welton",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 27,
+          "date_of_birth": "22 lis 1998 (27)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 63,
+          "rating_base": 59,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/527193-1757593452.png?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "241118",
+          "name": "Karen Muradyan",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 33,
+          "date_of_birth": "1 lis 1992 (33)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 62,
+          "rating_base": 56,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/241118-1757593516.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "868809",
+          "name": "Arayik Eloyan",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 22,
+          "date_of_birth": "16 mar 2004 (22)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 61,
+          "rating_base": 59,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/868809-1757593764.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "735822",
+          "name": "Hugo Oliveira",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 24,
+          "date_of_birth": "10 lut 2002 (24)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 61,
+          "rating_base": 59,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/735822-1757593337.png?lm=1",
+          "nationalities": [
+            "Portugalia"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "448919",
+          "name": "Alexandros Malis",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 29,
+          "date_of_birth": "19 mar 1997 (29)",
+          "market_value": "225 tys. €",
+          "market_value_eur": 225000,
+          "rating": 61,
+          "rating_base": 57,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/448919-1757593186.png?lm=1",
+          "nationalities": [
+            "Grecja"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "411315",
+          "name": "Alwyn Tera",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 29,
+          "date_of_birth": "18 sty 1997 (29)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 60,
+          "rating_base": 56,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/411315-1757593479.png?lm=1",
+          "nationalities": [
+            "Kenia"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "155893",
+          "name": "Armen Ambartsumyan",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 32,
+          "date_of_birth": "11 kwi 1994 (32)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 59,
+          "rating_base": 54,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/155893-1757593542.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "621489",
+          "name": "Arman Nersesyan",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 24,
+          "date_of_birth": "19 paź 2001 (24)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/621489-1757592923.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "270971",
+          "name": "Hakob Hakobyan",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 29,
+          "date_of_birth": "29 mar 1997 (29)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/270971-1757593358.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Gruzja"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "545594",
+          "name": "Bruno Pinto",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 33,
+          "date_of_birth": "9 cze 1992 (33)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 55,
+          "rating_base": 49,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/545594-1757592950.png?lm=1",
+          "nationalities": [
+            "Portugalia"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "623117",
+          "name": "Vahram Makhsudyan",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 23,
+          "date_of_birth": "22 sty 2003 (23)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 52,
+          "rating_base": 50,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/623117-1757593569.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "876102",
+          "name": "Davit Barseghyan",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 21,
+          "date_of_birth": "3 sty 2005 (21)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/876102-1757593610.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Francja"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "1055718",
+          "name": "Davit Petrosyan",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 21,
+          "date_of_birth": "2 mar 2005 (21)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 43,
+          "rating_base": 42,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "53453"
+        },
+        {
+          "player_id": "876065",
+          "name": "Hayk Khachatryan",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 21,
+          "date_of_birth": "27 sty 2005 (21)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 43,
+          "rating_base": 42,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "53453"
+        }
+      ]
+    },
+    {
+      "club_id": "10301",
+      "name": "FC Pyunik Erewan",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/10301.png?lm=1552669420",
+      "league_url": "",
+      "color": "hsl(245 70% 48%)",
+      "avg_rating": 67,
+      "strength": 67,
+      "budget_millions": 1.09,
+      "squad_size": 25,
+      "players": [
+        {
+          "player_id": "425756",
+          "name": "Daniil Kulikov",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 27,
+          "date_of_birth": "24 cze 1998 (27)",
+          "market_value": "600 tys. €",
+          "market_value_eur": 600000,
+          "rating": 72,
+          "rating_base": 68,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/425756-1690122594.png?lm=1",
+          "nationalities": [
+            "Rosja"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "449306",
+          "name": "Filipe Almeida",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 28,
+          "date_of_birth": "5 lip 1997 (28)",
+          "market_value": "600 tys. €",
+          "market_value_eur": 600000,
+          "rating": 72,
+          "rating_base": 68,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/449306-1548232519.jpg?lm=1",
+          "nationalities": [
+            "Portugalia"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "357701",
+          "name": "Marius Noubissi",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 29,
+          "date_of_birth": "28 lis 1996 (29)",
+          "market_value": "450 tys. €",
+          "market_value_eur": 450000,
+          "rating": 69,
+          "rating_base": 65,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/357701-1626769984.jpg?lm=1",
+          "nationalities": [
+            "Kamerun"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "577933",
+          "name": "Sead Islamovic",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 26,
+          "date_of_birth": "24 wrz 1999 (26)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 66,
+          "rating_base": 63,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/577933-1683734972.png?lm=1",
+          "nationalities": [
+            "Serbia"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "380416",
+          "name": "Eric Ocansey",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 28,
+          "date_of_birth": "22 sie 1997 (28)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 66,
+          "rating_base": 62,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/380416-1773765607.png?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "413506",
+          "name": "Javi Moreno",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 28,
+          "date_of_birth": "20 cze 1997 (28)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 66,
+          "rating_base": 62,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/413506-1693667191.jpg?lm=1",
+          "nationalities": [
+            "Hiszpania"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "490292",
+          "name": "Momo Yansane",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 28,
+          "date_of_birth": "29 lip 1997 (28)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 66,
+          "rating_base": 62,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/490292-1635961223.png?lm=1",
+          "nationalities": [
+            "Gwinea"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "249671",
+          "name": "Henri Avagyan",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 30,
+          "date_of_birth": "16 sty 1996 (30)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 64,
+          "rating_base": 59,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/249671-1721138501.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "554291",
+          "name": "James",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 30,
+          "date_of_birth": "15 lip 1995 (30)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 64,
+          "rating_base": 59,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/554291-1608661469.png?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "279963",
+          "name": "Mikhail Kovalenko",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 31,
+          "date_of_birth": "25 sty 1995 (31)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 64,
+          "rating_base": 59,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/279963-1658925978.png?lm=1",
+          "nationalities": [
+            "Rosja"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "170354",
+          "name": "Sergiy Vakulenko",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 32,
+          "date_of_birth": "7 wrz 1993 (32)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 64,
+          "rating_base": 59,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/170354-1658925877.png?lm=1",
+          "nationalities": [
+            "Ukraina"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "719644",
+          "name": "Daniel Aghbalyan",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 27,
+          "date_of_birth": "12 mar 1999 (27)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 63,
+          "rating_base": 59,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/719644-1600615902.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "256695",
+          "name": "Alemão",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 33,
+          "date_of_birth": "7 gru 1992 (33)",
+          "market_value": "225 tys. €",
+          "market_value_eur": 225000,
+          "rating": 63,
+          "rating_base": 57,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/256695-1721138491.png?lm=1",
+          "nationalities": [
+            "Brazylia",
+            "Portugalia"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "1062741",
+          "name": "Gonçalo Miguel",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 23,
+          "date_of_birth": "6 maj 2003 (23)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 61,
+          "rating_base": 59,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1062741-1757261144.png?lm=1",
+          "nationalities": [
+            "Portugalia"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "520610",
+          "name": "Lucas Villela",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 32,
+          "date_of_birth": "24 mar 1994 (32)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 61,
+          "rating_base": 56,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/520610-1737871752.png?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "881024",
+          "name": "Karlen Hovhannisyan",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 21,
+          "date_of_birth": "26 kwi 2005 (21)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 60,
+          "rating_base": 59,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/881024-1658926633.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "493332",
+          "name": "Nikolaos Kenourgios",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 27,
+          "date_of_birth": "8 wrz 1998 (27)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 60,
+          "rating_base": 56,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/493332-1773765515.png?lm=1",
+          "nationalities": [
+            "Grecja"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "279541",
+          "name": "Robert Darbinyan",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 30,
+          "date_of_birth": "4 paź 1995 (30)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 59,
+          "rating_base": 54,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/279541-1608661419.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "430463",
+          "name": "Gevorg Tarakhchyan",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 24,
+          "date_of_birth": "15 mar 2002 (24)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/430463-1725458893.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "876515",
+          "name": "Vyacheslav Afyan",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 20,
+          "date_of_birth": "28 paź 2005 (20)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 57,
+          "rating_base": 56,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/876515-1658926458.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "431083",
+          "name": "Sargis Metoyan",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 28,
+          "date_of_birth": "6 wrz 1997 (28)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/431083-1770911417.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "78726",
+          "name": "Aleksandar Miljkovic",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 36,
+          "date_of_birth": "26 lut 1990 (36)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 56,
+          "rating_base": 49,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/78726-1725370568.png?lm=1",
+          "nationalities": [
+            "Serbia"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "106984",
+          "name": "Artak Dashyan",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 36,
+          "date_of_birth": "20 lis 1989 (36)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 56,
+          "rating_base": 49,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/106984-1725371013.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "116302",
+          "name": "Edgar Malakyan",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 35,
+          "date_of_birth": "22 wrz 1990 (35)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 56,
+          "rating_base": 49,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/116302-1604583049.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "10301"
+        },
+        {
+          "player_id": "151787",
+          "name": "Stanislav Buchnev",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 35,
+          "date_of_birth": "17 lip 1990 (35)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 56,
+          "rating_base": 49,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/151787-1600614798.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "10301"
+        }
+      ]
+    },
+    {
+      "club_id": "37914",
+      "name": "Alashkert Yerevan",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/37914.png?lm=1751382984",
+      "league_url": "",
+      "color": "hsl(264 70% 48%)",
+      "avg_rating": 63,
+      "strength": 63,
+      "budget_millions": 0.8,
+      "squad_size": 28,
+      "players": [
+        {
+          "player_id": "605308",
+          "name": "Karen Nalbandyan",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 24,
+          "date_of_birth": "14 kwi 2002 (24)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 67,
+          "rating_base": 65,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/605308-1726575378.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "830382",
+          "name": "Klaidher Macedo",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 27,
+          "date_of_birth": "18 sty 1999 (27)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 67,
+          "rating_base": 63,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/830382-1679177735.png?lm=1",
+          "nationalities": [
+            "Brazylia",
+            "Włochy"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "666923",
+          "name": "Momo Touré",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 24,
+          "date_of_birth": "12 sty 2002 (24)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 65,
+          "rating_base": 63,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/666923-1658073045.png?lm=1",
+          "nationalities": [
+            "Gwinea"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "947639",
+          "name": "Olawale Farayola",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 23,
+          "date_of_birth": "10 paź 2002 (23)",
+          "market_value": "350 tys. €",
+          "market_value_eur": 350000,
+          "rating": 65,
+          "rating_base": 63,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/947639-1726573454.png?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "707602",
+          "name": "Edgar Piloyan",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 21,
+          "date_of_birth": "7 lis 2004 (21)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 63,
+          "rating_base": 62,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/707602-1744383462.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "1111660",
+          "name": "Joseph Sabobo",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 20,
+          "date_of_birth": "17 gru 2005 (20)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 63,
+          "rating_base": 62,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1111660-1745779454.jpeg?lm=1",
+          "nationalities": [
+            "Zambia"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "217513",
+          "name": "Arsen Beglaryan",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 33,
+          "date_of_birth": "18 lut 1993 (33)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 62,
+          "rating_base": 56,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/217513-1608661062.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "863824",
+          "name": "Kajally Drammeh",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 22,
+          "date_of_birth": "10 paź 2003 (22)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 61,
+          "rating_base": 59,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/863824-1684833478.jpg?lm=1",
+          "nationalities": [
+            "Gambia"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "270993",
+          "name": "Davit Terteryan",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 28,
+          "date_of_birth": "17 gru 1997 (28)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 60,
+          "rating_base": 56,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/270993-1726913501.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "361777",
+          "name": "Yuri Gareginyan",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 32,
+          "date_of_birth": "3 lut 1994 (32)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 59,
+          "rating_base": 54,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/361777-1633455120.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "987811",
+          "name": "Ifeanyi David Nduka",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 22,
+          "date_of_birth": "2 gru 2003 (22)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/987811-1724335733.png?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "323112",
+          "name": "Arsen Sadoyan",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 27,
+          "date_of_birth": "16 mar 1999 (27)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 58,
+          "rating_base": 54,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/323112-1583253874.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "279548",
+          "name": "Serob Grigoryan",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 31,
+          "date_of_birth": "4 lut 1995 (31)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 58,
+          "rating_base": 53,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/279548-1600615111.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "309036",
+          "name": "Robert Hakobyan",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 29,
+          "date_of_birth": "22 paź 1996 (29)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/309036-1600615207.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "1222746",
+          "name": "Caio Henrique",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 21,
+          "date_of_birth": "12 sty 2005 (21)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 55,
+          "rating_base": 54,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1222746-1752065427.png?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "1288956",
+          "name": "Yaroslav Matyukhin",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 20,
+          "date_of_birth": "19 wrz 2005 (20)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 55,
+          "rating_base": 54,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1288956-1722376065.png?lm=1",
+          "nationalities": [
+            "Rosja"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "1073318",
+          "name": "Jefferson Granado",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 23,
+          "date_of_birth": "9 kwi 2003 (23)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1073318-1735106338.png?lm=1",
+          "nationalities": [
+            "Kolumbia"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "1037842",
+          "name": "David Kirakosyan",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 19,
+          "date_of_birth": "13 lip 2006 (19)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 54,
+          "rating_base": 54,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1037842-1664445983.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "278495",
+          "name": "Anatoliy Ayvazov",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 29,
+          "date_of_birth": "8 cze 1996 (29)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/278495-1608661120.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "1124463",
+          "name": "Juan Campos",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 18,
+          "date_of_birth": "26 lip 2007 (18)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 49,
+          "rating_base": 49,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1124463-1753778710.png?lm=1",
+          "nationalities": [
+            "Wenezuela"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "1497558",
+          "name": "Rafael Jesus",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 18,
+          "date_of_birth": "31 maj 2007 (18)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 49,
+          "rating_base": 49,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "1378596",
+          "name": "Usman Ajibona",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 19,
+          "date_of_birth": "23 lut 2007 (19)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 49,
+          "rating_base": 49,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1378596-1742725264.png?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "1523484",
+          "name": "Khalil Ahmad Sammani",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 18,
+          "date_of_birth": "20 sty 2008 (18)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "707603",
+          "name": "Mher Kankanyan",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 22,
+          "date_of_birth": "19 mar 2004 (22)",
+          "market_value": "10 tys. €",
+          "market_value_eur": 10000,
+          "rating": 43,
+          "rating_base": 41,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/707603-1770911351.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "667355",
+          "name": "Vlad Chatunts",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 23,
+          "date_of_birth": "19 wrz 2002 (23)",
+          "market_value": "10 tys. €",
+          "market_value_eur": 10000,
+          "rating": 43,
+          "rating_base": 41,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/667355-1600614905.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "1422154",
+          "name": "Isah Yahaya Buhari",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 19,
+          "date_of_birth": "22 mar 2007 (19)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1422154-1751880249.png?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "1457484",
+          "name": "Samuel Segun",
+          "position": "OB",
+          "position_label": "Obrońca",
+          "age": 18,
+          "date_of_birth": "5 wrz 2007 (18)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1457484-1770911344.png?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "37914"
+        },
+        {
+          "player_id": "1038625",
+          "name": "Stepan Gigolyan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 20,
+          "date_of_birth": "20 sty 2006 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1038625-1664447891.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "37914"
+        }
+      ]
+    },
+    {
+      "club_id": "11411",
+      "name": "FC Urartu Erewan",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/11411.png?lm=1566468999",
+      "league_url": "",
+      "color": "hsl(248 70% 48%)",
+      "avg_rating": 62,
+      "strength": 62,
+      "budget_millions": 0.87,
+      "squad_size": 27,
+      "players": [
+        {
+          "player_id": "372047",
+          "name": "Bruno Michel",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 26,
+          "date_of_birth": "1 cze 1999 (26)",
+          "market_value": "600 tys. €",
+          "market_value_eur": 600000,
+          "rating": 71,
+          "rating_base": 68,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/372047-1663320457.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "306327",
+          "name": "Zhirayr Margaryan",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 28,
+          "date_of_birth": "13 wrz 1997 (28)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 66,
+          "rating_base": 62,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/306327-1725458320.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "545380",
+          "name": "Erik Piloyan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 25,
+          "date_of_birth": "29 sty 2001 (25)",
+          "market_value": "300 tys. €",
+          "market_value_eur": 300000,
+          "rating": 65,
+          "rating_base": 62,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/545380-1725458359.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "167553",
+          "name": "Anton Bratkov",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 33,
+          "date_of_birth": "14 maj 1993 (33)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 65,
+          "rating_base": 59,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/167553-1633454910.png?lm=1",
+          "nationalities": [
+            "Ukraina"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "131444",
+          "name": "Artem Polyarus",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 33,
+          "date_of_birth": "5 lip 1992 (33)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 62,
+          "rating_base": 56,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/131444-1725458797.png?lm=1",
+          "nationalities": [
+            "Ukraina"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "545378",
+          "name": "Narek Aghasaryan",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 24,
+          "date_of_birth": "15 lip 2001 (24)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 61,
+          "rating_base": 59,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/545378-1725458562.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "368452",
+          "name": "Karen Melkonyan",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 27,
+          "date_of_birth": "25 mar 1999 (27)",
+          "market_value": "225 tys. €",
+          "market_value_eur": 225000,
+          "rating": 61,
+          "rating_base": 57,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/368452-1725458869.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "376226",
+          "name": "Yevgeniy Tsymbalyuk",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 29,
+          "date_of_birth": "19 cze 1996 (29)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 60,
+          "rating_base": 56,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/376226-1637315146.png?lm=1",
+          "nationalities": [
+            "Ukraina"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "800113",
+          "name": "Aleksandr Mishiev",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 22,
+          "date_of_birth": "29 sty 2004 (22)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/800113-1749011283.png?lm=1",
+          "nationalities": [
+            "Rosja"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "545383",
+          "name": "Sergey Mkrtchyan",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 24,
+          "date_of_birth": "26 cze 2001 (24)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/545383-1725458661.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "663909",
+          "name": "Alef Santos",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 29,
+          "date_of_birth": "6 lis 1996 (29)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 58,
+          "rating_base": 54,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/663909-1713339416.png?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "411424",
+          "name": "Alexandre Llovet",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 28,
+          "date_of_birth": "26 lis 1997 (28)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 58,
+          "rating_base": 54,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/411424-1729507000.png?lm=1",
+          "nationalities": [
+            "Francja"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "545362",
+          "name": "Mikayel Mirzoyan",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 25,
+          "date_of_birth": "6 lut 2001 (25)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 57,
+          "rating_base": 54,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/545362-1725458623.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "545381",
+          "name": "Arman Ghazaryan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 24,
+          "date_of_birth": "24 lip 2001 (24)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 56,
+          "rating_base": 54,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/545381-1725458407.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "623458",
+          "name": "Erik Simonyan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 22,
+          "date_of_birth": "12 cze 2003 (22)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 56,
+          "rating_base": 54,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/623458-1725458431.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "747944",
+          "name": "Khariton Ayvazyan",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 22,
+          "date_of_birth": "8 lis 2003 (22)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 56,
+          "rating_base": 54,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/747944-1725458455.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Gruzja"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "375385",
+          "name": "Miguel Velosa",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 26,
+          "date_of_birth": "28 mar 2000 (26)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 56,
+          "rating_base": 53,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/375385-1719545679.jpg?lm=1",
+          "nationalities": [
+            "Portugalia"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "707597",
+          "name": "Gor Matinyan",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 21,
+          "date_of_birth": "23 cze 2004 (21)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 55,
+          "rating_base": 54,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/707597-1725458187.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "649339",
+          "name": "Artemiy Gunko",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 22,
+          "date_of_birth": "6 kwi 2004 (22)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/649339-1619520662.png?lm=1",
+          "nationalities": [
+            "Rosja"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "1146714",
+          "name": "Nicholas Kaloukian",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 23,
+          "date_of_birth": "18 lut 2003 (23)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1146714-1740074273.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Stany Zjednaczone"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "869165",
+          "name": "Edik Vardanyan",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 21,
+          "date_of_birth": "25 mar 2005 (21)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 54,
+          "rating_base": 53,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/869165-1620980421.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "802623",
+          "name": "Levon Bashoyan",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 20,
+          "date_of_birth": "15 wrz 2005 (20)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 54,
+          "rating_base": 53,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/802623-1600871690.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "217359",
+          "name": "Oleg Polyakov",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 35,
+          "date_of_birth": "29 lis 1990 (35)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 54,
+          "rating_base": 47,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/217359-1725458710.png?lm=1",
+          "nationalities": [
+            "Rosja"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "801090",
+          "name": "Okezie Prince Ebenezer",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 25,
+          "date_of_birth": "28 lut 2001 (25)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 53,
+          "rating_base": 50,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/801090-1629448897.png?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "149117",
+          "name": "Andrija Dragojevic",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 34,
+          "date_of_birth": "25 gru 1991 (34)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 53,
+          "rating_base": 47,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/149117-1583172352.png?lm=1",
+          "nationalities": [
+            "Czarnogóra"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "867297",
+          "name": "Artur Israelyan",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 22,
+          "date_of_birth": "16 sty 2004 (22)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/867297-1620980208.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11411"
+        },
+        {
+          "player_id": "869167",
+          "name": "Garnik Minasyan",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 20,
+          "date_of_birth": "12 lip 2005 (20)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/869167-1666371922.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11411"
+        }
+      ]
+    },
+    {
+      "club_id": "4807",
+      "name": "FC Shirak Gyumri",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/4807.png?lm=1583623838",
+      "league_url": "",
+      "color": "hsl(211 70% 48%)",
+      "avg_rating": 57,
+      "strength": 57,
+      "budget_millions": 0.51,
+      "squad_size": 24,
+      "players": [
+        {
+          "player_id": "431742",
+          "name": "Rafik Misakyan",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 26,
+          "date_of_birth": "2 sty 2000 (26)",
+          "market_value": "225 tys. €",
+          "market_value_eur": 225000,
+          "rating": 60,
+          "rating_base": 57,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/431742-1645808084.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "500015",
+          "name": "Rudik Mkrtchyan",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 27,
+          "date_of_birth": "26 paź 1998 (27)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 60,
+          "rating_base": 56,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/500015-1657292414.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "262106",
+          "name": "Aleksa Vidic",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 31,
+          "date_of_birth": "29 wrz 1994 (31)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 59,
+          "rating_base": 54,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/262106-1555610170.png?lm=1",
+          "nationalities": [
+            "Serbia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "940056",
+          "name": "Donald Alvine Kodia",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 23,
+          "date_of_birth": "1 sty 2003 (23)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Wybrzeże Kości Słoniowej"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "645512",
+          "name": "Hamlet Mnatsakanyan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 23,
+          "date_of_birth": "21 sie 2002 (23)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/645512-1645807890.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "518186",
+          "name": "Lyova Mryan",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 26,
+          "date_of_birth": "11 maj 2000 (26)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 56,
+          "rating_base": 53,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/518186-1645807983.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "753264",
+          "name": "Jesse Akila",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 24,
+          "date_of_birth": "27 gru 2001 (24)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/753264-1713587338.png?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "603976",
+          "name": "Levon Darbinyan",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 24,
+          "date_of_birth": "24 sty 2002 (24)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/603976-1645807916.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "748507",
+          "name": "Sergey Manukyan",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 22,
+          "date_of_birth": "3 kwi 2004 (22)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "315653",
+          "name": "Sokrat Hovhannisyan",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 30,
+          "date_of_birth": "5 kwi 1996 (30)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 55,
+          "rating_base": 50,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/315653-1645808148.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "1016197",
+          "name": "Mher Tarloyan",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 21,
+          "date_of_birth": "7 mar 2005 (21)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 54,
+          "rating_base": 53,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "1044669",
+          "name": "Suren Tsarukyan",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 20,
+          "date_of_birth": "19 sie 2005 (20)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 54,
+          "rating_base": 53,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "608605",
+          "name": "Lyova Karapetyan",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 25,
+          "date_of_birth": "1 mar 2001 (25)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 53,
+          "rating_base": 50,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/608605-1645807961.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "1044664",
+          "name": "Hovhannes Pahlevanyan",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 20,
+          "date_of_birth": "2 wrz 2005 (20)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 51,
+          "rating_base": 50,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "1044667",
+          "name": "Narek Janoyan",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 20,
+          "date_of_birth": "28 paź 2005 (20)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 51,
+          "rating_base": 50,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "874726",
+          "name": "Tigran Sumbulyan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 21,
+          "date_of_birth": "27 gru 2004 (21)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "1044665",
+          "name": "Vazgen Sargsyan",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 21,
+          "date_of_birth": "12 lis 2004 (21)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "991274",
+          "name": "Grigor Ghumashyan",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 22,
+          "date_of_birth": "16 sty 2004 (22)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 49,
+          "rating_base": 47,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/991274-1712857641.png?lm=1",
+          "nationalities": [
+            "Rosja",
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "868521",
+          "name": "Ruben Karagulyan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 23,
+          "date_of_birth": "15 maj 2003 (23)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 49,
+          "rating_base": 47,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/868521-1693981446.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "947284",
+          "name": "Gagik Akulyan",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 21,
+          "date_of_birth": "2 sty 2005 (21)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 48,
+          "rating_base": 47,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "876064",
+          "name": "Vardan Tovmasyan",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 21,
+          "date_of_birth": "17 sty 2005 (21)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 48,
+          "rating_base": 47,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "1095453",
+          "name": "Emil Papikyan",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 19,
+          "date_of_birth": "21 sty 2007 (19)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 47,
+          "rating_base": 47,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "603857",
+          "name": "Samvel Ghukasyan",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 23,
+          "date_of_birth": "19 maj 2002 (23)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/603857-1645808106.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "4807"
+        },
+        {
+          "player_id": "1052999",
+          "name": "Tigran Khachiyan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 21,
+          "date_of_birth": "6 sty 2005 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1052999-1752677222.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "4807"
+        }
+      ]
+    },
+    {
+      "club_id": "23911",
+      "name": "Gandzasar Kapan",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/23911.png?lm=1658500306",
+      "league_url": "",
+      "color": "hsl(256 70% 48%)",
+      "avg_rating": 57,
+      "strength": 57,
+      "budget_millions": 0.62,
+      "squad_size": 34,
+      "players": [
+        {
+          "player_id": "1188327",
+          "name": "Mariano Ahouangbo",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 23,
+          "date_of_birth": "16 lis 2002 (23)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 61,
+          "rating_base": 59,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1188327-1756665460.jpg?lm=1",
+          "nationalities": [
+            "Benin"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "192202",
+          "name": "Taron Voskanyan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 33,
+          "date_of_birth": "22 lut 1993 (33)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 60,
+          "rating_base": 54,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/192202-1721138520.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "549022",
+          "name": "João Nóbrega",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 24,
+          "date_of_birth": "4 gru 2001 (24)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/549022-1713417045.png?lm=1",
+          "nationalities": [
+            "Portugalia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "1103486",
+          "name": "Luke Merrill",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 26,
+          "date_of_birth": "3 maj 2000 (26)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 57,
+          "rating_base": 54,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1103486-1679124612.jpg?lm=1",
+          "nationalities": [
+            "Stany Zjednaczone"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "539722",
+          "name": "Annan Mensah",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 29,
+          "date_of_birth": "6 lip 1996 (29)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/539722-1608661333.png?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "296198",
+          "name": "Arman Khachatryan",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 28,
+          "date_of_birth": "9 cze 1997 (28)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/296198-1610378811.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "1035506",
+          "name": "Bertrand Mani",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 28,
+          "date_of_birth": "25 maj 1997 (28)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1035506-1700579122.png?lm=1",
+          "nationalities": [
+            "Chad",
+            "Kamerun"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "270975",
+          "name": "Vahagn Hayrapetyan",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 28,
+          "date_of_birth": "14 cze 1997 (28)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/270975-1636216767.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "1058466",
+          "name": "Ofoeke Chibuike Emmanuel",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 22,
+          "date_of_birth": "11 gru 2003 (22)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 56,
+          "rating_base": 54,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "1142281",
+          "name": "Shunto Kanda",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 26,
+          "date_of_birth": "9 maj 2000 (26)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 56,
+          "rating_base": 53,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Japonia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "828273",
+          "name": "Simon Obonde",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 25,
+          "date_of_birth": "10 maj 2001 (25)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 56,
+          "rating_base": 53,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "430714",
+          "name": "Narek Alaverdyan",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 24,
+          "date_of_birth": "19 lut 2002 (24)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/430714-1600301123.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "688955",
+          "name": "Nikita Lobusov",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 23,
+          "date_of_birth": "4 sie 2002 (23)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/688955-1567001331.png?lm=1",
+          "nationalities": [
+            "Rosja"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "1153019",
+          "name": "Dilane Ekongolo",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 21,
+          "date_of_birth": "12 sie 2004 (21)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 54,
+          "rating_base": 53,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1153019-1713415740.png?lm=1",
+          "nationalities": [
+            "Kamerun"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "1237801",
+          "name": "Danylo Malov",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 19,
+          "date_of_birth": "28 sty 2007 (19)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 53,
+          "rating_base": 53,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1237801-1756630912.png?lm=1",
+          "nationalities": [
+            "Ukraina"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "672506",
+          "name": "Haggai Katoh",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 27,
+          "date_of_birth": "29 kwi 1999 (27)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/672506-1712676863.png?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "786419",
+          "name": "Levon Petrosyan",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 22,
+          "date_of_birth": "24 mar 2004 (22)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 52,
+          "rating_base": 50,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/786419-1606596031.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "747322",
+          "name": "Lucca",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 22,
+          "date_of_birth": "3 mar 2004 (22)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 52,
+          "rating_base": 50,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/747322-1664893482.jpg?lm=1",
+          "nationalities": [
+            "Luksemburg",
+            "Brazylia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "545385",
+          "name": "Patvakan Avetisyan",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 24,
+          "date_of_birth": "24 sie 2001 (24)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 52,
+          "rating_base": 50,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/545385-1693981680.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "802152",
+          "name": "Yuri Martirosyan",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 22,
+          "date_of_birth": "8 cze 2003 (22)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 52,
+          "rating_base": 50,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/802152-1752065445.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "528379",
+          "name": "Grigoriy Matevosyan",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 26,
+          "date_of_birth": "9 cze 1999 (26)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 52,
+          "rating_base": 49,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/528379-1608661175.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "431744",
+          "name": "Martin Grigoryan",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 25,
+          "date_of_birth": "25 wrz 2000 (25)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 52,
+          "rating_base": 49,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/431744-1507208997.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "686938",
+          "name": "Arwin Kalmarzy",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 24,
+          "date_of_birth": "30 paź 2001 (24)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/686938-1742392711.png?lm=1",
+          "nationalities": [
+            "Iran",
+            "Holandia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "808026",
+          "name": "Takafumi Sawada",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 26,
+          "date_of_birth": "3 kwi 2000 (26)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 50,
+          "rating_base": 47,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Japonia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "1104391",
+          "name": "Ethan Lizalda",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 24,
+          "date_of_birth": "18 kwi 2002 (24)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1104391-1739464224.png?lm=1",
+          "nationalities": [
+            "Kolumbia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "866961",
+          "name": "Grisha Paronyan",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 22,
+          "date_of_birth": "14 lip 2003 (22)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/866961-1614262107.png?lm=1",
+          "nationalities": [
+            "Rosja",
+            "Armenia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "1422782",
+          "name": "Kofi Duffour",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 19,
+          "date_of_birth": "26 kwi 2007 (19)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1422782-1751880264.png?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "545384",
+          "name": "Petros Manukyan",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 25,
+          "date_of_birth": "8 maj 2001 (25)",
+          "market_value": "10 tys. €",
+          "market_value_eur": 10000,
+          "rating": 44,
+          "rating_base": 41,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/545384-1593335066.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "949824",
+          "name": "Roman Rostokin",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 26,
+          "date_of_birth": "2 lip 1999 (26)",
+          "market_value": "10 tys. €",
+          "market_value_eur": 10000,
+          "rating": 44,
+          "rating_base": 41,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/949824-1708480006.png?lm=1",
+          "nationalities": [
+            "Ukraina",
+            "Hiszpania"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "1006804",
+          "name": "Arman Vardanyan",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 20,
+          "date_of_birth": "27 wrz 2005 (20)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1006804-1680196620.png?lm=1",
+          "nationalities": [
+            "Kazachstan",
+            "Armenia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "1276256",
+          "name": "Davit Davtyan",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 17,
+          "date_of_birth": "10 cze 2008 (17)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1276256-1725874763.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "1469987",
+          "name": "Jerzino Ntolo",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 24,
+          "date_of_birth": "7 sie 2001 (24)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1469987-1776874511.jpg?lm=1",
+          "nationalities": [
+            "Kamerun"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "1222630",
+          "name": "Michael Quarcoo",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 21,
+          "date_of_birth": "26 paź 2004 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "23911"
+        },
+        {
+          "player_id": "648549",
+          "name": "Rafael Manasyan",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 22,
+          "date_of_birth": "22 maj 2003 (22)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "23911"
+        }
+      ]
+    },
+    {
+      "club_id": "46507",
+      "name": "BKMA Yerevan",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/46507.png?lm=1628336141",
+      "league_url": "",
+      "color": "hsl(262 70% 48%)",
+      "avg_rating": 56,
+      "strength": 56,
+      "budget_millions": 0.5,
+      "squad_size": 22,
+      "players": [
+        {
+          "player_id": "926276",
+          "name": "Narek Hovhannisyan",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 19,
+          "date_of_birth": "6 sie 2006 (19)",
+          "market_value": "400 tys. €",
+          "market_value_eur": 400000,
+          "rating": 65,
+          "rating_base": 65,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/926276-1774610401.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "1055775",
+          "name": "Artur Askaryan",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 20,
+          "date_of_birth": "26 kwi 2006 (20)",
+          "market_value": "250 tys. €",
+          "market_value_eur": 250000,
+          "rating": 60,
+          "rating_base": 59,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1055775-1774610195.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "190865",
+          "name": "Argishti Petrosyan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 33,
+          "date_of_birth": "16 paź 1992 (33)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 59,
+          "rating_base": 53,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/190865-1610378728.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "1064069",
+          "name": "Petik Manukyan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 20,
+          "date_of_birth": "21 lut 2006 (20)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 57,
+          "rating_base": 56,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1064069-1774609997.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "623118",
+          "name": "Gor Arakelyan",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 23,
+          "date_of_birth": "10 sty 2003 (23)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 56,
+          "rating_base": 54,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/623118-1700579081.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "545387",
+          "name": "Grenik Petrosyan",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 24,
+          "date_of_birth": "5 gru 2001 (24)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 56,
+          "rating_base": 54,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/545387-1725371181.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "867298",
+          "name": "Hamlet Sargsyan",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 21,
+          "date_of_birth": "20 maj 2004 (21)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 55,
+          "rating_base": 54,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/867298-1620981065.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "876467",
+          "name": "Mark Avetisyan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 20,
+          "date_of_birth": "24 cze 2005 (20)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 54,
+          "rating_base": 53,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/876467-1658926431.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "876103",
+          "name": "Michel Ayvazyan",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 20,
+          "date_of_birth": "21 cze 2005 (20)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 54,
+          "rating_base": 53,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/876103-1709117929.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "1041221",
+          "name": "David Harutyunyan",
+          "position": "NA",
+          "position_label": "Cofnięty napastnik",
+          "age": 18,
+          "date_of_birth": "2 sie 2007 (18)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 53,
+          "rating_base": 53,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1041221-1774610445.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "812171",
+          "name": "Ruben Abrahamyan",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 22,
+          "date_of_birth": "7 sie 2003 (22)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 52,
+          "rating_base": 50,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/812171-1774610060.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "804216",
+          "name": "Davit Davtyan",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 20,
+          "date_of_birth": "27 lip 2005 (20)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 51,
+          "rating_base": 50,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/804216-1774609949.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "926266",
+          "name": "Hayk Ghazaryan",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 19,
+          "date_of_birth": "19 wrz 2006 (19)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 50,
+          "rating_base": 50,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/926266-1725458258.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "1058425",
+          "name": "Alyosha Khachatryan",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 20,
+          "date_of_birth": "13 maj 2006 (20)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1058425-1774610097.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "881030",
+          "name": "Petros Alekyan",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 20,
+          "date_of_birth": "25 gru 2005 (20)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/881030-1774610284.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "1180751",
+          "name": "Andranik Hakobyan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 20,
+          "date_of_birth": "4 paź 2005 (20)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 48,
+          "rating_base": 47,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1180751-1774610138.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Hiszpania"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "1308089",
+          "name": "Artur Movsesyan",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 18,
+          "date_of_birth": "2 sty 2008 (18)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 47,
+          "rating_base": 47,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1308089-1725874956.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "913015",
+          "name": "Poghos Krmzyan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 21,
+          "date_of_birth": "16 sie 2004 (21)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/913015-1632152960.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "1384313",
+          "name": "Arshak Petrosyan",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 19,
+          "date_of_birth": "12 sty 2007 (19)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1384313-1774610480.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "1145679",
+          "name": "Suren Kirakosyan",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 19,
+          "date_of_birth": "23 gru 2006 (19)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1145679-1774610250.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "1130990",
+          "name": "Aleks Galstyan",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 19,
+          "date_of_birth": "29 mar 2007 (19)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1130990-1774610323.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        },
+        {
+          "player_id": "1256119",
+          "name": "Harutyun Manukyan",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 18,
+          "date_of_birth": "14 lis 2007 (18)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1256119-1774610354.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "46507"
+        }
+      ]
+    },
+    {
+      "club_id": "74661",
+      "name": "FC Van",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/74661.png?lm=1597183812",
+      "league_url": "",
+      "color": "hsl(264 70% 48%)",
+      "avg_rating": 56,
+      "strength": 56,
+      "budget_millions": 0.5,
+      "squad_size": 27,
+      "players": [
+        {
+          "player_id": "272785",
+          "name": "Andriy Markovych",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 30,
+          "date_of_birth": "25 cze 1995 (30)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 59,
+          "rating_base": 54,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/272785-1583481931.jpg?lm=1",
+          "nationalities": [
+            "Ukraina"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "309676",
+          "name": "Petros Avetisyan",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 30,
+          "date_of_birth": "7 sty 1996 (30)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 59,
+          "rating_base": 54,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/309676-1773767649.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "191651",
+          "name": "Benik Hovhannisyan",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 33,
+          "date_of_birth": "1 maj 1993 (33)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 59,
+          "rating_base": 53,
+          "rating_experience": 6,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/191651-1773767671.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "558631",
+          "name": "Danila Bokov",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 23,
+          "date_of_birth": "9 sie 2002 (23)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 58,
+          "rating_base": 56,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/558631-1773767109.png?lm=1",
+          "nationalities": [
+            "Rosja"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "1221837",
+          "name": "Ferreira",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 21,
+          "date_of_birth": "14 cze 2004 (21)",
+          "market_value": "200 tys. €",
+          "market_value_eur": 200000,
+          "rating": 57,
+          "rating_base": 56,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "923633",
+          "name": "Saba Sidamonidze",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 23,
+          "date_of_birth": "5 sie 2002 (23)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/923633-1773767410.png?lm=1",
+          "nationalities": [
+            "Gruzja"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "231948",
+          "name": "Gor Manukyan",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 32,
+          "date_of_birth": "27 wrz 1993 (32)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 55,
+          "rating_base": 50,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/231948-1773767272.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "911959",
+          "name": "Javier Torres",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 26,
+          "date_of_birth": "5 mar 2000 (26)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 53,
+          "rating_base": 50,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/911959-1773767499.png?lm=1",
+          "nationalities": [
+            "Kolumbia"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "354761",
+          "name": "Jonel Désiré",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 29,
+          "date_of_birth": "12 lut 1997 (29)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 53,
+          "rating_base": 49,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/354761-1608662403.png?lm=1",
+          "nationalities": [
+            "Haiti"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "80320",
+          "name": "Hrayr Mkoyan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 39,
+          "date_of_birth": "2 wrz 1986 (39)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 52,
+          "rating_base": 45,
+          "rating_experience": 7,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/80320-1773767473.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "1095303",
+          "name": "Maurinho",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 20,
+          "date_of_birth": "7 cze 2005 (20)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 51,
+          "rating_base": 50,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "794633",
+          "name": "Narek Manukyan",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 22,
+          "date_of_birth": "19 gru 2003 (22)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/794633-1767415674.png?lm=1",
+          "nationalities": [
+            "Armenia",
+            "Rosja"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "1518564",
+          "name": "Ibrahim Isty Daniel",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 21,
+          "date_of_birth": "23 mar 2005 (21)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1518564-1773767626.png?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "838958",
+          "name": "Hayk Tatosyan",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 21,
+          "date_of_birth": "17 sie 2004 (21)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 48,
+          "rating_base": 47,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/838958-1773767699.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "1362418",
+          "name": "Samuel Reis",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 19,
+          "date_of_birth": "21 wrz 2006 (19)",
+          "market_value": "75 tys. €",
+          "market_value_eur": 75000,
+          "rating": 47,
+          "rating_base": 47,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1362418-1773767864.png?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "430740",
+          "name": "Arsen Galstyan",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 24,
+          "date_of_birth": "1 maj 2002 (24)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/430740-1773767439.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "876511",
+          "name": "Aris Karapetyan",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 20,
+          "date_of_birth": "24 maj 2005 (20)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/876511-1773767887.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "1500131",
+          "name": "Alex",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 18,
+          "date_of_birth": "20 maj 2007 (18)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1500131-1773767568.png?lm=1",
+          "nationalities": [
+            "Brazylia"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "1124780",
+          "name": "Davit Krasovski",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 20,
+          "date_of_birth": "21 gru 2005 (20)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 43,
+          "rating_base": 42,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1124780-1773767914.png?lm=1",
+          "nationalities": [
+            "Gruzja"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "1250224",
+          "name": "Emmanuel Nnamani",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 20,
+          "date_of_birth": "28 gru 2005 (20)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 43,
+          "rating_base": 42,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1250224-1773767741.png?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "1255384",
+          "name": "Nikolozi Sajaia",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 20,
+          "date_of_birth": "4 paź 2005 (20)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 43,
+          "rating_base": 42,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1255384-1773767544.png?lm=1",
+          "nationalities": [
+            "Gruzja"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "869178",
+          "name": "Gabriel Yeghiazaryan",
+          "position": "PO",
+          "position_label": "Lewy pomocnik",
+          "age": 21,
+          "date_of_birth": "27 lip 2004 (21)",
+          "market_value": "10 tys. €",
+          "market_value_eur": 10000,
+          "rating": 42,
+          "rating_base": 41,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/869178-1775792252.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "876516",
+          "name": "Hunan Gyurjinyan",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 21,
+          "date_of_birth": "16 sty 2005 (21)",
+          "market_value": "10 tys. €",
+          "market_value_eur": 10000,
+          "rating": 42,
+          "rating_base": 41,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/876516-1773767312.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "817343",
+          "name": "Artur Zagorodnikov",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 21,
+          "date_of_birth": "19 lip 2004 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/817343-1773767520.png?lm=1",
+          "nationalities": [
+            "Rosja"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "1518547",
+          "name": "Emeka Peter Maduka",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 19,
+          "date_of_birth": "7 sie 2006 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "1246843",
+          "name": "Juan Perrotta",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 24,
+          "date_of_birth": "7 lis 2001 (24)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Argentyna"
+          ],
+          "club_id": "74661"
+        },
+        {
+          "player_id": "1518546",
+          "name": "Onwukwe Chukwumaobi Henry",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 18,
+          "date_of_birth": "3 sie 2007 (18)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1518546-1773767601.png?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "74661"
+        }
+      ]
+    },
+    {
+      "club_id": "11912",
+      "name": "FC Ararat Erewan",
+      "url": "",
+      "logo_url": "https://tmssl.akamaized.net//images/wappen/head/11912.png?lm=1522679445",
+      "league_url": "",
+      "color": "hsl(254 70% 48%)",
+      "avg_rating": 54,
+      "strength": 54,
+      "budget_millions": 0.5,
+      "squad_size": 28,
+      "players": [
+        {
+          "player_id": "499503",
+          "name": "Albert Khachumyan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 26,
+          "date_of_birth": "23 cze 1999 (26)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 57,
+          "rating_base": 54,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/499503-1763228700.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "296197",
+          "name": "Artur Kartashyan",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 29,
+          "date_of_birth": "8 sty 1997 (29)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 57,
+          "rating_base": 53,
+          "rating_experience": 4,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/296197-1763228788.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "570121",
+          "name": "Volodya Samsonyan",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 25,
+          "date_of_birth": "24 lut 2001 (25)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 56,
+          "rating_base": 53,
+          "rating_experience": 3,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/570121-1763228812.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1285173",
+          "name": "Moussa Kante",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 20,
+          "date_of_birth": "19 sie 2005 (20)",
+          "market_value": "175 tys. €",
+          "market_value_eur": 175000,
+          "rating": 55,
+          "rating_base": 54,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1285173-1763228921.png?lm=1",
+          "nationalities": [
+            "Wybrzeże Kości Słoniowej"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1166416",
+          "name": "Malick Aziz Berte",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 22,
+          "date_of_birth": "23 lut 2004 (22)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 55,
+          "rating_base": 53,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1166416-1700579054.png?lm=1",
+          "nationalities": [
+            "Mali"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "206051",
+          "name": "Artur Grigoryan",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 32,
+          "date_of_birth": "10 lip 1993 (32)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 55,
+          "rating_base": 50,
+          "rating_experience": 5,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/206051-1763228965.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1168592",
+          "name": "Clinton Dombila",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 21,
+          "date_of_birth": "10 lut 2005 (21)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 54,
+          "rating_base": 53,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1168592-1763228730.png?lm=1",
+          "nationalities": [
+            "Ghana"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1168597",
+          "name": "Kalifala Doumbia",
+          "position": "NA",
+          "position_label": "Środkowy napastnik",
+          "age": 21,
+          "date_of_birth": "28 wrz 2004 (21)",
+          "market_value": "150 tys. €",
+          "market_value_eur": 150000,
+          "rating": 54,
+          "rating_base": 53,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1168597-1763229232.png?lm=1",
+          "nationalities": [
+            "Mali"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "817935",
+          "name": "Adel Anzimati-Aboudou",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 24,
+          "date_of_birth": "5 lis 2001 (24)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 52,
+          "rating_base": 50,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/817935-1763228601.png?lm=1",
+          "nationalities": [
+            "Komory",
+            "Francja"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "664544",
+          "name": "Gor Lulukyan",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 23,
+          "date_of_birth": "2 sty 2003 (23)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 52,
+          "rating_base": 50,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/664544-1763228943.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1429534",
+          "name": "Mohamed Lamine Fofana",
+          "position": "PO",
+          "position_label": "Defensywny pomocnik",
+          "age": 20,
+          "date_of_birth": "20 gru 2005 (20)",
+          "market_value": "125 tys. €",
+          "market_value_eur": 125000,
+          "rating": 51,
+          "rating_base": 50,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1429534-1763229019.png?lm=1",
+          "nationalities": [
+            "Wybrzeże Kości Słoniowej"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1427777",
+          "name": "Adama Méïté",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 22,
+          "date_of_birth": "20 kwi 2004 (22)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1427777-1763229281.png?lm=1",
+          "nationalities": [
+            "Wybrzeże Kości Słoniowej"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1145001",
+          "name": "Yaya Sogodogo",
+          "position": "NA",
+          "position_label": "Lewy napastnik",
+          "age": 23,
+          "date_of_birth": "20 lis 2002 (23)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 51,
+          "rating_base": 49,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1145001-1763229328.png?lm=1",
+          "nationalities": [
+            "Wybrzeże Kości Słoniowej"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1422136",
+          "name": "Abdul Karim Djiré",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 20,
+          "date_of_birth": "7 gru 2005 (20)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1422136-1763228994.png?lm=1",
+          "nationalities": [
+            "Mali"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1447268",
+          "name": "Aboubacar Sidick Ouattara",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 20,
+          "date_of_birth": "7 sty 2006 (20)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1447268-1763229167.png?lm=1",
+          "nationalities": [
+            "Wybrzeże Kości Słoniowej"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1117944",
+          "name": "Aram Aslanyan",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 21,
+          "date_of_birth": "17 mar 2005 (21)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1117944-1763229458.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1433693",
+          "name": "Patrick Victoire Handzongo",
+          "position": "NA",
+          "position_label": "Prawy napastnik",
+          "age": 21,
+          "date_of_birth": "9 wrz 2004 (21)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 50,
+          "rating_base": 49,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1433693-1763229251.png?lm=1",
+          "nationalities": [
+            "Kamerun"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1522958",
+          "name": "Emmanuel Prince Obinna",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 18,
+          "date_of_birth": "29 sie 2007 (18)",
+          "market_value": "100 tys. €",
+          "market_value_eur": 100000,
+          "rating": 49,
+          "rating_base": 49,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "623134",
+          "name": "Andranik Martirosyan",
+          "position": "BR",
+          "position_label": "Bramkarz",
+          "age": 23,
+          "date_of_birth": "1 sty 2003 (23)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 47,
+          "rating_base": 45,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/623134-1763228647.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1458627",
+          "name": "Ernest Kacou",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 20,
+          "date_of_birth": "28 lis 2005 (20)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1458627-1763229186.png?lm=1",
+          "nationalities": [
+            "Wybrzeże Kości Słoniowej"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1071662",
+          "name": "Gagik Simonyan",
+          "position": "PO",
+          "position_label": "Ofensywny pomocnik",
+          "age": 20,
+          "date_of_birth": "8 mar 2006 (20)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 46,
+          "rating_base": 45,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1071662-1763229586.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1165651",
+          "name": "Aleksandr Aleksanyan",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 19,
+          "date_of_birth": "14 lis 2006 (19)",
+          "market_value": "50 tys. €",
+          "market_value_eur": 50000,
+          "rating": 45,
+          "rating_base": 45,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1165651-1763229070.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1469648",
+          "name": "Aphelele Modolwana",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 23,
+          "date_of_birth": "26 lut 2003 (23)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 44,
+          "rating_base": 42,
+          "rating_experience": 2,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1469648-1763229555.png?lm=1",
+          "nationalities": [
+            "Republika Południowej Afryki"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1165653",
+          "name": "Alen Mkrtchyan",
+          "position": "PO",
+          "position_label": "Prawy pomocnik",
+          "age": 19,
+          "date_of_birth": "17 sie 2006 (19)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1165653-1763229091.png?lm=1",
+          "nationalities": [
+            "Armenia"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1133738",
+          "name": "Guy Lima",
+          "position": "OB",
+          "position_label": "Środkowy obrońca",
+          "age": 19,
+          "date_of_birth": "7 paź 2006 (19)",
+          "market_value": "25 tys. €",
+          "market_value_eur": 25000,
+          "rating": 42,
+          "rating_base": 42,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1133738-1763228860.png?lm=1",
+          "nationalities": [
+            "Senegal"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1190268",
+          "name": "Divine Ukadike",
+          "position": "OB",
+          "position_label": "Lewy obrońca",
+          "age": 21,
+          "date_of_birth": "14 sie 2004 (21)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 1,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1522957",
+          "name": "Okuchukwu Precious Chukwu",
+          "position": "PO",
+          "position_label": "Środkowy pomocnik",
+          "age": 19,
+          "date_of_birth": "7 maj 2007 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/default.jpg?lm=1",
+          "nationalities": [
+            "Nigeria"
+          ],
+          "club_id": "11912"
+        },
+        {
+          "player_id": "1517669",
+          "name": "Souleymane Touré",
+          "position": "OB",
+          "position_label": "Prawy obrońca",
+          "age": 19,
+          "date_of_birth": "26 sty 2007 (19)",
+          "market_value": "-",
+          "market_value_eur": null,
+          "rating": 40,
+          "rating_base": 35,
+          "rating_experience": 0,
+          "rating_potential": 0,
+          "potential": 0,
+          "photo_url": "https://img.a.transfermarkt.technology/portrait/medium/1517669-1771690025.png?lm=1",
+          "nationalities": [
+            "Mali"
+          ],
+          "club_id": "11912"
+        }
+      ]
+    }
+  ]
+}
