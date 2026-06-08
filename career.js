@@ -1386,7 +1386,26 @@ function _renderKnockoutCard(ko, cup, leagueData){
         const fhName = knockoutTeamName(fh, leagueData), faName = knockoutTeamName(fa, leagueData);
         const fhLogo = knockoutTeamLogo(fh, leagueData), faLogo = knockoutTeamLogo(fa, leagueData);
         const finalDone = ko.final.winner !== null;
-        html += '<div class="euro-table-card" style="margin-bottom:1rem;border:2px solid #fbbf2444;background:linear-gradient(135deg,rgba(251,191,36,.05),rgba(0,0,0,.2));"><div style="text-align:center;padding:1rem;"><div style="font-size:2rem;margin-bottom:.3rem;">🏆</div><div style="font-size:1.1rem;font-weight:900;color:#fbbf24;letter-spacing:.05em;">FINAŁ</div></div><div style="display:flex;align-items:center;justify-content:center;gap:1.5rem;padding:1rem 1.5rem;"><div style="text-align:center;' + (String(ko.final.winner)===String(fh)?'color:#10b981;':'color:#fff;') + '"><div style="width:60px;height:60px;border-radius:50%;background:' + knockoutTeamColor(fh, leagueData) + ';margin:0 auto .4rem;background-image:url('' + fhLogo + '');background-size:76%;background-repeat:no-repeat;background-position:center;"></div><div style="font-size:.85rem;font-weight:800;max-width:120px;">' + escapeHtml(fhName) + '</div></div><div style="text-align:center;"><div style="font-size:2rem;font-weight:900;color:#fbbf24;">' + (finalDone?ko.final.homeGoals + ' : ' + ko.final.awayGoals:'VS') + '</div>' + (finalDone?'<div style="font-size:.75rem;font-weight:700;color:#10b981;margin-top:.3rem;">🏆 ' + escapeHtml(knockoutTeamName(ko.final.winner, leagueData)) + '</div>':'') + '</div><div style="text-align:center;' + (String(ko.final.winner)===String(fa)?'color:#10b981;':'color:#fff;') + '"><div style="width:60px;height:60px;border-radius:50%;background:' + knockoutTeamColor(fa, leagueData) + ';margin:0 auto .4rem;background-image:url('' + faLogo + '');background-size:76%;background-repeat:no-repeat;background-position:center;"></div><div style="font-size:.85rem;font-weight:800;max-width:120px;">' + escapeHtml(faName) + '</div></div></div></div>';
+        const fWinner = String(ko.final.winner);
+        const hClass = fWinner === String(fh) ? 'color:#10b981;' : 'color:#fff;';
+        const aClass = fWinner === String(fa) ? 'color:#10b981;' : 'color:#fff;';
+        const hColor = knockoutTeamColor(fh, leagueData);
+        const aColor = knockoutTeamColor(fa, leagueData);
+        const winnerName = finalDone ? escapeHtml(knockoutTeamName(ko.final.winner, leagueData)) : '';
+        const scoreStr = finalDone ? ko.final.homeGoals + ' : ' + ko.final.awayGoals : 'VS';
+        const badgeHtml = finalDone ? '<div style="font-size:.75rem;font-weight:700;color:#10b981;margin-top:.3rem;">🏆 ' + winnerName + '</div>' : '';
+        html += '<div class="euro-table-card" style="margin-bottom:1rem;border:2px solid #fbbf2444;background:linear-gradient(135deg,rgba(251,191,36,.05),rgba(0,0,0,.2));">';
+        html += '<div style="text-align:center;padding:1rem;"><div style="font-size:2rem;margin-bottom:.3rem;">🏆</div>';
+        html += '<div style="font-size:1.1rem;font-weight:900;color:#fbbf24;letter-spacing:.05em;">FINAŁ</div></div>';
+        html += '<div style="display:flex;align-items:center;justify-content:center;gap:1.5rem;padding:1rem 1.5rem;">';
+        html += '<div style="text-align:center;' + hClass + '"><div style="width:60px;height:60px;border-radius:50%;background:' + hColor + ';margin:0 auto .4rem;';
+        html += 'background-image:url("' + fhLogo + '");background-size:76%;background-repeat:no-repeat;background-position:center;"></div>';
+        html += '<div style="font-size:.85rem;font-weight:800;max-width:120px;">' + escapeHtml(fhName) + '</div></div>';
+        html += '<div style="text-align:center;"><div style="font-size:2rem;font-weight:900;color:#fbbf24;">' + scoreStr + '</div>' + badgeHtml + '</div>';
+        html += '<div style="text-align:center;' + aClass + '"><div style="width:60px;height:60px;border-radius:50%;background:' + aColor + ';margin:0 auto .4rem;';
+        html += 'background-image:url("' + faLogo + '");background-size:76%;background-repeat:no-repeat;background-position:center;"></div>';
+        html += '<div style="font-size:.85rem;font-weight:800;max-width:120px;">' + escapeHtml(faName) + '</div></div>';
+        html += '</div></div>';
     }
     return html;
 }
