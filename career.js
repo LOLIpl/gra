@@ -2385,7 +2385,7 @@ function matchInfoFromFixture(fx){
   };
 }
 function trainingDayInfo(){return{badge:"Dzień treningowy",date:formatDateLong(state.currentDate),home:state.team,away:{name:describeDay(),logo_url:"",color:"var(--bg-light)"},score:"TRENING",playable:false,button:"Brak meczu"};}
-function seasonFinishedInfo(){return{badge:" Koniec sezonu",date:formatDateLong(state.currentDate),home:state.team,away:{name:"Podsumowanie",logo_url:"",color:"#1f2937"},score:"KONIEC",playable:true,button:" Podsumowanie sezonu",action:showSeasonEndModal};}
+function seasonFinishedInfo(){return{badge:" Koniec sezonu",date:formatDateLong(state.currentDate),home:state.team,away:{name:"Podsumowanie",logo_url:"",color:"#1f2937"},score:"KONIEC",playable:true,button:" Podsumowanie sezonu"};}
 
 function updateMatchPanel(badgeId,dateId,hLogoId,hNameId,aLogoId,aNameId,scoreId,btnId,info,_unused) {
     document.getElementById(badgeId).textContent=info.badge;
@@ -2396,7 +2396,7 @@ function updateMatchPanel(badgeId,dateId,hLogoId,hNameId,aLogoId,aNameId,scoreId
     document.getElementById(aNameId).textContent=info.away.name;
     document.getElementById(scoreId).textContent=info.score;
     const b=document.getElementById(btnId);b.textContent=info.button;
-    b.onclick = info.action || startSimulation;
+    b.onclick = startSimulation;
     b.disabled = !info.playable;
 }
 
@@ -2405,10 +2405,47 @@ async function startSimulation(){
     const fx=getUserFixtureByDate(toIsoDate(state.currentDate));
     if(!fx||fx.played)return;
     if(state.liveMatch?.running) return;
-    // Zaznacz zawodnikow zawieszonych przed meczem i zastap ich laczka z lawki
-    state.lineup.forEach(p => {
-        p._suspendedBeforeMatch = !!p.suspended;
-    });
+    showMatchModeModal(fx);
+}
+
+function showMatchModeModal(fx){
+    const h=getClub(fx.homeClubId), a=getClub(fx.awayClubId);
+    const hLogo=h?.logo_url||''; const aLogo=a?.logo_url||'';
+    const hColor=h?.color||'#1f2937'; const aColor=a?.color||'#1f2937';
+    const badge=`<div style="font-size:.72rem;color:var(--muted);text-transform:uppercase;font-weight:700;letter-spacing:.06em;margin-bottom:.75rem;">${escapeHtml(getFixtureCompetitionLabel(fx))}</div>`;
+    const teams=`<div style="display:flex;align-items:center;justify-content:center;gap:1.25rem;margin-bottom:1.5rem;">
+        <div style="text-align:center;">
+            <div style="width:56px;height:56px;border-radius:50%;background:${hColor};margin:0 auto .35rem;background-image:url('${hLogo}');background-size:76%;background-repeat:no-repeat;background-position:center;"></div>
+            <div style="font-size:.8rem;font-weight:700;max-width:90px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${escapeHtml(h?.name||'')}</div>
+        </div>
+        <div style="font-size:1.5rem;font-weight:900;color:var(--muted);">vs</div>
+        <div style="text-align:center;">
+            <div style="width:56px;height:56px;border-radius:50%;background:${aColor};margin:0 auto .35rem;background-image:url('${aLogo}');background-size:76%;background-repeat:no-repeat;background-position:center;"></div>
+            <div style="font-size:.8rem;font-weight:700;max-width:90px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${escapeHtml(a?.name||'')}</div>
+        </div>
+    </div>`;
+    const c=document.getElementById('modalContent');
+    c.innerHTML=`<div style="text-align:center;">
+        <h2 style="margin:.25rem 0 .5rem;">Wybierz tryb meczu</h2>
+        ${badge}${teams}
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem;">
+            <button class="btn btn-secondary btn-lg" onclick="closeModal();runQuickSim();" style="display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:1.1rem .75rem;height:auto;">
+                <span style="font-size:1.6rem;">⚡</span>
+                <span style="font-weight:900;">Szybka symulacja</span>
+                <span style="font-size:.72rem;color:var(--muted);font-weight:400;">Natychmiastowy wynik</span>
+            </button>
+            <button class="btn btn-primary btn-lg" onclick="closeModal();runLiveSim();" style="display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:1.1rem .75rem;height:auto;">
+                <span style="font-size:1.6rem;">▶</span>
+                <span style="font-weight:900;">Symulacja na żywo</span>
+                <span style="font-size:.72rem;color:rgba(255,255,255,.7);font-weight:400;">1 minuta = 1 sekunda</span>
+            </button>
+        </div>
+    </div>`;
+    document.getElementById('modal').classList.add('active');
+}
+
+async function _prepareMatchLineup(){
+    state.lineup.forEach(p => { p._suspendedBeforeMatch = !!p.suspended; });
     const suspended = state.lineup.filter(p => p.suspended && !p.injury);
     if(suspended.length > 0){
         suspended.forEach(sp => {
@@ -2426,14 +2463,44 @@ async function startSimulation(){
         addNews(`Zawieszenia: ${suspended.map(p=>p.name).join(", ")} pomija mecz.`);
         await renderFormation();
     }
-    startLiveMatchSimulation(fx);
 }
 
-function startLiveMatchSimulation(fx){
+async function runQuickSim(){
+    if(state.seasonFinished) return;
+    const fx=getUserFixtureByDate(toIsoDate(state.currentDate));
+    if(!fx||fx.played) return;
+    await _prepareMatchLineup();
     const h=getClub(fx.homeClubId), a=getClub(fx.awayClubId);
     const result=generateScore(h,a,fx);
     const report=buildMatchReport(h,a,fx,result);
-    state.liveMatch={running:true,fixtureId:fx.id,minute:0,homeGoals:0,awayGoals:0,result,report,shownEvents:0,timer:null,half:1};
+    fx.homeGoals=result.homeGoals; fx.awayGoals=result.awayGoals;
+    fx.matchReport=report; fx.played=true;
+    const myG=fx.homeClubId===state.team.club_id?fx.homeGoals:fx.awayGoals;
+    const opG=fx.homeClubId===state.team.club_id?fx.awayGoals:fx.homeGoals;
+    const opp=fx.homeClubId===state.team.club_id?a.name:h.name;
+    const rw=myG>opG?"wygrywa":myG===opG?"remisuje":"przegrywa";
+    state.results.push({date:fx.date,round:fx.round,home:h.name,away:a.name,homeGoals:fx.homeGoals,awayGoals:fx.awayGoals,userMatch:true});
+    state.matchLog.unshift(`${formatDateLong(state.currentDate)}: ${getFixtureCompetitionLabel(fx)} — ${state.team.name} ${rw} z ${opp} ${myG}:${opG}.`);
+    addNews(`${getFixtureCompetitionLabel(fx)}: ${state.team.name} ${rw} z ${opp} ${myG}:${opG}`);
+    applySquadEffects(myG, opG);
+    state.lineup.forEach(p=>{ if(p._suspendedBeforeMatch){p.suspended=false;delete p._suspendedBeforeMatch;} });
+    simulateAllLeagueFixturesForDate(fx.date); sortTable();
+    renderAll(); showMatchResult();
+}
+
+async function runLiveSim(){
+    if(state.seasonFinished) return;
+    const fx=getUserFixtureByDate(toIsoDate(state.currentDate));
+    if(!fx||fx.played) return;
+    await _prepareMatchLineup();
+    startLiveMatchSimulation(fx, 1000);
+}
+
+function startLiveMatchSimulation(fx, speedMs){
+    const h=getClub(fx.homeClubId), a=getClub(fx.awayClubId);
+    const result=generateScore(h,a,fx);
+    const report=buildMatchReport(h,a,fx,result);
+    state.liveMatch={running:true,fixtureId:fx.id,minute:0,homeGoals:0,awayGoals:0,result,report,shownEvents:0,timer:null,half:1,speedMs:speedMs||1000};
     document.querySelector(".match-day-big-card")?.classList.add("live-match-running");
     const btn=document.getElementById("simBtn"); if(btn){btn.disabled=true;btn.textContent="Mecz trwa...";}
     const stop=document.getElementById("stopBtn"); if(stop)stop.style.display="inline-flex";
@@ -2495,7 +2562,7 @@ function runLiveMinute(){
         addLiveLog("45' +"+rand(1,4)+" — Koniec pierwszej połowy.", "whistle");
         lm.half = 2;
         updateLiveScoreboard(fx); renderLiveStats(lm.report);
-        lm.timer=setTimeout(runLiveMinute, Math.max(120, simSpeedMs));
+        lm.timer=setTimeout(runLiveMinute, lm.speedMs||1000);
         return;
     }
     if(lm.minute === 46){
@@ -2530,7 +2597,7 @@ function runLiveMinute(){
         addLiveLog(`90' +${rand(2,5)} — Sędzia kończy mecz!`, "whistle");
         finishLiveMatch(fx); return;
     }
-    lm.timer=setTimeout(runLiveMinute, Math.max(120, simSpeedMs));
+    lm.timer=setTimeout(runLiveMinute, lm.speedMs||1000);
 }
 
 function updateLiveScoreboard(fx){
