@@ -531,10 +531,67 @@ kbd{background:#e1e1e1;color:#000;border-radius:3px;border:1px solid #b4b4b4;col
   document.head.appendChild(s);
 }
 
-// LOADING_STEPS, _loadedStep, setLoadProgress, renderLoadingItems,
-// showGlobalLoading i hideGlobalLoading są zdefiniowane w app.js
-// (muszą być dostępne zanim career.js zostanie załadowany)
+const LOADING_STEPS = [
+  { id: 'init', label: 'Inicjalizacja danych' },
+  { id: 'uefa', label: 'Ładowanie rankingu UEFA' },
+  { id: 'fixtures', label: 'Generowanie terminarza' },
+  { id: 'squad', label: 'Ustawianie składu' },
+  { id: 'transfers', label: 'Ładowanie transferów' },
+  { id: 'leagues', label: 'Ładowanie lig' },
+  { id: 'tables', label: 'Generowanie tabel ligowych' },
+  { id: 'render', label: 'Renderowanie interfejsu' },
+  { id: 'done', label: 'Gotowe!' },
+];
+
+let _loadedStep = -1;
+
 // getUefaForLeague, loadUefaData
+
+function setLoadProgress(pct, msg, stepId){
+  const lt=document.getElementById("loadingText");if(lt)lt.textContent=msg||"";
+  const pf=document.getElementById("progressFill");if(pf)pf.style.width=Math.min(100,Math.max(0,pct))+"%";
+  const glt=document.getElementById("globalLoadingText");if(glt)glt.textContent=msg||"";
+  const gpf=document.getElementById("globalProgressFill");if(gpf)gpf.style.width=Math.min(100,Math.max(0,pct))+"%";
+
+  if(stepId){
+    const idx = LOADING_STEPS.findIndex(s => s.id === stepId);
+    if(idx >= 0 && idx > _loadedStep){
+      _loadedStep = idx;
+      const counter = document.getElementById("globalProgressCounter");
+      if(counter) counter.textContent = `${idx+1} / ${LOADING_STEPS.length}`;
+      renderLoadingItems(idx);
+    }
+  }
+}
+
+function renderLoadingItems(activeIdx){
+  const cont = document.getElementById("globalLoadingItems");
+  if(!cont) return;
+  cont.innerHTML = LOADING_STEPS.map((s, i) => {
+    let cls = 'loading-item';
+    if(i < activeIdx) cls += ' done';
+    else if(i === activeIdx) cls += ' active';
+    return `<div class="${cls}"><span class="dot"></span>${s.label}</div>`;
+  }).join('');
+}
+
+function showGlobalLoading(){
+  const el = document.getElementById("globalLoading");
+  if(!el) return;
+  _loadedStep = -1;
+  el.style.display = 'flex';
+  el.style.opacity = '1';
+  const counter = document.getElementById("globalProgressCounter");
+  if(counter) counter.textContent = `0 / ${LOADING_STEPS.length}`;
+  renderLoadingItems(-1);
+}
+
+function hideGlobalLoading(){
+  const el = document.getElementById("globalLoading");
+  if(!el) return;
+  el.style.opacity = '0';
+  setTimeout(() => { el.style.display = 'none'; }, 400);
+}
 async function initCareer() {
     injectGameplayStyles();
     const loader=document.getElementById("loadingScreen");
@@ -2328,7 +2385,7 @@ function matchInfoFromFixture(fx){
   };
 }
 function trainingDayInfo(){return{badge:"Dzień treningowy",date:formatDateLong(state.currentDate),home:state.team,away:{name:describeDay(),logo_url:"",color:"var(--bg-light)"},score:"TRENING",playable:false,button:"Brak meczu"};}
-function seasonFinishedInfo(){return{badge:" Koniec sezonu",date:formatDateLong(state.currentDate),home:state.team,away:{name:"Podsumowanie",logo_url:"",color:"#1f2937"},score:"KONIEC",playable:true,button:" Podsumowanie sezonu"};}
+function seasonFinishedInfo(){return{badge:" Koniec sezonu",date:formatDateLong(state.currentDate),home:state.team,away:{name:"Podsumowanie",logo_url:"",color:"#1f2937"},score:"KONIEC",playable:true,button:" Podsumowanie sezonu",action:showSeasonEndModal};}
 
 function updateMatchPanel(badgeId,dateId,hLogoId,hNameId,aLogoId,aNameId,scoreId,btnId,info,_unused) {
     document.getElementById(badgeId).textContent=info.badge;
@@ -2339,7 +2396,7 @@ function updateMatchPanel(badgeId,dateId,hLogoId,hNameId,aLogoId,aNameId,scoreId
     document.getElementById(aNameId).textContent=info.away.name;
     document.getElementById(scoreId).textContent=info.score;
     const b=document.getElementById(btnId);b.textContent=info.button;
-    b.onclick = startSimulation;
+    b.onclick = info.action || startSimulation;
     b.disabled = !info.playable;
 }
 
