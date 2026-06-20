@@ -20,6 +20,29 @@ const MONTHS = ["Styczeń","Luty","Marzec","Kwiecień","Maj","Czerwiec","Lipiec"
 const DAY_NAMES = ["Pn","Wt","Sr","Cz","Pt","Sb","Nd"];
 const POS_ICON = {BR:"BR",OB:"ŚO",PO:"ŚP",NA:"N"};
 const AI_STYLES = ["balanced","attacking","defensive","possession","counter"];
+const POS_PENALTY = {
+    BR:{BR:0,OB:-60,PO:-60,NA:-60},
+    OB:{BR:-40,OB:0,PO:-10,NA:-20},
+    PO:{BR:-40,OB:-10,PO:0,NA:-10},
+    NA:{BR:-40,OB:-20,PO:-10,NA:0}
+};
+function getExpectedPosition(formation, idx) {
+    const {BR:br,OB:ob,PO:po} = formation;
+    if (idx < br) return "BR";
+    if (idx < br + ob) return "OB";
+    if (idx < br + ob + po) return "PO";
+    return "NA";
+}
+function getPositionPenalty(playerPosition, expectedPosition) {
+    return (POS_PENALTY[playerPosition]||{})[expectedPosition] || 0;
+}
+function getLineupPenalty(player, lineupIdx) {
+    const f = FORMATIONS[state.formation];
+    if (!f) return 0;
+    const exp = getExpectedPosition(f, lineupIdx);
+    if (player.position === exp) return 0;
+    return getPositionPenalty(player.position, exp);
+}
 // FORM_ICON, UEFA_CUPS, UEFA_CODE_ALIASES
 
 let simSpeedMs = 500;
@@ -582,7 +605,7 @@ async function initCareer() {
     state.players=team.players.map((p,i)=>enrichPlayer(p,i+1));
     state.formation="4-3-3";state.tactics={style:"balanced",pressing:"medium",width:"normal"};
     state.table=[];state.results=[];state.news=[];state.matchLog=[];
-    state.currentDate=new Date(2025,6,1);state.calendarDate=new Date(2025,6,1);
+    state.currentDate=new Date(2025,5,2);state.calendarDate=new Date(2025,5,2);
     setLoadProgress(30,"Ładowanie rankingu UEFA...","uefa");
     try{await loadUefaData();}catch(e){}
     if (!state.uefaPoints || Object.keys(state.uefaPoints).length === 0) {
@@ -675,20 +698,25 @@ function generateFixtures(startYear) {
     const all=[...rounds,...rev];
     const totalRounds = all.length;
     const firstMatch = new Date(startYear, 7, 2);
-    snapToMatchDay(firstMatch, false);
     const lastDeadline = new Date(startYear + 1, 4, 31);
-    const msAvail = lastDeadline - firstMatch;
-    const winterMs = 28 * 24 * 60 * 60 * 1000;
-    const effectiveDays = Math.max(1, (msAvail - winterMs) / (24 * 60 * 60 * 1000));
-    const gapDays = Math.max(1, Math.min(Math.floor(effectiveDays / totalRounds), 7));
+    const totalMs = lastDeadline - firstMatch;
+    const totalDays = totalMs / (24 * 60 * 60 * 1000);
+    const gapDays = Math.max(1, Math.floor(totalDays / totalRounds));
     const fixtures=[];
+    const matchDays = [5, 6, 0, 1];
     let cur = new Date(firstMatch);
     all.forEach((rf)=>{
         if(cur.getMonth()===11&&cur.getDate()>10) cur=new Date(cur.getFullYear()+1,0,1);
-        snapToMatchDay(cur, false);
         if (cur > lastDeadline) cur = new Date(lastDeadline);
+        const day = cur.getDay();
+        const mon = new Date(cur);
+        mon.setDate(mon.getDate() + (day===0?-6:1-day));
+        const rd = matchDays[rand(0, 3)];
+        const off = rd===1?0:rd===5?4:rd===6?5:6;
+        const md = new Date(mon);
+        md.setDate(mon.getDate() + off);
         rf.forEach((f)=>{
-            fixtures.push({id:`${f.round}-${f.homeClubId}-${f.awayClubId}`,competition:"league",round:f.round,date:toIsoDate(cur),homeClubId:f.homeClubId,awayClubId:f.awayClubId,played:false,homeGoals:null,awayGoals:null});
+            fixtures.push({id:`${f.round}-${f.homeClubId}-${f.awayClubId}`,competition:"league",round:f.round,date:toIsoDate(md),homeClubId:f.homeClubId,awayClubId:f.awayClubId,played:false,homeGoals:null,awayGoals:null});
         });
         cur.setDate(cur.getDate() + gapDays);
     });
@@ -1447,17 +1475,18 @@ function generateAllLeagueFixtures(startYear) {
         const all=[...rounds,...rev];
         const totalRounds = all.length;
         const firstMatch = new Date(startYear, 7, 2);
-        snapToMatchDay(firstMatch, false);
         const lastDeadline = new Date(startYear + 1, 4, 31);
-        const msAvail = lastDeadline - firstMatch;
-        const winterMs = 28 * 24 * 60 * 60 * 1000;
-        const effectiveDays = Math.max(1, (msAvail - winterMs) / (24 * 60 * 60 * 1000));
-        const gapDays = Math.max(1, Math.floor(effectiveDays / totalRounds));
+        const totalDays = (lastDeadline - firstMatch) / (24 * 60 * 60 * 1000);
+        const gapDays = Math.max(1, Math.floor(totalDays / totalRounds));
         const fixtures=[];let cur=new Date(firstMatch);
+        const matchDays = [5, 6, 0, 1];
         all.forEach((rf)=>{if(cur.getMonth()===11&&cur.getDate()>10) cur=new Date(cur.getFullYear()+1,0,1);
-            snapToMatchDay(cur, false);
             if (cur > lastDeadline) cur = new Date(lastDeadline);
-            rf.forEach((f)=>{fixtures.push({id:`${code}-${f.round}-${f.homeClubId}-${f.awayClubId}`,round:f.round,date:toIsoDate(cur),homeClubId:f.homeClubId,awayClubId:f.awayClubId,played:false,homeGoals:null,awayGoals:null});});
+            const day=cur.getDay();const mon=new Date(cur);
+            mon.setDate(mon.getDate()+(day===0?-6:1-day));
+            const rd=matchDays[rand(0,3)];const off=rd===1?0:rd===5?4:rd===6?5:6;
+            const md=new Date(mon);md.setDate(mon.getDate()+off);
+            rf.forEach((f)=>{fixtures.push({id:`${code}-${f.round}-${f.homeClubId}-${f.awayClubId}`,round:f.round,date:toIsoDate(md),homeClubId:f.homeClubId,awayClubId:f.awayClubId,played:false,homeGoals:null,awayGoals:null});});
             cur.setDate(cur.getDate() + gapDays);
         });
         state.leagueFixtures[code]=fixtures;
@@ -1712,8 +1741,9 @@ function renderFormation() {
     const setupPitchDrop=(el)=>{if(!el._dropSetup){el._dropSetup=true;el.ondragover=(e)=>e.preventDefault();el.ondrop=(e)=>{e.preventDefault();moveDraggedPlayer("lineup",null);};}};
     setupPitchDrop(d);setupPitchDrop(pitch);
     const fb=document.createElement("div");fb.className="formation-badge";fb.textContent=state.formation;d.appendChild(fb);
-    state.lineup.forEach((p,i)=>{const sl=df.positions[i]||{top:50,left:50};const n=document.createElement("div");n.className="player-slot";n.draggable=true;n.dataset.playerId=String(p.id);n.dataset.zone="lineup";n.style.top=`${sl.top}%`;n.style.left=`${sl.left}%`;n.style.transform="translate(-50%,-50%)";n.onclick=()=>showPlayerModal(p);n.addEventListener("mouseenter",(e)=>showPlayerTooltip(p,e));n.addEventListener("mousemove",(e)=>{const el=document.getElementById("playerTooltip");if(el&&el.style.display==="block")positionTooltip(el,e);});n.addEventListener("mouseleave",hidePlayerTooltip);const bc=ratingBorderColor(p.rating);const rc=ratingClass(p.rating);const rbc=ratingBorderColor(p.rating);const fitPct=p.fitness||96;const fitColor=fitPct>=85?'#10b981':fitPct>=65?'#f59e0b':'#ef4444';const _ph=p.photo_url?`<img src="${escapeHtml(p.photo_url)}" alt="" style="position:absolute;top:-16px;left:50%;transform:translateX(-50%);width:52px;height:52px;object-fit:cover;border-radius:50%;z-index:2;" onerror="this.style.display='none'">`:'';
-        n.innerHTML=`<div style="position:relative;${p.photo_url?'padding-top:16px;':''}"><div class="shirt" style="background:${teamColor};border-color:${bc};box-shadow:0 0 6px ${bc}44,0 3px 8px rgba(0,0,0,.4);">${_ph}<div class="rating-badge" style="background:${rbc};">${p.rating}</div>${p.photo_url?'':i+1}<div class="fit-indicator" style="position:absolute;bottom:-3px;left:50%;transform:translateX(-50%);width:50px;height:5px;background:rgba(0,0,0,.5);border-radius:2px;overflow:hidden;"><div style="width:${fitPct}%;height:100%;background:${fitColor};border-radius:2px;"></div></div></div></div><div class="name">${escapeHtml(p.name.split(' ').pop())}</div>`;n.addEventListener("dragstart",onPlayerDragStart);n.addEventListener("dragover",onPlayerDragOver);n.addEventListener("drop",onPitchPlayerDrop);n.addEventListener("dragend",onPlayerDragEnd);d.appendChild(n);});
+    state.lineup.forEach((p,i)=>{const sl=df.positions[i]||{top:50,left:50};const n=document.createElement("div");n.className="player-slot";n.draggable=true;n.dataset.playerId=String(p.id);n.dataset.zone="lineup";n.style.top=`${sl.top}%`;n.style.left=`${sl.left}%`;n.style.transform="translate(-50%,-50%)";n.onclick=()=>showPlayerModal(p);n.addEventListener("mouseenter",(e)=>showPlayerTooltip(p,e));n.addEventListener("mousemove",(e)=>{const el=document.getElementById("playerTooltip");if(el&&el.style.display==="block")positionTooltip(el,e);});n.addEventListener("mouseleave",hidePlayerTooltip);const bc=ratingBorderColor(p.rating);const rbc=ratingBorderColor(p.rating);const fitPct=p.fitness||96;const fitColor=fitPct>=85?'#10b981':fitPct>=65?'#f59e0b':'#ef4444';const _ph=p.photo_url?`<img src="${escapeHtml(p.photo_url)}" alt="" style="position:absolute;top:-16px;left:50%;transform:translateX(-50%);width:52px;height:52px;object-fit:cover;border-radius:50%;z-index:2;" onerror="this.style.display='none'">`:'';
+        const penalty=getLineupPenalty(p,i);const eff=p.rating+penalty;const penBadge=penalty<0?`<div style="position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);background:#ef4444;color:#fff;font-size:.6rem;font-weight:800;padding:1px 4px;border-radius:3px;white-space:nowrap;z-index:3;">${penalty}</div>`:'';
+        n.innerHTML=`<div style="position:relative;${p.photo_url?'padding-top:16px;':''}"><div class="shirt" style="background:${teamColor};border-color:${bc};box-shadow:0 0 6px ${bc}44,0 3px 8px rgba(0,0,0,.4);">${_ph}<div class="rating-badge" style="background:${rbc};">${eff}</div>${p.photo_url?'':i+1}${penBadge}<div class="fit-indicator" style="position:absolute;bottom:-3px;left:50%;transform:translateX(-50%);width:50px;height:5px;background:rgba(0,0,0,.5);border-radius:2px;overflow:hidden;"><div style="width:${fitPct}%;height:100%;background:${fitColor};border-radius:2px;"></div></div></div></div><div class="name">${escapeHtml(p.name.split(' ').pop())}</div>`;n.addEventListener("dragstart",onPlayerDragStart);n.addEventListener("dragover",onPlayerDragOver);n.addEventListener("drop",onPitchPlayerDrop);n.addEventListener("dragend",onPlayerDragEnd);d.appendChild(n);});
 }
 
 function renderSquadList(){const l=document.getElementById("squadList");l.innerHTML="";l.dataset.zone="lineup";setupDropZone(l,"lineup");state.lineup.forEach((p,i)=>l.appendChild(buildPlayerRow(p,i+1,"lineup")));}
@@ -1771,7 +1801,9 @@ function buildPlayerRow(player,badge,zone) {
     const fitBar=`<div style="display:inline-flex;align-items:center;gap:3px;margin-left:6px;vertical-align:middle;" title="Kondycja: ${fitPct}%"><div style="width:32px;height:4px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden;"><div style="width:${fitPct}%;height:100%;background:${fitColor};border-radius:2px;"></div></div></div>`;
     const goalsStr=player.goals?`<span style="color:#10b981;font-size:.7rem;margin-left:4px;">⚽${player.goals}</span>`:"";
     const assistsStr=player.assists?`<span style="color:#60a5fa;font-size:.7rem;margin-left:2px;">🅰${player.assists}</span>`:"";
-    r.innerHTML=`<div class="num" style="background:${tc};color:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem;flex-shrink:0;">${escapeHtml(badge)}</div><div class="info"><div class="p-name">${sh}${escapeHtml(player.name)} ${goalsStr}${assistsStr}</div><div class="p-details">${escapeHtml(POS_MAP[player.position])} · ${player.age||"-"} lat · €${formatMoney(player.valueMillions)}M</div>${fitBar}</div><div class="player-rating-chip ${rc}">${player.rating}${player.injury ? `<span class="inj-badge" title="${escapeHtml(player.injury.type)} — ${player.injury.daysLeft} dni">KON</span>` : player.suspended ? `<span class="susp-badge" title="Zawieszony">ZAW</span>` : ""}</div>`;
+    let penStr='';let effRating=player.rating;
+    if(zone==="lineup"){const idx=Number(badge)-1;const pnl=getLineupPenalty(player,idx);if(pnl<0){penStr=`<span style="color:#ef4444;font-size:.6rem;font-weight:800;margin-left:2px;">${pnl}</span>`;effRating+=pnl;}}
+    r.innerHTML=`<div class="num" style="background:${tc};color:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem;flex-shrink:0;">${escapeHtml(badge)}</div><div class="info"><div class="p-name">${sh}${escapeHtml(player.name)} ${goalsStr}${assistsStr}</div><div class="p-details">${escapeHtml(POS_MAP[player.position])} · ${player.age||"-"} lat · €${formatMoney(player.valueMillions)}M</div>${fitBar}</div><div class="player-rating-chip ${rc}">${effRating}${penStr}${player.injury ? `<span class="inj-badge" title="${escapeHtml(player.injury.type)} — ${player.injury.daysLeft} dni">KON</span>` : player.suspended ? `<span class="susp-badge" title="Zawieszony">ZAW</span>` : ""}</div>`;
     return r;
 }
 function onPlayerDragStart(e){state.dragPlayerId=Number(e.currentTarget.dataset.playerId);state.dragSource=e.currentTarget.dataset.zone;e.dataTransfer.effectAllowed="move";e.currentTarget.classList.add("dragging");}
@@ -2780,8 +2812,6 @@ function applyResultToTableRaw(tbl,fx){const h=tbl.find((r)=>r.clubId===fx.homeC
 function sortTableRaw(tbl){tbl.sort((a,b)=>(b.points-a.points)||((b.gf-b.ga)-(a.gf-a.ga))||(b.gf-a.gf)||a.name.localeCompare(b.name,"pl"));}
 
 function generateScore(h,a,fx){
-    const hs = AI_STYLES[Math.floor(Math.random()*AI_STYLES.length)];
-    const as = AI_STYLES[Math.floor(Math.random()*AI_STYLES.length)];
     
     let hp = (h.avg_rating||70) + rand(-2,2);
     let ap = (a.avg_rating||70) + rand(-2,2);
@@ -2789,13 +2819,13 @@ function generateScore(h,a,fx){
     if(fx.homeClubId === state.team.club_id) {
         hp += userTeamBonus();
     } else {
-        hp += aiTacticBonus(hs, h.avg_rating);
+        hp += aiTeamBonus(h.avg_rating);
     }
     
     if(fx.awayClubId === state.team.club_id) {
         ap += userTeamBonus();
     } else {
-        ap += aiTacticBonus(as, a.avg_rating);
+        ap += aiTeamBonus(a.avg_rating);
     }
     
     // Bonus własnego boiska
@@ -2818,7 +2848,7 @@ function generateScore(h,a,fx){
         awayGoals: calculateGoals(ap, hp * 0.88, hKeeper >= 78)
     };
 }
-function aiTacticBonus(s,r){switch(s){case"attacking":return 1.0+rand(-1,1);case"defensive":return 0.3+rand(-1,1);case"possession":return 0.6+rand(-1,1);case"counter":return 0.8+rand(-1,1);default:return 0.5+rand(-1,1);}}
+function aiTeamBonus(r){return (r||70)*0.065+rand(-1,1);}
 function calculateGoals(tp, op, hasGoodKeeper){
     const base = 0.26 + (tp - op) * 0.009;
     const keeperBonus = hasGoodKeeper ? -0.06 : 0;
@@ -2834,11 +2864,17 @@ function calculateGoals(tp, op, hasGoodKeeper){
 function userTeamBonus(){
     if(!state.lineup || state.lineup.length < 11) return 0;
     
-    const avg = state.lineup.reduce((s,p)=>s+p.rating,0) / state.lineup.length;
+    const f = FORMATIONS[state.formation];
+    const adjusted = state.lineup.map((p, i) => {
+        const exp = f ? getExpectedPosition(f, i) : p.position;
+        if (p.position !== exp) return p.rating + getPositionPenalty(p.position, exp);
+        return p.rating;
+    });
+    
+    const avg = adjusted.reduce((s,v)=>s+v,0) / adjusted.length;
     const avgFit = state.lineup.reduce((s,p)=>s+(p.fitness||96),0) / state.lineup.length;
     const fitFactor = avgFit<60 ? 0.78 : avgFit<70 ? 0.88 : avgFit<80 ? 0.94 : avgFit<90 ? 0.98 : 1.04;
     
-    // Bramkarz ma większe znaczenie
     const gk = state.lineup.find(p => p.position === "BR");
     const gkBonus = gk ? (gk.rating - 70) * 0.06 : -1;
     
@@ -3666,8 +3702,8 @@ function restartSeason(endNews) {
     const june = state.currentDate;
     const ny   = june.getMonth() <= 6 ? june.getFullYear() : june.getFullYear() + 1;
 
-    state.currentDate  = new Date(ny, 6, 1);
-    state.calendarDate = new Date(ny, 6, 1);
+    state.currentDate  = new Date(ny, 5, 2);
+    state.calendarDate = new Date(ny, 5, 2);
     state.seasonFinished = false;
     state.transferWindow = "summer";
     state.results  = [];
