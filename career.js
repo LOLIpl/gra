@@ -680,7 +680,7 @@ function generateFixtures(startYear) {
     const msAvail = lastDeadline - firstMatch;
     const winterMs = 28 * 24 * 60 * 60 * 1000;
     const effectiveDays = Math.max(1, (msAvail - winterMs) / (24 * 60 * 60 * 1000));
-    const gapDays = Math.max(1, Math.floor(effectiveDays / totalRounds));
+    const gapDays = Math.max(1, Math.min(Math.floor(effectiveDays / totalRounds), 7));
     const fixtures=[];
     let cur = new Date(firstMatch);
     all.forEach((rf)=>{
