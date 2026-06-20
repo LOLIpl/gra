@@ -21,25 +21,7 @@ const DAY_NAMES = ["Pn","Wt","Sr","Cz","Pt","Sb","Nd"];
 const POS_ICON = {BR:"BR",OB:"ŚO",PO:"ŚP",NA:"N"};
 const AI_STYLES = ["balanced","attacking","defensive","possession","counter"];
 // FORM_ICON, UEFA_CUPS, UEFA_CODE_ALIASES
-const LEAGUE_RULES = {
-    GB1:{down:"GB2",relegation:3,playoffRelegation:0}, GB2:{up:"GB1",promotion:2,playoffPromotion:[3,4,5,6],relegation:3},
-    ES1:{down:"ES2",relegation:3,playoffRelegation:0}, ES2:{up:"ES1",promotion:2,playoffPromotion:[3,4,5,6],relegation:4},
-    IT1:{down:"IT2",relegation:3,playoffRelegation:0}, IT2:{up:"IT1",promotion:2,playoffPromotion:[3,4,5,6,7,8],relegation:3,playoffRelegation:1},
-    L1:{down:"L2",relegation:2,playoffRelegation:1}, L2:{up:"L1",promotion:2,playoffPromotion:[3],relegation:2,playoffRelegation:1},
-    FR1:{down:"FR2",relegation:2,playoffRelegation:1}, FR2:{up:"FR1",promotion:2,playoffPromotion:[3,4,5],relegation:3},
-    PO1:{down:"PO2",relegation:2,playoffRelegation:1}, PO2:{up:"PO1",promotion:2,playoffPromotion:[3],relegation:2},
-    NL1:{down:"NL2",relegation:2,playoffRelegation:1}, NL2:{up:"NL1",promotion:2,playoffPromotion:[3,4,5,6,7,8],relegation:0},
-    PL1:{down:"PL2",relegation:3,playoffRelegation:0}, PL2:{up:"PL1",promotion:2,playoffPromotion:[3,4,5,6],relegation:3},
-    TR1:{down:"TR2",relegation:4,playoffRelegation:0}, TR2:{up:"TR1",promotion:2,playoffPromotion:[3,4,5,6,7],relegation:4},
-    BE1:{down:"BE2",relegation:1,playoffRelegation:1}, BE2:{up:"BE1",promotion:1,playoffPromotion:[2,3,4,5],relegation:1},
-    DK1:{down:"DK2",relegation:2,playoffRelegation:0}, DK2:{up:"DK1",promotion:2,relegation:2},
-    A1:{down:"A2",relegation:1,playoffRelegation:0}, A2:{up:"A1",promotion:1,relegation:3},
-    NO1:{down:"NO2",relegation:2,playoffRelegation:1}, NO2:{up:"NO1",promotion:2,playoffPromotion:[3,4,5,6],relegation:2},
-    SE1:{down:"SE2",relegation:2,playoffRelegation:1}, SE2:{up:"SE1",promotion:2,playoffPromotion:[3],relegation:2},
-    TS1:{down:"TS2",relegation:1,playoffRelegation:2}, TS2:{up:"TS1",promotion:1,playoffPromotion:[2,3],relegation:2},
-    RO1:{down:"RO2",relegation:2,playoffRelegation:2}, RO2:{up:"RO1",promotion:2,playoffPromotion:[3,4],relegation:4},
-    GR1:{down:"GRS2",relegation:2,playoffRelegation:0}, GRS2:{up:"GR1",promotion:2,relegation:4},
-};
+
 let simSpeedMs = 500;
 
 function injectGameplayStyles(){
@@ -603,7 +585,7 @@ async function initCareer() {
     state.players=team.players.map((p,i)=>enrichPlayer(p,i+1));
     state.formation="4-3-3";state.tactics={style:"balanced",pressing:"medium",width:"normal"};
     state.table=[];state.results=[];state.news=[];state.matchLog=[];
-    state.currentDate=new Date(2025,6,1);state.calendarDate=new Date(2025,6,1);
+    state.currentDate=new Date(2025,7,1);state.calendarDate=new Date(2025,7,1);
     setLoadProgress(30,"Ładowanie rankingu UEFA...","uefa");
     try{await loadUefaData();}catch(e){}
     if (!state.uefaPoints || Object.keys(state.uefaPoints).length === 0) {
@@ -3403,75 +3385,92 @@ async function applyAllPromotionsRelegations() {
         const playoffLowerRows = playoffPromotionPositions.map(p => sortedL[p-1]).filter(Boolean);
         let lowerPlayoffWinner = null;
         if (playoffLowerRows.length) {
-            lowerPlayoffWinner = playoffLowerRows.reduce((best,row)=>{
-                if(!best) return row;
-                const rowClub = lowerData.clubs.find(c => String(c.club_id) === String(row.clubId));
-                const bestClub = lowerData.clubs.find(c => String(c.club_id) === String(best.clubId));
-                const rowScore = (rowClub?.avg_rating || 60) + rand(-5,5) + row.points * 0.05;
-                const bestScore = (bestClub?.avg_rating || 60) + rand(-5,5) + best.points * 0.05;
-                return rowScore >= bestScore ? row : best;
-            }, null);
-            addNews(`Baraże o awans (${lowerData.name || lowerCode}): wygrywa ${lowerPlayoffWinner.name}.`);
+            let matches = [];
+            let i = 0;
+            while (i + 1 < playoffLowerRows.length) {
+                matches.push([playoffLowerRows[i], playoffLowerRows[i + 1]]);
+                i += 2;
+            }
+            const winners = [];
+            for (const [teamA, teamB] of matches) {
+                const clubA = lowerData.clubs.find(c => String(c.club_id) === String(teamA.clubId));
+                const clubB = lowerData.clubs.find(c => String(c.club_id) === String(teamB.clubId));
+                const ratingA = clubA?.avg_rating || 60;
+                const ratingB = clubB?.avg_rating || 60;
+                const ha = rand(10, 20);
+                const hs = ratingA * 0.1 + ha + rand(-8, 8);
+                const as = ratingB * 0.1 + rand(-8, 8);
+                const homeGoals = Math.max(0, Math.round(hs));
+                const awayGoals = Math.max(0, Math.round(as));
+                const winner = homeGoals > awayGoals ? teamA : homeGoals < awayGoals ? teamB : (rand() % 2 === 0 ? teamA : teamB);
+                const loser = winner === teamA ? teamB : teamA;
+                const score = `${homeGoals}:${awayGoals}`;
+                addNews(`Baraż o awans: ${clubA?.name || teamA.name} ${homeGoals}:${awayGoals} ${clubB?.name || teamB.name} — ${winner.name} wygrywa i awansuje!`);
+                winners.push(winner);
+            }
+            lowerPlayoffWinner = winners[0];
+            for (let i = 1; i < winners.length; i++) {
+                promoteIds.push(String(winners[i].clubId));
+            }
         }
 
-        if (playoffRelegation > 0 && lowerPlayoffWinner) {
-            const barazU = sortedU[nU - directRelegation - 1];
-            const barazL = lowerPlayoffWinner;
-
-            if (barazU && barazL) {
-                const uId = String(barazU.clubId);
-                const lId = String(barazL.clubId);
-                const userInUpper = uId === userClubId;
-                const userInLower = lId === userClubId;
-
-                let upperSurvives;
-
-                if (userInUpper || userInLower) {
-                    // Baraż z udziałem gracza — używamy siły składu
-                    const userStr = state.lineup.reduce((s, p) => s + p.rating, 0)
-                        / Math.max(1, state.lineup.length);
-                    const oppClubData = userInUpper
-                        ? lowerData.clubs.find(c => String(c.club_id) === lId)
-                        : upperData.clubs.find(c => String(c.club_id) === uId);
-                    const oppStr = oppClubData?.avg_rating || 65;
-
-                    // Drużyna z wyższej ligi gra u siebie (przewaga)
-                    const isHome = userInUpper;
-                    const ha = isHome ? 2 : 0;
-                    const uG = calculateGoals(userStr * 0.11 + ha + rand(-3, 3), oppStr * 0.09 + rand(-3, 3));
-                    const oG = calculateGoals(oppStr * 0.09 + rand(-3, 3), userStr * 0.11 + ha + rand(-3, 3));
-
-                    const oppName = userInUpper ? barazL.name : barazU.name;
-                    const score = `${uG}:${oG}`;
-
-                    if (userInUpper) {
-                        upperSurvives = uG >= oG;
-                        barazMsg = upperSurvives
-                            ? `Baraż o utrzymanie: ${state.team.name} utrzymuje się z ${oppName} ${score}.`
-                            : `Baraż o utrzymanie: ${state.team.name} przegrywa z ${oppName} ${score} i spada.`;
-                    } else {
-                        upperSurvives = uG <= oG;
-                        const userWins = !upperSurvives;
-                        barazMsg = userWins
-                            ? `Baraż o awans: ${state.team.name} wygrywa z ${oppName} ${uG}:${oG} i awansuje!`
-                            : `Baraż o awans: ${state.team.name} przegrywa z ${oppName} ${uG}:${oG}.`;
-                    }
-                } else {
-                    // AI vs AI
-                    const uClub = upperData.clubs.find(c => String(c.club_id) === uId);
-                    const lClub = lowerData.clubs.find(c => String(c.club_id) === lId);
-                    const hs = (uClub?.avg_rating || 65) + rand(-6, 6) + 2;
-                    const as = (lClub?.avg_rating  || 60) + rand(-6, 6);
-                    const hG = calculateGoals(hs, as);
-                    const aG = calculateGoals(as, hs);
-                    upperSurvives = hG >= aG;
-                    const winner = upperSurvives ? barazU.name : barazL.name;
-                    addNews(`Baraż: ${barazU.name} ${hG}:${aG} ${barazL.name} — ${winner} wygrywa.`);
+        if (playoffRelegation > 0) {
+            // Przystań do systemu z fazami play-off z prawdziwymi meczami
+            const relegationCandidates = sortedU.slice(nU - directRelegation - playoffRelegation, nU - directRelegation);
+            
+            if (relegationCandidates.length > 1) {
+                // Przygotuj mecze barażowe
+                let matches = [];
+                let i = 0;
+                while (i + 1 < relegationCandidates.length) {
+                    matches.push([relegationCandidates[i], relegationCandidates[i + 1]]);
+                    i += 2;
                 }
-
-                if (!upperSurvives) {
-                    relegateIds.push(uId);
-                    promoteIds.push(lId);
+                
+                const results = [];
+                for (const [teamA, teamB] of matches) {
+                    const clubA = upperData.clubs.find(c => String(c.club_id) === String(teamA.clubId));
+                    const clubB = upperData.clubs.find(c => String(c.club_id) === String(teamB.clubId));
+                    const ratingA = clubA?.avg_rating || 65;
+                    const ratingB = clubB?.avg_rating || 60;
+                    
+                    const ha = rand(10, 20);
+                    const hs = ratingA * 0.12 + ha + rand(-8, 8);
+                    const as = ratingB * 0.1 + rand(-8, 8);
+                    const homeGoals = Math.max(0, Math.round(hs));
+                    const awayGoals = Math.max(0, Math.round(as));
+                    
+                    const winner = homeGoals > awayGoals ? teamA : homeGoals < awayGoals ? teamB : (rand() % 2 === 0 ? teamA : teamB);
+                    const loser = winner === teamA ? teamB : teamA;
+                    const score = `${homeGoals}:${awayGoals}`;
+                    const winnerName = winner.name;
+                    const loserName = loser.name;
+                    
+                    addNews(`Baraż o utrzymanie: ${winnerName} ${homeGoals}:${awayGoals} ${loserName} — ${winnerName} utrzymuje się, ${loserName} spada!`);
+                    
+                    results.push(winner);
+                }
+                
+                const winner = results[0];
+                const loser = results[1];
+                
+                const winnerId = String(winner.clubId);
+                const loserId = String(loser.clubId);
+                relegateIds.push(loserId);
+                promoteIds.push(winnerId);
+                
+                if (userClubId === winnerId) {
+                    barazMsg = `Baraż o utrzymanie: ${state.team.name} utrzymuje się!`;
+                } else if (userClubId === loserId) {
+                    barazMsg = `Baraż o utrzymanie: ${state.team.name} spada z ligi.`;
+                }
+            } else if (relegationCandidates.length === 1 && !promoteIds.includes(String(relegationCandidates[0].clubId))) {
+                const loser = relegationCandidates[0];
+                const loserId = String(loser.clubId);
+                relegateIds.push(loserId);
+                
+                if (userClubId === loserId) {
+                    barazMsg = `Baraż o utrzymanie: ${state.team.name} spada z ligi.`;
                 }
             }
         } else if (lowerPlayoffWinner && !promoteIds.includes(String(lowerPlayoffWinner.clubId))) {
@@ -3667,8 +3666,8 @@ function restartSeason(endNews) {
     const june = state.currentDate;
     const ny   = june.getMonth() <= 6 ? june.getFullYear() : june.getFullYear() + 1;
 
-    state.currentDate  = new Date(ny, 6, 1);
-    state.calendarDate = new Date(ny, 6, 1);
+    state.currentDate  = new Date(ny, 7, 1);
+    state.calendarDate = new Date(ny, 7, 1);
     state.seasonFinished = false;
     state.transferWindow = "summer";
     state.results  = [];
