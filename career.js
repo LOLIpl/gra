@@ -680,7 +680,7 @@ function generateFixtures(startYear) {
     const msAvail = lastDeadline - firstMatch;
     const winterMs = 28 * 24 * 60 * 60 * 1000;
     const effectiveDays = Math.max(1, (msAvail - winterMs) / (24 * 60 * 60 * 1000));
-    const gapDays = Math.max(1, Math.floor(effectiveDays / (totalRounds * 0.5)));
+    const gapDays = Math.max(1, Math.floor(effectiveDays / totalRounds));
     const fixtures=[];
     let cur = new Date(firstMatch);
     all.forEach((rf)=>{
@@ -690,12 +690,6 @@ function generateFixtures(startYear) {
         rf.forEach((f)=>{
             fixtures.push({id:`${f.round}-${f.homeClubId}-${f.awayClubId}`,competition:"league",round:f.round,date:toIsoDate(cur),homeClubId:f.homeClubId,awayClubId:f.awayClubId,played:false,homeGoals:null,awayGoals:null});
         });
-        cur.setDate(cur.getDate() + gapDays);
-        if (cur <= lastDeadline) {
-            rf.forEach((f)=>{
-                fixtures.push({id:`${f.round}-extra-${f.homeClubId}-${f.awayClubId}`,competition:"league",round:f.round,date:toIsoDate(cur),homeClubId:f.homeClubId,awayClubId:f.awayClubId,played:false,homeGoals:null,awayGoals:null});
-            });
-        }
         cur.setDate(cur.getDate() + gapDays);
     });
     
