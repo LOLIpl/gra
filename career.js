@@ -7,7 +7,18 @@ function round2(n) { return Math.round((n||0)*100)/100; }
 function formatMoney(val) { return Number(val||0).toFixed(2); }
 function initials(name) { if (!name) return '??'; return name.split(' ').map(w=>w[0]).join('').toUpperCase().slice(0,3); }
 function deepClone(obj) { return JSON.parse(JSON.stringify(obj)); }
-function closeModal() { document.getElementById('modal')?.classList.remove('active'); }
+function closeModal() {
+    document.getElementById('modal')?.classList.remove('active');
+    const win = document.querySelector("#modal .modal-window");
+    if (win && win.dataset.seasonMode) {
+        win.style.maxWidth = "";
+        win.style.width = "";
+        win.style.maxHeight = "";
+        win.style.overflowY = "";
+        win.style.padding = "";
+        delete win.dataset.seasonMode;
+    }
+}
 
 const FORMATIONS = {
     "4-3-3":{BR:1,OB:4,PO:3,NA:3,positions:[{top:88,left:50},{top:68,left:15},{top:68,left:38},{top:68,left:62},{top:68,left:85},{top:45,left:25},{top:45,left:50},{top:45,left:75},{top:18,left:20},{top:18,left:50},{top:18,left:80}]},
@@ -2415,6 +2426,8 @@ async function startSimulation(){
 }
 
 function showMatchModeModal(fx){
+    const _w=document.querySelector("#modal .modal-window");
+    if(_w && _w.dataset.seasonMode){ _w.style.maxWidth="";_w.style.width="";_w.style.maxHeight="";_w.style.overflowY="";_w.style.padding=""; delete _w.dataset.seasonMode; }
     const h=getClub(fx.homeClubId),a=getClub(fx.awayClubId);
     const hC=h?.color||'#1f2937',aC=a?.color||'#1f2937';
     const hL=h?.logo_url||'',aL=a?.logo_url||'';
@@ -2660,11 +2673,40 @@ async function simulateDay() {
     if (state.seasonFinished) return;
 
     if (isPastSeasonEnd()) {
+        // Dograj ewentualne brakujące mecze przed podsumowaniem (zamiast od razu restartować sezon)
+        const pending = state.fixtures.filter(f=>!f.played);
+        if (pending.length) {
+            const dates = [...new Set(pending.map(f=>f.date))].sort();
+            for (const iso of dates) simulateFixturesForDate(iso);
+            sortTable();
+        }
+        if (state.allLeagueData && state.leagueFixtures) {
+            const allDates = new Set();
+            for (const fixtures of Object.values(state.leagueFixtures)) {
+                fixtures.filter(f=>!f.played).forEach(f=>allDates.add(f.date));
+            }
+            for (const iso of [...allDates].sort()) simulateAllLeagueFixturesForDate(iso);
+        }
+        // Snapshot statystyk do okna podsumowania
+        try {
+            state._seasonSnapshot = {
+                table: deepClone(state.table),
+                fixtures: deepClone(state.fixtures),
+                players: deepClone(state.players),
+                budgetBefore: state.budgetMillions,
+                outcome: deepClone(getSeasonOutcome()),
+                seasonLabel: (function(){
+                    const y = parseInt(state.fixtures[0]?.date?.split("-")[0]||String(state.currentDate.getFullYear()));
+                    return `${y}/${String(y+1).slice(2)}`;
+                })()
+            };
+        } catch(e) {}
         state.seasonFinished = true;
         state.transferWindow = "summer";
         stopSimulation();
-        await finishSeasonNow();
         renderAll();
+        // Auto-otwórz podsumowanie dla UX – użytkownik nadal może je zamknąć i otworzyć kliknięciem
+        setTimeout(()=>{ try{ showSeasonEndModal(); }catch(e){} },120);
         return;
     }
 
@@ -3589,35 +3631,199 @@ function getSeasonOutcome() {
 
 
 function showSeasonEndModal() {
-    const outcome = getSeasonOutcome();
-    const pos = state.table.findIndex(r => r.clubId === state.team.club_id);
+    // Dane z snapshotu jeśli istnieje, inaczej live
+    const snap = state._seasonSnapshot;
+    const tbl = (snap && snap.table) ? snap.table : state.table;
+    const playersSnap = (snap && snap.players) ? snap.players : state.players;
+    const outcome = (snap && snap.outcome) ? snap.outcome : getSeasonOutcome();
+    const posIdx = tbl.findIndex(r => String(r.clubId)===String(state.team.club_id));
+    const pos = posIdx >=0 ? posIdx+1 : 1;
+    const row = tbl[posIdx] || state.table.find(r=>String(r.clubId)===String(state.team.club_id)) || {played:0,won:0,drawn:0,lost:0,gf:0,ga:0,points:0,form:[]};
+    const total = tbl.length || 0;
+    const seasonLabel = (snap && snap.seasonLabel) ? snap.seasonLabel : (function(){ const y=parseInt(state.fixtures[0]?.date?.split("-")[0]||String(state.currentDate.getFullYear())); return `${y}/${String(y+1).slice(2)}`; })();
+    const budgetBefore = (snap && snap.budgetBefore!==undefined) ? snap.budgetBefore : state.budgetMillions;
+    const budgetAfter = Math.max(0.5, round2(budgetBefore + (outcome.budget||0)));
+    const topScorers = [...playersSnap].sort((a,b)=>(b.goals||0)-(a.goals||0)).slice(0,5);
+    const topAssists = [...playersSnap].sort((a,b)=>(b.assists||0)-(a.assists||0)).slice(0,5);
+    const gd = (row.gf||0)-(row.ga||0);
+    const gdStr = gd>0?`+${gd}`:String(gd);
+    const gdColor = gd>0?'#10b981':gd<0?'#ef4444':'var(--muted)';
+    const zones = getLeagueZones(state.selectedLeagueCode, tbl);
+    const zoneInfo = zones.get(pos);
+    // Powiększ okno modala dla statystyk
+    const win = document.querySelector("#modal .modal-window");
+    if (win) {
+        win.style.maxWidth = "760px";
+        win.style.width = "96%";
+        win.style.maxHeight = "92vh";
+        win.style.overflowY = "auto";
+        win.style.padding = "1.4rem";
+        win.dataset.seasonMode = "1";
+    }
+    // Tabela końcowa (kompaktowa)
+    const tableRows = tbl.map((r,i)=>{
+        const isUser = String(r.clubId)===String(state.team.club_id);
+        const z = zones.get(i+1);
+        const rowBg = isUser ? "background:rgba(37,99,235,.14);" : (z ? (z.rowClass==="pos-promo" ? "background:rgba(16,185,129,.05);" : z.rowClass==="pos-releg"?"background:rgba(239,68,68,.05);":"") : "");
+        const nameStyle = isUser ? "color:#93c5fd;font-weight:800;" : "color:#e2e8f0;font-weight:600;";
+        const ptsStyle = isUser ? "color:#fff;font-weight:900;" : "color:#93c5fd;font-weight:800;";
+        const tip = z ? ` title="${escapeHtml(z.label)}"` : "";
+        return `<tr style="${rowBg}border-bottom:1px solid rgba(255,255,255,.04);"${tip}>
+            <td style="padding:.45rem .4rem;text-align:center;font-weight:900;color:${isUser?'#60a5fa':(z?.rowClass==='pos-promo'?'#10b981':z?.rowClass==='pos-releg'?'#ef4444':'var(--muted)')};font-size:.82rem;">${i+1}</td>
+            <td style="padding:.45rem .4rem;text-align:left;${nameStyle}white-space:nowrap;">${clubCrestHtml(r.logo_url,r.name,"club-crest-sm")}${escapeHtml(r.name)}${isUser?' <span style="background:var(--primary);color:#fff;font-size:.55rem;padding:1px 5px;border-radius:4px;margin-left:.35rem;">TY</span>':''}${z && r.clubId!==state.team.club_id ? ` <span style="font-size:.55rem;color:${z.rowClass==='pos-promo'?'#10b981':z.rowClass==='pos-releg'?'#ef4444':'#9ca3af'};">• ${escapeHtml(z.label)}</span>`:''}</td>
+            <td style="padding:.45rem .4rem;text-align:center;color:var(--muted);font-size:.8rem;">${r.played||0}</td>
+            <td style="padding:.45rem .4rem;text-align:center;color:#10b981;font-weight:700;font-size:.8rem;">${r.won||0}</td>
+            <td style="padding:.45rem .4rem;text-align:center;color:#9ca3af;font-weight:700;font-size:.8rem;">${r.drawn||0}</td>
+            <td style="padding:.45rem .4rem;text-align:center;color:#ef4444;font-weight:700;font-size:.8rem;">${r.lost||0}</td>
+            <td style="padding:.45rem .4rem;text-align:center;font-weight:700;color:var(--muted);font-size:.8rem;">${r.gf||0}:${r.ga||0}</td>
+            <td style="padding:.45rem .4rem;text-align:center;${ptsStyle}font-size:.85rem;">${r.points||0}</td>
+        </tr>`;
+    }).join("");
+    const scorersRows = topScorers.length && topScorers[0].goals>0 ? topScorers.map((p,i)=>`
+        <tr style="border-bottom:1px solid rgba(255,255,255,.04);">
+            <td style="padding:.45rem .4rem;text-align:center;color:var(--muted);font-weight:700;">${i+1}</td>
+            <td style="padding:.45rem .4rem;text-align:left;font-weight:600;color:#fff;">${escapeHtml(p.name)}</td>
+            <td style="padding:.45rem .4rem;text-align:center;"><span style="background:${positionColor(p.position)}22;color:${positionColor(p.position)};border:1px solid ${positionColor(p.position)}44;padding:1px 5px;border-radius:4px;font-size:.65rem;font-weight:700;">${escapeHtml(POS_MAP[p.position]||p.position)}</span></td>
+            <td style="padding:.45rem .4rem;text-align:center;color:var(--muted);font-size:.8rem;">${p.matches||0}</td>
+            <td style="padding:.45rem .4rem;text-align:center;color:#10b981;font-weight:800;">${p.goals||0}</td>
+            <td style="padding:.45rem .4rem;text-align:center;color:#60a5fa;font-weight:700;">${p.assists||0}</td>
+        </tr>`).join("") : `<tr><td colspan="6" style="text-align:center;color:var(--muted);padding:1rem;font-size:.82rem;">Brak strzelców w tym sezonie.</td></tr>`;
+    const assistsRows = topAssists.length && topAssists[0].assists>0 ? topAssists.map((p,i)=>`
+        <tr style="border-bottom:1px solid rgba(255,255,255,.04);">
+            <td style="padding:.45rem .4rem;text-align:center;color:var(--muted);font-weight:700;">${i+1}</td>
+            <td style="padding:.45rem .4rem;text-align:left;font-weight:600;color:#fff;">${escapeHtml(p.name)}</td>
+            <td style="padding:.45rem .4rem;text-align:center;"><span style="background:${positionColor(p.position)}22;color:${positionColor(p.position)};border:1px solid ${positionColor(p.position)}44;padding:1px 5px;border-radius:4px;font-size:.65rem;font-weight:700;">${escapeHtml(POS_MAP[p.position]||p.position)}</span></td>
+            <td style="padding:.45rem .4rem;text-align:center;color:var(--muted);font-size:.8rem;">${p.matches||0}</td>
+            <td style="padding:.45rem .4rem;text-align:center;color:#60a5fa;font-weight:800;">${p.assists||0}</td>
+            <td style="padding:.45rem .4rem;text-align:center;color:#10b981;font-weight:700;">${p.goals||0}</td>
+        </tr>`).join("") : `<tr><td colspan="6" style="text-align:center;color:var(--muted);padding:1rem;font-size:.82rem;">Brak asyst w tym sezonie.</td></tr>`;
+
     const c = document.getElementById("modalContent");
-    c.innerHTML = `<div style="text-align:center;">
-        <h2 style="margin:.5rem 0;">Koniec sezonu!</h2>
-        <div style="font-size:1.2rem;font-weight:900;color:${outcome.color};margin-bottom:1rem;">${outcome.label}</div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:1.5rem 0;text-align:left;">
-            <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:.8rem;">
-                <div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;">Pozycja</div>
-                <div style="font-size:1.1rem;font-weight:800;">${pos + 1}. miejsce</div>
+    c.innerHTML = `
+    <div style="text-align:center;margin-bottom:1rem;">
+        <div style="display:inline-flex;align-items:center;gap:.5rem;background:rgba(251,191,36,.12);color:#fbbf24;border:1px solid rgba(251,191,36,.25);padding:.35rem .9rem;border-radius:999px;font-size:.75rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;">🏆 Podsumowanie sezonu ${escapeHtml(seasonLabel)}</div>
+        <h2 style="margin:.7rem 0 .25rem;font-size:1.55rem;font-weight:900;letter-spacing:-.02em;">Koniec sezonu!</h2>
+        <div style="font-size:1rem;font-weight:900;color:${outcome.color};letter-spacing:.02em;">${escapeHtml(outcome.label)}</div>
+        <div style="font-size:.82rem;color:var(--muted);margin-top:.35rem;">${escapeHtml(state.team.name)} • ${escapeHtml(state.leagueData.name||"")} ${zoneInfo?`• <span style="color:${outcome.color};font-weight:700;">${escapeHtml(zoneInfo.label)}</span>`:''}</div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin-bottom:1rem;">
+        <div style="background:linear-gradient(135deg,rgba(37,99,235,.14),rgba(0,0,0,.2));border:1px solid rgba(37,99,235,.2);border-radius:12px;padding:.8rem;text-align:center;">
+            <div style="font-size:.65rem;color:var(--muted);text-transform:uppercase;font-weight:800;letter-spacing:.05em;">Pozycja</div>
+            <div style="font-size:1.55rem;font-weight:900;color:#fff;line-height:1;margin:.25rem 0;">${pos}<span style="font-size:.85rem;color:var(--muted);font-weight:700;">/${total}</span></div>
+            <div style="font-size:.72rem;color:var(--muted);">${pos===1?'🥇 Mistrz':pos<=3?'Top 3':'Tabela'}</div>
+        </div>
+        <div style="background:rgba(0,0,0,.18);border:1px solid var(--border);border-radius:12px;padding:.8rem;text-align:center;">
+            <div style="font-size:.65rem;color:var(--muted);text-transform:uppercase;font-weight:800;letter-spacing:.05em;">Punkty</div>
+            <div style="font-size:1.55rem;font-weight:900;color:#60a5fa;line-height:1;margin:.25rem 0;">${row.points||0}</div>
+            <div style="font-size:.72rem;color:var(--muted);">${row.won||0}W • ${row.drawn||0}R • ${row.lost||0}P</div>
+        </div>
+        <div style="background:rgba(0,0,0,.18);border:1px solid var(--border);border-radius:12px;padding:.8rem;text-align:center;">
+            <div style="font-size:.65rem;color:var(--muted);text-transform:uppercase;font-weight:800;letter-spacing:.05em;">Bramki</div>
+            <div style="font-size:1.45rem;font-weight:900;color:#fff;line-height:1;margin:.25rem 0;">${row.gf||0}:${row.ga||0} <span style="font-size:.9rem;font-weight:800;color:${gdColor};">(${gdStr})</span></div>
+            <div style="font-size:.72rem;color:var(--muted);">${row.played||0} meczów</div>
+        </div>
+        <div style="background:linear-gradient(135deg,rgba(251,191,36,.1),rgba(0,0,0,.18));border:1px solid rgba(251,191,36,.2);border-radius:12px;padding:.8rem;text-align:center;">
+            <div style="font-size:.65rem;color:var(--muted);text-transform:uppercase;font-weight:800;letter-spacing:.05em;">Budżet</div>
+            <div style="font-size:1.15rem;font-weight:900;color:#fbbf24;line-height:1;margin:.25rem 0;">€${formatMoney(budgetAfter)}M</div>
+            <div style="font-size:.72rem;color:${(outcome.budget||0)>=0?'#10b981':'#ef4444'};font-weight:700;">${(outcome.budget||0)>=0?`+€${formatMoney(outcome.budget||0)}M premii`:`€${formatMoney(outcome.budget||0)}M`}</div>
+        </div>
+    </div>
+
+    ${outcome.europe ? `<div style="display:flex;align-items:center;gap:.7rem;background:linear-gradient(135deg,${outcome.europe.color}14,rgba(0,0,0,.15));border:1px solid ${outcome.europe.color}33;border-radius:10px;padding:.75rem .9rem;margin-bottom:1rem;">
+        <div style="width:36px;height:36px;border-radius:50%;background:${outcome.europe.color};display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:.75rem;flex-shrink:0;">${escapeHtml(outcome.europe.short)}</div>
+        <div style="text-align:left;">
+            <div style="font-size:.82rem;font-weight:800;color:#fff;">Kwalifikacja europejska: ${escapeHtml(outcome.europe.name)}</div>
+            <div style="font-size:.72rem;color:var(--muted);">Twoja drużyna zagra w pucharach w przyszłym sezonie.</div>
+        </div>
+        <div style="margin-left:auto;font-size:1.2rem;">🏆</div>
+    </div>` : `<div style="background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:10px;padding:.7rem .9rem;margin-bottom:1rem;text-align:center;font-size:.82rem;color:var(--muted);">Brak kwalifikacji do pucharów w przyszłym sezonie.</div>`}
+
+    <div style="display:grid;grid-template-columns:1fr;gap:1rem;">
+        <div style="background:rgba(0,0,0,.18);border:1px solid var(--border);border-radius:12px;overflow:hidden;">
+            <div style="padding:.75rem 1rem;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;">
+                <h3 style="margin:0;font-size:.95rem;font-weight:800;">📊 Tabela końcowa — ${escapeHtml(state.leagueData.name||"Liga")}</h3>
+                <span class="badge badge-blue" style="font-size:.7rem;">Sezon ${escapeHtml(seasonLabel)}</span>
             </div>
-            <div style="background:rgba(0,0,0,.2);border-radius:8px;padding:.8rem;">
-                <div style="font-size:.7rem;color:var(--muted);text-transform:uppercase;">Budżet</div>
-                <div style="font-size:1.1rem;font-weight:800;color:#fbbf24;">€${formatMoney(state.budgetMillions)}M</div>
+            <div style="max-height:260px;overflow-y:auto;">
+                <table style="width:100%;border-collapse:collapse;font-size:.82rem;">
+                    <thead style="position:sticky;top:0;background:#0f172a;z-index:1;">
+                        <tr style="border-bottom:1px solid var(--border);">
+                            <th style="padding:.5rem .4rem;text-align:center;color:var(--muted);font-size:.68rem;">#</th>
+                            <th style="padding:.5rem .4rem;text-align:left;color:var(--muted);font-size:.68rem;">Drużyna</th>
+                            <th style="padding:.5rem .4rem;text-align:center;color:var(--muted);font-size:.68rem;">M</th>
+                            <th style="padding:.5rem .4rem;text-align:center;color:var(--muted);font-size:.68rem;">W</th>
+                            <th style="padding:.5rem .4rem;text-align:center;color:var(--muted);font-size:.68rem;">R</th>
+                            <th style="padding:.5rem .4rem;text-align:center;color:var(--muted);font-size:.68rem;">P</th>
+                            <th style="padding:.5rem .4rem;text-align:center;color:var(--muted);font-size:.68rem;">B</th>
+                            <th style="padding:.5rem .4rem;text-align:center;color:var(--muted);font-size:.68rem;">Pkt</th>
+                        </tr>
+                    </thead>
+                    <tbody>${tableRows}</tbody>
+                </table>
+            </div>
+            <div style="display:flex;gap:1rem;padding:.6rem 1rem;font-size:.72rem;color:var(--muted);border-top:1px solid var(--border);flex-wrap:wrap;background:rgba(0,0,0,.12);">
+                <span style="display:flex;align-items:center;gap:.3rem;"><span style="width:10px;height:10px;background:#10b981;border-radius:3px;"></span>Awans / Puchary</span>
+                <span style="display:flex;align-items:center;gap:.3rem;"><span style="width:10px;height:10px;background:#ef4444;border-radius:3px;"></span>Spadek</span>
+                <span style="margin-left:auto;color:var(--primary-light);font-weight:700;">${row.form?.length ? `Forma: ${row.form.slice(-5).map(v=>FORM_ICON[v]||v).join(' ')}`:''}</span>
             </div>
         </div>
-        <div style="font-size:.85rem;color:var(--muted);margin-bottom:1.5rem;">
-            ${outcome.budget >= 0 ? `Bonus: +€${formatMoney(outcome.budget)}M` : `Kara: -€${formatMoney(Math.abs(outcome.budget))}M`}
-            ${outcome.europe ? `· Kwalifikacja: ${outcome.europe.name}` : ''}
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div style="background:rgba(0,0,0,.18);border:1px solid var(--border);border-radius:12px;overflow:hidden;">
+                <div style="padding:.7rem 1rem;border-bottom:1px solid var(--border);">
+                    <h3 style="margin:0;font-size:.9rem;font-weight:800;">⚽ Najlepsi strzelcy</h3>
+                    <div style="font-size:.72rem;color:var(--muted);">Twoja drużyna — sezon ${escapeHtml(seasonLabel)}</div>
+                </div>
+                <div style="overflow-x:auto;">
+                    <table style="width:100%;border-collapse:collapse;font-size:.8rem;">
+                        <thead><tr style="border-bottom:1px solid rgba(255,255,255,.06);"><th style="padding:.45rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">#</th><th style="padding:.45rem .4rem;text-align:left;color:var(--muted);font-size:.65rem;">Zawodnik</th><th style="padding:.45rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">Poz</th><th style="padding:.45rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">M</th><th style="padding:.45rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">Gole</th><th style="padding:.45rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">As</th></tr></thead>
+                        <tbody>${scorersRows}</tbody>
+                    </table>
+                </div>
+            </div>
+            <div style="background:rgba(0,0,0,.18);border:1px solid var(--border);border-radius:12px;overflow:hidden;">
+                <div style="padding:.7rem 1rem;border-bottom:1px solid var(--border);">
+                    <h3 style="margin:0;font-size:.9rem;font-weight:800;">🅰️ Najlepsi asystenci</h3>
+                    <div style="font-size:.72rem;color:var(--muted);">Twoja drużyna — sezon ${escapeHtml(seasonLabel)}</div>
+                </div>
+                <div style="overflow-x:auto;">
+                    <table style="width:100%;border-collapse:collapse;font-size:.8rem;">
+                        <thead><tr style="border-bottom:1px solid rgba(255,255,255,.06);"><th style="padding:.45rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">#</th><th style="padding:.45rem .4rem;text-align:left;color:var(--muted);font-size:.65rem;">Zawodnik</th><th style="padding:.45rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">Poz</th><th style="padding:.45rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">M</th><th style="padding:.45rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">As</th><th style="padding:.45rem .4rem;text-align:center;color:var(--muted);font-size:.65rem;">Gole</th></tr></thead>
+                        <tbody>${assistsRows}</tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-        <button class="btn btn-primary btn-lg full-width-btn" onclick="closeModal();applySeasonOutcome();">
-            Rozpocznij nowy sezon
+    </div>
+
+    <div style="display:flex;gap:.6rem;margin-top:1.2rem;flex-wrap:wrap;">
+        <button class="btn btn-secondary" style="flex:1;justify-content:center;min-height:48px;" onclick="closeModal()">Zamknij</button>
+        <button class="btn btn-primary btn-glow" style="flex:2;justify-content:center;min-height:48px;font-size:1rem;font-weight:900;" onclick="applySeasonOutcome();">
+            Następny sezon <span style="margin-left:.35rem;">→</span>
         </button>
-    </div>`;
+    </div>
+    <div style="text-align:center;font-size:.72rem;color:var(--muted);margin-top:.6rem;">Kliknij „Następny sezon” aby rozpocząć sezon ${(() => { const y=parseInt(seasonLabel.split('/')[0]); return `${y+1}/${String(y+2).slice(2)}`; })()} • Budżet zostanie zaktualizowany.</div>
+    `;
     document.getElementById("modal").classList.add("active");
 }
 
 async function applySeasonOutcome() {
     closeModal();
+    // Zabezpieczenie: jeśli sezon nie jest oznaczony jako zakończony, oznacz teraz
+    if (!state.seasonFinished) {
+        state.seasonFinished = true;
+        try {
+            state._seasonSnapshot = {
+                table: deepClone(state.table),
+                fixtures: deepClone(state.fixtures),
+                players: deepClone(state.players),
+                budgetBefore: state.budgetMillions,
+                outcome: deepClone(getSeasonOutcome()),
+                seasonLabel: (function(){ const y=parseInt(state.fixtures[0]?.date?.split("-")[0]||String(state.currentDate.getFullYear())); return `${y}/${String(y+1).slice(2)}`; })()
+            };
+        } catch(e) {}
+    }
     await finishSeasonNow();
 }
 
@@ -3699,6 +3905,8 @@ async function finishSeasonNow() {
 }
 
 function restartSeason(endNews) {
+    // Wyczyść snapshot poprzedniego sezonu
+    if (state._seasonSnapshot) delete state._seasonSnapshot;
     const june = state.currentDate;
     const ny   = june.getMonth() <= 6 ? june.getFullYear() : june.getFullYear() + 1;
 
@@ -3753,6 +3961,8 @@ function restartSeason(endNews) {
 }
 
 function showMatchResult(){
+    const _w2=document.querySelector("#modal .modal-window");
+    if(_w2 && _w2.dataset.seasonMode){ _w2.style.maxWidth="";_w2.style.width="";_w2.style.maxHeight="";_w2.style.overflowY="";_w2.style.padding=""; delete _w2.dataset.seasonMode; }
     const fx=getUserFixtureByDate(toIsoDate(state.currentDate));
     if(!fx||!fx.played)return;
     const h=getClub(fx.homeClubId),a=getClub(fx.awayClubId);
